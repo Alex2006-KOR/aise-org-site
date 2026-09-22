@@ -4,6 +4,14 @@ title: Staff & Governance — 실행 책임과 운영 책임을 갈라놓은 이
 
 # 실행 책임과 운영 책임을 갈라놓은 이유
 
+::: tip 읽는 자리 — 동작 원리 (2/5)
+[동작 원리](/how-it-works) 대분류의 두 번째 글입니다. 앞
+[Organization Model](/organization-model)이 조직의 배치도를 그렸다면, 이 페이지는 그 배치도에서
+**가장 설명이 필요한 자리 하나**를 확대합니다 — 참모입니다. 실행 책임과 운영 책임을 왜 갈랐고,
+참모가 왜 한 명에서 셋이 됐는지. 여기까지가 "정지 화면"이고, 다음
+[Lifecycle](/lifecycle)부터 구조가 **움직이기 시작합니다.**
+:::
+
 부서가 일을 하는 동안, 그 위에서 조직 전체가 어긋나지 않게 살피는 역할이 따로 있어야 했습니다.
 그런데 이 역할을 [뎁스-2 피라미드](/organization-model) 안에 그냥 끼워 넣으면 문제가 생깁니다 —
 사용자가 부서마다 일일이 이 역할을 거치게 되어 뎁스가 조용히 늘어나기 때문입니다. 그래서 이
@@ -202,9 +210,9 @@ the judgment behind it any sharper"* — 어차피 우회할 수 없는 게이�
 **헷갈리기 쉬운 것 하나.** "참모가 부서보다 윗사람"은 아닙니다. 참모는 실행 책임을 지지 않고,
 부서는 운영 책임을 지지 않습니다 — 위아래가 아니라 **다른 종류의 책임**입니다.
 
-**다음으로.** 조직이 자기 자신을 바꾸는 순간을 어떻게 격리했는지 →
-[Operator vs Meta Mode](/operator-vs-meta-mode). 이 참모들이 조립하는 협업의 층위 →
-[Collaboration Model](/collaboration-model).
+**다음으로.** 여기까지가 정지 화면입니다. 이제 부서 하나가 태어나서 끝날 때까지의 시간축 →
+[Lifecycle](/lifecycle). (조직이 자기 자신을 바꾸는 순간을 어떻게 격리했는지는 이 대분류의
+마지막 글 [Operator vs Meta Mode](/operator-vs-meta-mode)에 있습니다.)
 
 *근거: `CONSTITUTION.md` §10.3–§10.9, §11; `schema/OP_ORCHESTRATOR.md`,
 `schema/HR_ORCHESTRATOR.md`, `schema/AS_ORCHESTRATOR.md`, `schema/MG_ORCHESTRATOR.md`;

@@ -4,6 +4,15 @@ title: AI-Native Principles — AI라서 포기하지 않아도 되는 것들
 
 # AI라서 포기하지 않아도 되는 것들
 
+::: tip 읽는 자리 — 배경 및 철학 (3/3)
+[배경 및 철학](/background) 대분류의 마지막 글입니다. 앞
+[일반적인 방식과 무엇이 다른가](/real-world-vs-aise)가 흔한 방식과의 차이를 일곱 축으로
+늘어놓았다면, 이 페이지는 그 차이들 중 **"AI가 사람과 다르기 때문에 가능해진 것"만 따로
+모읍니다.** 이 구분이 중요한 이유는, 사람 조직에 그대로 옮기면 안 되는 것까지 일반화하기가
+쉽기 때문입니다. 이걸로 "왜"는 끝나고, 다음 대분류 [동작 원리](/how-it-works)부터
+"어떻게"로 넘어갑니다.
+:::
+
 인간 조직의 원칙을 지키기로 한 것과, 인간 조직의 한계까지 그대로 물려받는 것은 다른 이야기입니다.
 AISE는 후자를 거부합니다 — 다음 능력들은 AI라는 이유로 제한하지 않고 오히려 적극적으로 씁니다.
 
@@ -103,9 +112,9 @@ baseline, 벗어날 땐 근거 한 줄을 남깁니다.
 3. `schema/roles/project-manager.template.yaml`의 `authority` 필드에서 PM이 위임 시점에
    모델 티어를 선택하는 규칙 전문을 읽을 수 있습니다.
 
-**다음으로.** 이 원칙들이 실제로 조직 구조 층위에서 어떻게 지켜지는지 →
-[Structural Principles/OCP](/structural-principles-ocp). 이 원칙들이 왜 필요했는지의 출발점 →
-[Philosophy](/philosophy).
+**다음으로.** 여기까지가 "왜"입니다. 이제 이 원칙들이 실제로 어떤 모양의 조직으로 굳었는지 →
+[동작 원리](/how-it-works). 이 원칙들이 나중에 구조 층위에서 어떻게 지켜지는지가 궁금하시면
+[Structural Principles/OCP](/structural-principles-ocp)로 건너뛰셔도 됩니다.
 
 *근거: `CONSTITUTION.md` §7; `knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md`,
 `knowledge/decisions/2026-07-08-model-is-not-a-provisioned-asset.md`,

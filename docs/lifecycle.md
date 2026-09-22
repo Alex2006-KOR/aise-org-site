@@ -4,6 +4,14 @@ title: Lifecycle — 여섯 단계로 자라는 조직
 
 # 같은 문제를 두 번 처음부터 풀지 않으려면
 
+::: tip 읽는 자리 — 동작 원리 (3/5)
+[동작 원리](/how-it-works) 대분류의 세 번째 글이고, **여기서부터 구조가 움직입니다.** 앞의
+두 글([Organization Model](/organization-model), [Staff & Governance](/staff-governance))이
+"무엇이 있고 누가 관리하나"를 그린 정지 화면이었다면, 이 페이지는 **시간축** — 부서 하나가
+태어나서 끝날 때까지 — 을 붙입니다. 다음 [Collaboration Model](/collaboration-model)은 거기에
+**여러 개가 동시에 굴러갈 때**를 더합니다.
+:::
+
 [Philosophy](/philosophy)의 셋째 원칙 "조직은 지속적으로 성장해야 한다"가 실제로 어떻게 돌아가는지는,
 여섯 단계를 한 바퀴 도는 순환으로 나타납니다.
 
