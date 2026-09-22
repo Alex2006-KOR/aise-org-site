@@ -4,6 +4,15 @@ title: Staff & Governance — Why Execution Accountability and Operating Account
 
 # Why execution accountability and operating accountability are separated
 
+::: tip Where you are — How It Works (2/5)
+The second page in the [How It Works](/en/how-it-works) category. If
+[Organization Model](/en/organization-model) drew the layout, this page zooms in on **the one
+position on it that needs the most explaining** — the staff figure. Why execution accountability
+was split from operating accountability, and why one staff figure became three. This is where the
+"still frame" ends; from the next page, [Lifecycle](/en/lifecycle), the structure **starts
+moving.**
+:::
+
 While departments do the work, there had to be a separate role watching over the whole
 organization so nothing drifts out of alignment. But simply slotting that role into the
 [depth-2 pyramid](/en/organization-model) causes a problem — the user would have to go through
@@ -234,9 +243,9 @@ at the same time.
 execution accountability, and departments carry no operating accountability — it's not a
 hierarchy, it's **a different kind of accountability**.
 
-**Next.** How the organization isolated the moment it changes itself →
-[Operator vs Meta Mode](/en/operator-vs-meta-mode). The layers of collaboration these staff
-assemble → [Collaboration Model](/en/collaboration-model).
+**Next.** That's the still frame done. Now the time axis of a single department, from formation to
+end → [Lifecycle](/en/lifecycle). (How the organization isolated the moment it changes itself is
+in this category's final page, [Operator vs Meta Mode](/en/operator-vs-meta-mode).)
 
 *Source: `CONSTITUTION.md` §10.3-§10.9, §11; `schema/OP_ORCHESTRATOR.md`,
 `schema/HR_ORCHESTRATOR.md`, `schema/AS_ORCHESTRATOR.md`, `schema/MG_ORCHESTRATOR.md`;

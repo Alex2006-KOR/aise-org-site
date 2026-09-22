@@ -4,6 +4,14 @@ title: Ultimate Goal — An Organization, Not a Framework
 
 # Why build an organization, not a framework
 
+::: tip Where you are — Evaluation & Value (2/2)
+The last page in the [Evaluation & Value](/en/value) category, and the end of the whole
+narrative. If [Structural Principles / OCP](/en/structural-principles-ocp) answered "does this
+structure hold up when changed," this page answers **"so what is all of it for"** — why we call
+it an "organization" rather than a "framework." The question thrown out back on [Home](/en/)
+closes here.
+:::
+
 AISE is not a project to build a multi-agent framework. There are already plenty of those, and
 more will keep coming. What AISE is trying to build sits at a different layer — an **AI
 organizational operating system that learns on its own, grows on its own, and continuously

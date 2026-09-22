@@ -4,6 +4,15 @@ title: AI-Native Principles — Things AI Doesn't Have to Give Up
 
 # Things AI doesn't have to give up
 
+::: tip Where you are — Background & Philosophy (3/3)
+The last page in the [Background & Philosophy](/en/background) category. If
+[What the usual way does differently](/en/real-world-vs-aise) laid out the differences across
+seven axes, this page collects only **the ones that became possible because AI isn't a person.**
+That distinction matters because it's easy to over-generalize things that should never be carried
+back into a human organization. This closes out the "why"; the next category,
+[How It Works](/en/how-it-works), moves on to the "how."
+:::
+
 Keeping the principles of a human organization is one thing; inheriting the limits of a human
 organization along with it is another. AISE refuses the latter — the following capabilities are
 not restricted just because it's AI. They're actively used instead.
@@ -115,9 +124,10 @@ actually testing "is this really possible on this execution substrate."
 3. Read the `authority` field of `schema/roles/project-manager.template.yaml` for the full rule
    on how a PM chooses model tier at the point of delegation.
 
-**Next.** How these principles actually hold up at the level of organizational structure →
-[Structural Principles / OCP](/en/structural-principles-ocp). Where these principles started
-from, in the first place → [Philosophy](/en/philosophy).
+**Next.** That's the "why" done. Now, what shape of organization these principles actually
+hardened into → [How It Works](/en/how-it-works). If you'd rather see how they hold up at the
+structural level, you can jump ahead to
+[Structural Principles / OCP](/en/structural-principles-ocp).
 
 *Source: `CONSTITUTION.md` §7; `knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md`,
 `knowledge/decisions/2026-07-08-model-is-not-a-provisioned-asset.md`,

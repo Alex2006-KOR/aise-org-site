@@ -156,12 +156,20 @@ flowchart LR
 AISE는 설계도로 끝나지 않았습니다 — 지금 이 순간에도 실제로 여러 부서가 이 구조 위에서
 실제 소프트웨어를 만들고 있습니다. 이 사이트 자신도 그중 한 부서의 결과물입니다.
 
-- **[Organization Model](/organization-model)** — 참모 3인방, 부서, 역할이 실제로 어떻게
-  맞물리는지
-- **[Operator vs Meta Mode](/operator-vs-meta-mode)** — 조직이 "일을 하는 것"과 "조직 자신을
-  바꾸는 것"을 어떻게 분리해뒀는지
-- **[Lifecycle](/lifecycle)** — 부서 하나가 태어나서 끝날 때까지 거치는 단계
-- **[Glossary](/glossary)** — 여기 나온 용어들을 한 번에 찾아보고 싶다면
+그리고 이 사이트는 **네 개의 큰 묶음**으로 되어 있습니다. 순서가 곧 이야기입니다 — 왜
+만들었는지에서 시작해서, 어떻게 생겼는지를 보고, 실제로 써 보고, 그게 무슨 값을 했는지로
+끝납니다.
+
+| 대분류 | 답하는 질문 | 안에 있는 것 |
+|---|---|---|
+| **1. [배경 및 철학](/background)** | 왜 이런 걸 만들었나 | 다섯 원칙 · **일반적인 방식과 무엇이 다른가** · AI라서 다르게 한 것 |
+| **2. [동작 원리](/how-it-works)** | 실제로 어떻게 생겼고 굴러가나 | 조직의 모양 · 참모와 거버넌스 · 부서의 생명주기 · 협업 방식 · Operator/Meta 모드 |
+| **3. [쓰는 법과 이어가기](/in-practice)** | 그래서 어떻게 쓰나 | **일을 맡기는 법** · **세션을 넘어 이어가기** |
+| **4. [평가와 가치](/value)** | 그래서 무엇을 만들어냈나 | 구조가 변경을 견디는 법 · 궁극적으로 무엇을 노리나 |
+
+각 대분류 이름을 누르면, 그 안의 글들을 **왜 그 순서로 읽는 게 좋은지** 설명하는 짧은 안내가
+먼저 나옵니다. 그리고 모든 페이지 맨 위에는 지금 전체 흐름의 어디쯤인지 알려주는 한 단락이
+붙어 있으니, 중간부터 들어오셔도 길을 잃지 않으실 겁니다.
 
 더 정확한 원문이 궁금하다면, 이 모든 이야기의 근거는 결국 `CONSTITUTION.md` 한 파일입니다 —
 이 사이트는 그 조항들을 그대로 옮긴 게 아니라, 왜 그렇게 정했는지를 풀어쓴 것입니다.
@@ -175,14 +183,16 @@ AISE는 설계도로 끝나지 않았습니다 — 지금 이 순간에도 실�
 
 | 이런 게 궁금하다면 | 여기부터 |
 |---|---|
-| 왜 굳이 이런 걸 만들었나 | [Philosophy](/philosophy) → [Ultimate Goal](/ultimate-goal) |
+| 처음부터 순서대로 읽고 싶다 | [배경 및 철학](/background) → [동작 원리](/how-it-works) → [쓰는 법과 이어가기](/in-practice) → [평가와 가치](/value) |
+| 흔한 방식과 뭐가 다른지만 빨리 | [일반적인 방식과 무엇이 다른가](/real-world-vs-aise)의 대조표 한 장 |
 | 실제로 어떤 모양의 조직인가 | [Organization Model](/organization-model) → [Staff & Governance](/staff-governance) |
-| 일이 실제로 어떻게 굴러가나 | [Lifecycle](/lifecycle) → [Collaboration Model](/collaboration-model) |
+| 이 조직에 일을 맡기려면 | [일을 맡기는 법](/usage) → [세션을 넘어 이어가기](/handoff) |
 | 안전장치가 어떻게 되어 있나 | [Operator vs Meta Mode](/operator-vs-meta-mode) → [Structural Principles / OCP](/structural-principles-ocp) |
 | 용어가 낯설다 | [Glossary](/glossary) |
 
-**5분만 있다면.** 이 페이지의 그림 두 장과 [Organization Model](/organization-model)의 "그림이
-두 장 필요했다"만 보셔도 핵심 구조는 잡힙니다.
+**5분만 있다면.** 이 페이지의 그림 두 장, [일반적인 방식과 무엇이 다른가](/real-world-vs-aise)의
+일곱 축 대조표, 그리고 [Organization Model](/organization-model)의 "그림이 두 장 필요했다"만
+보셔도 핵심은 잡힙니다.
 
 **읽기 전에 알아두면 편한 것.** 이 사이트의 설명 상자(**결정 되짚어보기**)는 전부 실제로 있었던
 결정 기록에서 가져온 것입니다 — *문제 → 조사 → 해결 → 그래서 생긴 강점* 순서로 읽으시면 됩니다.
