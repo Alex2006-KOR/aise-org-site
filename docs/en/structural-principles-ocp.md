@@ -4,6 +4,14 @@ title: Structural Principles / OCP — Extend Without Modifying
 
 # Extend without modifying
 
+::: tip Where you are — Evaluation & Value (1/2)
+The first page in the [Evaluation & Value](/en/value) category. The previous category finished
+**how to actually use** this organization, so now it's time to look back — and a structure's worth
+is decided not when you add a feature but by whether you can add it **without touching what's
+already there.** So "how it holds up when it must change" comes first, and
+[Ultimate Goal](/en/ultimate-goal) closes with "so what is it ultimately trying to build."
+:::
+
 The organization's own implementation follows a software design principle too — the
 **Open-Closed Principle (OCP)**, from SOLID. When something new is needed, it's added alongside
 what already exists instead of modifying it.

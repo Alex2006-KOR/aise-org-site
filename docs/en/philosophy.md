@@ -4,6 +4,15 @@ title: Philosophy
 
 # Five principles, and why each one was needed
 
+::: tip Where you are — Background & Philosophy (1/3)
+The first page in the [Background & Philosophy](/en/background) category. If [Home](/en/) threw
+out the problem — "nothing survives when a session ends" — this page follows **which decisions
+branched out of it.** The next page,
+[What the usual way does differently](/en/real-world-vs-aise), contrasts where those decisions
+actually diverge from the usual way. So: this page is "what we believe," the next one is "so what
+changes."
+:::
+
 Going back to the problem we saw on [Home](/en/) — AI forgets when a session ends. That single
 sentence actually produced five distinct decisions. Follow them one at a time, and you can see
 why each one was necessary.
@@ -126,8 +135,8 @@ accountability)? And how do we do that without just imitating people (5)?
 only five sentences, so reading them once lets you compare directly against how this page
 unpacked those five lines.
 
-**Next.** How these five actually turn into a concrete shape of organization →
-[Organization Model](/en/organization-model).
+**Next.** Where these five actually diverge from the way things are usually done →
+[What the usual way does differently](/en/real-world-vs-aise).
 
 *Source: `CONSTITUTION.md` §2.1-§2.5 /
 `knowledge/decisions/2026-09-08-stateless-pm-sidesteps-handoff-tax.md`.*

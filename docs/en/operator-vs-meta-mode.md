@@ -4,6 +4,14 @@ title: Operator vs Meta Mode — Wearing a Different Hat Each Day
 
 # Wearing a different hat each day
 
+::: tip Where you are — How It Works (5/5)
+The last page in the [How It Works](/en/how-it-works) category. If the previous four were all
+about **"doing work,"** this page covers how **"the organization changing itself"** was separated
+from it — it comes last because what's being protected only lands once you've seen the whole
+structure. That closes out the structural explanation; the next category,
+[In Practice](/en/in-practice), starts actually handing over work.
+:::
+
 The person operating this organization actually switches between very different roles several
 times a day — assigning today's work requires an entirely different mode than reshaping the
 organization itself.
@@ -156,9 +164,9 @@ latter is never trusted from reading alone — it's actually tested with adversa
 3. The work of building this very site (`aise-org-site`) is always done in Operator mode — no
    matter how much content gets edited, the CONSTITUTION and `schema/*` are never touched.
 
-**Next.** What you can actually do in Operator mode was already covered in
-[Collaboration Model](/en/collaboration-model). Why the organization sees these principles as
-things AI can do even better than people → [AI-Native Principles](/en/ai-native-principles).
+**Next.** That's the structural explanation done. Now **the actual procedure for handing work to
+this organization** → [How to hand work to this org](/en/usage). That's where declaring a mode
+becomes the first move in practice.
 
 *Source: `governance/MODE_POLICY.md`; `knowledge/decisions/2026-07-07-operator-meta-mode-split.md`,
 `knowledge/decisions/2026-07-07-mode-gate-hardening.md`,

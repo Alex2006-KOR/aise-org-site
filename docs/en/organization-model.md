@@ -4,6 +4,15 @@ title: Organization Model — Org Chart and Execution Graph
 
 # One person still has to be able to see the whole thing
 
+::: tip Where you are — How It Works (1/5)
+The first page in the [How It Works](/en/how-it-works) category. The previous category finished
+the "why," so from here on it's **"how."** This category starts static and moves steadily toward
+the parts that move, and this page is the starting point — it draws **what exists** (how staff,
+departments, and roles are laid out). Every name appears here, which is why it has to come first.
+The next page, [Staff & Governance](/en/staff-governance), zooms in on the position on that
+layout that needs the most explaining.
+:::
+
 Turn the fourth of the five principles from [Philosophy](/en/philosophy), "accountability must be
 unambiguous," into an actual structure, and this is what you get.
 

@@ -4,6 +4,12 @@ title: Glossary — All the Terms Used Here, in One Place
 
 # All the terms used here, in one place
 
+::: tip Where you are — Reference
+This page isn't part of the narrative; it's **reference material.** There's no need to read it in
+order — drop in whenever an unfamiliar term shows up on another page. To get back to the overall
+flow → the category map on [Home](/en/).
+:::
+
 Here's a collection of the terms used throughout this site. If you're curious where a concept
 came from, follow the link.
 
@@ -28,7 +34,20 @@ came from, follow the link.
 - **Operator mode / Meta mode** — see [Operator vs Meta Mode](/en/operator-vs-meta-mode).
 - **Project Record** — made up of the PM's detailed continuity memory (`project-record.md`), the
   inbox of not-yet-absorbed instructions the Ops-staff leaves (`directive.md`), and the
-  lightweight report sent to the Ops-staff (`report.md`).
+  lightweight digest sent to the Ops-staff (`execution.md`). Each file has exactly one writer, and
+  the story of how they came to be split is in
+  [Carrying on across sessions](/en/handoff). (That third file was first created as `report.md`
+  on 2026-08-26 and renamed to `execution.md` two days later, after colliding with the execution
+  tool's filename guard.)
+- **run** — a single execution. A department exists across many independent runs, and those runs
+  share no memory with each other — each one bootstraps afresh from the three files above. See
+  [Carrying on across sessions](/en/handoff).
+- **`/aise:op` · `/aise:meta` · `/aise:handoff`** — declaring Operator mode, declaring Meta mode,
+  and writing a continuity record right now, respectively. See
+  [How to hand work to this org](/en/usage).
+- **Ledger** — the append-only history inside `project-record.md`. Verbatim quotes of absorbed
+  instructions and each run's deliverable land here — which is what lets the instruction inbox
+  stay small.
 
 Two of these terms carry a short story of their own — knowing why these distinctions were needed
 also makes clearer why the rest of the terms above ended up with the names and places they have

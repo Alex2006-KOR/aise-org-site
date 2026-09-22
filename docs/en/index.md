@@ -169,12 +169,19 @@ AISE didn't stop at a design document — right now, at this very moment, severa
 actually building real software on top of this structure. This site itself is the output of one
 of those departments.
 
-- **[Organization Model](/en/organization-model)** — how the three staff, departments, and roles
-  actually fit together
-- **[Operator vs Meta Mode](/en/operator-vs-meta-mode)** — how the org separates "doing the work"
-  from "changing the org itself"
-- **[Lifecycle](/en/lifecycle)** — the stages a single department goes through, from birth to end
-- **[Glossary](/en/glossary)** — if you want to look up all the terms used here in one place
+And this site is organized into **four big groups.** The order is the story — it starts with why
+we built it, then what it looks like, then actually using it, and ends with what that was worth.
+
+| Category | The question it answers | What's inside |
+|---|---|---|
+| **1. [Background & Philosophy](/en/background)** | Why build this at all | The five principles · **What the usual way does differently** · What's different because it's AI |
+| **2. [How It Works](/en/how-it-works)** | What it looks like and how it runs | The shape of the org · Staff & governance · A department's lifecycle · How collaboration works · Operator/Meta mode |
+| **3. [In Practice](/en/in-practice)** | So how do you use it | **How to hand work to this org** · **Carrying on across sessions** |
+| **4. [Evaluation & Value](/en/value)** | So what did it produce | How the structure absorbs change · What it is ultimately for |
+
+Click a category name and you'll first get a short guide explaining **why its pages are best read
+in that order.** Every page also opens with a paragraph telling you where you are in the overall
+flow, so dropping in from the middle won't get you lost.
 
 If you want the more precise source text, the ground truth behind every story here is, in the
 end, a single file: `CONSTITUTION.md` — this site doesn't just copy those clauses, it unpacks why
@@ -190,14 +197,16 @@ organization around AI.
 
 | If you're wondering about... | Start here |
 |---|---|
-| Why bother building this at all | [Philosophy](/en/philosophy) → [Ultimate Goal](/en/ultimate-goal) |
+| I want to read it all, in order | [Background & Philosophy](/en/background) → [How It Works](/en/how-it-works) → [In Practice](/en/in-practice) → [Evaluation & Value](/en/value) |
+| Just quickly, what's different from the usual way | The one comparison table in [What the usual way does differently](/en/real-world-vs-aise) |
 | What shape the organization actually takes | [Organization Model](/en/organization-model) → [Staff & Governance](/en/staff-governance) |
-| How work actually gets done | [Lifecycle](/en/lifecycle) → [Collaboration Model](/en/collaboration-model) |
+| I want to hand work to this org | [How to hand work to this org](/en/usage) → [Carrying on across sessions](/en/handoff) |
 | What the safeguards look like | [Operator vs Meta Mode](/en/operator-vs-meta-mode) → [Structural Principles / OCP](/en/structural-principles-ocp) |
 | The terminology is unfamiliar | [Glossary](/en/glossary) |
 
-**If you only have 5 minutes.** The two diagrams on this page, plus "Why two diagrams were
-needed" on [Organization Model](/en/organization-model), will get you the core structure.
+**If you only have 5 minutes.** The two diagrams on this page, the seven-axis comparison table in
+[What the usual way does differently](/en/real-world-vs-aise), and "Why two diagrams were needed"
+on [Organization Model](/en/organization-model) will get you the core.
 
 **Worth knowing before you read on.** Every info box on this site (**Revisiting the decision**) is
 pulled from an actual decision record — read it as *problem → investigation → resolution → the

@@ -4,6 +4,14 @@ title: Collaboration Model — Three Layers Where Collaboration Happens
 
 # Three layers where collaboration happens
 
+::: tip Where you are — How It Works (4/5)
+The fourth page in the [How It Works](/en/how-it-works) category. If [Lifecycle](/en/lifecycle)
+followed the time axis of **one** department, this page covers what happens when **several run in
+the same moment** — who assembles the execution graph, and how two roles waiting on each other
+get unstuck. The next page, [Operator vs Meta Mode](/en/operator-vs-meta-mode), is this
+category's final safety mechanism.
+:::
+
 If you've made it this far, a question naturally comes up — does collaboration happen only
 within a department, or across departments too? The answer is both, and there's a third layer on
 top.

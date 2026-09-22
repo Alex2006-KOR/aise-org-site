@@ -4,6 +4,14 @@ title: Lifecycle — An Organization That Grows Through Six Stages
 
 # So you don't solve the same problem from scratch twice
 
+::: tip Where you are — How It Works (3/5)
+The third page in the [How It Works](/en/how-it-works) category, and **this is where the structure
+starts moving.** If the previous two ([Organization Model](/en/organization-model),
+[Staff & Governance](/en/staff-governance)) were a still frame of "what exists and who manages
+it," this page adds the **time axis** — one department from formation to end. The next page,
+[Collaboration Model](/en/collaboration-model), adds **several of them running at once.**
+:::
+
 How the third principle in [Philosophy](/en/philosophy), "the organization must keep growing,"
 actually plays out shows up as a cycle that loops through six stages.
 
