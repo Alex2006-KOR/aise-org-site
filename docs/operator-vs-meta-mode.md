@@ -4,6 +4,14 @@ title: Operator vs Meta Mode — 매일 다른 모자를 쓴다
 
 # 매일 다른 모자를 쓴다
 
+::: tip 읽는 자리 — 동작 원리 (5/5)
+[동작 원리](/how-it-works) 대분류의 마지막 글입니다. 앞의 네 글이 전부 **"일을 하는 것"** 에
+관한 것이었다면, 이 페이지는 **"조직이 자기 자신을 바꾸는 것"** 을 그것과 어떻게 분리해뒀는지를
+다룹니다 — 구조를 다 본 뒤에 읽어야 무엇이 보호 대상인지가 와닿기 때문에 마지막입니다.
+이걸로 구조 설명은 끝나고, 다음 대분류 [쓰는 법과 이어가기](/in-practice)에서 실제로 일을
+맡기기 시작합니다.
+:::
+
 이 조직을 운영하는 사람은 사실 하루에도 여러 번 다른 역할을 오갑니다 — 오늘 할 일을 맡길 때와,
 조직 자체를 손볼 때는 완전히 다른 모드로 움직여야 하기 때문입니다.
 
@@ -146,9 +154,8 @@ flowchart LR
 3. 지금 이 사이트(`aise-org-site`)를 만드는 작업 자체도 항상 Operator 모드에서 진행됩니다 —
    콘텐츠를 아무리 많이 고쳐도 CONSTITUTION이나 schema/*는 건드리지 않습니다.
 
-**다음으로.** Operator 모드에서 실제로 무엇을 할 수 있는지는 이미 [Collaboration
-Model](/collaboration-model)에서 봤습니다. 조직이 이런 원칙들을 왜 "AI라서 오히려 더 잘할 수
-있다"고 보는지 → [AI-Native Principles](/ai-native-principles).
+**다음으로.** 구조 설명은 여기서 끝납니다. 이제 이 조직에 **실제로 일을 맡기는 절차** →
+[일을 맡기는 법](/usage). 모드 선언이 실전에서 어떻게 첫 동작이 되는지가 거기 나옵니다.
 
 *근거: `governance/MODE_POLICY.md`; `knowledge/decisions/2026-07-07-operator-meta-mode-split.md`,
 `knowledge/decisions/2026-07-07-mode-gate-hardening.md`,
