@@ -195,6 +195,10 @@ Summed up, the moves **a human must make** in a unit of work are fewer than you'
 Everything else — which roles to use, in what order to divide, what to write into the record — is
 handled inside the organization.
 
+A hands-on version of this table, laid out as "what do I type now," is in the
+[Quick Guide](/en/quick-guide) — this page covers why it works this way; the Quick Guide covers what
+to do.
+
 ## Wrap-up
 
 **In one sentence.** Handing over work is the two moves **declare a mode → speak to Ops-staff**;

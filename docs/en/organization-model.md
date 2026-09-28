@@ -213,6 +213,48 @@ The same class can sit in two departments **at the same time** without interferi
 other. What makes the difference isn't the class itself, but the domain profile HR attaches when
 it joins a department.
 
+## A real execution graph — one session on 2026-09-15
+
+"Dept A/B, members A1/A2" in the diagram above are illustrative. Here's one taken straight from the
+record. On 2026-09-15, a single Ops-staff session (`e9540e5f`) started the PMs of all four
+departments with the same instruction ("carry on with each department's backlog," run_label
+`op-parallel-backlog-2026-09-15`). The graph below isn't drawn from memory — it's the actual
+transcript of that session, reconstructed with `session_usage.py`, the script behind this org's
+`/aise:usage` (nesting recovered through each subagent's `parentAgentId`).
+
+```mermaid
+flowchart TD
+  OP["Ops-staff session<br/>e9540e5f"] -->|"Wave 1 · parallel"| S["sfr-ssot-platform PM"]
+  OP -->|"Wave 1 · parallel"| R["simple-ragcurl-platform PM"]
+  OP -->|"Wave 1 · parallel"| A["aise-org-site PM"]
+  OP -->|"Wave 1 · parallel"| L["llm-wiki-platform PM"]
+  S -->|"sequential delegation"| F["frontend-engineer<br/>App.tsx 391→228 lines"]
+  OP -->|"Wave 2 · sequential"| A2["aise-org-site PM<br/>IA redesign proposal"]
+  OP -.->|"re-verifies directly"| V["re-runs evaluation<br/>reproduces mean_recall 0.744"]
+```
+
+| Node | What this run did | Own tokens (incl. children) |
+|---|---|---|
+| sfr-ssot-platform PM | Designed a split of the 391-line `App.tsx` into 3 components, delegated it to `frontend-engineer`, re-verified the result itself (vitest 236 passed, 228 lines confirmed), PR #27 | 144,126 (186,261) |
+| └ frontend-engineer | Pure extraction with no behavior change | 42,135 |
+| simple-ragcurl-platform PM | Executed OQ-10 — excluded the curated content, re-evaluated 0.694 → 0.744 (the decision box on [Collaboration Model](/en/collaboration-model)), PR #15 | 223,486 |
+| aise-org-site PM | Re-confirmed this site's PR #7 merge and verified 44 KOR+EN render requests | 86,298 |
+| llm-wiki-platform PM | Re-verified two blockers from scratch, no new delegation | 129,606 |
+
+- **The execution graph takes a different shape every time.** That day four departments ran in
+  parallel, only one delegated further inside, and the other three finished with the PM alone
+  checking and executing. The org chart (depth 2) stayed the same; the graph on top fit that day's
+  work.
+- **The top didn't just pass results along.** After receiving the four reports, Ops-staff re-ran
+  the evaluation script itself and reproduced q3 `recall=0.600` and `mean_recall=0.744`
+  (`knowledge/protocols/operational-watchlist/op-orchestrator-independent-verification.md`,
+  2026-09-15 entry).
+- **The numbers are kept too.** The whole session came to 11.69M tokens (10.96M for the top-level
+  session itself + 0.73M across all subagents) — meaning what was expensive can be examined later
+  from the real record.
+- Source: the `op-parallel-backlog-2026-09-15` rows in each department's `project-record.md`
+  Ledger; `.claude/hooks/lib/session_usage.py` (run against session `e9540e5f`).
+
 ## Wrap-up
 
 **In one sentence.** The org chart fixes only "who is accountable" (depth 2: user — department —

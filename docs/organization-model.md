@@ -187,6 +187,45 @@ flowchart LR
 같은 클래스가 두 부서에 **동시에** 놓여 있어도 서로 간섭하지 않습니다. 차이를 만드는 건 클래스
 자체가 아니라, 부서에 합류할 때 `HR_ORCHESTRATOR`(인사참모)가 붙여주는 도메인 프로필입니다.
 
+## 실제로 그려 본 실행 그래프 — 2026-09-15의 한 세션
+
+위 그림의 "부서 A/B, 부서원 A1/A2"는 설명용 예시입니다. 실제 기록에서 하나를 그대로 꺼내 보면
+이렇습니다. 2026-09-15, 업무참모 세션 하나(`e9540e5f`)가 같은 지시("각 부서의 백로그를 이어서
+진행하라", run_label `op-parallel-backlog-2026-09-15`)로 네 부서의 PM을 띄웠습니다. 아래 그래프는
+짐작해서 그린 게 아니라, 이 조직의 `/aise:usage`가 쓰는 `session_usage.py`로 그 세션의 실제
+트랜스크립트를 재구성한 결과입니다(각 서브에이전트의 `parentAgentId`로 중첩을 복원).
+
+```mermaid
+flowchart TD
+  OP["업무참모 세션<br/>e9540e5f"] -->|"Wave 1 · 병렬"| S["sfr-ssot-platform PM"]
+  OP -->|"Wave 1 · 병렬"| R["simple-ragcurl-platform PM"]
+  OP -->|"Wave 1 · 병렬"| A["aise-org-site PM"]
+  OP -->|"Wave 1 · 병렬"| L["llm-wiki-platform PM"]
+  S -->|"순차 위임"| F["frontend-engineer<br/>App.tsx 391→228줄"]
+  OP -->|"Wave 2 · 순차"| A2["aise-org-site PM<br/>IA 재설계 제안"]
+  OP -.->|"직접 재검증"| V["평가 재실행<br/>mean_recall 0.744 재현"]
+```
+
+| 노드 | 이 run이 한 일 | 자기 토큰(하위 포함) |
+|---|---|---|
+| sfr-ssot-platform PM | 391줄로 불어난 `App.tsx`를 3개 컴포넌트로 나누는 설계 후 `frontend-engineer`에 위임, 결과를 직접 재검증(vitest 236 passed, 228줄 확인), PR #27 | 144,126 (186,261) |
+| └ frontend-engineer | 동작 변경 없는 순수 추출 | 42,135 |
+| simple-ragcurl-platform PM | OQ-10 실행 — 큐레이션 콘텐츠 제외, 재평가 0.694 → 0.744([Collaboration Model](/collaboration-model)의 결정 상자), PR #15 | 223,486 |
+| aise-org-site PM | 이 사이트의 PR #7 병합을 직접 재확인하고 KOR+EN 44개 요청 렌더 검증 | 86,298 |
+| llm-wiki-platform PM | 두 블로커를 처음부터 재검증, 새 위임 없음 | 129,606 |
+
+- **실행 그래프는 매번 다른 모양입니다.** 이날은 네 부서가 병렬로, 그중 한 부서만 안에서 한 번 더
+  위임했고, 나머지 셋은 PM 혼자 확인·실행으로 끝났습니다. 조직도(뎁스 2)는 그대로인데 그 위의
+  그래프는 그날 일에 맞춰 달라졌습니다.
+- **맨 위가 결과를 그대로 전달하지 않았습니다.** 업무참모는 네 부서의 보고를 받은 뒤 평가 스크립트를
+  직접 다시 돌려 q3 `recall=0.600`, `mean_recall=0.744`를 재현했습니다
+  (`knowledge/protocols/operational-watchlist/op-orchestrator-independent-verification.md`,
+  2026-09-15 항목).
+- **숫자도 남습니다.** 이 세션 전체는 1,169만 토큰(최상위 세션 자체 1,096만 + 모든 서브에이전트
+  73만)이었습니다 — 무엇이 비쌌는지를 나중에 실제 기록으로 따져볼 수 있다는 뜻입니다.
+- 근거: 각 부서 `project-record.md` Ledger의 `op-parallel-backlog-2026-09-15` 계열 행,
+  `.claude/hooks/lib/session_usage.py`(세션 `e9540e5f`에 대해 실행).
+
 ## 정리
 
 **한 문장으로.** 조직도는 "누가 책임지는가"만 고정하고(뎁스 2, 사용자 — 부서 — 부서원), 실제

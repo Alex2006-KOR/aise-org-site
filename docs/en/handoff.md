@@ -189,7 +189,9 @@ repository disagree, the actual state is always right.
 **③ And one thing records can't solve.** Recorded honestly. On 17 September 2026, feedback the
 operator produced by reading this very site landed in `directive.md` as an instruction — and
 **nothing happened for five days.** The inbox worked perfectly and the content was intact. But
-**no PM run was ever launched to read it.** (This page exists because that instruction finally
+**no PM run ever read it through.** A PM run for an IA redesign proposal did start the same day,
+but it was interrupted after two minutes and left nothing in the record (found later while
+reconstructing session `e9540e5f`'s transcript). (This page exists because that instruction finally
 got executed.)
 
 The boundary that reveals is clear. **A record cannot execute itself.** A Project Record (the department's record files) perfectly
