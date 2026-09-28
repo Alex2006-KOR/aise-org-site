@@ -229,7 +229,7 @@ flowchart TD
   OP -->|"Wave 1 · parallel"| A["aise-org-site PM"]
   OP -->|"Wave 1 · parallel"| L["llm-wiki-platform PM"]
   S -->|"sequential delegation"| F["frontend-engineer<br/>App.tsx 391→228 lines"]
-  OP -->|"Wave 2 · sequential"| A2["aise-org-site PM<br/>IA redesign proposal"]
+  OP -->|"Wave 2 · sequential"| A2["aise-org-site PM<br/>09-17 resume · stopped at 2 min"]
   OP -.->|"re-verifies directly"| V["re-runs evaluation<br/>reproduces mean_recall 0.744"]
 ```
 
@@ -249,6 +249,11 @@ flowchart TD
   the evaluation script itself and reproduced q3 `recall=0.600` and `mean_recall=0.744`
   (`knowledge/protocols/operational-watchlist/op-orchestrator-independent-verification.md`,
   2026-09-15 entry).
+- **Branches that didn't finish show up too.** Wave 2 is a PM run started two days later (09-17),
+  when the same session reopened, to propose this site's IA redesign; the user interrupted it after
+  two minutes and it left nothing behind. Reading the records alone, this branch is invisible — it
+  only surfaces when the transcript is reconstructed (case ③ on
+  [Carrying on across sessions](/en/handoff)).
 - **The numbers are kept too.** The whole session came to 11.69M tokens (10.96M for the top-level
   session itself + 0.73M across all subagents) — meaning what was expensive can be examined later
   from the real record.

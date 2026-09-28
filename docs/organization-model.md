@@ -202,7 +202,7 @@ flowchart TD
   OP -->|"Wave 1 · 병렬"| A["aise-org-site PM"]
   OP -->|"Wave 1 · 병렬"| L["llm-wiki-platform PM"]
   S -->|"순차 위임"| F["frontend-engineer<br/>App.tsx 391→228줄"]
-  OP -->|"Wave 2 · 순차"| A2["aise-org-site PM<br/>IA 재설계 제안"]
+  OP -->|"Wave 2 · 순차"| A2["aise-org-site PM<br/>09-17 재개 · 2분 만에 중단"]
   OP -.->|"직접 재검증"| V["평가 재실행<br/>mean_recall 0.744 재현"]
 ```
 
@@ -221,6 +221,10 @@ flowchart TD
   직접 다시 돌려 q3 `recall=0.600`, `mean_recall=0.744`를 재현했습니다
   (`knowledge/protocols/operational-watchlist/op-orchestrator-independent-verification.md`,
   2026-09-15 항목).
+- **끝까지 가지 못한 가지도 그대로 보입니다.** Wave 2는 이틀 뒤(09-17) 같은 세션이 다시 열렸을 때
+  이 사이트의 IA 재설계 제안을 맡겨 띄운 PM run인데, 2분 만에 사용자가 중단해 아무것도 남기지
+  못했습니다. 기록만 읽으면 이 가지는 보이지 않고, 트랜스크립트를 재구성해야 드러납니다
+  ([세션을 넘어 이어가기](/handoff)의 실사례 ③).
 - **숫자도 남습니다.** 이 세션 전체는 1,169만 토큰(최상위 세션 자체 1,096만 + 모든 서브에이전트
   73만)이었습니다 — 무엇이 비쌌는지를 나중에 실제 기록으로 따져볼 수 있다는 뜻입니다.
 - 근거: 각 부서 `project-record.md` Ledger의 `op-parallel-backlog-2026-09-15` 계열 행,
