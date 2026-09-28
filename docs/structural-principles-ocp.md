@@ -1,8 +1,8 @@
 ---
-title: Structural Principles / OCP — 고치지 않고 확장한다
+title: Structural Principles / OCP — 고치기보다 덧붙이는 쪽으로
 ---
 
-# 고치지 않고 확장한다
+# 고치기보다 덧붙이는 쪽으로
 
 ::: tip 읽는 자리 — 평가와 가치 (1/2)
 [평가와 가치](/value) 대분류의 첫 글입니다. 앞 대분류에서 이 조직을 **써 보는 법**까지
@@ -68,7 +68,7 @@ flowchart LR
   원칙을 그대로 따른 선택이었습니다.
 :::
 
-::: info 결정 되짚어보기 — 세 번째가 되기 전엔 추출하지 않는다
+::: info 결정 되짚어보기 — 세 번째 사례가 나올 때까지 공통 모듈을 미룬 이유
 **문제**
 
 - `mode-gate.sh`와 `execution_directive_gate.py`는 이미 각자 독립적으로 똑같은 모양(들어온 JSON을 읽고, 대상 경로를 저장소 루트 기준으로

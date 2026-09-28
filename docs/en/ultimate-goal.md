@@ -1,8 +1,8 @@
 ---
-title: Ultimate Goal — An Organization, Not a Framework
+title: Ultimate Goal — An Organization Rather Than a Framework
 ---
 
-# Why build an organization, not a framework
+# Why we are trying to build an organization rather than a framework
 
 ::: tip Where you are — Evaluation & Value (2/2)
 The last page in the [Evaluation & Value](/en/value) category, and the end of the whole
@@ -36,7 +36,7 @@ flowchart LR
 But saying "the organization remembers" can easily lump together two entirely different kinds of
 memory — to keep that distinction from getting lost, we once renamed something wholesale.
 
-::: info Revisiting the decision — don't stuff two different things into the single word "memory"
+::: info Revisiting the decision — separating the two things hiding inside the word "memory"
 **Problem**
 
 - When an execution context (a session, an agent run) hits its limit, whatever was in progress
@@ -69,7 +69,7 @@ memory — to keep that distinction from getting lost, we once renamed something
   in exactly that directory.
 :::
 
-## 정리
+## Wrap-up
 
 **In one sentence.** AISE is not a framework tuned to a particular model or tool — it's a project
 to build an organization where the capability accumulated in `knowledge/decisions/` survives no

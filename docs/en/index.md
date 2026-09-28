@@ -15,7 +15,7 @@ nothing gets written down.**
 **AISE took that problem seriously and ran an experiment: what if you built an actual
 organization around the AI?**
 
-## Not a smarter prompt — an org chart
+## Instead of a smarter prompt, we tried drawing an org chart
 
 The difference between a solo AI session and AISE isn't "how smart is it." It's **what's left
 after it's done**.
@@ -91,7 +91,7 @@ keeps writing to its own **Project Record** while it works. When the next sessio
 department starts by reading this record — nobody has to re-explain where things left off
 yesterday.
 
-## Why an "organization," not a "workflow"
+## Why we chose an "organization" over a "workflow"
 
 We could have just built this as a well-crafted script or an agent pipeline. There's a reason
 AISE deliberately borrowed the shape of a **company** — departments, HR, a constitution, audits:
@@ -119,7 +119,7 @@ exactly to keep it. This story is worth telling because most of the decisions on
 the same shape: the obvious first answer turns out, once actually checked, to be wrong — and that
 checking is what produces the real design.
 
-::: info Revisiting the decision — an organization's memory has to live inside the repository
+::: info Revisiting the decision — why we moved the organization's memory into the repository
 **Problem**
 
 - Early on, the org's own operating rules (git discipline, checking before relying on a tool's
@@ -218,7 +218,7 @@ organization around AI.
 | The terminology is unfamiliar | [Glossary](/en/glossary) |
 
 **If you only have 5 minutes.** The two diagrams on this page, the seven-axis comparison table in
-[What the usual way does differently](/en/real-world-vs-aise), and "Why two diagrams were needed"
+[What the usual way does differently](/en/real-world-vs-aise), and "How we ended up drawing two diagrams"
 on [Organization Model](/en/organization-model) will get you the core.
 
 **Worth knowing before you read on.** Every info box on this site (**Revisiting the decision**) is

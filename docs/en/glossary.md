@@ -53,7 +53,7 @@ Two of these terms carry a short story of their own — knowing why these distin
 also makes clearer why the rest of the terms above ended up with the names and places they have
 now.
 
-::: info Revisiting the decision — the same name shouldn't point to two different things
+::: info Revisiting the decision — the directory whose one name pointed to two things
 **Problem**
 
 - At one point, a single directory named `org/` held both this organization's own schema files
@@ -113,7 +113,7 @@ now.
 - Every decision record this glossary cites got into `knowledge/decisions/` exactly this way.
 :::
 
-## 정리
+## Wrap-up
 
 **In one sentence.** This glossary is both an index of the terms used across the site and a
 miniature demonstration of why they ended up split the way they did — the same name shouldn't

@@ -31,11 +31,11 @@ In one line: **what exists → who manages it → what happens over time → wha
 
 | Page | Sections inside it |
 |---|---|
-| [Organization Model](/en/organization-model) | Why two diagrams were needed · Why depth was capped at 2 · Why isn't the PM a "fourth staff"? · How can the same role exist in multiple departments at once? |
-| [Staff & Governance](/en/staff-governance) | Three staff, all peers · Why accountability was split into two kinds · The story of when there was only one staff · But why three? · The Meta mode partner |
+| [Organization Model](/en/organization-model) | How we ended up drawing two diagrams · Why we settled on a depth of 2 · Why isn't the PM a "fourth staff"? · How can the same role exist in multiple departments at once? |
+| [Staff & Governance](/en/staff-governance) | The three staff are peers · Why accountability was split into two kinds · The story of when there was only one staff · How one staff became three · The Meta mode partner |
 | [Lifecycle](/en/lifecycle) | The six stages · The life of a single department |
-| [Collaboration Model](/en/collaboration-model) | When two roles are stuck waiting on each other |
-| [Operator vs Meta Mode](/en/operator-vs-meta-mode) | Why bother separating them |
+| [Collaboration Model](/en/collaboration-model) | Two roles that stalled waiting on each other |
+| [Operator vs Meta Mode](/en/operator-vs-meta-mode) | Why we split them in two |
 
 ## When this category ends
 

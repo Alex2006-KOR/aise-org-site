@@ -151,7 +151,7 @@ This is where AISE diverges most from a human organization, and it got confirmed
 "Who can access what" is usually solved with a table. You draw a role × resource matrix and
 assume finer is safer. This organization met that temptation twice and built no table either time.
 
-::: info Revisiting the decision — scaffolding around a gate doesn't sharpen the judgment behind it
+::: info Revisiting the decision — why we didn't build more scaffolding around the gate
 **Problem**
 
 - Once roles became shared classes crossing departments, a real worry appeared.
@@ -199,7 +199,7 @@ assume finer is safer. This organization met that temptation twice and built no 
   distinguish.**
 :::
 
-## So what did we give up
+## What we gave up in exchange
 
 Worth writing down honestly. The choices above aren't free.
 
@@ -218,7 +218,7 @@ Worth writing down honestly. The choices above aren't free.
   [Philosophy](/en/philosophy) calls this cost "a very weak and bounded form of the trajectory
   tax."
 
-## And the biggest difference of all
+## Finally, probably the biggest difference
 
 There's one axis we left out of the table: **the organization changing itself.**
 
@@ -227,7 +227,7 @@ way. AISE split the two into entirely different modes, and made the organization
 untouchable without a mode declaration. That story is too big to compress into one table row, so
 it lives separately in [Operator vs Meta Mode](/en/operator-vs-meta-mode).
 
-## 정리
+## Wrap-up
 
 **In one sentence.** Of the seven points where AISE diverges from the usual way, four are not
 "something extra we built" but **"something we chose not to build until a real event demanded

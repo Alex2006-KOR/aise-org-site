@@ -27,8 +27,8 @@ In one line: **how a unit of work begins → what's left once it's over.**
 
 | Page | Sections inside it |
 |---|---|
-| [How to hand work to this org](/en/usage) | Pick the hat first · You always speak to one person · The moment a department gets assembled · It gets divided again inside the department · This is all the operator actually has to do |
-| [Carrying on across sessions](/en/handoff) | The session ends, the department doesn't · Why the files were split in three · `/aise:handoff` — writing it down before you stop · The next run doesn't "inherit," it re-derives · We nearly lost things exactly like this |
+| [How to hand work to this org](/en/usage) | First, pick a mode · You only ever talk to the operations staff · How a department gets put together · How work gets divided again inside the department · What the operator actually does |
+| [Carrying on across sessions](/en/handoff) | The session ends, but the department carries on · Why the files were split in three · `/aise:handoff` — writing it down before you stop · The next run starts again from the record instead of inheriting · Times we nearly lost things |
 
 ## Once you've read this far
 

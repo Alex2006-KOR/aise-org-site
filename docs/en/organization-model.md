@@ -2,7 +2,7 @@
 title: Organization Model — Org Chart and Execution Graph
 ---
 
-# One person still has to be able to see the whole thing
+# We wanted one person to still be able to see the whole thing
 
 ::: tip Where you are — How It Works (1/5)
 The first page in the [How It Works](/en/how-it-works) category. The previous category finished
@@ -16,7 +16,7 @@ layout that needs the most explaining.
 Turn the fourth of the five principles from [Philosophy](/en/philosophy), "accountability must be
 unambiguous," into an actual structure, and this is what you get.
 
-## Why two diagrams were needed
+## How we ended up drawing two diagrams
 
 At first we tried to draw everything in a single org chart. But the lines showing "who is
 accountable for this" kept diverging from the lines showing "who actually worked with whom
@@ -83,7 +83,7 @@ given moment by an execution graph (dashed lines) formed through cross-departmen
 and temporary subagent participation.</figcaption>
 </figure>
 
-## Why depth was capped at 2
+## Why we settled on a depth of 2
 
 The second question was "how deep should the org chart go?" The answer came, surprisingly, not
 from organizational theory but from something very practical — **a single user must be able to
@@ -102,7 +102,7 @@ A natural question follows here. [There are three staff](/en/staff-governance), 
 leading a department seems just as important. Why isn't the PM pinned down as a staff role
 instead of just being one role among others?
 
-::: info Revisiting the decision — the PM is a recruited role, not a fixed seat
+::: info Revisiting the decision — why the PM became a recruited role rather than a fixed seat
 **Problem**
 
 - Once departments stopped being "permanent organizations" and became "project-scoped" instead,
@@ -146,7 +146,7 @@ Copying the role definition three times is obviously wasteful. But managing it l
 is currently assigned to Department A" creates a whole new headcount-pool management problem —
 someone has to track who's free across every department.
 
-::: info Revisiting the decision — a role is a "class," not an "instance"
+::: info Revisiting the decision — why a role became a "class" rather than an "instance"
 **Problem**
 
 - Reusing the same role across departments meant copy-pasting the definition.
@@ -213,7 +213,7 @@ The same class can sit in two departments **at the same time** without interferi
 other. What makes the difference isn't the class itself, but the domain profile HR attaches when
 it joins a department.
 
-## 정리
+## Wrap-up
 
 **In one sentence.** The org chart fixes only "who is accountable" (depth 2: user — department —
 member); the actual shape of collaboration is assembled on the fly by the execution graph; and

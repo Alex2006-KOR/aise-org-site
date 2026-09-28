@@ -149,7 +149,7 @@ ended on a completion instruction, and becomes closed once the knowledge-accumul
 done.</figcaption>
 </figure>
 
-::: info Revisiting the decision — the department wasn't renamed, its meaning changed
+::: info Revisiting the decision — how the meaning of "department" changed
 **Problem**
 
 - Two frictions showed up in practice.
@@ -188,7 +188,7 @@ done.</figcaption>
   directory structure but by **the call-nesting structure itself**.
 :::
 
-## 정리
+## Wrap-up
 
 **In one sentence.** The organization keeps cycling through six stages
 (Recruitment→Assignment→Collaboration→Reporting→Feedback→Knowledge Accumulation), and within that

@@ -1,8 +1,8 @@
 ---
-title: Staff & Governance — Why Execution Accountability and Operating Accountability Are Separated
+title: Staff & Governance — How We Came to Separate Running the Work from Running the Org
 ---
 
-# Why execution accountability and operating accountability are separated
+# How we came to separate running the work from running the org
 
 ::: tip Where you are — How It Works (2/5)
 The second page in the [How It Works](/en/how-it-works) category. If
@@ -20,7 +20,7 @@ this role for every single department, quietly deepening the hierarchy. So these
 entirely outside the depth count instead — the same way staff officers or an executive office in
 a real company aren't counted as a level in the hierarchy chart.
 
-## Three staff, all peers
+## The three staff are peers
 
 - **Ops-staff** — turns the user's intent into actually executable work, and assembles the most
   suitable department.
@@ -160,12 +160,12 @@ The key to this design is that the line separating the two paths is not "intent,
 **"is it a new file, or an existing one"** — because it's decided by fact, not judgment, there's
 no room to route around it.
 
-## But why three?
+## How one staff became three
 
 The second staff role is explained by the recruitment problem. The third (Asset-staff) came from
 somewhere completely different.
 
-::: info Revisiting the decision — a tool belongs to the organization, not the individual
+::: info Revisiting the decision — why tools ended up belonging to the organization, not the individual
 **Problem**
 
 - Working out what a newly joined role should be given revealed that two things were entirely
@@ -252,7 +252,7 @@ the organization's own schema (CONSTITUTION, schema, governance) — but it's ac
 mode, and any actual change always goes through user confirmation. The full distinction continues
 in [Operator vs Meta Mode](/en/operator-vs-meta-mode).
 
-## 정리
+## Wrap-up
 
 **In one sentence.** The three staff stand outside the depth count as peers, each owning exactly
 one different question — **who exists (HR)? what happens (Ops)? what can be used (Asset)?** —

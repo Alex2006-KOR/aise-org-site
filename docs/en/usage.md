@@ -36,7 +36,7 @@ flowchart TB
 Worth noting that the arrows only ever flow up and down. **There is no line that skips a level** —
 and below you'll see that this isn't incidental but explicitly forbidden.
 
-## Pick the hat first
+## First, pick a mode
 
 Before handing over work there's one thing to settle: is what you're about to do **work that uses
 the organization to build something**, or **work that changes the organization itself**? This org
@@ -94,7 +94,7 @@ And until recently, the mode-declaration command itself had a fairly large hole 
 - This decision document's own final section is titled `## Verification still pending`.
 :::
 
-## You always speak to one person
+## You only ever talk to the operations staff
 
 Mode settled, you can now speak. But the one you speak to is **always 업무참모, and only
 업무참모.** There's no "this is trivial, I'll just tell the department directly."
@@ -109,7 +109,7 @@ the organization's overall state.**
 The layer below works the same way. The PM divides work among department members; there is no path
 for the operator to address a member directly.
 
-## The moment a department gets assembled
+## How a department gets put together
 
 업무참모 hears the request and decides whose work it is. If no department fits, it forms one —
 forming a department isn't recruitment, so it needs no 인사참모 approval either. A new department
@@ -162,7 +162,7 @@ Once the operator approves activation the department goes `active` and starts ru
 Ending works on the same principle — a PM cannot declare its own work complete. The full flow is
 in [A department's lifecycle](/en/lifecycle).
 
-## It gets divided again inside the department
+## How work gets divided again inside the department
 
 When work arrives at a department, the PM receives it. The PM's first move isn't opening code —
 it's **reading its department's three record files.** Why that has to be so is the next page's
@@ -180,7 +180,7 @@ Two things the PM observes here are worth an operator knowing.
   the other can make, the PM settles the shared decision first and then divides. Details are in
   [How collaboration works](/en/collaboration-model).
 
-## This is all the operator actually has to do
+## What the operator actually does
 
 Summed up, the moves **a human must make** in a unit of work are fewer than you'd think.
 
@@ -195,7 +195,7 @@ Summed up, the moves **a human must make** in a unit of work are fewer than you'
 Everything else — which roles to use, in what order to divide, what to write into the record — is
 handled inside the organization.
 
-## 정리
+## Wrap-up
 
 **In one sentence.** Handing over work is the two moves **declare a mode → speak to 업무참모**;
 the rest of the path (assembling a department, slicing, recording) is handled by the org's own

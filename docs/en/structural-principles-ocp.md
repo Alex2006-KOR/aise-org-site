@@ -1,8 +1,8 @@
 ---
-title: Structural Principles / OCP — Extend Without Modifying
+title: Structural Principles / OCP — Adding On Rather Than Rewriting
 ---
 
-# Extend without modifying
+# Adding on rather than rewriting
 
 ::: tip Where you are — Evaluation & Value (1/2)
 The first page in the [Evaluation & Value](/en/value) category. The previous category finished
@@ -74,7 +74,7 @@ outward, toward the adapter boundary, and once pointing inward, toward the hooks
   what's already there instead of modifying it."
 :::
 
-::: info Revisiting the decision — don't extract until it's the third time
+::: info Revisiting the decision — why we waited for a third case before extracting a shared module
 **Problem**
 
 - `mode-gate.sh` and `execution_directive_gate.py` had already, independently, each implemented the
@@ -108,7 +108,7 @@ outward, toward the adapter boundary, and once pointing inward, toward the hooks
   page's principle — extend freely, but don't lay down structure prematurely.
 :::
 
-## 정리
+## Wrap-up
 
 **In one sentence.** This organization adds a new file alongside existing code instead of
 modifying it whenever a new capability is needed, and even the standard for making that

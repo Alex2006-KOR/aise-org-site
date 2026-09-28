@@ -126,7 +126,7 @@ record may itself reflect that run's tier, so the following run shouldn't accept
 must **re-derive it**. This is a very weak, narrowly scoped form of the trajectory tax the paper
 measured.
 
-## 정리
+## Wrap-up
 
 **In one sentence.** Read in order, the five principles derive from a single question — should
 we build an organization (1)? If so, what does it take to be one (2 memory, 3 growth, 4

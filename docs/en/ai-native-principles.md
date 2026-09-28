@@ -127,7 +127,7 @@ what makes that story interesting is that the mistake was caught by actually tes
   baseline, and departing from it requires leaving a one-line justification.
 :::
 
-## 정리
+## Wrap-up
 
 **In one sentence.** AISE doesn't uncritically inherit the habits of a human organization (fixed
 headcount, sequential processing, tool lock-in) — it only sets something as a principle after

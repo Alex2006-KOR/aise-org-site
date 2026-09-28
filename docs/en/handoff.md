@@ -15,7 +15,7 @@ We're back to the problem raised on [Home](/en/). Sessions end. Sometimes by hit
 limit, sometimes just by closing the window. This page shows, file by file, **what actually
 survives that.**
 
-## The session ends, the department doesn't
+## The session ends, but the department carries on
 
 First a distinction. **A run ending** and **a department ending** are different things. One
 department exists across many independent PM runs, and those runs share no memory with each other.
@@ -99,7 +99,7 @@ record.
 
 The important part is that this command **does not ask for a summary.**
 
-::: info Revisiting the decision — filter, don't summarize
+::: info Revisiting the decision — why we chose filtering over summarizing
 **Problem**
 
 - One early handoff record, checked later against the raw transcript, turned out to have **quietly
@@ -140,7 +140,7 @@ The important part is that this command **does not ask for a summary.**
   context came into being.
 :::
 
-## The next run doesn't "inherit," it re-derives
+## The next run starts again from the record instead of inheriting
 
 This is where the organization diverges most sharply from the usual way.
 
@@ -157,7 +157,7 @@ that situation structurally can't arise.
 It isn't free, though. Re-deriving also means **not accepting the previous record as the right
 answer.** And why that matters, the department that built this site learned the hard way.
 
-## We nearly lost things exactly like this
+## Times we nearly lost things
 
 Everything below is actually recorded in the Ledger of the `aise-org-site` department's own
 `project-record.md` — **the department that builds this site.** These aren't invented examples.
@@ -198,7 +198,7 @@ execution happens" — that remains the layer above's job, and in this case that
 No other case shows the strengths and the limits of the continuity mechanism this precisely, which
 is why the department recorded it itself and why it's reproduced here.
 
-## 정리
+## Wrap-up
 
 **In one sentence.** Continuity in this organization is not a conversation history but **three
 files with exactly one writer each**, and the next execution doesn't inherit them but **reads and

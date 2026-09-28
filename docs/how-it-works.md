@@ -28,11 +28,11 @@ title: 동작 원리 — 실제로 어떻게 생겼고 어떻게 굴러가나
 
 | 소분류 | 안에 들어 있는 절 |
 |---|---|
-| [Organization Model](/organization-model) | 그림이 두 장 필요했다 · 왜 뎁스를 2로 못박았나 · PM은 왜 "네 번째 참모"가 아닐까 · 같은 역할이 여러 부서에 동시에 있으려면 |
-| [Staff & Governance](/staff-governance) | 세 명의 참모, 서로 동급 · 책임을 두 종류로 나눈 이유 · 참모가 원래 한 명이었다는 이야기 · 그런데 왜 셋이 됐나 · Meta 모드의 파트너 |
+| [Organization Model](/organization-model) | 그림을 두 장 그리게 된 이유 · 뎁스를 2로 정해 둔 이유 · PM은 왜 "네 번째 참모"가 아닐까 · 같은 역할이 여러 부서에 동시에 있으려면 |
+| [Staff & Governance](/staff-governance) | 참모 셋은 서로 동급입니다 · 책임을 두 종류로 나눈 이유 · 참모가 원래 한 명이었다는 이야기 · 그러다 셋이 된 사연 · Meta 모드의 파트너 |
 | [Lifecycle](/lifecycle) | 여섯 단계 · 부서 하나의 생애 |
 | [Collaboration Model](/collaboration-model) | 협업이 일어나는 세 층위 · 두 역할이 서로를 기다리고 있다면 |
-| [Operator vs Meta Mode](/operator-vs-meta-mode) | 매일 다른 모자를 쓴다 · 왜 굳이 나눴나 |
+| [Operator vs Meta Mode](/operator-vs-meta-mode) | 하루에도 몇 번씩 모자를 바꿔 씁니다 · 굳이 둘로 나눈 이유 |
 
 ## 이 대분류가 끝나면
 

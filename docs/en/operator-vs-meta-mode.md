@@ -1,8 +1,8 @@
 ---
-title: Operator vs Meta Mode — Wearing a Different Hat Each Day
+title: Operator vs Meta Mode — Switching Hats Several Times a Day
 ---
 
-# Wearing a different hat each day
+# Switching hats several times a day
 
 ::: tip Where you are — How It Works (5/5)
 The last page in the [How It Works](/en/how-it-works) category. If the previous four were all
@@ -64,7 +64,7 @@ changes the instance inside it; Meta mode changes that shape itself — the latt
 through user confirmation.</figcaption>
 </figure>
 
-## Why bother separating them
+## Why we split them in two
 
 Mixing the two modes together risks the organization's own definition quietly shifting while
 you're just handling routine work. So every session (or a specific unit of work within a session)
@@ -167,7 +167,7 @@ flowchart LR
   E -- "Operator" --> F["denied"]
 ```
 
-## 정리
+## Wrap-up
 
 **In one sentence.** Because the same person hands out work today and might reshape the
 organization itself tomorrow, the policy (what to protect) stays tool-neutral at the constitution

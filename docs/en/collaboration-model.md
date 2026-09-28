@@ -1,8 +1,8 @@
 ---
-title: Collaboration Model — Three Layers Where Collaboration Happens
+title: Collaboration Model — Where and How Collaboration Happens
 ---
 
-# Three layers where collaboration happens
+# Where and how collaboration happens
 
 ::: tip Where you are — How It Works (4/5)
 The fourth page in the [How It Works](/en/how-it-works) category. If [Lifecycle](/en/lifecycle)
@@ -46,7 +46,7 @@ Peers at the same level can freely exchange lightweight questions and confirmati
 work delegation is always reflected into the execution graph by the manager at that level** — the
 PM for members within a department, the Ops-staff for departments.
 
-## When two roles are stuck waiting on each other
+## Two roles that stalled waiting on each other
 
 This principle wasn't just written down and left on paper — it was actually put to the test.
 
@@ -148,7 +148,7 @@ it's safe.
   content's diagram syntax doesn't work without the scaffold's rendering support.
 :::
 
-## 정리
+## Wrap-up
 
 **In one sentence.** Collaboration happens across three layers — within a department, across
 departments, and ad hoc dynamic teaming — and in both of the first two, "is it really safe to go
