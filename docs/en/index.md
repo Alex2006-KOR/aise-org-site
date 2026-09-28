@@ -15,7 +15,7 @@ nothing gets written down.**
 **AISE took that problem seriously and ran an experiment: what if you built an actual
 organization around the AI?**
 
-## Not a smarter prompt — an org chart
+## Instead of a smarter prompt, we tried drawing an org chart
 
 The difference between a solo AI session and AISE isn't "how smart is it." It's **what's left
 after it's done**.
@@ -81,17 +81,17 @@ after it's done**.
   <text x="540" y="315" text-anchor="middle" font-size="11" font-weight="600" opacity="0.7">the department's record doesn't</text>
 </svg>
 <figcaption>Left: the ordinary way everyone uses AI today, where nothing survives the end of a
-session. Right: AISE, where a department's (project's) Project Record becomes the starting point
+session. Right: AISE, where a department's Project Record (the department's record files) becomes the starting point
 for the next session.</figcaption>
 </figure>
 
 The left side is what all of us do every day. The right side is AISE — the user instructs the
-Ops-staff, the Ops-staff assembles a department (staff/PM/roles) to handle it, and the department
+`OP_ORCHESTRATOR` (Ops-staff), the Ops-staff assembles a department (staff/PM/roles) to handle it, and the department
 keeps writing to its own **Project Record** while it works. When the next session opens, that
 department starts by reading this record — nobody has to re-explain where things left off
 yesterday.
 
-## Why an "organization," not a "workflow"
+## Why we chose an "organization" over a "workflow"
 
 We could have just built this as a well-crafted script or an agent pipeline. There's a reason
 AISE deliberately borrowed the shape of a **company** — departments, HR, a constitution, audits:
@@ -119,32 +119,45 @@ exactly to keep it. This story is worth telling because most of the decisions on
 the same shape: the obvious first answer turns out, once actually checked, to be wrong — and that
 checking is what produces the real design.
 
-::: info Revisiting the decision — an organization's memory has to live inside the repository
-**Problem.** Early on, the org's own operating rules (git discipline, checking before relying on
-a tool's features, portability principles, and the like) were written into the AI tool's
-**personal memory feature**. It was convenient. But that's storage tied to one specific person, on
-one specific machine. It collided head-on with the goal that "AISE should work the same way when
-moved to a different machine, a different operator."
+::: info Revisiting the decision — why we moved the organization's memory into the repository
+**Problem**
 
-**Investigation.** So could the personal-memory storage location just be pointed back inside the
-project? Checking the tool's own documentation directly showed it was blocked — changing that
-personal-memory path via a project-committed setting was **deliberately designed to be ignored**
-(*"Ignored if set in projectSettings ... for security"*). It's a safeguard against someone else's
-personal notes leaking into your session when you clone their repo. In other words, **there was
-no way at all to use the tool's personal memory as the organization's portable memory.**
-(Source: `knowledge/decisions/2026-07-07-org-memory-must-be-project-local.md`)
+- Early on, the org's own operating rules (git discipline, checking before relying on a tool's
+  features, portability principles, and the like) were written into the AI tool's **personal memory
+  feature**.
+- It was convenient.
+- But that's storage tied to one specific person, on one specific machine.
+- It collided head-on with the goal that "AISE should work the same way when moved to a different
+  machine, a different operator."
 
-**Resolution.** Rather than work around it, we split the two apart. **Facts about a specific
-person** (an operator's background, say) stay in the tool's personal memory — that's the right
-place for it, since it's supposed to differ from person to person. **Anything about how AISE
-itself is built and run** moved unconditionally into files committed to the repository. Further,
-any setting that affects how the org behaves (hooks, permissions, connected servers) was made to
-default to project settings committed to the repo, not personal global settings.
+**Investigation**
 
-**The strength that followed.** The bar became very simple — **if something isn't reconstructed
-by a single `git clone`, and it still governs how the org behaves, it's in the wrong place.**
-Credentials are the one deliberate exception (a new operator logging into their own tool isn't a
-portability failure — it's just the normal setup step).
+- So could the personal-memory storage location just be pointed back inside the project?
+- Checking the tool's own documentation directly showed it was blocked — changing that
+  personal-memory path via a project-committed setting was **deliberately designed to be ignored**
+  (*"Ignored if set in projectSettings ... for security"*).
+- It's a safeguard against someone else's personal notes leaking into your session when you clone
+  their repo.
+- In other words, **there was no way at all to use the tool's personal memory as the organization's
+  portable memory.**
+- Source: `knowledge/decisions/2026-07-07-org-memory-must-be-project-local.md`
+
+**Resolution**
+
+- Rather than work around it, we split the two apart.
+- **Facts about a specific person** (an operator's background, say) stay in the tool's personal
+  memory — that's the right place for it, since it's supposed to differ from person to person.
+- **Anything about how AISE itself is built and run** moved unconditionally into files committed to
+  the repository.
+- Further, any setting that affects how the org behaves (hooks, permissions, connected servers) was
+  made to default to project settings committed to the repo, not personal global settings.
+
+**The strength that followed**
+
+- The bar became very simple — **if something isn't reconstructed by a single `git clone`, and it
+  still governs how the org behaves, it's in the wrong place.**
+- Credentials are the one deliberate exception (a new operator logging into their own tool isn't a
+  portability failure — it's just the normal setup step).
 :::
 
 So a single unit of work (a run) in this organization traces this cycle. Because memory lives in
@@ -178,6 +191,7 @@ we built it, then what it looks like, then actually using it, and ends with what
 | **2. [How It Works](/en/how-it-works)** | What it looks like and how it runs | The shape of the org · Staff & governance · A department's lifecycle · How collaboration works · Operator/Meta mode |
 | **3. [In Practice](/en/in-practice)** | So how do you use it | **How to hand work to this org** · **Carrying on across sessions** |
 | **4. [Evaluation & Value](/en/value)** | So what did it produce | How the structure absorbs change · What it is ultimately for |
+| **[Quick Guide](/en/quick-guide)** (standalone chapter) | What do I type now | The hands-on order from `/aise:op` through starting, continuing, and ending a department |
 
 Click a category name and you'll first get a short guide explaining **why its pages are best read
 in that order.** Every page also opens with a paragraph telling you where you are in the overall
@@ -187,7 +201,7 @@ If you want the more precise source text, the ground truth behind every story he
 end, a single file: `CONSTITUTION.md` — this site doesn't just copy those clauses, it unpacks why
 they were decided that way.
 
-## Quick guide — where to start reading
+## Wrap-up — where to start reading
 
 **In one sentence.** AISE isn't a trick for using AI better — it's an experiment in building
 **memory, accountability, and growth** that survive the end of a session, shaped like an
@@ -200,12 +214,13 @@ organization around AI.
 | I want to read it all, in order | [Background & Philosophy](/en/background) → [How It Works](/en/how-it-works) → [In Practice](/en/in-practice) → [Evaluation & Value](/en/value) |
 | Just quickly, what's different from the usual way | The one comparison table in [What the usual way does differently](/en/real-world-vs-aise) |
 | What shape the organization actually takes | [Organization Model](/en/organization-model) → [Staff & Governance](/en/staff-governance) |
+| I just want to try it | [Quick Guide](/en/quick-guide) |
 | I want to hand work to this org | [How to hand work to this org](/en/usage) → [Carrying on across sessions](/en/handoff) |
 | What the safeguards look like | [Operator vs Meta Mode](/en/operator-vs-meta-mode) → [Structural Principles / OCP](/en/structural-principles-ocp) |
 | The terminology is unfamiliar | [Glossary](/en/glossary) |
 
 **If you only have 5 minutes.** The two diagrams on this page, the seven-axis comparison table in
-[What the usual way does differently](/en/real-world-vs-aise), and "Why two diagrams were needed"
+[What the usual way does differently](/en/real-world-vs-aise), and "How we ended up drawing two diagrams"
 on [Organization Model](/en/organization-model) will get you the core.
 
 **Worth knowing before you read on.** Every info box on this site (**Revisiting the decision**) is

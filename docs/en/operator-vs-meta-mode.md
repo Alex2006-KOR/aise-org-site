@@ -1,8 +1,8 @@
 ---
-title: Operator vs Meta Mode — Wearing a Different Hat Each Day
+title: Operator vs Meta Mode — Switching Hats Several Times a Day
 ---
 
-# Wearing a different hat each day
+# Switching hats several times a day
 
 ::: tip Where you are — How It Works (5/5)
 The last page in the [How It Works](/en/how-it-works) category. If the previous four were all
@@ -23,7 +23,7 @@ organization itself.
   structure itself, like the depth-2 pyramid) is left untouched.
 - **Meta mode** — changes the organization itself. Adding or removing roles, revising a Workflow,
   changing the schema of the portfolio or asset catalog, or amending the CONSTITUTION or this very
-  policy — all of that belongs here. The standing partner in this mode is the Management-staff,
+  policy — all of that belongs here. The standing partner in this mode is the `MG_ORCHESTRATOR` (Management-staff),
   but it only analyzes and proposes — final approval and execution always go through the user.
 
 <figure>
@@ -64,7 +64,7 @@ changes the instance inside it; Meta mode changes that shape itself — the latt
 through user confirmation.</figcaption>
 </figure>
 
-## Why bother separating them
+## Why we split them in two
 
 Mixing the two modes together risks the organization's own definition quietly shifting while
 you're just handling routine work. So every session (or a specific unit of work within a session)
@@ -72,68 +72,87 @@ must explicitly declare one mode before it starts — Meta-level write authority
 silently by default.
 
 ::: info Revisiting the decision — why the policy and the enforcement were put in entirely different places
-**Problem.** The operator moves between Operator (running a department head handing out real
-work) and Meta/Architect (evolving AISE's own structure) within the same day. Without an explicit
-signal, there was a risk that the organization's own definition (§2.1's "clear accountability,"
-§2.4's "the philosophy stays even as tools change") could quietly shift in the middle of ordinary
-work.
+**Problem**
 
-**Investigation.** The operator wanted AISE to eventually be portable to other AI tools, while
-also wanting to be asked for confirmation every time before a Claude-specific mechanism became
-part of the organization's actual structure. Satisfying both at once meant **policy (what to
-protect)** and **enforcement (how to block it)** had to sit in entirely different layers.
-(Source: `knowledge/decisions/2026-07-07-operator-meta-mode-split.md`)
+- The operator moves between Operator (running a department head handing out real work) and
+  Meta/Architect (evolving AISE's own structure) within the same day.
+- Without an explicit signal, there was a risk that the organization's own definition (§2.1's "clear
+  accountability," §2.4's "the philosophy stays even as tools change") could quietly shift in the
+  middle of ordinary work.
 
-**Resolution.** `governance/MODE_POLICY.md` defines the two modes and the core protected paths
-(`CONSTITUTION.md`, `governance/`, `org/`, `registry/`, `adapters/`, `memory/`) using
-**tool-agnostic language only** — it says nothing about which mechanism enforces it. The
-constitution, org chart, governance, and memory core stay tool-neutral, while the actual binding
-to Claude Code (slash commands, PreToolUse hooks, subagent format) lives entirely inside
-`adapters/claude-code/`. In the decision record's words, *"a different AI tool can be supported
-later via a new adapter without touching core."*
+**Investigation**
 
-**The strength that followed.** Supporting a different AI tool later only requires adding one new
-adapter — the core policy never has to be touched (this open-for-extension/closed-for-modification
-principle comes back again in [Structural Principles / OCP](/en/structural-principles-ocp)).
+- The operator wanted AISE to eventually be portable to other AI tools, while also wanting to be
+  asked for confirmation every time before a Claude-specific mechanism became part of the
+  organization's actual structure.
+- Satisfying both at once meant **policy (what to protect)** and **enforcement (how to block it)**
+  had to sit in entirely different layers.
+- Source: `knowledge/decisions/2026-07-07-operator-meta-mode-split.md`
+
+**Resolution**
+
+- `governance/MODE_POLICY.md` defines the two modes and the core protected paths (`CONSTITUTION.md`,
+  `governance/`, `org/`, `registry/`, `adapters/`, `memory/`) using **tool-agnostic language only**
+  — it says nothing about which mechanism enforces it.
+- The constitution, org chart, governance, and memory core stay tool-neutral, while the actual
+  binding to Claude Code (slash commands, PreToolUse hooks, subagent format) lives entirely inside
+  `adapters/claude-code/`.
+- In the decision record's words, *"a different AI tool can be supported later via a new adapter
+  without touching core."*
+
+**The strength that followed**
+
+- Supporting a different AI tool later only requires adding one new adapter — the core policy never
+  has to be touched (this open-for-extension/closed-for-modification principle comes back again in
+  [Structural Principles / OCP](/en/structural-principles-ocp)).
 :::
 
 Writing down the two modes and actually making the boundary hold were two different problems.
 
 ::: info Revisiting the decision — writing down a policy and actually enforcing it are different problems
-**Problem.** Testing the hook that enforces this policy (`mode-gate.sh`) with genuinely
-adversarial input revealed two real bypasses. ① The hook only watched the `Edit`/`Write`/
-`NotebookEdit` tools, so writing via `Bash` with something like
-`echo ... > governance/MODE_POLICY.md` sailed through regardless of mode. ② A path with `..`
-mixed in, like `.../scratch/../governance/MODE_POLICY.md`, passed through even though it actually
-pointed at a protected file, because the simple string match only checked whether the path
-*started with* a protected prefix — this was confirmed by directly testing that exact payload and
-seeing it slip past the block in Operator mode.
-(Source: `knowledge/decisions/2026-07-07-mode-gate-hardening.md`)
+**Problem**
 
-**Investigation.** Neither bug was found just by reading the code — in the decision record's
-words, *"Both bugs were found by directly testing the hook with adversarial-shaped inputs rather
-than only reasoning about the code."* The path-traversal (`../`) bug in particular only came to
-light after actually feeding it a real `../` payload, since the original code, with its
-`case "$REL_PATH" in ...`, looked at a glance like it was checking properly.
+- Testing the hook that enforces this policy (`mode-gate.sh`) with genuinely adversarial input
+  revealed two real bypasses.
+- ① The hook only watched the `Edit`/`Write`/ `NotebookEdit` tools, so writing via `Bash` with
+  something like `echo ... > governance/MODE_POLICY.md` sailed through regardless of mode.
+- ② A path with `..` mixed in, like `.../scratch/../governance/MODE_POLICY.md`, passed through even
+  though it actually pointed at a protected file, because the simple string match only checked
+  whether the path *started with* a protected prefix — this was confirmed by directly testing that
+  exact payload and seeing it slip past the block in Operator mode.
+- Source: `knowledge/decisions/2026-07-07-mode-gate-hardening.md`
 
-**Resolution.** `Bash` was added to the list of watched tools, and paths were normalized with
-`os.path.normpath` before comparison. `Bash` commands are blocked with a heuristic only when a
-write directive (`>`, `tee`, `cp`, `mv`, `rm`, `sed -i`, etc.) and a protected path appear
-**together** — explicitly documented as not a perfect defense, but a guard against "an honest
-agent's everyday, accidental drift." That heuristic itself then created a brand-new trap — the
-`>` character in the heredoc trailer this organization requires in commit messages
-(`Co-Authored-By: ... <noreply@anthropic.com>`), combined with a commit message body that merely
-mentions a protected path name, produced false-positive blocks on legitimate commits. On top of
-that, while this very hook was being fixed, a literal quote embedded inside a bash single-quoted
-string caused a total lockout of **every** tool call — twice.
-(Source: `knowledge/decisions/2026-07-15-mode-gate-heredoc-false-positive-and-recurrence.md`)
+**Investigation**
 
-**The strength that followed.** Instead of quietly fixing these failures and forgetting them, all
-of them were written into the decision record, so the next person touching this file doesn't step
-on the same trap (a literal quote inside a bash single-quoted string) again. And the whole episode
-hardened a general principle for this organization — **security-adjacent logic like path matching
-is never trusted just by reading the code; it must be directly tested with adversarial payloads
-like `../`.**
+- Neither bug was found just by reading the code — in the decision record's words, *"Both bugs were
+  found by directly testing the hook with adversarial-shaped inputs rather than only reasoning about
+  the code."* The path-traversal (`../`) bug in particular only came to light after actually feeding
+  it a real `../` payload, since the original code, with its `case "$REL_PATH" in ...`, looked at a
+  glance like it was checking properly.
+
+**Resolution**
+
+- `Bash` was added to the list of watched tools, and paths were normalized with `os.path.normpath`
+  before comparison.
+- `Bash` commands are blocked with a heuristic only when a write directive (`>`, `tee`, `cp`, `mv`,
+  `rm`, `sed -i`, etc.) and a protected path appear **together** — explicitly documented as not a
+  perfect defense, but a guard against "an honest agent's everyday, accidental drift." That
+  heuristic itself then created a brand-new trap — the `>` character in the heredoc trailer this
+  organization requires in commit messages (`Co-Authored-By: ... <noreply@anthropic.com>`), combined
+  with a commit message body that merely mentions a protected path name, produced false-positive
+  blocks on legitimate commits.
+- On top of that, while this very hook was being fixed, a literal quote embedded inside a bash
+  single-quoted string caused a total lockout of **every** tool call — twice.
+- Source: `knowledge/decisions/2026-07-15-mode-gate-heredoc-false-positive-and-recurrence.md`
+
+**The strength that followed**
+
+- Instead of quietly fixing these failures and forgetting them, all of them were written into the
+  decision record, so the next person touching this file doesn't step on the same trap (a literal
+  quote inside a bash single-quoted string) again.
+- And the whole episode hardened a general principle for this organization — **security-adjacent
+  logic like path matching is never trusted just by reading the code; it must be directly tested
+  with adversarial payloads like `../`.**
 :::
 
 ```mermaid
@@ -148,7 +167,7 @@ flowchart LR
   E -- "Operator" --> F["denied"]
 ```
 
-## Quick guide
+## Wrap-up
 
 **In one sentence.** Because the same person hands out work today and might reshape the
 organization itself tomorrow, the policy (what to protect) stays tool-neutral at the constitution

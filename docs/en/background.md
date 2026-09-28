@@ -33,7 +33,7 @@ AI made possible.**
 | Page | Sections inside it |
 |---|---|
 | [Philosophy](/en/philosophy) | 1. The organization is the center · 2. The organization must remember · 3. The organization must keep growing · 4. Accountability must be unambiguous · 5. Make the most of what AI is good at · One unexpected bonus |
-| [What the usual way does differently](/en/real-world-vs-aise) | The seven axes at a glance · We didn't draw the org chart first · We don't let members build a career · We didn't build a permissions matrix · So what did we give up · And the biggest difference of all |
+| [What the usual way does differently](/en/real-world-vs-aise) | The seven axes at a glance · We didn't draw the org chart first · We don't let members build a career · We didn't build a permissions matrix · What we gave up in exchange · Finally, probably the biggest difference |
 | [AI-Native Principles](/en/ai-native-principles) | The places where we refuse to inherit a human organization's constraints |
 
 ## When it's fine to skip this category

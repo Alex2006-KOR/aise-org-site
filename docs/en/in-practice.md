@@ -14,7 +14,7 @@ ends with a record. Explained apart, both come out as halves.
 ## Why read them in this order
 
 1. **[How to hand work to this org](/en/usage)** — first, how **a single unit of work** begins.
-   The operator declares a mode, speaks to 업무참모, 업무참모 assembles a department, and the PM
+   The operator declares a mode, speaks to `OP_ORCHESTRATOR` (Ops-staff), Ops-staff assembles a department, and the `project-manager` (PM)
    divides it among department members. Up to here it's all about "right now."
 2. **[Carrying on across sessions](/en/handoff)** — and then the session ends. Sometimes it hits
    a context limit, sometimes you just close the window. What's left behind, and how the next
@@ -27,8 +27,8 @@ In one line: **how a unit of work begins → what's left once it's over.**
 
 | Page | Sections inside it |
 |---|---|
-| [How to hand work to this org](/en/usage) | Pick the hat first · You always speak to one person · The moment a department gets assembled · It gets divided again inside the department · This is all the operator actually has to do |
-| [Carrying on across sessions](/en/handoff) | The session ends, the department doesn't · Why the files were split in three · `/aise:handoff` — writing it down before you stop · The next run doesn't "inherit," it re-derives · We nearly lost things exactly like this |
+| [How to hand work to this org](/en/usage) | First, pick a mode · You only ever talk to Ops-staff · How a department gets put together · How work gets divided again inside the department · What the operator actually does |
+| [Carrying on across sessions](/en/handoff) | The session ends, but the department carries on · Why the files were split in three · `/aise:handoff` — writing it down before you stop · The next run starts again from the record instead of inheriting · Times we nearly lost things |
 
 ## Once you've read this far
 

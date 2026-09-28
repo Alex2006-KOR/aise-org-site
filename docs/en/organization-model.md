@@ -2,7 +2,7 @@
 title: Organization Model — Org Chart and Execution Graph
 ---
 
-# One person still has to be able to see the whole thing
+# We wanted one person to still be able to see the whole thing
 
 ::: tip Where you are — How It Works (1/5)
 The first page in the [How It Works](/en/how-it-works) category. The previous category finished
@@ -16,7 +16,7 @@ layout that needs the most explaining.
 Turn the fourth of the five principles from [Philosophy](/en/philosophy), "accountability must be
 unambiguous," into an actual structure, and this is what you get.
 
-## Why two diagrams were needed
+## How we ended up drawing two diagrams
 
 At first we tried to draw everything in a single org chart. But the lines showing "who is
 accountable for this" kept diverging from the lines showing "who actually worked with whom
@@ -26,7 +26,7 @@ diagrams entirely.
 - **Organization Chart** — the **fixed accountability structure** that defines roles,
   responsibilities, authority, and reporting lines. It defines who answers to whom, but not how
   they'll actually collaborate today.
-- **Execution Graph** — the **collaboration structure** that's actually formed on the fly while
+- **Execution graph (who does what, when)** — the **collaboration structure** that's actually formed on the fly while
   work gets done. Parallel work, temporary subagents, and cross-department collaboration all
   happen freely here. It uses the org chart as a foundation, but it isn't the org chart itself.
 
@@ -83,7 +83,7 @@ given moment by an execution graph (dashed lines) formed through cross-departmen
 and temporary subagent participation.</figcaption>
 </figure>
 
-## Why depth was capped at 2
+## Why we settled on a depth of 2
 
 The second question was "how deep should the org chart go?" The answer came, surprisingly, not
 from organizational theory but from something very practical — **a single user must be able to
@@ -92,7 +92,7 @@ to review, until eventually nobody fully grasps what's actually happening. So th
 organization (the part that carries execution accountability) was fixed at exactly two levels —
 **user — department — member.**
 
-A department consists of a PM and members. The PM understands each member's role, responsibility,
+A department consists of a `project-manager` (PM) and members. The PM understands each member's role, responsibility,
 and capability, and breaks down the large task handed down from the user into pieces its members
 can actually handle.
 
@@ -102,32 +102,41 @@ A natural question follows here. [There are three staff](/en/staff-governance), 
 leading a department seems just as important. Why isn't the PM pinned down as a staff role
 instead of just being one role among others?
 
-::: info Revisiting the decision — the PM is a recruited role, not a fixed seat
-**Problem.** Once departments stopped being "permanent organizations" and became "project-scoped"
-instead, there was no longer a reason to carve out a permanent department-head seat in the org
-structure. At the same time, there was a worry running the other way — how do you prevent
-so-called *skip-level* behavior, where the Ops-staff bypasses the department head and instructs
-members directly?
+::: info Revisiting the decision — why the PM became a recruited role rather than a fixed seat
+**Problem**
 
-**Investigation.** The first attempted fix was to block it with directory structure — nest member
-files physically underneath the department head's, on the idea that this would make direct access
-harder. The review came back negative — *"still bypassable by anything that already knew a target
-subagent's name"*, and on top of that, it assumed departments were permanent units, which cut
-against the direction of this whole reorganization.
-(Source: `knowledge/decisions/2026-07-09-pm-is-a-recruited-role-not-a-fourth-staff.md`)
+- Once departments stopped being "permanent organizations" and became "project-scoped" instead,
+  there was no longer a reason to carve out a permanent department-head seat in the org structure.
+- At the same time, there was a worry running the other way — how do you prevent so-called
+  *skip-level* behavior, where the `OP_ORCHESTRATOR` (Ops-staff) bypasses the department head and instructs members
+  directly?
 
-**Resolution.** We solved it with the **nature of the role**, not structure. We gave the PM the
-authority of "the sole interface representing this department," and made it so members are only
-ever created within the PM's own execution scope. That way, there's exactly one path by which the
-Ops-staff can reach a department — the PM — so skip-level *has no way to happen*. In the words of
-the decision record, it's **"a structural guarantee, not a documented courtesy"** — not a
-politeness written down to be honored, but a structural fact. So the PM became an ordinary role,
-recruited from and retired to the catalog just like any other, without the exemption from being
-"recruited" that the three staff get.
+**Investigation**
 
-**The strength that followed.** The org structure has one fewer fixed seat, yet the safeguard got
-stronger, not weaker. A PM is freshly recruited for every department that needs one and vanishes
-when it's done, so no unused organizational layer sits around.
+- The first attempted fix was to block it with directory structure — nest member files physically
+  underneath the department head's, on the idea that this would make direct access harder.
+- The review came back negative — *"still bypassable by anything that already knew a target
+  subagent's name"*, and on top of that, it assumed departments were permanent units, which cut
+  against the direction of this whole reorganization.
+- Source: `knowledge/decisions/2026-07-09-pm-is-a-recruited-role-not-a-fourth-staff.md`
+
+**Resolution**
+
+- We solved it with the **nature of the role**, not structure.
+- We gave the PM the authority of "the sole interface representing this department," and made it so
+  members are only ever created within the PM's own execution scope.
+- That way, there's exactly one path by which the Ops-staff can reach a department — the PM — so
+  skip-level *has no way to happen*.
+- In the words of the decision record, it's **"a structural guarantee, not a documented courtesy"**
+  — not a politeness written down to be honored, but a structural fact.
+- So the PM became an ordinary role, recruited from and retired to the catalog just like any other,
+  without the exemption from being "recruited" that the three staff get.
+
+**The strength that followed**
+
+- The org structure has one fewer fixed seat, yet the safeguard got stronger, not weaker.
+- A PM is freshly recruited for every department that needs one and vanishes when it's done, so no
+  unused organizational layer sits around.
 :::
 
 ## How can the same role exist in multiple departments at once?
@@ -137,32 +146,41 @@ Copying the role definition three times is obviously wasteful. But managing it l
 is currently assigned to Department A" creates a whole new headcount-pool management problem —
 someone has to track who's free across every department.
 
-::: info Revisiting the decision — a role is a "class," not an "instance"
-**Problem.** Reusing the same role across departments meant copy-pasting the definition. The
-first candidate solution resembled a human organization — a "talent pool" model that splits a
-reusable role *type* (class) from an *individual* (instance) that's assigned to a department and
-accumulates experience there.
+::: info Revisiting the decision — why a role became a "class" rather than an "instance"
+**Problem**
 
-**Investigation.** Testing this instance concept against how execution actually works didn't
-hold up. To quote the finding directly: every subagent invocation is always a *fresh, independent
-execution* of the class definition, and **"There is no mechanism that keeps an 'instance'
-idle-yet-remembering between assignments"** — there is no such thing, to begin with, as an
-individual that rests between assignments while retaining memory. Modeling it would have required
-inventing a ledger for idle/assigned status — to simulate something that, in reality, doesn't
-exist.
-(Source: `knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md`)
+- Reusing the same role across departments meant copy-pasting the definition.
+- The first candidate solution resembled a human organization — a "talent pool" model that splits a
+  reusable role *type* (class) from an *individual* (instance) that's assigned to a department and
+  accumulates experience there.
 
-**Resolution.** We dropped the instance concept and kept **only the class**. Fields in role files
-that represented department affiliation (`tier`, `department`, `reports_to`) were removed
-entirely. Instead, whatever context a role needs to know about a specific department is attached
-as a **domain profile** at the moment it joins that department.
+**Investigation**
 
-**The strength that followed.** Three things followed at once. ① The concurrency problem
-disappeared — nothing ever becomes "checked out," so any number of departments can use the same
-class at the same time with nothing to fight over. ② Using an already-recruited class in a new
-department is **free, with no approval step**. ③ "Experience" isn't tied to any one individual's
-identity — it accumulates in the organization's knowledge assets, so those lessons can later be
-drawn on by *other* roles too.
+- Testing this instance concept against how execution actually works didn't hold up.
+- To quote the finding directly: every subagent invocation is always a *fresh, independent
+  execution* of the class definition, and **"There is no mechanism that keeps an 'instance'
+  idle-yet-remembering between assignments"** — there is no such thing, to begin with, as an
+  individual that rests between assignments while retaining memory.
+- Modeling it would have required inventing a ledger for idle/assigned status — to simulate
+  something that, in reality, doesn't exist.
+- Source: `knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md`
+
+**Resolution**
+
+- We dropped the instance concept and kept **only the class**.
+- Fields in role files that represented department affiliation (`tier`, `department`, `reports_to`)
+  were removed entirely.
+- Instead, whatever context a role needs to know about a specific department is attached as a
+  **domain profile** at the moment it joins that department.
+
+**The strength that followed**
+
+- Three things followed at once.
+- ① The concurrency problem disappeared — nothing ever becomes "checked out," so any number of
+  departments can use the same class at the same time with nothing to fight over.
+- ② Using an already-recruited class in a new department is **free, with no approval step**.
+- ③ "Experience" isn't tied to any one individual's identity — it accumulates in the organization's
+  knowledge assets, so those lessons can later be drawn on by *other* roles too.
 :::
 
 ```mermaid
@@ -195,7 +213,54 @@ The same class can sit in two departments **at the same time** without interferi
 other. What makes the difference isn't the class itself, but the domain profile HR attaches when
 it joins a department.
 
-## Quick guide
+## A real execution graph — one session on 2026-09-15
+
+"Dept A/B, members A1/A2" in the diagram above are illustrative. Here's one taken straight from the
+record. On 2026-09-15, a single Ops-staff session (`e9540e5f`) started the PMs of all four
+departments with the same instruction ("carry on with each department's backlog," run_label
+`op-parallel-backlog-2026-09-15`). The graph below isn't drawn from memory — it's the actual
+transcript of that session, reconstructed with `session_usage.py`, the script behind this org's
+`/aise:usage` (nesting recovered through each subagent's `parentAgentId`).
+
+```mermaid
+flowchart TD
+  OP["Ops-staff session<br/>e9540e5f"] -->|"Wave 1 · parallel"| S["sfr-ssot-platform PM"]
+  OP -->|"Wave 1 · parallel"| R["simple-ragcurl-platform PM"]
+  OP -->|"Wave 1 · parallel"| A["aise-org-site PM"]
+  OP -->|"Wave 1 · parallel"| L["llm-wiki-platform PM"]
+  S -->|"sequential delegation"| F["frontend-engineer<br/>App.tsx 391→228 lines"]
+  OP -->|"Wave 2 · sequential"| A2["aise-org-site PM<br/>09-17 resume · stopped at 2 min"]
+  OP -.->|"re-verifies directly"| V["re-runs evaluation<br/>reproduces mean_recall 0.744"]
+```
+
+| Node | What this run did | Own tokens (incl. children) |
+|---|---|---|
+| sfr-ssot-platform PM | Designed a split of the 391-line `App.tsx` into 3 components, delegated it to `frontend-engineer`, re-verified the result itself (vitest 236 passed, 228 lines confirmed), PR #27 | 144,126 (186,261) |
+| └ frontend-engineer | Pure extraction with no behavior change | 42,135 |
+| simple-ragcurl-platform PM | Executed OQ-10 — excluded the curated content, re-evaluated 0.694 → 0.744 (the decision box on [Collaboration Model](/en/collaboration-model)), PR #15 | 223,486 |
+| aise-org-site PM | Re-confirmed this site's PR #7 merge and verified 44 KOR+EN render requests | 86,298 |
+| llm-wiki-platform PM | Re-verified two blockers from scratch, no new delegation | 129,606 |
+
+- **The execution graph takes a different shape every time.** That day four departments ran in
+  parallel, only one delegated further inside, and the other three finished with the PM alone
+  checking and executing. The org chart (depth 2) stayed the same; the graph on top fit that day's
+  work.
+- **The top didn't just pass results along.** After receiving the four reports, Ops-staff re-ran
+  the evaluation script itself and reproduced q3 `recall=0.600` and `mean_recall=0.744`
+  (`knowledge/protocols/operational-watchlist/op-orchestrator-independent-verification.md`,
+  2026-09-15 entry).
+- **Branches that didn't finish show up too.** Wave 2 is a PM run started two days later (09-17),
+  when the same session reopened, to propose this site's IA redesign; the user interrupted it after
+  two minutes and it left nothing behind. Reading the records alone, this branch is invisible — it
+  only surfaces when the transcript is reconstructed (case ③ on
+  [Carrying on across sessions](/en/handoff)).
+- **The numbers are kept too.** The whole session came to 11.69M tokens (10.96M for the top-level
+  session itself + 0.73M across all subagents) — meaning what was expensive can be examined later
+  from the real record.
+- Source: the `op-parallel-backlog-2026-09-15` rows in each department's `project-record.md`
+  Ledger; `.claude/hooks/lib/session_usage.py` (run against session `e9540e5f`).
+
+## Wrap-up
 
 **In one sentence.** The org chart fixes only "who is accountable" (depth 2: user — department —
 member); the actual shape of collaboration is assembled on the fly by the execution graph; and
