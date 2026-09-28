@@ -99,33 +99,46 @@ was solved, is the case that teaches the most about this organization, so it's w
 full.
 
 ::: info Revisiting the decision — why recruitment authority was pulled away from the staff role
-**Problem.** A single staff role being able to freely change the org's composition is a problem.
-But requiring the user to approve every single hire causes approval fatigue. Neither option
-worked.
+**Problem**
 
-**Investigation.** The first attempt was to **detect it technically** — could you automatically
-tell "simple recruitment" apart from "reorganization" from file-change history? The investigation
-found this direction kept getting defeated — creating a new file and deleting the old one,
-renaming with `mv`, or just swapping the `id:` value inside a file all slipped through. The
-decision record's conclusion is exact: these safeguards *"kept being defeated by new bypass
-shapes"*, because **"does this operation deserve extra scrutiny" is a semantic judgment that no
-path-matching mechanism can fully resolve.**
-(Source: `knowledge/decisions/2026-07-07-hr-orchestrator-split.md`)
+- A single staff role being able to freely change the org's composition is a problem.
+- But requiring the user to approve every single hire causes approval fatigue.
+- Neither option worked.
 
-**Resolution.** We gave up on detection and switched to **structure**. ① Recruitment/reorg
-authority was pulled out entirely and handed to a separate staff role (HR-staff). ② Further,
-*analysis, approval,* and *execution* were split across different actors, so no single actor could
-decide and execute at the same time. And the decisive move — **a department has zero authority
-over existing role files. All a department can do is request a new role, and even the file for
-that new role is actually created by the Ops-staff, not the department.** This turns "is it a new
-file or an existing one" into a mechanically checkable line that separates recruitment from
-reorganization. Instead of trying to classify ambiguous cases after the fact, **the organization's
-design itself was changed so ambiguous cases can't arise.**
+**Investigation**
 
-**The strength that followed.** Recruitment stays cheap (HR-staff approves alone — no user
-fatigue). Meanwhile only reorganization, which can shake up the existing structure, requires the
-user's explicit sign-off. In other words, **human confirmation is spent only on the one thing
-that's actually a real signal**, and everything else flows automatically.
+- The first attempt was to **detect it technically** — could you automatically tell "simple
+  recruitment" apart from "reorganization" from file-change history?
+- The investigation found this direction kept getting defeated — creating a new file and deleting
+  the old one, renaming with `mv`, or just swapping the `id:` value inside a file all slipped
+  through.
+- The decision record's conclusion is exact: these safeguards *"kept being defeated by new bypass
+  shapes"*, because **"does this operation deserve extra scrutiny" is a semantic judgment that no
+  path-matching mechanism can fully resolve.**
+- Source: `knowledge/decisions/2026-07-07-hr-orchestrator-split.md`
+
+**Resolution**
+
+- We gave up on detection and switched to **structure**.
+- ① Recruitment/reorg authority was pulled out entirely and handed to a separate staff role
+  (HR-staff).
+- ② Further, *analysis, approval,* and *execution* were split across different actors, so no single
+  actor could decide and execute at the same time.
+- And the decisive move — **a department has zero authority over existing role files. All a
+  department can do is request a new role, and even the file for that new role is actually created
+  by the Ops-staff, not the department.**
+- This turns "is it a new file or an existing one" into a mechanically checkable line that separates
+  recruitment from reorganization.
+- Instead of trying to classify ambiguous cases after the fact, **the organization's design itself
+  was changed so ambiguous cases can't arise.**
+
+**The strength that followed**
+
+- Recruitment stays cheap (HR-staff approves alone — no user fatigue).
+- Meanwhile only reorganization, which can shake up the existing structure, requires the user's
+  explicit sign-off.
+- In other words, **human confirmation is spent only on the one thing that's actually a real
+  signal**, and everything else flows automatically.
 :::
 
 ```mermaid
@@ -153,64 +166,83 @@ The second staff role is explained by the recruitment problem. The third (Asset-
 somewhere completely different.
 
 ::: info Revisiting the decision — a tool belongs to the organization, not the individual
-**Problem.** Working out what a newly joined role should be given revealed that two things were
-entirely different in nature — **persona** (its own expertise and accountability, belonging to
-the individual) and **provisioning** (tools, MCP, model, skills — the actual means of acting).
-The latter is like a company issuing a laptop — it **belongs to the organization, not the
-individual.**
+**Problem**
 
-**Investigation.** The first attempt was to create an ordinary department — a "general affairs"
-team — to own this. But two things got in the way. ① This function isn't something an
-organization can take or leave — translating an organization's real constraints into "what's
-allowed" is itself just as universal a function as HR — except **what gets approved varies
-completely by deployment** (one org has security standards, another has cost/licensing
-standards). ② More decisively, if an ordinary department owned this, it creates a circularity —
-**"who approves that department's own provisioning?"** — exactly the same circularity that HR-staff
-was created to avoid.
-(Source: `knowledge/decisions/2026-07-07-as-orchestrator-provisioning-split.md`)
+- Working out what a newly joined role should be given revealed that two things were entirely
+  different in nature — **persona** (its own expertise and accountability, belonging to the
+  individual) and **provisioning** (tools, MCP, model, skills — the actual means of acting).
+- The latter is like a company issuing a laptop — it **belongs to the organization, not the
+  individual.**
 
-**Resolution.** We applied the same remedy as with HR — broke the circularity by making it a
-**third staff role directly defined by the constitution**, not a recruited department. Naming it
-**Asset-staff** rather than "security team" or "general affairs" was deliberate too: the name has
-to work across any deployment (since the kind of constraint varies by deployment), leaving only
-the actual policy content specific to that deployment. So the roles settled into three —
-**HR-staff decides who exists, Ops-staff decides what happens, Asset-staff decides what can be
-used.**
+**Investigation**
 
-**The strength that followed.** The three are independent gates. **Approval to be recruited does
-not imply provisioning approval** — being hired doesn't automatically hand you tools; a separate
-judgment has to be passed as well.
+- The first attempt was to create an ordinary department — a "general affairs" team — to own this.
+- But two things got in the way.
+- ① This function isn't something an organization can take or leave — translating an organization's
+  real constraints into "what's allowed" is itself just as universal a function as HR — except
+  **what gets approved varies completely by deployment** (one org has security standards, another
+  has cost/licensing standards).
+- ② More decisively, if an ordinary department owned this, it creates a circularity — **"who
+  approves that department's own provisioning?"** — exactly the same circularity that HR-staff was
+  created to avoid.
+- Source: `knowledge/decisions/2026-07-07-as-orchestrator-provisioning-split.md`
+
+**Resolution**
+
+- We applied the same remedy as with HR — broke the circularity by making it a **third staff role
+  directly defined by the constitution**, not a recruited department.
+- Naming it **Asset-staff** rather than "security team" or "general affairs" was deliberate too: the
+  name has to work across any deployment (since the kind of constraint varies by deployment),
+  leaving only the actual policy content specific to that deployment.
+- So the roles settled into three — **HR-staff decides who exists, Ops-staff decides what happens,
+  Asset-staff decides what can be used.**
+
+**The strength that followed**
+
+- The three are independent gates.
+- **Approval to be recruited does not imply provisioning approval** — being hired doesn't
+  automatically hand you tools; a separate judgment has to be passed as well.
 :::
 
 There's one more interesting postscript to this gate.
 
 ::: info Revisiting the decision — instead of bolting more onto the gate, we wrote down the standard for the judgment
-**Problem.** Once roles became reusable classes not tied to a department, a side effect showed
-up — if one department grants a class some authority because it needs it, that authority
-**permanently sticks to every future department that reuses that class.** Like a ratchet that only
-tightens in one direction, the principle of least privilege slowly erodes.
+**Problem**
 
-**Investigation.** The first candidate fix was a new mechanism — a separate
-`provisioning.yaml` per department. On review, this made **nothing** safer — the same Asset-staff
-would end up filling in that new file with the same judgment anyway. So we re-examined the
-premise, and it turned out that a request about **scope** (which data, which credentials) was
-never something provisioning — which deals with **capability** (whether a tool can be used at
-all) — was meant to record in the first place. That's a runtime parameter, like which file a
-`Read` call happens to read.
-(Source: `knowledge/decisions/2026-07-09-provisioning-scope-is-a-judgment-not-a-mechanism.md`)
+- Once roles became reusable classes not tied to a department, a side effect showed up — if one
+  department grants a class some authority because it needs it, that authority **permanently sticks
+  to every future department that reuses that class.**
+- Like a ratchet that only tightens in one direction, the principle of least privilege slowly
+  erodes.
 
-**Resolution.** No new schema, no per-department file. Instead, the Asset-staff's own document
-was given an explicit **line for the judgment to draw** — (a) coarse capability approval is
-provisioning's job, (b) fine-grained scope and credential issuance is not provisioning's job. And
-if a request that looks like (b) shows up, that's read as **a signal that the catalog entry is
-defined too coarsely**, and instead of adding a new approval layer, the catalog is rewritten at
-the right granularity.
+**Investigation**
 
-**The strength that followed.** *"Adding scaffolding around a gate that already can't be skipped
-doesn't make the judgment behind it any sharper"* — bolting structure onto a gate that's already
-unbypassable doesn't sharpen the judgment behind it. This decision stands as **a case of not
-mistaking a problem for a mechanism**, and thanks to it, the organization didn't end up with a
-single additional file to manage.
+- The first candidate fix was a new mechanism — a separate `provisioning.yaml` per department.
+- On review, this made **nothing** safer — the same Asset-staff would end up filling in that new
+  file with the same judgment anyway.
+- So we re-examined the premise, and it turned out that a request about **scope** (which data, which
+  credentials) was never something provisioning — which deals with **capability** (whether a tool
+  can be used at all) — was meant to record in the first place.
+- That's a runtime parameter, like which file a `Read` call happens to read.
+- Source: `knowledge/decisions/2026-07-09-provisioning-scope-is-a-judgment-not-a-mechanism.md`
+
+**Resolution**
+
+- No new schema, no per-department file.
+- Instead, the Asset-staff's own document was given an explicit **line for the judgment to draw** —
+  (a) coarse capability approval is provisioning's job, (b) fine-grained scope and credential
+  issuance is not provisioning's job.
+- And if a request that looks like (b) shows up, that's read as **a signal that the catalog entry is
+  defined too coarsely**, and instead of adding a new approval layer, the catalog is rewritten at
+  the right granularity.
+
+**The strength that followed**
+
+- *"Adding scaffolding around a gate that already can't be skipped doesn't make the judgment behind
+  it any sharper"* — bolting structure onto a gate that's already unbypassable doesn't sharpen the
+  judgment behind it.
+- This decision stands as **a case of not mistaking a problem for a mechanism**, and thanks to it,
+  the organization didn't end up with a single additional file to manage.
 :::
 
 ## The Meta mode partner
@@ -220,7 +252,7 @@ the organization's own schema (CONSTITUTION, schema, governance) — but it's ac
 mode, and any actual change always goes through user confirmation. The full distinction continues
 in [Operator vs Meta Mode](/en/operator-vs-meta-mode).
 
-## Quick guide
+## 정리
 
 **In one sentence.** The three staff stand outside the depth count as peers, each owning exactly
 one different question — **who exists (HR)? what happens (Ops)? what can be used (Asset)?** —

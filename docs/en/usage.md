@@ -56,32 +56,42 @@ gate, not a courtesy. Why it was separated this hard lives in
 And until recently, the mode-declaration command itself had a fairly large hole in it.
 
 ::: info Revisiting the decision — the staff figure had never once read its own operating manual
-**Problem.** Two new rules were added to 업무참모's operating document, and in the very next
-Operator-mode session they were followed **zero times.** The rules had been committed before that
-session even started, so "bad timing" wasn't available as an excuse.
+**Problem**
 
-**Investigation.** Digging directly into that session's own tool-call history, the cause was
-almost absurdly clear — *"it never read `schema/OP_ORCHESTRATOR.md` at all — not once, at any
-point."* We checked the system prompt too: a stock base prompt with zero AISE-specific content.
-So why hadn't this been visible before? Because every other role goes through a **realize** step
-that bakes its role definition into a system prompt, while 업무참모 and 경영참모 existed only by
-the convention that "the top-level session declaring the mode *is* them." We also confirmed why
-it had limped along fine: that session was reading department records and **imitating** the
-conventions soaked into them. Which is exactly why long-standing rules survived and freshly added
-ones were quietly ignored.
-(Source: `knowledge/decisions/2026-09-15-orchestrator-persona-never-realized-nor-read.md`)
+- Two new rules were added to 업무참모's operating document, and in the very next Operator-mode session
+  they were followed **zero times.**
+- The rules had been committed before that session even started, so "bad timing" wasn't available as
+  an excuse.
 
-**Resolution.** A step was added to both `/aise:op` and `/aise:meta` — **read the corresponding
-staff document in full**, framed explicitly not as a reference to consult if convenient but as
-*"a real operating manual to follow this session."* Something heavier (a separate realize
-artifact) was deliberately not built — these two staff figures aren't spawnable subagents in the
-first place, so nothing would ever select such a file, and *"it would sit unused."*
+**Investigation**
 
-**The strength that followed.** Declaring a mode is no longer flipping a switch but **actually
-loading that session's operating manual.** There was a further, incidental gain: this
-organization picked up the habit of confirming that "the rule is written down" and "the rule was
-actually followed" are different things — **by digging through real session transcripts.** This
-decision document's own final section is titled `## Verification still pending`.
+- Digging directly into that session's own tool-call history, the cause was almost absurdly clear —
+  *"it never read `schema/OP_ORCHESTRATOR.md` at all — not once, at any point."* We checked the
+  system prompt too: a stock base prompt with zero AISE-specific content.
+- So why hadn't this been visible before?
+- Because every other role goes through a **realize** step that bakes its role definition into a
+  system prompt, while 업무참모 and 경영참모 existed only by the convention that "the top-level session
+  declaring the mode *is* them." We also confirmed why it had limped along fine: that session was
+  reading department records and **imitating** the conventions soaked into them.
+- Which is exactly why long-standing rules survived and freshly added ones were quietly ignored.
+- Source: `knowledge/decisions/2026-09-15-orchestrator-persona-never-realized-nor-read.md`
+
+**Resolution**
+
+- A step was added to both `/aise:op` and `/aise:meta` — **read the corresponding staff document in
+  full**, framed explicitly not as a reference to consult if convenient but as *"a real operating
+  manual to follow this session."* Something heavier (a separate realize artifact) was deliberately
+  not built — these two staff figures aren't spawnable subagents in the first place, so nothing
+  would ever select such a file, and *"it would sit unused."*
+
+**The strength that followed**
+
+- Declaring a mode is no longer flipping a switch but **actually loading that session's operating
+  manual.**
+- There was a further, incidental gain: this organization picked up the habit of confirming that
+  "the rule is written down" and "the rule was actually followed" are different things — **by
+  digging through real session transcripts.**
+- This decision document's own final section is titled `## Verification still pending`.
 :::
 
 ## You always speak to one person
@@ -109,34 +119,43 @@ Real work can happen in `draft` too — feasibility checks, research, even a PoC
 did we actually commit to this" easy to blur, and it did blur once.
 
 ::: info Revisiting the decision — we built a place to ask instead of an automatic transition
-**Problem.** Running the first department in `draft`, background research, scoping, a real PoC
-spike and even two role-class hires were all finished — and **nobody had noticed that a formal
-go-ahead had never been given.** So should we add a rule that "recruitment automatically promotes
-to `active`"?
+**Problem**
 
-**Investigation.** That option was considered and rejected, for two reasons. ① Recruitment
-legitimately happens inside `draft` for exploratory purposes — making it an automatic trigger
-would either retroactively misclassify already-correct PoC-purpose hires as an activation event,
-or demand a new and harder-to-draw line between "exploratory" and "production" recruitment. ② The
-explicit-go-ahead rule exists as a **safety checkpoint** in the first place, and automating it
-away on a plausible proxy *"would remove the one place a human is guaranteed to weigh in before a
-department's resourcing/scope escalates."*
+- Running the first department in `draft`, background research, scoping, a real PoC spike and even
+  two role-class hires were all finished — and **nobody had noticed that a formal go-ahead had never
+  been given.**
+- So should we add a rule that "recruitment automatically promotes to `active`"?
 
-Then the actual problem got separated out — the operator hadn't judged wrong; **nothing had told
-them there was a judgment to make.** *"That's a missing prompt, not a missing automatic
-trigger."*
-(Source: `knowledge/decisions/2026-07-27-activation-prompt-point.md`)
+**Investigation**
 
-**Resolution.** The state-transition rule was left exactly as it was, and only **an obligation to
-ask** was added. The moment a PM identifies a recruitment need that is for *executing the actual
-deliverable* rather than for exploration, 업무참모 must **explicitly** ask the operator right
-there whether to activate. Quietly staying in `draft` and silently promoting to `active` are both
-forbidden. The only thing that actually moves the state is still the operator's answer.
+- That option was considered and rejected, for two reasons.
+- ① Recruitment legitimately happens inside `draft` for exploratory purposes — making it an
+  automatic trigger would either retroactively misclassify already-correct PoC-purpose hires as an
+  activation event, or demand a new and harder-to-draw line between "exploratory" and "production"
+  recruitment.
+- ② The explicit-go-ahead rule exists as a **safety checkpoint** in the first place, and automating
+  it away on a plausible proxy *"would remove the one place a human is guaranteed to weigh in before
+  a department's resourcing/scope escalates."*
+- Then the actual problem got separated out — the operator hadn't judged wrong; **nothing had told
+  them there was a judgment to make.**
+- *"That's a missing prompt, not a missing automatic trigger."*
+- Source: `knowledge/decisions/2026-07-27-activation-prompt-point.md`
 
-**The strength that followed.** The safety property (a human explicitly decides to commit) stayed
-fully intact while only the actually-observed failure mode (that decision point slipping by
-unnoticed) got fixed. No new state value, no new automatic transition — a case of **not
-mistaking a notification problem for a trigger-design problem.**
+**Resolution**
+
+- The state-transition rule was left exactly as it was, and only **an obligation to ask** was added.
+- The moment a PM identifies a recruitment need that is for *executing the actual deliverable*
+  rather than for exploration, 업무참모 must **explicitly** ask the operator right there whether to
+  activate.
+- Quietly staying in `draft` and silently promoting to `active` are both forbidden.
+- The only thing that actually moves the state is still the operator's answer.
+
+**The strength that followed**
+
+- The safety property (a human explicitly decides to commit) stayed fully intact while only the
+  actually-observed failure mode (that decision point slipping by unnoticed) got fixed.
+- No new state value, no new automatic transition — a case of **not mistaking a notification problem
+  for a trigger-design problem.**
 :::
 
 Once the operator approves activation the department goes `active` and starts running in earnest.
@@ -176,7 +195,7 @@ Summed up, the moves **a human must make** in a unit of work are fewer than you'
 Everything else — which roles to use, in what order to divide, what to write into the record — is
 handled inside the organization.
 
-## Quick guide
+## 정리
 
 **In one sentence.** Handing over work is the two moves **declare a mode → speak to 업무참모**;
 the rest of the path (assembling a department, slicing, recording) is handled by the org's own

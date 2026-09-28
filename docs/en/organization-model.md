@@ -103,31 +103,40 @@ leading a department seems just as important. Why isn't the PM pinned down as a 
 instead of just being one role among others?
 
 ::: info Revisiting the decision — the PM is a recruited role, not a fixed seat
-**Problem.** Once departments stopped being "permanent organizations" and became "project-scoped"
-instead, there was no longer a reason to carve out a permanent department-head seat in the org
-structure. At the same time, there was a worry running the other way — how do you prevent
-so-called *skip-level* behavior, where the Ops-staff bypasses the department head and instructs
-members directly?
+**Problem**
 
-**Investigation.** The first attempted fix was to block it with directory structure — nest member
-files physically underneath the department head's, on the idea that this would make direct access
-harder. The review came back negative — *"still bypassable by anything that already knew a target
-subagent's name"*, and on top of that, it assumed departments were permanent units, which cut
-against the direction of this whole reorganization.
-(Source: `knowledge/decisions/2026-07-09-pm-is-a-recruited-role-not-a-fourth-staff.md`)
+- Once departments stopped being "permanent organizations" and became "project-scoped" instead,
+  there was no longer a reason to carve out a permanent department-head seat in the org structure.
+- At the same time, there was a worry running the other way — how do you prevent so-called
+  *skip-level* behavior, where the Ops-staff bypasses the department head and instructs members
+  directly?
 
-**Resolution.** We solved it with the **nature of the role**, not structure. We gave the PM the
-authority of "the sole interface representing this department," and made it so members are only
-ever created within the PM's own execution scope. That way, there's exactly one path by which the
-Ops-staff can reach a department — the PM — so skip-level *has no way to happen*. In the words of
-the decision record, it's **"a structural guarantee, not a documented courtesy"** — not a
-politeness written down to be honored, but a structural fact. So the PM became an ordinary role,
-recruited from and retired to the catalog just like any other, without the exemption from being
-"recruited" that the three staff get.
+**Investigation**
 
-**The strength that followed.** The org structure has one fewer fixed seat, yet the safeguard got
-stronger, not weaker. A PM is freshly recruited for every department that needs one and vanishes
-when it's done, so no unused organizational layer sits around.
+- The first attempted fix was to block it with directory structure — nest member files physically
+  underneath the department head's, on the idea that this would make direct access harder.
+- The review came back negative — *"still bypassable by anything that already knew a target
+  subagent's name"*, and on top of that, it assumed departments were permanent units, which cut
+  against the direction of this whole reorganization.
+- Source: `knowledge/decisions/2026-07-09-pm-is-a-recruited-role-not-a-fourth-staff.md`
+
+**Resolution**
+
+- We solved it with the **nature of the role**, not structure.
+- We gave the PM the authority of "the sole interface representing this department," and made it so
+  members are only ever created within the PM's own execution scope.
+- That way, there's exactly one path by which the Ops-staff can reach a department — the PM — so
+  skip-level *has no way to happen*.
+- In the words of the decision record, it's **"a structural guarantee, not a documented courtesy"**
+  — not a politeness written down to be honored, but a structural fact.
+- So the PM became an ordinary role, recruited from and retired to the catalog just like any other,
+  without the exemption from being "recruited" that the three staff get.
+
+**The strength that followed**
+
+- The org structure has one fewer fixed seat, yet the safeguard got stronger, not weaker.
+- A PM is freshly recruited for every department that needs one and vanishes when it's done, so no
+  unused organizational layer sits around.
 :::
 
 ## How can the same role exist in multiple departments at once?
@@ -138,31 +147,40 @@ is currently assigned to Department A" creates a whole new headcount-pool manage
 someone has to track who's free across every department.
 
 ::: info Revisiting the decision — a role is a "class," not an "instance"
-**Problem.** Reusing the same role across departments meant copy-pasting the definition. The
-first candidate solution resembled a human organization — a "talent pool" model that splits a
-reusable role *type* (class) from an *individual* (instance) that's assigned to a department and
-accumulates experience there.
+**Problem**
 
-**Investigation.** Testing this instance concept against how execution actually works didn't
-hold up. To quote the finding directly: every subagent invocation is always a *fresh, independent
-execution* of the class definition, and **"There is no mechanism that keeps an 'instance'
-idle-yet-remembering between assignments"** — there is no such thing, to begin with, as an
-individual that rests between assignments while retaining memory. Modeling it would have required
-inventing a ledger for idle/assigned status — to simulate something that, in reality, doesn't
-exist.
-(Source: `knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md`)
+- Reusing the same role across departments meant copy-pasting the definition.
+- The first candidate solution resembled a human organization — a "talent pool" model that splits a
+  reusable role *type* (class) from an *individual* (instance) that's assigned to a department and
+  accumulates experience there.
 
-**Resolution.** We dropped the instance concept and kept **only the class**. Fields in role files
-that represented department affiliation (`tier`, `department`, `reports_to`) were removed
-entirely. Instead, whatever context a role needs to know about a specific department is attached
-as a **domain profile** at the moment it joins that department.
+**Investigation**
 
-**The strength that followed.** Three things followed at once. ① The concurrency problem
-disappeared — nothing ever becomes "checked out," so any number of departments can use the same
-class at the same time with nothing to fight over. ② Using an already-recruited class in a new
-department is **free, with no approval step**. ③ "Experience" isn't tied to any one individual's
-identity — it accumulates in the organization's knowledge assets, so those lessons can later be
-drawn on by *other* roles too.
+- Testing this instance concept against how execution actually works didn't hold up.
+- To quote the finding directly: every subagent invocation is always a *fresh, independent
+  execution* of the class definition, and **"There is no mechanism that keeps an 'instance'
+  idle-yet-remembering between assignments"** — there is no such thing, to begin with, as an
+  individual that rests between assignments while retaining memory.
+- Modeling it would have required inventing a ledger for idle/assigned status — to simulate
+  something that, in reality, doesn't exist.
+- Source: `knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md`
+
+**Resolution**
+
+- We dropped the instance concept and kept **only the class**.
+- Fields in role files that represented department affiliation (`tier`, `department`, `reports_to`)
+  were removed entirely.
+- Instead, whatever context a role needs to know about a specific department is attached as a
+  **domain profile** at the moment it joins that department.
+
+**The strength that followed**
+
+- Three things followed at once.
+- ① The concurrency problem disappeared — nothing ever becomes "checked out," so any number of
+  departments can use the same class at the same time with nothing to fight over.
+- ② Using an already-recruited class in a new department is **free, with no approval step**.
+- ③ "Experience" isn't tied to any one individual's identity — it accumulates in the organization's
+  knowledge assets, so those lessons can later be drawn on by *other* roles too.
 :::
 
 ```mermaid
@@ -195,7 +213,7 @@ The same class can sit in two departments **at the same time** without interferi
 other. What makes the difference isn't the class itself, but the domain profile HR attaches when
 it joins a department.
 
-## Quick guide
+## 정리
 
 **In one sentence.** The org chart fixes only "who is accountable" (depth 2: user — department —
 member); the actual shape of collaboration is assembled on the fly by the execution graph; and

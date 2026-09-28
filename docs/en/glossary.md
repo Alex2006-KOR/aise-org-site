@@ -54,49 +54,66 @@ also makes clearer why the rest of the terms above ended up with the names and p
 now.
 
 ::: info Revisiting the decision — the same name shouldn't point to two different things
-**Problem.** At one point, a single directory named `org/` held both this organization's own
-schema files (`README.md`, `OP_ORCHESTRATOR.md`, etc., belonging to the aise-core repository) and
-the actual instance data of a live deployment (role files, Project Records, etc., belonging to an
-entirely separate repository called `aise-instance-prod`). Even the Ops-staff, while auditing
-this, once got confused about which git repo tracked what and misdiagnosed something as a result.
+**Problem**
 
-**Investigation.** The decision record identifies the core of the problem this way — *"A
-directory whose name is the mount point for two independent, differently-scoped git repositories
-is a standing source of confusion, not a one-time documentation gap."*
-(Source: `knowledge/decisions/2026-08-06-org-instance-directory-split.md`)
+- At one point, a single directory named `org/` held both this organization's own schema files
+  (`README.md`, `OP_ORCHESTRATOR.md`, etc., belonging to the aise-core repository) and the actual
+  instance data of a live deployment (role files, Project Records, etc., belonging to an entirely
+  separate repository called `aise-instance-prod`).
+- Even the Ops-staff, while auditing this, once got confused about which git repo tracked what and
+  misdiagnosed something as a result.
 
-**Resolution.** The instance data's mount point was moved from `org/` to **`instance/`**, named
-after that repository's own actual name. `org/` now holds only the four schema files.
+**Investigation**
 
-**The strength that followed.** *"org/ is schema, full stop; instance/ is this deployment's own
-data, full stop"* — the distinction became self-evident just from the path name. This also
-explains why "Project Record" in the list above lives specifically under
-`instance/workspace/<project-id>/`.
+- The decision record identifies the core of the problem this way — *"A directory whose name is the
+  mount point for two independent, differently-scoped git repositories is a standing source of
+  confusion, not a one-time documentation gap."*
+- Source: `knowledge/decisions/2026-08-06-org-instance-directory-split.md`
+
+**Resolution**
+
+- The instance data's mount point was moved from `org/` to **`instance/`**, named after that
+  repository's own actual name.
+- `org/` now holds only the four schema files.
+
+**The strength that followed**
+
+- *"org/ is schema, full stop; instance/ is this deployment's own data, full stop"* — the
+  distinction became self-evident just from the path name.
+- This also explains why "Project Record" in the list above lives specifically under
+  `instance/workspace/<project-id>/`.
 :::
 
 ::: info Revisiting the decision — how the knowledge/decisions/ this glossary cites gets filled
-**Problem.** There was an actual case where one department's Decisions entry got independently
-re-adopted by an entirely unrelated department, and each time, there was no org-wide source to
-cite. A situation where both departments were still `active` and reusing each other's decisions
-was a blind spot that neither the retrospective review (which only opens once a department is
-`closed`) nor a promotion rule scoped to a single department could catch.
+**Problem**
 
-**Investigation.** The decision record fills that gap this way — *"When a department's Decisions
-entry is found to have been independently adopted by a second, unrelated department ... that
-reuse is itself the trigger to write it up in knowledge/decisions/ immediately."*
-(Source: `knowledge/decisions/2026-08-13-cross-department-decision-promotion-trigger.md`)
+- There was an actual case where one department's Decisions entry got independently re-adopted by an
+  entirely unrelated department, and each time, there was no org-wide source to cite.
+- A situation where both departments were still `active` and reusing each other's decisions was a
+  blind spot that neither the retrospective review (which only opens once a department is `closed`)
+  nor a promotion rule scoped to a single department could catch.
 
-**Resolution.** Instead of waiting for a department to end, the moment reuse is confirmed becomes
-the promotion trigger — the retrospective review at `closed` time remains only as a final net for
-whatever this trigger missed.
+**Investigation**
 
-**The strength that followed.** *"whoever reads only one department's Project Record has no
-signal that the decision they're re-deriving is already settled org-wide"* — that problem
-disappears. Every decision record this glossary cites got into `knowledge/decisions/` exactly
-this way.
+- The decision record fills that gap this way — *"When a department's Decisions entry is found to
+  have been independently adopted by a second, unrelated department ... that reuse is itself the
+  trigger to write it up in knowledge/decisions/ immediately."*
+- Source: `knowledge/decisions/2026-08-13-cross-department-decision-promotion-trigger.md`
+
+**Resolution**
+
+- Instead of waiting for a department to end, the moment reuse is confirmed becomes the promotion
+  trigger — the retrospective review at `closed` time remains only as a final net for whatever this
+  trigger missed.
+
+**The strength that followed**
+
+- *"whoever reads only one department's Project Record has no signal that the decision they're
+  re-deriving is already settled org-wide"* — that problem disappears.
+- Every decision record this glossary cites got into `knowledge/decisions/` exactly this way.
 :::
 
-## Quick guide
+## 정리
 
 **In one sentence.** This glossary is both an index of the terms used across the site and a
 miniature demonstration of why they ended up split the way they did — the same name shouldn't

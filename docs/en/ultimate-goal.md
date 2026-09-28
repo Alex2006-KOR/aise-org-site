@@ -37,31 +37,39 @@ But saying "the organization remembers" can easily lump together two entirely di
 memory — to keep that distinction from getting lost, we once renamed something wholesale.
 
 ::: info Revisiting the decision — don't stuff two different things into the single word "memory"
-**Problem.** When an execution context (a session, an agent run) hits its limit, whatever was in
-progress risked disappearing entirely (`CONSTITUTION.md` §2.2, "the organization must remember").
-While discussing where to keep the handoff record that would prevent this, the first proposal was
-simply to extend the existing `memory/` directory.
+**Problem**
 
-**Investigation.** The operator pushed back on the spot — *"'memory' as a word covers both
-durable, accumulated knowledge (long-term memory) and in-progress working state (working
-memory) — naming both the existing directory and the new one around 'memory' would keep that
-ambiguity baked into the org's own vocabulary."*
-(Source: `knowledge/decisions/2026-07-08-knowledge-continuity-split.md`)
+- When an execution context (a session, an agent run) hits its limit, whatever was in progress
+  risked disappearing entirely (`CONSTITUTION.md` §2.2, "the organization must remember").
+- While discussing where to keep the handoff record that would prevent this, the first proposal was
+  simply to extend the existing `memory/` directory.
 
-**Resolution.** `memory/` was renamed to **`knowledge/`**, holding only "organizational
-capability that accumulates durably," and in-progress state (handoff records) was split off into
-a brand-new directory, **`continuity/`**.
+**Investigation**
 
-**The strength that followed.** If a handoff record later turns out to be a real, recurring
-lesson, it gets promoted at that point to `knowledge/retrospectives/` — but *"the record itself,
-while work is still open, is operational, not knowledge, and forcing a Meta-mode switch just to
-avoid losing in-progress work would defeat the point of having continuity at all."* Thanks to
-this distinction, this site itself can keep growing by citing what's accumulated in
-`knowledge/decisions/`, without needing a wholesale re-tuning every time the model changes — the
-decision records this very page cites live in exactly that directory.
+- The operator pushed back on the spot — *"'memory' as a word covers both durable, accumulated
+  knowledge (long-term memory) and in-progress working state (working memory) — naming both the
+  existing directory and the new one around 'memory' would keep that ambiguity baked into the org's
+  own vocabulary."*
+- Source: `knowledge/decisions/2026-07-08-knowledge-continuity-split.md`
+
+**Resolution**
+
+- `memory/` was renamed to **`knowledge/`**, holding only "organizational capability that
+  accumulates durably," and in-progress state (handoff records) was split off into a brand-new
+  directory, **`continuity/`**.
+
+**The strength that followed**
+
+- If a handoff record later turns out to be a real, recurring lesson, it gets promoted at that point
+  to `knowledge/retrospectives/` — but *"the record itself, while work is still open, is
+  operational, not knowledge, and forcing a Meta-mode switch just to avoid losing in-progress work
+  would defeat the point of having continuity at all."* Thanks to this distinction, this site itself
+  can keep growing by citing what's accumulated in `knowledge/decisions/`, without needing a
+  wholesale re-tuning every time the model changes — the decision records this very page cites live
+  in exactly that directory.
 :::
 
-## Quick guide
+## 정리
 
 **In one sentence.** AISE is not a framework tuned to a particular model or tool — it's a project
 to build an organization where the capability accumulated in `knowledge/decisions/` survives no

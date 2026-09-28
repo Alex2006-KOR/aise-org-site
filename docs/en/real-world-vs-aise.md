@@ -65,27 +65,37 @@ Usually the org chart comes first. You sketch what teams you need, then fill the
 AISE inverted that order, and it wasn't convenience — it was an explicit decision.
 
 ::: info Revisiting the decision — we chose to start with an empty org chart
-**Problem.** Starting Phase 1 meant having a starting org chart. But the operator's actual scope
-of work was too broad — embedded SW, firmware simulation tooling, general software engineering,
-plus CI/CD and service development. The moment you pick one domain and draw the chart around it,
-you have to unwind all of it if that pick was wrong.
+**Problem**
 
-**Investigation.** The decision record wrote the risk down like this — *"Pre-picking a domain
-would have overfit Phase 1 to a guess, contradicting §4.1 itself (recruitment happens in response
-to a real gap, not speculatively) and risking premature structure the operator would have to
-unwind later."* A pre-chosen domain produces a structure overfit to a guess, and that structure
-becomes a debt the operator personally has to unwind.
-(Source: `knowledge/decisions/2026-07-07-recruit-on-demand-phase-1.md`)
+- Starting Phase 1 meant having a starting org chart.
+- But the operator's actual scope of work was too broad — embedded SW, firmware simulation tooling,
+  general software engineering, plus CI/CD and service development.
+- The moment you pick one domain and draw the chart around it, you have to unwind all of it if that
+  pick was wrong.
 
-**Resolution.** We started with the org chart deliberately empty. *"A role is only created ...
-when a real Operator-mode task reveals a capability the organization doesn't yet have. No
-top-down pre-design of roles by domain."* A role exists only once real Operator-mode work
-surfaces "we don't have this capability."
+**Investigation**
 
-**The strength that followed.** A side effect came along: the recruitment procedure itself became
-**a working mechanism rather than a diagram**. In the record's own words, it *"doubles as a live
-test of the Recruitment lifecycle rather than a diagram exercise."* Had the chart been
-pre-filled, the recruitment mechanism would have sat unused, alive only on paper.
+- The decision record wrote the risk down like this — *"Pre-picking a domain would have overfit
+  Phase 1 to a guess, contradicting §4.1 itself (recruitment happens in response to a real gap, not
+  speculatively) and risking premature structure the operator would have to unwind later."* A
+  pre-chosen domain produces a structure overfit to a guess, and that structure becomes a debt the
+  operator personally has to unwind.
+- Source: `knowledge/decisions/2026-07-07-recruit-on-demand-phase-1.md`
+
+**Resolution**
+
+- We started with the org chart deliberately empty.
+- *"A role is only created ... when a real Operator-mode task reveals a capability the organization
+  doesn't yet have. No top-down pre-design of roles by domain."* A role exists only once real
+  Operator-mode work surfaces "we don't have this capability."
+
+**The strength that followed**
+
+- A side effect came along: the recruitment procedure itself became **a working mechanism rather
+  than a diagram**.
+- In the record's own words, it *"doubles as a live test of the Recruitment lifecycle rather than a
+  diagram exercise."* Had the chart been pre-filled, the recruitment mechanism would have sat
+  unused, alive only on paper.
 :::
 
 ## We don't let members build a career
@@ -93,40 +103,47 @@ pre-filled, the recruitment mechanism would have sat unused, alive only on paper
 This is where AISE diverges most from a human organization, and it got confirmed twice.
 
 ::: info Revisiting the decision — we started building a talent pool, stopped, and stopped again
-**Problem.** The first picture that came to mind was natural. If the same role (say, market
-research) is needed in several departments at once, you could define a reusable role **type** and
-place an **instance** of it in each department. Have that instance move between assignments and
-accumulate its own experience, and you have exactly a **talent pool**. The decision record uses
-that very phrase — *"mirroring a 'talent pool.'"*
+**Problem**
 
-**Investigation.** Pressing that instance concept against how execution actually works, there was
-no floor underneath it — *"a subagent invocation is always a fresh, independent run of a class
-definition ... There is no mechanism that keeps an 'instance' idle-yet-remembering between
-assignments."* An instance that sits idle while remembering simply cannot exist, and imitating
-one would have meant inventing **bookkeeping to simulate an identity that isn't there**
-(idle/assigned status, pool management).
-(Source: `knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md`)
+- The first picture that came to mind was natural.
+- If the same role (say, market research) is needed in several departments at once, you could define
+  a reusable role **type** and place an **instance** of it in each department.
+- Have that instance move between assignments and accumulate its own experience, and you have
+  exactly a **talent pool**.
+- The decision record uses that very phrase — *"mirroring a 'talent pool.'"*
 
-**Resolution.** We dropped the instance and kept only the **class**. Every instance-shaped field
-(department, tier) was removed from the role file, and experience was routed to the organization
-instead of the individual — *"'Experience' doesn't live in any one class's identity — it lives in
-`org/retrospectives/` → `portfolio/` `insight` entries."*
+**Investigation**
 
-Then in September 2026 the same question came back. Five role-classes were now being reused
-across four departments, so wasn't the original condition ("revisit once a real role does
-recurring work") met? **We looked again, and deferred again** — *"the letter of the original
-trigger condition looks met, but the substance behind it ... is not."* Several departments had
-used the same class for different one-off projects; no single role had done the same kind of work
-twice and hit friction. Instead we rewrote the revisit condition to be far sharper: revisit once
-a real record shows a second occurrence **visibly re-deriving something the first had already
-worked out.**
-(Source: `knowledge/decisions/2026-09-02-role-proficiency-idea-still-deferred.md`)
+- Pressing that instance concept against how execution actually works, there was no floor underneath
+  it — *"a subagent invocation is always a fresh, independent run of a class definition ... There is
+  no mechanism that keeps an 'instance' idle-yet-remembering between assignments."* An instance that
+  sits idle while remembering simply cannot exist, and imitating one would have meant inventing
+  **bookkeeping to simulate an identity that isn't there** (idle/assigned status, pool management).
+- Source: `knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md`
 
-**The strength that followed.** The concurrency problem vanished entirely — using a class doesn't
-put anything "on loan," so there's no scarce resource to contend over. Any number of departments
-can use the same role simultaneously. And because we deferred twice, **the revisit condition
-moved from "someday" to "when this specific scene shows up in the record."** Postponing something
-can get more precise the second time too.
+**Resolution**
+
+- We dropped the instance and kept only the **class**.
+- Every instance-shaped field (department, tier) was removed from the role file, and experience was
+  routed to the organization instead of the individual — *"'Experience' doesn't live in any one
+  class's identity — it lives in `org/retrospectives/` → `portfolio/` `insight` entries."*
+- Then in September 2026 the same question came back.
+- Five role-classes were now being reused across four departments, so wasn't the original condition
+  ("revisit once a real role does recurring work") met?
+- **We looked again, and deferred again** — *"the letter of the original trigger condition looks
+  met, but the substance behind it ... is not."* Several departments had used the same class for
+  different one-off projects; no single role had done the same kind of work twice and hit friction.
+- Instead we rewrote the revisit condition to be far sharper: revisit once a real record shows a
+  second occurrence **visibly re-deriving something the first had already worked out.**
+- Source: `knowledge/decisions/2026-09-02-role-proficiency-idea-still-deferred.md`
+
+**The strength that followed**
+
+- The concurrency problem vanished entirely — using a class doesn't put anything "on loan," so
+  there's no scarce resource to contend over.
+- Any number of departments can use the same role simultaneously.
+- And because we deferred twice, **the revisit condition moved from "someday" to "when this specific
+  scene shows up in the record."** Postponing something can get more precise the second time too.
 :::
 
 ## We didn't build a permissions matrix
@@ -135,40 +152,51 @@ can get more precise the second time too.
 assume finer is safer. This organization met that temptation twice and built no table either time.
 
 ::: info Revisiting the decision — scaffolding around a gate doesn't sharpen the judgment behind it
-**Problem.** Once roles became shared classes crossing departments, a real worry appeared. If one
-department gets a permission approved because it needed it, that grant **follows the class onto
-every unrelated department that reuses it later**. A ratchet that only ever turns one way.
+**Problem**
 
-**Investigation.** The first prescription that came to mind was a new mechanism — a
-project-scoped permissions file per department. On inspection it **added no safety at all**:
-*"the same single decision-maker (자산참모) would still decide what goes in the new file, using
-the same judgment."* Same person, same judgment, new file. So the premise got re-examined, and it
-turned out a request about **scope** (which data, which credential) had always been a different
-kind of question from an approval about **capability** (is this tool allowed at all).
-(Source: `knowledge/decisions/2026-07-09-provisioning-scope-is-a-judgment-not-a-mechanism.md`)
+- Once roles became shared classes crossing departments, a real worry appeared.
+- If one department gets a permission approved because it needed it, that grant **follows the class
+  onto every unrelated department that reuses it later**.
+- A ratchet that only ever turns one way.
 
-**Resolution.** No new schema, no per-department permissions file. Instead the line the judgment
-has to draw was written into the document explicitly — **(a) coarse capability approval** is what
-provisioning governs; **(b) fine-grained scope/credential issuance** isn't provisioning's job at
-all. A request that looks like (b) is read not as a need for a new approval tier but as **a
-signal that the catalog entry itself is defined too coarsely.**
+**Investigation**
 
-Five days later the same family of question arrived in a different shape — "what if we want a
-role never to read one specific folder?" Again nothing was built; instead we recorded where the
-real boundary is. An application-layer hook is inherently best-effort, and *"The strictly
-stronger boundary ... is OS/infrastructure-level isolation ... this is tool-agnostic ... and
-doesn't depend on the agent's cooperation at all."* We also wrote down that a hook, if ever
-built, is a convenience layer on top of that boundary and not the boundary itself. And the reason
-for not starting was simple — *"No department has actually hit this need — the whole discussion
-was prompted by a hypothetical, not a real task."*
-(Source: `knowledge/decisions/2026-07-14-folder-scoped-access-control-deferred.md`)
+- The first prescription that came to mind was a new mechanism — a project-scoped permissions file
+  per department.
+- On inspection it **added no safety at all**: *"the same single decision-maker (자산참모) would still
+  decide what goes in the new file, using the same judgment."* Same person, same judgment, new file.
+- So the premise got re-examined, and it turned out a request about **scope** (which data, which
+  credential) had always been a different kind of question from an approval about **capability** (is
+  this tool allowed at all).
+- Source: `knowledge/decisions/2026-07-09-provisioning-scope-is-a-judgment-not-a-mechanism.md`
 
-**The strength that followed.** Both times resolve into the same sentence — *"Adding scaffolding
-around a gate that already can't be skipped doesn't make the judgment behind it any sharper;
-documenting the actual distinction the judgment needs to draw does."* Instead of stacking more
-scaffolding around a gate nobody can bypass, we wrote down the distinction that gate actually has
-to draw. As a result there's still no permissions table — there's **a sentence about what the
-judgment must distinguish.**
+**Resolution**
+
+- No new schema, no per-department permissions file.
+- Instead the line the judgment has to draw was written into the document explicitly — **(a) coarse
+  capability approval** is what provisioning governs; **(b) fine-grained scope/credential issuance**
+  isn't provisioning's job at all.
+- A request that looks like (b) is read not as a need for a new approval tier but as **a signal that
+  the catalog entry itself is defined too coarsely.**
+- Five days later the same family of question arrived in a different shape — "what if we want a role
+  never to read one specific folder?" Again nothing was built; instead we recorded where the real
+  boundary is.
+- An application-layer hook is inherently best-effort, and *"The strictly stronger boundary ... is
+  OS/infrastructure-level isolation ... this is tool-agnostic ... and doesn't depend on the agent's
+  cooperation at all."* We also wrote down that a hook, if ever built, is a convenience layer on top
+  of that boundary and not the boundary itself.
+- And the reason for not starting was simple — *"No department has actually hit this need — the
+  whole discussion was prompted by a hypothetical, not a real task."*
+- Source: `knowledge/decisions/2026-07-14-folder-scoped-access-control-deferred.md`
+
+**The strength that followed**
+
+- Both times resolve into the same sentence — *"Adding scaffolding around a gate that already can't
+  be skipped doesn't make the judgment behind it any sharper; documenting the actual distinction the
+  judgment needs to draw does."* Instead of stacking more scaffolding around a gate nobody can
+  bypass, we wrote down the distinction that gate actually has to draw.
+- As a result there's still no permissions table — there's **a sentence about what the judgment must
+  distinguish.**
 :::
 
 ## So what did we give up
@@ -199,7 +227,7 @@ way. AISE split the two into entirely different modes, and made the organization
 untouchable without a mode declaration. That story is too big to compress into one table row, so
 it lives separately in [Operator vs Meta Mode](/en/operator-vs-meta-mode).
 
-## Quick guide
+## 정리
 
 **In one sentence.** Of the seven points where AISE diverges from the usual way, four are not
 "something extra we built" but **"something we chose not to build until a real event demanded
