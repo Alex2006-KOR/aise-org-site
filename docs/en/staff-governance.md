@@ -80,7 +80,7 @@ from the relevant staff when needed.
   <text x="600" y="180" text-anchor="middle" font-size="9" fill="#c1652a">not involved in execution</text>
 </svg>
 <figcaption>Left: the depth-2 line organization. Top right: the three staff, peers outside the
-depth count. Bottom right: the `MG_ORCHESTRATOR` (Management-staff), uninvolved in Operator-mode execution and active
+depth count. Bottom right: the <code>MG_ORCHESTRATOR</code> (Management-staff), uninvolved in Operator-mode execution and active
 only in Meta mode.</figcaption>
 </figure>
 

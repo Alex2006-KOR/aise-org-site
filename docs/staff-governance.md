@@ -74,7 +74,7 @@ department(부서)가 일을 하는 동안, 그 위에서 조직 전체가 어�
   <text x="600" y="180" text-anchor="middle" font-size="9" fill="#c1652a">실행에는 관여 안 함</text>
 </svg>
 <figcaption>왼쪽은 뎁스-2 라인 조직, 오른쪽 위는 뎁스 밖에서 서로 동급으로 일하는 세 참모,
-오른쪽 아래는 Operator 모드 조직 운영에는 관여하지 않고 Meta 모드에서만 활동하는 `MG_ORCHESTRATOR`(경영참모).</figcaption>
+오른쪽 아래는 Operator 모드 조직 운영에는 관여하지 않고 Meta 모드에서만 활동하는 <code>MG_ORCHESTRATOR</code>(경영참모).</figcaption>
 </figure>
 
 ## 책임을 두 종류로 나눈 이유
