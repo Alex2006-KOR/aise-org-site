@@ -55,7 +55,7 @@ AISE는 한계까지 물려받지는 않기로 했습니다 — 아래 능력들
 **그래서 생긴 강점**
 
 - 결정 문서의 정리 — *"An abstraction that doesn't correspond to any real, persisted state in
-  the execution substrate is exactly the kind of complexity ... this org didn't actually have"*
+  the execution substrate is exactly the kind of complexity ... the org didn't actually have"*
   (실행 기반에 실재하는 상태와 대응하지 않는 추상화는, 이 조직에 있지도 않은 문제를 풀려는 불필요한
   복잡함이다).
 - 동시성 문제가 사라집니다 — 아무것도 "체크아웃"되지 않으니, 여러 부서가 같은 클래스를 동시에 몇

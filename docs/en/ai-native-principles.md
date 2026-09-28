@@ -67,7 +67,7 @@ This list isn't just a declaration. There were several moments during design whe
 **The strength that followed**
 
 - As the decision record puts it — *"An abstraction that doesn't correspond to any real, persisted
-  state in the execution substrate is exactly the kind of complexity ... this org didn't actually
+  state in the execution substrate is exactly the kind of complexity ... the org didn't actually
   have"*.
 - The concurrency problem disappears entirely — nothing is ever "checked out," so any number of
   departments can use the same class at once.
