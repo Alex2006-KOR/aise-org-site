@@ -26,8 +26,8 @@ a real company aren't counted as a level in the hierarchy chart.
   suitable department.
 - **`HR_ORCHESTRATOR` (HR-staff)** — owns recruitment and reorganization exclusively. Doesn't get involved in
   executing work itself.
-- **`AS_ORCHESTRATOR` (Asset-staff)** — owns which roles can actually use which tools, MCP servers, and skills
-  (provisioning (company-approved tools)).
+- **`AS_ORCHESTRATOR` (Asset-staff)** — owns which roles can actually use which tools, MCP servers, and skills —
+  that is, provisioning (company-approved tools).
 
 None of the three carry execution accountability, they're all peers, and none reports to another.
 The Ops-staff never decides HR or provisioning matters directly either — it only requests them
