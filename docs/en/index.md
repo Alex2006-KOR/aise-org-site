@@ -81,12 +81,12 @@ after it's done**.
   <text x="540" y="315" text-anchor="middle" font-size="11" font-weight="600" opacity="0.7">the department's record doesn't</text>
 </svg>
 <figcaption>Left: the ordinary way everyone uses AI today, where nothing survives the end of a
-session. Right: AISE, where a department's (project's) Project Record becomes the starting point
+session. Right: AISE, where a department's Project Record (the department's record files) becomes the starting point
 for the next session.</figcaption>
 </figure>
 
 The left side is what all of us do every day. The right side is AISE — the user instructs the
-Ops-staff, the Ops-staff assembles a department (staff/PM/roles) to handle it, and the department
+`OP_ORCHESTRATOR` (Ops-staff), the Ops-staff assembles a department (staff/PM/roles) to handle it, and the department
 keeps writing to its own **Project Record** while it works. When the next session opens, that
 department starts by reading this record — nobody has to re-explain where things left off
 yesterday.

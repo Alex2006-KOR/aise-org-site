@@ -26,7 +26,7 @@ diagrams entirely.
 - **Organization Chart** — the **fixed accountability structure** that defines roles,
   responsibilities, authority, and reporting lines. It defines who answers to whom, but not how
   they'll actually collaborate today.
-- **Execution Graph** — the **collaboration structure** that's actually formed on the fly while
+- **Execution graph (who does what, when)** — the **collaboration structure** that's actually formed on the fly while
   work gets done. Parallel work, temporary subagents, and cross-department collaboration all
   happen freely here. It uses the org chart as a foundation, but it isn't the org chart itself.
 
@@ -92,7 +92,7 @@ to review, until eventually nobody fully grasps what's actually happening. So th
 organization (the part that carries execution accountability) was fixed at exactly two levels —
 **user — department — member.**
 
-A department consists of a PM and members. The PM understands each member's role, responsibility,
+A department consists of a `project-manager` (PM) and members. The PM understands each member's role, responsibility,
 and capability, and breaks down the large task handed down from the user into pieces its members
 can actually handle.
 
@@ -108,7 +108,7 @@ instead of just being one role among others?
 - Once departments stopped being "permanent organizations" and became "project-scoped" instead,
   there was no longer a reason to carve out a permanent department-head seat in the org structure.
 - At the same time, there was a worry running the other way — how do you prevent so-called
-  *skip-level* behavior, where the Ops-staff bypasses the department head and instructs members
+  *skip-level* behavior, where the `OP_ORCHESTRATOR` (Ops-staff) bypasses the department head and instructs members
   directly?
 
 **Investigation**

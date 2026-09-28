@@ -137,7 +137,7 @@ accountability)? And how do we do that without just imitating people (5)?
 | Principle | Where it actually shows up |
 |---|---|
 | 1. The organization is the center | [Ultimate Goal](/en/ultimate-goal) — why not a framework |
-| 2. The organization remembers | The Project Record cycle on [Home](/en/), knowledge accumulation in [Lifecycle](/en/lifecycle) |
+| 2. The organization remembers | The Project Record (the department's record files) cycle on [Home](/en/), knowledge accumulation in [Lifecycle](/en/lifecycle) |
 | 3. Continuous growth | The 6-stage cycle in [Lifecycle](/en/lifecycle) |
 | 4. Clear accountability | [Organization Model](/en/organization-model), [Staff & Governance](/en/staff-governance) |
 | 5. Leaning into AI's strengths | [AI-Native Principles](/en/ai-native-principles) |

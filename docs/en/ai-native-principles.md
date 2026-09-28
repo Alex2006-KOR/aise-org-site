@@ -27,7 +27,7 @@ not restricted just because it's AI. They're actively used instead.
   immediately.
 - **Continuous organizational learning** — the six-stage cycle from [Lifecycle](/en/lifecycle)
   never stops.
-- **Persistence of organizational memory** — the Project Record survives after a session ends, so
+- **Persistence of organizational memory** — the Project Record (the department's record files) survives after a session ends, so
   the next session can pick it up (see [Home](/en/)).
 - **Independence from AI tools** — the organization's identity isn't tied to any particular model
   or tool. Tools can change; the organization's philosophy and operating principles don't.
@@ -74,8 +74,10 @@ This list isn't just a declaration. There were several moments during design whe
 - Recruiting a new class is a one-time act, but any already-recruited class being used by a new
   department is always free, with no approval step — this is the point where
   [Lifecycle](/en/lifecycle)'s reuse-first principle actually gets teeth at the class level.
-- The frontend-engineer and devops-engineer that built this site are themselves a case of reusing
-  classes already in use by another department (`llm-wiki-platform`).
+- In practice, `backend-engineer`/`frontend-engineer` were first recruited in `sfr-ssot-platform`
+  and then reused as-is by `llm-wiki-platform`, and `frontend-engineer`/`devops-engineer` were
+  reused by this site (`aise-org-site`) — the full cross-department flow is in
+  [Collaboration Model](/en/collaboration-model).
 :::
 
 The principle of AI tool independence was itself once drawn incorrectly and later corrected — and
@@ -84,7 +86,7 @@ what makes that story interesting is that the mistake was caught by actually tes
 ::: info Revisiting the decision — how "model" fell off the provisioning list, then came back under a different label
 **Problem**
 
-- The original constitution and the three staff documents listed four things the Asset-staff
+- The original constitution and the three staff documents listed four things the `AS_ORCHESTRATOR` (Asset-staff)
   provisions: "tools, MCP, model, and skills." But working out what "choosing a model" actually
   means raised a question — model selection happens through the AI tool's own UI or settings (e.g.,
   Claude Code's `/model` command), not something any actor inside AISE could "decide and execute."
@@ -100,14 +102,14 @@ what makes that story interesting is that the mistake was caught by actually tes
 
 **Resolution (first pass)**
 
-- "Model" was removed entirely from the provisioning category list — not just deprioritized, but
+- "Model" was removed entirely from the provisioning (company-approved tools) category list — not just deprioritized, but
   judged to have been a **category error** to include in the first place.
 - The decision record states plainly — *"no actor inside AISE, including the AI running it, has a
   way to act on it"*.
 - **But that exception later came back.**
 - "Specifying a model for a newly spawned subagent" was still a real, existing lever, and it was
   later confirmed (2026-09-08) that this is a **managing act, not provisioning** — the delegating
-  party (Ops-staff→PM, PM→role) choosing that slice's model tier at the moment of delegation, as
+  party (Ops-staff→`project-manager` (PM), PM→role) choosing that slice's model tier at the moment of delegation, as
   part of the execution-graph-assembly authority it already had, not an asset the Asset-staff
   approves.
 - This was directly verified in a real session — confirming, from actual transcripts, that a
@@ -137,7 +139,7 @@ actually testing "is this really possible on this execution substrate."
 
 1. Open any `instance/roles/*.yaml` file and confirm there's no field for department affiliation
    or assignment status — only a class definition.
-2. Search `CONSTITUTION.md` for the word "model" and confirm it no longer appears in the
+2. Search `CONSTITUTION.md` (now in English) for the word "model" and confirm it no longer appears in the
    provisioning category lists (§10.3, §10.9).
 3. Read the `authority` field of `schema/roles/project-manager.template.yaml` for the full rule
    on how a PM chooses model tier at the point of delegation.

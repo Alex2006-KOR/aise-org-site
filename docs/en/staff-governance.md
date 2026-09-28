@@ -22,12 +22,12 @@ a real company aren't counted as a level in the hierarchy chart.
 
 ## The three staff are peers
 
-- **Ops-staff** — turns the user's intent into actually executable work, and assembles the most
+- **`OP_ORCHESTRATOR` (Ops-staff)** — turns the user's intent into actually executable work, and assembles the most
   suitable department.
-- **HR-staff** — owns recruitment and reorganization exclusively. Doesn't get involved in
+- **`HR_ORCHESTRATOR` (HR-staff)** — owns recruitment and reorganization exclusively. Doesn't get involved in
   executing work itself.
-- **Asset-staff** — owns which roles can actually use which tools, MCP servers, and skills
-  (provisioning).
+- **`AS_ORCHESTRATOR` (Asset-staff)** — owns which roles can actually use which tools, MCP servers, and skills
+  (provisioning (company-approved tools)).
 
 None of the three carry execution accountability, they're all peers, and none reports to another.
 The Ops-staff never decides HR or provisioning matters directly either — it only requests them
@@ -80,7 +80,7 @@ from the relevant staff when needed.
   <text x="600" y="180" text-anchor="middle" font-size="9" fill="#c1652a">not involved in execution</text>
 </svg>
 <figcaption>Left: the depth-2 line organization. Top right: the three staff, peers outside the
-depth count. Bottom right: the Management-staff, uninvolved in Operator-mode execution and active
+depth count. Bottom right: the `MG_ORCHESTRATOR` (Management-staff), uninvolved in Operator-mode execution and active
 only in Meta mode.</figcaption>
 </figure>
 

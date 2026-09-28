@@ -22,7 +22,7 @@ actually plays out shows up as a cycle that loops through six stages.
    can absorb it, whether it stays within the [depth-2 pyramid](/en/organization-model), and
    whether the reason is concrete.
 2. **Assignment** — the new role is given a clear role and responsibility.
-3. **Collaboration** — an execution graph is assembled to carry out the work. Whatever roles are
+3. **Collaboration** — an execution graph (who does what, when) is assembled to carry out the work. Whatever roles are
    needed collaborate freely.
 4. **Reporting** — every task's results are reported to the accountable owner. The reporting
    structure follows the org chart exactly.
@@ -172,7 +172,7 @@ done.</figcaption>
 
 - The name "department" and the §10.2 rule stayed exactly as they were — only **what it means to
   exist as a department** changed.
-- A department forms the moment some role-class actually needs to execute, and dissolves
+- A department forms the moment some role-class (a reusable job description) actually needs to execute, and dissolves
   automatically once the work is done — this forming and dissolving is never a reorganization.
 - Instead, **reorganization was redefined to target the role-class catalog, not the department**
   (merging, splitting, reclassifying, or retiring entries in `instance/roles/*.yaml`).
@@ -184,7 +184,7 @@ done.</figcaption>
 - Once departments became temporary and the fixed head/staff distinction tied to role-classes
   disappeared, the original complaint — "the orchestrator skips the reporting chain" — resolved
   itself naturally, with no separate department/staff directory split needed.
-- The property that a department's PM is the sole interface to the Ops-staff is now enforced not by
+- The property that a department's `project-manager` (PM) is the sole interface to the `OP_ORCHESTRATOR` (Ops-staff) is now enforced not by
   directory structure but by **the call-nesting structure itself**.
 :::
 

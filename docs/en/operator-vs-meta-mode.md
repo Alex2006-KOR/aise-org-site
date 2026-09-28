@@ -23,7 +23,7 @@ organization itself.
   structure itself, like the depth-2 pyramid) is left untouched.
 - **Meta mode** — changes the organization itself. Adding or removing roles, revising a Workflow,
   changing the schema of the portfolio or asset catalog, or amending the CONSTITUTION or this very
-  policy — all of that belongs here. The standing partner in this mode is the Management-staff,
+  policy — all of that belongs here. The standing partner in this mode is the `MG_ORCHESTRATOR` (Management-staff),
   but it only analyzes and proposes — final approval and execution always go through the user.
 
 <figure>

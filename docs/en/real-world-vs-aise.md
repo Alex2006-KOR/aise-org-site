@@ -174,7 +174,7 @@ assume finer is safer. This organization met that temptation twice and built no 
 
 - No new schema, no per-department permissions file.
 - Instead the line the judgment has to draw was written into the document explicitly — **(a) coarse
-  capability approval** is what provisioning governs; **(b) fine-grained scope/credential issuance**
+  capability approval** is what provisioning (company-approved tools) governs; **(b) fine-grained scope/credential issuance**
   isn't provisioning's job at all.
 - A request that looks like (b) is read not as a need for a new approval tier but as **a signal that
   the catalog entry itself is defined too coarsely.**

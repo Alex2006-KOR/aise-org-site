@@ -120,7 +120,7 @@ flowchart TB
 | 원칙 | 실제로 어디서 보이나 |
 |---|---|
 | 1. 조직이 중심이다 | [Ultimate Goal](/ultimate-goal) — 프레임워크가 아닌 이유 |
-| 2. 조직은 기억한다 | [Home](/)의 Project Record 순환, [Lifecycle](/lifecycle)의 지식자산화 |
+| 2. 조직은 기억한다 | [Home](/)의 Project Record(부서 기록 파일 세트) 순환, [Lifecycle](/lifecycle)의 지식자산화 |
 | 3. 지속적 성장 | [Lifecycle](/lifecycle) 6단계 순환 |
 | 4. 책임의 명확성 | [Organization Model](/organization-model), [Staff & Governance](/staff-governance) |
 | 5. AI 장점 활용 | [AI-Native Principles](/ai-native-principles) |
