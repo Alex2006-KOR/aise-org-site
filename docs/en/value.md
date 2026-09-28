@@ -36,8 +36,9 @@ straight through is the right shape for them.
 
 ## And after that
 
-That's the end of the whole narrative. If you'd like every term in one place, go to the
-[Glossary](/en/glossary); if you'd like to sweep the whole thing again, head back to
+That's the end of the explanation. To actually try it, go to the standalone chapter
+[Quick Guide](/en/quick-guide), which is a different kind of page; if you'd like every term in one
+place, go to the [Glossary](/en/glossary); to sweep the whole thing again, head back to
 [Home](/en/).
 
 **Next.** → [Structural Principles / OCP](/en/structural-principles-ocp)

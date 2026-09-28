@@ -33,8 +33,9 @@ title: 평가와 가치 — 그래서 이 구조가 무엇을 만들어냈나
 
 ## 그다음은
 
-여기까지가 전체 서사의 끝입니다. 용어를 한 번에 모아 보고 싶으시면
-[Glossary](/glossary)로, 처음부터 다시 훑고 싶으시면 [Home](/)으로 돌아가시면 됩니다.
+여기까지가 설명의 끝입니다. 실제로 써 보시려면 설명과 성격이 다른 독립 챕터
+[Quick Guide](/quick-guide)로, 용어를 한 번에 모아 보고 싶으시면 [Glossary](/glossary)로, 처음부터
+다시 훑고 싶으시면 [Home](/)으로 가시면 됩니다.
 
 **다음으로.** → [Structural Principles / OCP](/structural-principles-ocp)
 

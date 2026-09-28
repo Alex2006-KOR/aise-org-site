@@ -170,6 +170,7 @@ AISE는 설계도로 끝나지 않았습니다 — 지금 이 순간에도 실�
 | **2. [동작 원리](/how-it-works)** | 실제로 어떻게 생겼고 굴러가나 | 조직의 모양 · 참모와 거버넌스 · 부서의 생명주기 · 협업 방식 · Operator/Meta 모드 |
 | **3. [쓰는 법과 이어가기](/in-practice)** | 그래서 어떻게 쓰나 | **일을 맡기는 법** · **세션을 넘어 이어가기** |
 | **4. [평가와 가치](/value)** | 그래서 무엇을 만들어냈나 | 구조가 변경을 견디는 법 · 궁극적으로 무엇을 노리나 |
+| **[Quick Guide](/quick-guide)** (독립 챕터) | 지금 뭘 치면 되나 | `/aise:op`부터 부서 착수·이어가기·종료까지의 실전 순서 |
 
 각 대분류 이름을 누르면, 그 안의 글들을 **왜 그 순서로 읽는 게 좋은지** 설명하는 짧은 안내가
 먼저 나옵니다. 그리고 모든 페이지 맨 위에는 지금 전체 흐름의 어디쯤인지 알려주는 한 단락이
@@ -190,6 +191,7 @@ AISE는 설계도로 끝나지 않았습니다 — 지금 이 순간에도 실�
 | 처음부터 순서대로 읽고 싶다 | [배경 및 철학](/background) → [동작 원리](/how-it-works) → [쓰는 법과 이어가기](/in-practice) → [평가와 가치](/value) |
 | 흔한 방식과 뭐가 다른지만 빨리 | [일반적인 방식과 무엇이 다른가](/real-world-vs-aise)의 대조표 한 장 |
 | 실제로 어떤 모양의 조직인가 | [Organization Model](/organization-model) → [Staff & Governance](/staff-governance) |
+| 당장 써 보고 싶다 | [Quick Guide](/quick-guide) |
 | 이 조직에 일을 맡기려면 | [일을 맡기는 법](/usage) → [세션을 넘어 이어가기](/handoff) |
 | 안전장치가 어떻게 되어 있나 | [Operator vs Meta Mode](/operator-vs-meta-mode) → [Structural Principles / OCP](/structural-principles-ocp) |
 | 용어가 낯설다 | [Glossary](/glossary) |

@@ -76,6 +76,6 @@ flowchart LR
 3. `CONSTITUTION.md` §4.6에서 지식자산의 네 가지 종류(Workflow/Capability/Framework/Registry)를
    직접 확인해 보세요 — "Memory"는 더 이상 그 목록에 없습니다.
 
-**다음으로.** 여기서 쓴 용어들을 한 번에 모아 보려면 → [Glossary](/glossary).
+**다음으로.** 설명은 여기까지입니다. 이제 직접 써 보시려면 → [Quick Guide](/quick-guide). 용어를 한 번에 모아 보려면 → [Glossary](/glossary).
 
 *근거: `CONSTITUTION.md` §8; `knowledge/decisions/2026-07-08-knowledge-continuity-split.md`.*

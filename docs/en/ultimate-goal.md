@@ -85,6 +85,6 @@ matter how many times the model changes.
 3. Check the four kinds of knowledge assets (Workflow/Capability/Framework/Registry) in
    `CONSTITUTION.md` §4.6 for yourself — "Memory" is no longer on that list.
 
-**Next.** To gather all the terms used here in one place → [Glossary](/en/glossary).
+**Next.** That's the end of the explanation. To actually try it → [Quick Guide](/en/quick-guide). To gather all the terms in one place → [Glossary](/en/glossary).
 
 *Source: `CONSTITUTION.md` §8; `knowledge/decisions/2026-07-08-knowledge-continuity-split.md`.*

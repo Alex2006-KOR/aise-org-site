@@ -191,6 +191,7 @@ we built it, then what it looks like, then actually using it, and ends with what
 | **2. [How It Works](/en/how-it-works)** | What it looks like and how it runs | The shape of the org · Staff & governance · A department's lifecycle · How collaboration works · Operator/Meta mode |
 | **3. [In Practice](/en/in-practice)** | So how do you use it | **How to hand work to this org** · **Carrying on across sessions** |
 | **4. [Evaluation & Value](/en/value)** | So what did it produce | How the structure absorbs change · What it is ultimately for |
+| **[Quick Guide](/en/quick-guide)** (standalone chapter) | What do I type now | The hands-on order from `/aise:op` through starting, continuing, and ending a department |
 
 Click a category name and you'll first get a short guide explaining **why its pages are best read
 in that order.** Every page also opens with a paragraph telling you where you are in the overall
@@ -213,6 +214,7 @@ organization around AI.
 | I want to read it all, in order | [Background & Philosophy](/en/background) → [How It Works](/en/how-it-works) → [In Practice](/en/in-practice) → [Evaluation & Value](/en/value) |
 | Just quickly, what's different from the usual way | The one comparison table in [What the usual way does differently](/en/real-world-vs-aise) |
 | What shape the organization actually takes | [Organization Model](/en/organization-model) → [Staff & Governance](/en/staff-governance) |
+| I just want to try it | [Quick Guide](/en/quick-guide) |
 | I want to hand work to this org | [How to hand work to this org](/en/usage) → [Carrying on across sessions](/en/handoff) |
 | What the safeguards look like | [Operator vs Meta Mode](/en/operator-vs-meta-mode) → [Structural Principles / OCP](/en/structural-principles-ocp) |
 | The terminology is unfamiliar | [Glossary](/en/glossary) |

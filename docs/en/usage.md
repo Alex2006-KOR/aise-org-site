@@ -94,7 +94,7 @@ And until recently, the mode-declaration command itself had a fairly large hole 
 - This decision document's own final section is titled `## Verification still pending`.
 :::
 
-## You only ever talk to the operations staff
+## You only ever talk to Ops-staff
 
 Mode settled, you can now speak. But the one you speak to is **always Ops-staff, and only
 Ops-staff.** There's no "this is trivial, I'll just tell the department directly."
