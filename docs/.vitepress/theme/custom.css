@@ -1,0 +1,17 @@
+/*
+ * Dark-mode fix for hand-written inline SVG diagrams in doc pages.
+ *
+ * Their <text> labels carry no `fill` attribute, so they fall back to the SVG
+ * default (black) and disappear on the dark background. Make such labels
+ * follow the surrounding text color instead, like their strokes already do
+ * via `currentColor`.
+ *
+ * - `text:not([fill])`: labels with an explicit fill (e.g. accent #c1652a)
+ *   are left untouched. <tspan> children inherit the fill from their <text>.
+ * - `svg:not(.mermaid svg)`: diagrams rendered by vitepress-plugin-mermaid
+ *   (inside div.mermaid) manage their own label colors per theme, so they
+ *   are excluded.
+ */
+.vp-doc svg:not(.mermaid svg) text:not([fill]) {
+  fill: currentColor;
+}

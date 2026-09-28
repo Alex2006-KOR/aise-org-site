@@ -34,6 +34,7 @@ export default withMermaid(
             { text: '동작 원리', link: '/how-it-works' },
             { text: '쓰는 법', link: '/in-practice' },
             { text: '평가와 가치', link: '/value' },
+            { text: 'Quick Guide', link: '/quick-guide' },
           ],
           sidebar: [
             { text: 'Home', link: '/' },
@@ -77,6 +78,7 @@ export default withMermaid(
                 { text: '궁극적으로 무엇을 노리나', link: '/ultimate-goal' },
               ],
             },
+            { text: 'Quick Guide — 실제로 써 보기', link: '/quick-guide' },
             {
               text: '참고',
               collapsed: false,
@@ -96,6 +98,7 @@ export default withMermaid(
             { text: 'How It Works', link: '/en/how-it-works' },
             { text: 'In Practice', link: '/en/in-practice' },
             { text: 'Value', link: '/en/value' },
+            { text: 'Quick Guide', link: '/en/quick-guide' },
           ],
           sidebar: [
             { text: 'Home', link: '/en/' },
@@ -139,6 +142,7 @@ export default withMermaid(
                 { text: 'What it is ultimately for', link: '/en/ultimate-goal' },
               ],
             },
+            { text: 'Quick Guide — Actually Using It', link: '/en/quick-guide' },
             {
               text: 'Reference',
               collapsed: false,

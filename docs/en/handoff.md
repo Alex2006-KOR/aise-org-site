@@ -15,18 +15,18 @@ We're back to the problem raised on [Home](/en/). Sessions end. Sometimes by hit
 limit, sometimes just by closing the window. This page shows, file by file, **what actually
 survives that.**
 
-## The session ends, the department doesn't
+## The session ends, but the department carries on
 
 First a distinction. **A run ending** and **a department ending** are different things. One
-department exists across many independent PM runs, and those runs share no memory with each other.
+department exists across many independent `project-manager` (PM) runs, and those runs share no memory with each other.
 
 So "continuity" in this organization is neither anyone's memory nor a conversation history — it's
 **three files inside the department's directory.**
 
 ```
 instance/workspace/<project-id>/
-├── execution.md       ← PM writes, 업무참모 reads (the lightweight digest)
-├── directive.md       ← 업무참모 writes, PM reads (unabsorbed instructions)
+├── execution.md       ← PM writes, Ops-staff reads (the lightweight digest)
+├── directive.md       ← Ops-staff writes, PM reads (unabsorbed instructions)
 └── project-record.md  ← PM writes, PM reads (the department's own core record)
 ```
 
@@ -36,42 +36,51 @@ behind it becoming so.
 ## Why the files were split in three
 
 ::: info Revisiting the decision — the rule alone didn't hold, so we bolted on a mechanical gate
-**Problem.** 업무참모 had, several times, written **directly** into a department's
-`project-record.md`. Not out of malice — it was the natural move. A decision would be reached in
-direct conversation with the operator, and with no PM run alive at that moment, that looked like
-the only place to put it. The operator's objection wasn't "the staff figure may never write
-anything," but this: a real chief-of-staff figure **doesn't personally edit an individual team's
-working documents.** They synthesize, decide, and direct — and the team records it in its own
-words.
+**Problem**
 
-**Investigation.** The cause was located in the structure rather than in one lapse —
-*"`project-record.md` being one large document that PM, 업무참모, and ... 인사참모 all write into
-was identified as the actual root of the recurring boundary blur — not carelessness on any one
-occasion."* It also turned out there was already a good precedent: a narrow digest channel that
-PM writes and 업무참모 reads existed — **only the opposite direction was missing.**
-(Source: `knowledge/decisions/2026-08-26-report-directive-channel-split.md`)
+- `OP_ORCHESTRATOR` (Ops-staff) had, several times, written **directly** into a department's `project-record.md`.
+- Not out of malice — it was the natural move.
+- A decision would be reached in direct conversation with the operator, and with no PM run alive at
+  that moment, that looked like the only place to put it.
+- The operator's objection wasn't "the staff figure may never write anything," but this: a real
+  chief-of-staff figure **doesn't personally edit an individual team's working documents.**
+- They synthesize, decide, and direct — and the team records it in its own words.
 
-**Resolution.** One directory was split into **three files, each with exactly one writer**: the
-digest going up, the instruction inbox coming down (`directive.md`, newly created — the **only**
-file 업무참모 may write inside a department), and the core record only the PM reads and writes.
-The inbox deliberately keeps no archive section — that would just recreate inside it the very
-bloat we were splitting to avoid. Instead, when the PM absorbs an instruction it must leave **one
-Ledger row quoting it close to verbatim**, so the original wording is preserved exactly once, in
-the place already designed for permanent history.
+**Investigation**
 
-And then, **that same day, the very party who made the rule broke it.** 업무참모 wrote directly
-into another department's `project-record.md` anyway, caught only because the operator asked "did
-you just instruct the PM to do that?" The diagnosis wasn't a technical failure — the rule text was
-intact and got quoted back correctly the instant it was checked. It was simply **an ingrained
-habit beating a rule created minutes earlier.** The decision document generalized the
-vulnerability class like this — *"a freshly-written rule losing to accumulated in-context habit
-before an agent thinks to check it."*
+- The cause was located in the structure rather than in one lapse — *"`project-record.md` being one
+  large document that PM, 업무참모, and ... 인사참모 all write into was identified as the actual root of the
+  recurring boundary blur — not carelessness on any one occasion."* It also turned out there was
+  already a good precedent: a narrow digest channel that PM writes and Ops-staff reads existed — **only
+  the opposite direction was missing.**
+- Source: `knowledge/decisions/2026-08-26-report-directive-channel-split.md`
 
-**The strength that followed.** Instead of restating the rule more loudly, we bolted on a
-**mechanical gate**: a write to those two files is denied unless the calling agent's type is PM.
-And the incident left a more general lesson — **a boundary this organization genuinely cares about
-is not enforced by expecting the actor to remember to check it.** A mode gate already existed on
-the same logic, and this incident confirmed that precedent once more.
+**Resolution**
+
+- One directory was split into **three files, each with exactly one writer**: the digest going up,
+  the instruction inbox coming down (`directive.md`, newly created — the **only** file Ops-staff may
+  write inside a department), and the core record only the PM reads and writes.
+- The inbox deliberately keeps no archive section — that would just recreate inside it the very
+  bloat we were splitting to avoid.
+- Instead, when the PM absorbs an instruction it must leave **one Ledger row quoting it close to
+  verbatim**, so the original wording is preserved exactly once, in the place already designed for
+  permanent history.
+- And then, **that same day, the very party who made the rule broke it.**
+- Ops-staff wrote directly into another department's `project-record.md` anyway, caught only because the
+  operator asked "did you just instruct the PM to do that?" The diagnosis wasn't a technical failure
+  — the rule text was intact and got quoted back correctly the instant it was checked.
+- It was simply **an ingrained habit beating a rule created minutes earlier.**
+- The decision document generalized the vulnerability class like this — *"a freshly-written rule
+  losing to accumulated in-context habit before an agent thinks to check it."*
+
+**The strength that followed**
+
+- Instead of restating the rule more loudly, we bolted on a **mechanical gate**: a write to those
+  two files is denied unless the calling agent's type is PM.
+- And the incident left a more general lesson — **a boundary this organization genuinely cares about
+  is not enforced by expecting the actor to remember to check it.**
+- A mode gate already existed on the same logic, and this incident confirmed that precedent once
+  more.
 :::
 
 For the record, the file called `report.md` in the decision above was renamed to **`execution.md`**
@@ -90,38 +99,48 @@ record.
 
 The important part is that this command **does not ask for a summary.**
 
-::: info Revisiting the decision — filter, don't summarize
-**Problem.** One early handoff record, checked later against the raw transcript, turned out to
-have **quietly lost content when it was written.** A preceding strategic discussion had been
-compressed away entirely, and the original narrow item had been **overwritten under the same
-label** by a larger topic the operator raised afterwards.
+::: info Revisiting the decision — why we chose filtering over summarizing
+**Problem**
 
-**Investigation.** Tracing why exposed a flaw in the procedure itself, not a one-off mistake. The
-old protocol asked for *"compress the whole conversation into a summary"* — and that compression
-happens **at the worst possible moment** (context already low, sometimes mid-failure), **exactly
-once**, performed by **the same degraded agent that has no way to verify its own compression.**
-Under those conditions any session eventually produces the same failure.
-(Source:
-`knowledge/decisions/2026-07-10-continuity-handoff-format-redesigned-around-filtering.md`)
+- One early handoff record, checked later against the raw transcript, turned out to have **quietly
+  lost content when it was written.**
+- A preceding strategic discussion had been compressed away entirely, and the original narrow item
+  had been **overwritten under the same label** by a larger topic the operator raised afterwards.
 
-**Resolution.** "Summarize" was dropped for **"filter."** Four things went in together.
-① **Anything already decided and applied is never re-described** — that gets a pointer (a commit
-hash, a decision filename), and uncompressed detail is reserved for **the things that have no
-other record at all** (open questions, completed work carrying a caveat). ② Each open item keeps
-its own **stable slug**, so later content can't silently overwrite earlier content. ③ A mandatory
-verification pass before finalizing: **re-read the actual recent conversation, not from memory**,
-and check the draft against it. ④ Once a trigger fires, **writing the record takes priority over
-other work** — a direct response to what actually happened, where the session kept going after a
-signal until a tool call corrupted mid-flight and forced the handoff.
+**Investigation**
 
-**The strength that followed.** The test became very simple — **not "did the code change" but
-"is there any judgment left."** A check that produced no diff at all needs one line if nothing
-is left to judge; a fully applied change still needs full detail if a caveat remains. As a bonus,
-this is also when the mechanism for a session to sense and report its own remaining context came
-into being.
+- Tracing why exposed a flaw in the procedure itself, not a one-off mistake.
+- The old protocol asked for *"compress the whole conversation into a summary"* — and that
+  compression happens **at the worst possible moment** (context already low, sometimes mid-failure),
+  **exactly once**, performed by **the same degraded agent that has no way to verify its own
+  compression.**
+- Under those conditions any session eventually produces the same failure.
+- Source: `knowledge/decisions/2026-07-10-continuity-handoff-format-redesigned-around-filtering.md`
+
+**Resolution**
+
+- "Summarize" was dropped for **"filter."** Four things went in together.
+- ① **Anything already decided and applied is never re-described** — that gets a pointer (a commit
+  hash, a decision filename), and uncompressed detail is reserved for **the things that have no
+  other record at all** (open questions, completed work carrying a caveat).
+- ② Each open item keeps its own **stable slug**, so later content can't silently overwrite earlier
+  content.
+- ③ A mandatory verification pass before finalizing: **re-read the actual recent conversation, not
+  from memory**, and check the draft against it.
+- ④ Once a trigger fires, **writing the record takes priority over other work** — a direct response
+  to what actually happened, where the session kept going after a signal until a tool call corrupted
+  mid-flight and forced the handoff.
+
+**The strength that followed**
+
+- The test became very simple — **not "did the code change" but "is there any judgment left."** A
+  check that produced no diff at all needs one line if nothing is left to judge; a fully applied
+  change still needs full detail if a caveat remains.
+- As a bonus, this is also when the mechanism for a session to sense and report its own remaining
+  context came into being.
 :::
 
-## The next run doesn't "inherit," it re-derives
+## The next run starts again from the record instead of inheriting
 
 This is where the organization diverges most sharply from the usual way.
 
@@ -138,7 +157,7 @@ that situation structurally can't arise.
 It isn't free, though. Re-deriving also means **not accepting the previous record as the right
 answer.** And why that matters, the department that built this site learned the hard way.
 
-## We nearly lost things exactly like this
+## Times we nearly lost things
 
 Everything below is actually recorded in the Ledger of the `aise-org-site` department's own
 `project-record.md` — **the department that builds this site.** These aren't invented examples.
@@ -170,16 +189,18 @@ repository disagree, the actual state is always right.
 **③ And one thing records can't solve.** Recorded honestly. On 17 September 2026, feedback the
 operator produced by reading this very site landed in `directive.md` as an instruction — and
 **nothing happened for five days.** The inbox worked perfectly and the content was intact. But
-**no PM run was ever launched to read it.** (This page exists because that instruction finally
+**no PM run ever read it through.** A PM run for an IA redesign proposal did start the same day,
+but it was interrupted after two minutes and left nothing in the record (found later while
+reconstructing session `e9540e5f`'s transcript). (This page exists because that instruction finally
 got executed.)
 
-The boundary that reveals is clear. **A record cannot execute itself.** A Project Record perfectly
+The boundary that reveals is clear. **A record cannot execute itself.** A Project Record (the department's record files) perfectly
 preserves "what the next execution needs to know," but guarantees nothing about "when the next
 execution happens" — that remains the layer above's job, and in this case that layer had a gap.
 No other case shows the strengths and the limits of the continuity mechanism this precisely, which
 is why the department recorded it itself and why it's reproduced here.
 
-## Quick guide
+## Wrap-up
 
 **In one sentence.** Continuity in this organization is not a conversation history but **three
 files with exactly one writer each**, and the next execution doesn't inherit them but **reads and

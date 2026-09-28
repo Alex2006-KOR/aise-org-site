@@ -22,7 +22,7 @@ actually plays out shows up as a cycle that loops through six stages.
    can absorb it, whether it stays within the [depth-2 pyramid](/en/organization-model), and
    whether the reason is concrete.
 2. **Assignment** — the new role is given a clear role and responsibility.
-3. **Collaboration** — an execution graph is assembled to carry out the work. Whatever roles are
+3. **Collaboration** — an execution graph (who does what, when) is assembled to carry out the work. Whatever roles are
    needed collaborate freely.
 4. **Reporting** — every task's results are reported to the accountable owner. The reporting
    structure follows the org chart exactly.
@@ -80,26 +80,34 @@ recruitment decision (can an existing role absorb this?).
 </figure>
 
 ::: info Revisiting the decision — why we didn't pre-draw a "list of roles"
-**Problem.** A common temptation when first designing an organization is to draw up the org chart
-in advance — "what roles will this project need?" But the actual operator's work spans embedded
-software and firmware simulation tooling all the way to general software engineering, plus
-CI/CD, automation, and service development, across a roughly 500-person organization — no single
-domain could represent the whole scope.
+**Problem**
 
-**Investigation.** We considered what would happen if we picked a domain in advance and designed
-roles around it. The decision record's conclusion is clear — *"Pre-picking a domain would have
-overfit Phase 1 to a guess, contradicting §4.1 itself"*. A structure built in advance would only
-become debt the operator would later have to unwind.
-(Source: `knowledge/decisions/2026-07-07-recruit-on-demand-phase-1.md`)
+- A common temptation when first designing an organization is to draw up the org chart in advance —
+  "what roles will this project need?" But the actual operator's work spans embedded software and
+  firmware simulation tooling all the way to general software engineering, plus CI/CD, automation,
+  and service development, across a roughly 500-person organization — no single domain could
+  represent the whole scope.
 
-**Resolution.** `instance/roles/` started out **empty** on purpose. Roles are only created when
-actual Operator-mode work exposes a real gap in the organization's capability — there's no
-top-down, domain-by-domain pre-design.
+**Investigation**
 
-**The strength that followed.** The capability catalog grows from what actually happened, not
-from guesswork. And this principle itself has the effect of validating the recruitment cycle
-(Lifecycle) in the field rather than as a diagramming exercise — every role on this site
-(frontend-engineer, devops-engineer, and so on) actually came into being exactly that way.
+- We considered what would happen if we picked a domain in advance and designed roles around it.
+- The decision record's conclusion is clear — *"Pre-picking a domain would have overfit Phase 1 to a
+  guess, contradicting §4.1 itself"*.
+- A structure built in advance would only become debt the operator would later have to unwind.
+- Source: `knowledge/decisions/2026-07-07-recruit-on-demand-phase-1.md`
+
+**Resolution**
+
+- `instance/roles/` started out **empty** on purpose.
+- Roles are only created when actual Operator-mode work exposes a real gap in the organization's
+  capability — there's no top-down, domain-by-domain pre-design.
+
+**The strength that followed**
+
+- The capability catalog grows from what actually happened, not from guesswork.
+- And this principle itself has the effect of validating the recruitment cycle (Lifecycle) in the
+  field rather than as a diagramming exercise — every role on this site (frontend-engineer,
+  devops-engineer, and so on) actually came into being exactly that way.
 :::
 
 ## The life of a single department
@@ -141,37 +149,46 @@ ended on a completion instruction, and becomes closed once the knowledge-accumul
 done.</figcaption>
 </figure>
 
-::: info Revisiting the decision — the department wasn't renamed, its meaning changed
-**Problem.** Two frictions showed up in practice. One was orchestrators tending to skip the
-designated reporting chain and contact members directly; the other was the constraint that the
-organization could only handle one task per department at a time — which ran head-on into this
-org's own principle (§2.5/§7) that AI can work in parallel.
+::: info Revisiting the decision — how the meaning of "department" changed
+**Problem**
 
-**Investigation.** The first proposed fix was "just rename the department to a project." That
-proposal was immediately challenged — §10.7/§10.8 already allowed departments to be dissolved
-(termination, reorganization), so "permanence" was never actually an intrinsic property of a
-"department" to begin with. The decision record puts the real distinction this way —
-*"under the old model, ending a department was 조직개편 [reorganization] — exceptional,
-user-approval-gated... Under the new model, a department's end is the expected, routine outcome
-of its task finishing"*.
-(Source: `knowledge/decisions/2026-07-09-department-is-project-scoped-not-renamed.md`)
+- Two frictions showed up in practice.
+- One was orchestrators tending to skip the designated reporting chain and contact members directly;
+  the other was the constraint that the organization could only handle one task per department at a
+  time — which ran head-on into this org's own principle (§2.5/§7) that AI can work in parallel.
 
-**Resolution.** The name "department" and the §10.2 rule stayed exactly as they were — only
-**what it means to exist as a department** changed. A department forms the moment some
-role-class actually needs to execute, and dissolves automatically once the work is done — this
-forming and dissolving is never a reorganization. Instead, **reorganization was redefined to
-target the role-class catalog, not the department** (merging, splitting, reclassifying, or
-retiring entries in `instance/roles/*.yaml`). The very concept of "merging two departments"
-disappeared — because a department was never a permanent unit to begin with.
+**Investigation**
 
-**The strength that followed.** Once departments became temporary and the fixed head/staff
-distinction tied to role-classes disappeared, the original complaint — "the orchestrator skips
-the reporting chain" — resolved itself naturally, with no separate department/staff directory
-split needed. The property that a department's PM is the sole interface to the Ops-staff is now
-enforced not by directory structure but by **the call-nesting structure itself**.
+- The first proposed fix was "just rename the department to a project." That proposal was
+  immediately challenged — §10.7/§10.8 already allowed departments to be dissolved (termination,
+  reorganization), so "permanence" was never actually an intrinsic property of a "department" to
+  begin with.
+- The decision record puts the real distinction this way — *"under the old model, ending a
+  department was 조직개편 [reorganization] — exceptional, user-approval-gated... Under the new model, a
+  department's end is the expected, routine outcome of its task finishing"*.
+- Source: `knowledge/decisions/2026-07-09-department-is-project-scoped-not-renamed.md`
+
+**Resolution**
+
+- The name "department" and the §10.2 rule stayed exactly as they were — only **what it means to
+  exist as a department** changed.
+- A department forms the moment some role-class (a reusable job description) actually needs to execute, and dissolves
+  automatically once the work is done — this forming and dissolving is never a reorganization.
+- Instead, **reorganization was redefined to target the role-class catalog, not the department**
+  (merging, splitting, reclassifying, or retiring entries in `instance/roles/*.yaml`).
+- The very concept of "merging two departments" disappeared — because a department was never a
+  permanent unit to begin with.
+
+**The strength that followed**
+
+- Once departments became temporary and the fixed head/staff distinction tied to role-classes
+  disappeared, the original complaint — "the orchestrator skips the reporting chain" — resolved
+  itself naturally, with no separate department/staff directory split needed.
+- The property that a department's `project-manager` (PM) is the sole interface to the `OP_ORCHESTRATOR` (Ops-staff) is now enforced not by
+  directory structure but by **the call-nesting structure itself**.
 :::
 
-## Quick guide
+## Wrap-up
 
 **In one sentence.** The organization keeps cycling through six stages
 (Recruitment→Assignment→Collaboration→Reporting→Feedback→Knowledge Accumulation), and within that

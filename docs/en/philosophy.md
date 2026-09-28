@@ -69,32 +69,43 @@ first. It's a case we found later while surveying other systems, and it was wort
 separately as a strength**.
 
 ::: info Revisiting the decision — starting fresh every time turned out to be an advantage
-**Problem.** A single unit of work doesn't always need the same size of model. It's reasonable to
-use a stronger model for stretches that need difficult judgment and a lighter one for mechanical
-stretches. But **is it okay to switch models mid-task?**
+**Problem**
 
-**Investigation.** We checked this two ways. ① What's actually widely practiced turned out to be
-**fixing the model per role at the start and never switching mid-run** (Anthropic's own
-multi-agent research system, LangGraph, CrewAI, and AutoGen all let you configure per node, but
-none promote mid-execution). ② A paper explained why — *"The Handoff Tax: Continuing Non-Native
-Trajectories in LLM Agents"* (arXiv 2608.24358): when a stronger model picks up a weaker model's
-**in-progress reasoning trajectory**, it recovers **less than half** of the quality benefit it
-would have gotten by running the strong model from the start. It gets tied down by someone else's
-half-built plan and possibly wrong intermediate conclusions.
-(Source: `knowledge/decisions/2026-09-08-stateless-pm-sidesteps-handoff-tax.md`)
+- A single unit of work doesn't always need the same size of model.
+- It's reasonable to use a stronger model for stretches that need difficult judgment and a lighter
+  one for mechanical stretches.
+- But **is it okay to switch models mid-task?**
 
-**Resolution.** What we confirmed here was that AISE had **already been avoiding this problem**.
-A single AISE run doesn't inherit the reasoning of the previous execution — every time, it
-bootstraps fresh from **structured records** (the department's three files). That's not a frozen
-thought process; it's a status document written for a human to read. So the situation of
-"inheriting someone else's trajectory" **structurally never arises.** This wasn't a countermeasure
-we built — it's a property that fell out of keeping the first principle (tools are swappable
-members) and the second (memory lives in records).
+**Investigation**
 
-**The strength that followed.** Model tier became **a decision you can pick cleanly, fresh, every
-run** — because there's no carry-over loss. Most agent frameworks carry one long context forward,
-so "just make this one task use a stronger model" means paying a tax or throwing away state. AISE
-loses essentially nothing by re-instantiating.
+- We checked this two ways.
+- ① What's actually widely practiced turned out to be **fixing the model per role at the start and
+  never switching mid-run** (Anthropic's own multi-agent research system, LangGraph, CrewAI, and
+  AutoGen all let you configure per node, but none promote mid-execution).
+- ② A paper explained why — *"The Handoff Tax: Continuing Non-Native Trajectories in LLM Agents"*
+  (arXiv 2608.24358): when a stronger model picks up a weaker model's **in-progress reasoning
+  trajectory**, it recovers **less than half** of the quality benefit it would have gotten by
+  running the strong model from the start.
+- It gets tied down by someone else's half-built plan and possibly wrong intermediate conclusions.
+- Source: `knowledge/decisions/2026-09-08-stateless-pm-sidesteps-handoff-tax.md`
+
+**Resolution**
+
+- What we confirmed here was that AISE had **already been avoiding this problem**.
+- A single AISE run doesn't inherit the reasoning of the previous execution — every time, it
+  bootstraps fresh from **structured records** (the department's three files).
+- That's not a frozen thought process; it's a status document written for a human to read.
+- So the situation of "inheriting someone else's trajectory" **structurally never arises.**
+- This wasn't a countermeasure we built — it's a property that fell out of keeping the first
+  principle (tools are swappable members) and the second (memory lives in records).
+
+**The strength that followed**
+
+- Model tier became **a decision you can pick cleanly, fresh, every run** — because there's no
+  carry-over loss.
+- Most agent frameworks carry one long context forward, so "just make this one task use a stronger
+  model" means paying a tax or throwing away state.
+- AISE loses essentially nothing by re-instantiating.
 :::
 
 ```mermaid
@@ -115,7 +126,7 @@ record may itself reflect that run's tier, so the following run shouldn't accept
 must **re-derive it**. This is a very weak, narrowly scoped form of the trajectory tax the paper
 measured.
 
-## Quick guide
+## Wrap-up
 
 **In one sentence.** Read in order, the five principles derive from a single question — should
 we build an organization (1)? If so, what does it take to be one (2 memory, 3 growth, 4
@@ -126,7 +137,7 @@ accountability)? And how do we do that without just imitating people (5)?
 | Principle | Where it actually shows up |
 |---|---|
 | 1. The organization is the center | [Ultimate Goal](/en/ultimate-goal) — why not a framework |
-| 2. The organization remembers | The Project Record cycle on [Home](/en/), knowledge accumulation in [Lifecycle](/en/lifecycle) |
+| 2. The organization remembers | The Project Record (the department's record files) cycle on [Home](/en/), knowledge accumulation in [Lifecycle](/en/lifecycle) |
 | 3. Continuous growth | The 6-stage cycle in [Lifecycle](/en/lifecycle) |
 | 4. Clear accountability | [Organization Model](/en/organization-model), [Staff & Governance](/en/staff-governance) |
 | 5. Leaning into AI's strengths | [AI-Native Principles](/en/ai-native-principles) |
