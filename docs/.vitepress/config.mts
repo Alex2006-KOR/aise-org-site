@@ -19,6 +19,9 @@ export default withMermaid(
     description: 'AISE 조직의 철학·아키텍처·거버넌스를 설명하는 explainer 사이트',
     outDir: '../dist',
 
+    // Maintainer-facing design doc, not a site page.
+    srcExclude: ['architecture.md'],
+
     // Served at https://<org>.github.io/aise-org-site/ (project page, not a
     // user/org root page), so all asset/link paths must be prefixed.
     base: '/aise-org-site/',
