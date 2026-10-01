@@ -125,7 +125,7 @@ Project Record(부서 기록 파일 세트)**에 계속 기록을 남깁니다. 
   if set in projectSettings ... for security"*).
 - 남이 만든 저장소를 클론했더니 내 개인 메모가 엉뚱한 데 쓰이는 걸 막기 위한 안전장치였습니다.
 - 즉 **도구의 개인 메모리를 조직의 이식 가능한 기억으로 쓸 방법은 아예 없었습니다.**
-- 근거: `knowledge/decisions/2026-07-07-org-memory-must-be-project-local.md`
+- 근거: `knowledge/decisions/organization/departments.md` "2026-07-07 — org-memory-must-be-project-local"
 
 **해결**
 

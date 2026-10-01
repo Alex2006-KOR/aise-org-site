@@ -27,7 +27,7 @@ title: Glossary — 여기 나온 말들을 한 번에
   `backend-engineer`, `frontend-engineer`, `devops-engineer`.
 - **`OP_ORCHESTRATOR`(업무참모)** — 사용자의 지시를 받아 부서를 꾸리고 부서 간 협업을 조립하는
   참모. `/aise:op`를 선언한 최상위 세션 자체입니다. [Staff & Governance](/staff-governance) 참고.
-- **`HR_ORCHESTRATOR`(인사참모)** — 채용·조직개편만 전담하는 참모.
+- **`HR_ORCHESTRATOR`(인사참모)** — 역할 카탈로그(채용·역할 정의 변경·해고)만 전담하는 참모. 2026-09-30까지 쓰던 "조직개편"이라는 개념은 폐지됐습니다([Staff & Governance](/staff-governance)).
 - **`AS_ORCHESTRATOR`(자산참모)** — 각 역할이 무엇을 쓸 수 있는지(provisioning)를 승인하는 참모.
 - **`MG_ORCHESTRATOR`(경영참모)** — Meta 모드에서 조직 자체의 설계를 함께 다루는 참모. `/aise:meta`를
   선언한 최상위 세션 자체입니다.
@@ -67,7 +67,7 @@ title: Glossary — 여기 나온 말들을 한 번에
 - **`knowledge/decisions/`(조직 차원의 결정 기록)** — 이 사이트의 "결정 되짚어보기" 상자들이 인용하는
   원본. 2026-09-17부터 aise-core의 원문(CONSTITUTION.md 포함)은 영어로 작성·유지되므로, 이 사이트의
   한국어 설명은 번역이고 인용은 영어 원문 그대로입니다(근거:
-  `knowledge/decisions/2026-09-17-korean-to-english-conversion-executed-with-language-preference-mechanism.md`).
+  `knowledge/decisions/knowledge/language.md` "2026-09-17 — korean-to-english-conversion-executed-with-language-preference-mechanism").
 
 이 용어들 중 둘은 그 자체로 짧은 사연을 갖고 있습니다 — 왜 이런 구분이 필요했는지 알면, 위
 목록의 다른 용어들도 왜 지금의 이름과 자리로 갈라져 있는지 더 선명해집니다.
@@ -85,13 +85,13 @@ title: Glossary — 여기 나온 말들을 한 번에
   differently-scoped git repositories is a standing source of confusion, not a one-time
   documentation gap"*(이름 하나가 서로 다른 두 git 저장소의 마운트 지점 역할을 겸하는 디렉터리는, 한 번 고치면 끝나는 문서화 공백이 아니라 계속 혼란을
   낳는 구조적 문제다).
-- 근거: `knowledge/decisions/2026-08-06-org-instance-directory-split.md`
+- 근거: `knowledge/decisions/workspace/instance-data-location.md` "2026-08-06 — org-instance-directory-split"
 
 **해결**
 
 - 인스턴스 데이터의 마운트 지점을 `org/`에서 그 저장소 자신의 실제 이름을 딴 **`instance/`**로 옮겼습니다.
 - `org/`에는 스키마 파일만 남았고, 같은 날 이름 자체도 **`schema/`**로 바뀌었습니다(근거:
-  `knowledge/decisions/2026-08-06-org-directory-renamed-to-schema.md`).
+  `knowledge/decisions/workspace/instance-data-location.md` "2026-08-06 — org-directory-renamed-to-schema").
 
 **그래서 생긴 강점**
 
@@ -113,7 +113,7 @@ title: Glossary — 여기 나온 말들을 한 번에
   adopted by a second, unrelated department ... that reuse is itself the trigger to write it up in
   knowledge/decisions/ immediately"*(한 부서의 Decisions 항목이 전혀 무관한 다른 부서에서 독자적으로 채택됐다는 게 확인되면, 그 재사용
   자체가 knowledge/decisions/에 즉시 기록해야 하는 트리거다).
-- 근거: `knowledge/decisions/2026-08-13-cross-department-decision-promotion-trigger.md`
+- 근거: `knowledge/decisions/execution/cross-department.md` "2026-08-13 — cross-department-decision-promotion-trigger"
 
 **해결**
 
@@ -147,6 +147,6 @@ title: Glossary — 여기 나온 말들을 한 번에
 **다음으로.** 처음으로 돌아가 전체 그림을 다시 보고 싶다면 → [Home](/).
 
 *근거: `CONSTITUTION.md` 전체, `schema/README.md`, `schema/*_ORCHESTRATOR.md`, `governance/MODE_POLICY.md`;
-`knowledge/decisions/2026-08-06-org-instance-directory-split.md`,
-`knowledge/decisions/2026-08-06-org-directory-renamed-to-schema.md`,
-`knowledge/decisions/2026-08-13-cross-department-decision-promotion-trigger.md`.*
+`knowledge/decisions/workspace/instance-data-location.md` "2026-08-06 — org-instance-directory-split",
+`knowledge/decisions/workspace/instance-data-location.md` "2026-08-06 — org-directory-renamed-to-schema",
+`knowledge/decisions/execution/cross-department.md` "2026-08-13 — cross-department-decision-promotion-trigger".*

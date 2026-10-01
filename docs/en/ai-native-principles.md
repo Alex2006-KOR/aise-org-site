@@ -54,7 +54,7 @@ This list isn't just a declaration. There were several moments during design whe
   but still remembers." Modeling instances anyway would have required inventing new bookkeeping
   (waiting/assigned status, pool management) just to simulate a persistent identity the execution
   substrate never actually gives you.
-- Source: `knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md`
+- Source: `knowledge/decisions/roles/role-class-model.md` "2026-07-09 — role-is-a-class-not-an-instance"
 
 **Resolution**
 
@@ -98,7 +98,7 @@ what makes that story interesting is that the mistake was caught by actually tes
 - The closest capability was specifying a model for a newly spawned subagent (the `Agent` tool's
   `model` parameter), and that turned out to be a completely different act.
 - This distinction would matter again later.
-- Source: `knowledge/decisions/2026-07-08-model-is-not-a-provisioned-asset.md`
+- Source: `knowledge/decisions/provisioning/model-tiers.md` "2026-07-08 — model-is-not-a-provisioned-asset"
 
 **Resolution (first pass)**
 
@@ -115,7 +115,7 @@ what makes that story interesting is that the mistake was caught by actually tes
 - This was directly verified in a real session — confirming, from actual transcripts, that a
   subagent's model is fixed at spawn time and cannot be changed mid-execution by itself, and that a
   specified model does carry through correctly even in nested delegation (PM→role).
-- Source: `knowledge/decisions/2026-09-08-model-tier-selection-delegated.md`
+- Source: `knowledge/decisions/provisioning/model-tiers.md` "2026-09-08 — model-tier-selection-delegated"
 
 **The strength that followed**
 
@@ -149,6 +149,6 @@ hardened into → [How It Works](/en/how-it-works). If you'd rather see how they
 structural level, you can jump ahead to
 [Structural Principles / OCP](/en/structural-principles-ocp).
 
-*Source: `CONSTITUTION.md` §7; `knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md`,
-`knowledge/decisions/2026-07-08-model-is-not-a-provisioned-asset.md`,
-`knowledge/decisions/2026-09-08-model-tier-selection-delegated.md`.*
+*Source: `CONSTITUTION.md` §7; `knowledge/decisions/roles/role-class-model.md` "2026-07-09 — role-is-a-class-not-an-instance",
+`knowledge/decisions/provisioning/model-tiers.md` "2026-07-08 — model-is-not-a-provisioned-asset",
+`knowledge/decisions/provisioning/model-tiers.md` "2026-09-08 — model-tier-selection-delegated".*

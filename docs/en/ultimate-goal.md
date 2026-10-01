@@ -50,7 +50,7 @@ memory — to keep that distinction from getting lost, we once renamed something
   knowledge (long-term memory) and in-progress working state (working memory) — naming both the
   existing directory and the new one around 'memory' would keep that ambiguity baked into the org's
   own vocabulary."*
-- Source: `knowledge/decisions/2026-07-08-knowledge-continuity-split.md`
+- Source: `knowledge/decisions/continuity/handoff-records.md` "2026-07-08 — knowledge-continuity-split"
 
 **Resolution**
 
@@ -61,7 +61,7 @@ memory — to keep that distinction from getting lost, we once renamed something
 **The strength that followed**
 
 - If a handoff record later turns out to be a real, recurring lesson, it gets promoted at that point
-  to `knowledge/retrospectives/` — but *"the record itself, while work is still open, is
+  to `knowledge/decisions/` or `instance/retrospectives/` — but *"the record itself, while work is still open, is
   operational, not knowledge, and forcing a Meta-mode switch just to avoid losing in-progress work
   would defeat the point of having continuity at all."* Thanks to this distinction, this site itself
   can keep growing by citing what's accumulated in `knowledge/decisions/`, without needing a
@@ -87,4 +87,4 @@ matter how many times the model changes.
 
 **Next.** That's the end of the explanation. To actually try it → [Quick Guide](/en/quick-guide). To gather all the terms in one place → [Glossary](/en/glossary).
 
-*Source: `CONSTITUTION.md` §8; `knowledge/decisions/2026-07-08-knowledge-continuity-split.md`.*
+*Source: `CONSTITUTION.md` §8; `knowledge/decisions/continuity/handoff-records.md` "2026-07-08 — knowledge-continuity-split".*

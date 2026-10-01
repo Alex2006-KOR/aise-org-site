@@ -94,7 +94,7 @@ recruitment decision (can an existing role absorb this?).
 - The decision record's conclusion is clear — *"Pre-picking a domain would have overfit Phase 1 to a
   guess, contradicting §4.1 itself"*.
 - A structure built in advance would only become debt the operator would later have to unwind.
-- Source: `knowledge/decisions/2026-07-07-recruit-on-demand-phase-1.md`
+- Source: `knowledge/decisions/roles/role-class-model.md` "2026-07-07 — recruit-on-demand-phase-1"
 
 **Resolution**
 
@@ -166,7 +166,7 @@ done.</figcaption>
 - The decision record puts the real distinction this way — *"under the old model, ending a
   department was 조직개편 [reorganization] — exceptional, user-approval-gated... Under the new model, a
   department's end is the expected, routine outcome of its task finishing"*.
-- Source: `knowledge/decisions/2026-07-09-department-is-project-scoped-not-renamed.md`
+- Source: `knowledge/decisions/organization/departments.md` "2026-07-09 — department-is-project-scoped-not-renamed"
 
 **Resolution**
 
@@ -175,7 +175,9 @@ done.</figcaption>
 - A department forms the moment some role-class (a reusable job description) actually needs to execute, and dissolves
   automatically once the work is done — this forming and dissolving is never a reorganization.
 - Instead, **reorganization was redefined to target the role-class catalog, not the department**
-  (merging, splitting, reclassifying, or retiring entries in `instance/roles/*.yaml`).
+  (merging, splitting, reclassifying, or retiring entries in `instance/roles/*.yaml`). (That concept
+  of "reorganization" was itself dropped on 2026-09-30; HR-staff now changes and fires roles directly —
+  [Staff & Governance](/en/staff-governance).)
 - The very concept of "merging two departments" disappeared — because a department was never a
   permanent unit to begin with.
 
@@ -199,15 +201,15 @@ automatically once its work is done.
 
 1. Read the "Phase 1 stance: recruit-on-demand" section of `schema/README.md` directly and see
    how it distinguishes "recruitment" from "department formation" as two separate events.
-2. You can check, in any department, that the `status:` field at the top of
-   `instance/workspace/<project>/project-record.md` is actually one of
-   `draft`/`active`/`ended`/`closed`.
-3. This site's own department (`aise-org-site`) follows the exact same format — the department
+2. You can check, in the department list `instance/workspace/index.yaml`, that each department's
+   `status:` is actually one of `draft`/`active`/`ended`/`closed` (since 2026-10-01 this file is the
+   single source of a department's status).
+3. This site's own department (`aise-org-site`) is listed there in the exact same format — the department
    writing this very page is no exception.
 
 **Next.** How collaboration is actually assembled within a department and across departments →
 [Collaboration Model](/en/collaboration-model).
 
 *Source: `CONSTITUTION.md` §4, `schema/README.md` "Department lifecycle" · "Phase 1 stance:
-recruit-on-demand"; `knowledge/decisions/2026-07-07-recruit-on-demand-phase-1.md`,
-`knowledge/decisions/2026-07-09-department-is-project-scoped-not-renamed.md`.*
+recruit-on-demand"; `knowledge/decisions/roles/role-class-model.md` "2026-07-07 — recruit-on-demand-phase-1",
+`knowledge/decisions/organization/departments.md` "2026-07-09 — department-is-project-scoped-not-renamed".*

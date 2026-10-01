@@ -44,7 +44,7 @@ flowchart LR
   memory) and in-progress working state (working memory) — naming both the existing directory and
   the new one around 'memory' would keep that ambiguity baked into the org's own vocabulary"*(장기 기억과
   작업 중 상태를 둘 다 "memory"라는 한 단어로 부르면, 디렉터리를 나눠도 그 모호함이 조직의 용어 자체에 그대로 박제된다).
-- 근거: `knowledge/decisions/2026-07-08-knowledge-continuity-split.md`
+- 근거: `knowledge/decisions/continuity/handoff-records.md` "2026-07-08 — knowledge-continuity-split"
 
 **해결**
 
@@ -53,7 +53,7 @@ flowchart LR
 
 **그래서 생긴 강점**
 
-- 핸드오프 기록이 나중에 반복되는 진짜 교훈으로 판명되면 그건 그때 `knowledge/retrospectives/`로 승격됩니다 — 하지만 *"the record itself,
+- 핸드오프 기록이 나중에 반복되는 진짜 교훈으로 판명되면 그건 그때 `knowledge/decisions/`나 `instance/retrospectives/`로 승격됩니다 — 하지만 *"the record itself,
   while work is still open, is operational, not knowledge, and forcing a Meta-mode switch just to
   avoid losing in-progress work would defeat the point of having continuity at all"*(작업이 아직 진행 중인
   동안의 기록 자체는 operational이지 knowledge가 아니고, 진행 중인 작업을 잃지 않으려고 매번 Meta 모드로 전환하게 만드는 건 continuity를 두는
@@ -78,4 +78,4 @@ flowchart LR
 
 **다음으로.** 설명은 여기까지입니다. 이제 직접 써 보시려면 → [Quick Guide](/quick-guide). 용어를 한 번에 모아 보려면 → [Glossary](/glossary).
 
-*근거: `CONSTITUTION.md` §8; `knowledge/decisions/2026-07-08-knowledge-continuity-split.md`.*
+*근거: `CONSTITUTION.md` §8; `knowledge/decisions/continuity/handoff-records.md` "2026-07-08 — knowledge-continuity-split".*

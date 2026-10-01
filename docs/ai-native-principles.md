@@ -43,7 +43,7 @@ AISE는 한계까지 물려받지는 않기로 했습니다 — 아래 능력들
   "배치 대기 중이지만 기억은 유지되는 인스턴스"를 받쳐줄 메커니즘이 실행 기반에 없었습니다.
 - 그런데도 인스턴스를 모델링하려면, 실재하지 않는 정체성을 흉내 내기 위해 대기/배정 상태 같은 새
   장부를 발명해야 했을 겁니다.
-- 근거: `knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md`
+- 근거: `knowledge/decisions/roles/role-class-model.md` "2026-07-09 — role-is-a-class-not-an-instance"
 
 **해결**
 
@@ -84,7 +84,7 @@ AI 도구 독립성 원칙도 한 번 잘못 그려졌다가 바로잡힌 적이
   테스트해 보니, **없었습니다.**
 - 가장 가까운 능력은 새로 만드는 서브에이전트에게 모델을 지정하는 것(`Agent`의 `model`
   파라미터)뿐이었고, 이건 다른 행위였습니다. 이 구분이 나중에 다시 중요해집니다.
-- 근거: `knowledge/decisions/2026-07-08-model-is-not-a-provisioned-asset.md`
+- 근거: `knowledge/decisions/provisioning/model-tiers.md` "2026-07-08 — model-is-not-a-provisioned-asset"
 
 **해결**
 
@@ -97,7 +97,7 @@ AI 도구 독립성 원칙도 한 번 잘못 그려졌다가 바로잡힌 적이
   시점에 모델 티어를 고릅니다.
 - 실제 세션에서, 서브에이전트는 생성 시점에 모델이 고정되고 스스로 바꿀 수 없다는 것, 중첩
   위임에서도 지정한 모델이 그대로 적용된다는 것을 트랜스크립트로 확인했습니다.
-- 근거: `knowledge/decisions/2026-09-08-model-tier-selection-delegated.md`
+- 근거: `knowledge/decisions/provisioning/model-tiers.md` "2026-09-08 — model-tier-selection-delegated"
 
 **그래서 생긴 강점**
 
@@ -128,6 +128,6 @@ AI 도구 독립성 원칙도 한 번 잘못 그려졌다가 바로잡힌 적이
 [동작 원리](/how-it-works). 이 원칙들이 나중에 구조 층위에서 어떻게 지켜지는지가 궁금하시면
 [Structural Principles/OCP](/structural-principles-ocp)로 건너뛰셔도 됩니다.
 
-*근거: `CONSTITUTION.md` §7; `knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md`,
-`knowledge/decisions/2026-07-08-model-is-not-a-provisioned-asset.md`,
-`knowledge/decisions/2026-09-08-model-tier-selection-delegated.md`.*
+*근거: `CONSTITUTION.md` §7; `knowledge/decisions/roles/role-class-model.md` "2026-07-09 — role-is-a-class-not-an-instance",
+`knowledge/decisions/provisioning/model-tiers.md` "2026-07-08 — model-is-not-a-provisioned-asset",
+`knowledge/decisions/provisioning/model-tiers.md` "2026-09-08 — model-tier-selection-delegated".*
