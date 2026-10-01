@@ -118,7 +118,7 @@ instead of just being one role among others?
 - The review came back negative — *"still bypassable by anything that already knew a target
   subagent's name"*, and on top of that, it assumed departments were permanent units, which cut
   against the direction of this whole reorganization.
-- Source: `knowledge/decisions/2026-07-09-pm-is-a-recruited-role-not-a-fourth-staff.md`
+- Source: `knowledge/decisions/organization/line-staff-model.md` "2026-07-09 — pm-is-a-recruited-role-not-a-fourth-staff"
 
 **Resolution**
 
@@ -163,7 +163,7 @@ someone has to track who's free across every department.
   individual that rests between assignments while retaining memory.
 - Modeling it would have required inventing a ledger for idle/assigned status — to simulate
   something that, in reality, doesn't exist.
-- Source: `knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md`
+- Source: `knowledge/decisions/roles/role-class-model.md` "2026-07-09 — role-is-a-class-not-an-instance"
 
 **Resolution**
 
@@ -282,5 +282,5 @@ the roles filling it in are reusable classes, not tied to any department.
 an end? → [Lifecycle](/en/lifecycle).
 
 *Source: `CONSTITUTION.md` §3, §10.1-§10.2 / from `knowledge/decisions/`:
-`2026-07-09-pm-is-a-recruited-role-not-a-fourth-staff.md`,
-`2026-07-09-role-is-a-class-not-an-instance.md`.*
+`knowledge/decisions/organization/line-staff-model.md` "2026-07-09 — pm-is-a-recruited-role-not-a-fourth-staff",
+`knowledge/decisions/roles/role-class-model.md` "2026-07-09 — role-is-a-class-not-an-instance".*

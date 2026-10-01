@@ -29,7 +29,7 @@ text, each page uses this form only the first time a term appears, and the plain
 - **`OP_ORCHESTRATOR` (Ops-staff)** — takes the user's instructions, sets up departments, and
   assembles collaboration between them. It *is* the top-level session that declared `/aise:op`. See
   [Staff & Governance](/en/staff-governance).
-- **`HR_ORCHESTRATOR` (HR-staff)** — handles recruitment and reorganization, and nothing else.
+- **`HR_ORCHESTRATOR` (HR-staff)** — handles the role catalog (recruitment, role-definition changes, firing), and nothing else. The concept of "reorganization" used until 2026-09-30 has been dropped ([Staff & Governance](/en/staff-governance)).
 - **`AS_ORCHESTRATOR` (Asset-staff)** — approves what each role may use (provisioning).
 - **`MG_ORCHESTRATOR` (Management-staff)** — works on the design of the organization itself in Meta
   mode. It *is* the top-level session that declared `/aise:meta`.
@@ -73,7 +73,7 @@ text, each page uses this form only the first time a term appears, and the plain
 - **`knowledge/decisions/` (organization-level decision records)** — the sources the "Revisiting the
   decision" boxes on this site cite. Since 2026-09-17, aise-core's originals (including
   CONSTITUTION.md) are written and maintained in English (source:
-  `knowledge/decisions/2026-09-17-korean-to-english-conversion-executed-with-language-preference-mechanism.md`).
+  `knowledge/decisions/knowledge/language.md` "2026-09-17 — korean-to-english-conversion-executed-with-language-preference-mechanism").
 
 Two of these terms carry a short story of their own — knowing why these distinctions were needed
 also makes clearer why the rest of the terms above ended up with the names and places they have
@@ -94,14 +94,14 @@ now.
 - The decision record identifies the core of the problem this way — *"A directory whose name is the
   mount point for two independent, differently-scoped git repositories is a standing source of
   confusion, not a one-time documentation gap."*
-- Source: `knowledge/decisions/2026-08-06-org-instance-directory-split.md`
+- Source: `knowledge/decisions/workspace/instance-data-location.md` "2026-08-06 — org-instance-directory-split"
 
 **Resolution**
 
 - The instance data's mount point was moved from `org/` to **`instance/`**, named after that
   repository's own actual name.
 - `org/` was left holding only schema files, and the same day it was renamed to **`schema/`** (source:
-  `knowledge/decisions/2026-08-06-org-directory-renamed-to-schema.md`).
+  `knowledge/decisions/workspace/instance-data-location.md` "2026-08-06 — org-directory-renamed-to-schema").
 
 **The strength that followed**
 
@@ -125,7 +125,7 @@ now.
 - The decision record fills that gap this way — *"When a department's Decisions entry is found to
   have been independently adopted by a second, unrelated department ... that reuse is itself the
   trigger to write it up in knowledge/decisions/ immediately."*
-- Source: `knowledge/decisions/2026-08-13-cross-department-decision-promotion-trigger.md`
+- Source: `knowledge/decisions/execution/cross-department.md` "2026-08-13 — cross-department-decision-promotion-trigger"
 
 **Resolution**
 
@@ -160,6 +160,6 @@ not once a department happens to end.
 **Next.** To go back to the beginning and see the whole picture again → [Home](/en/).
 
 *Source: the whole of `CONSTITUTION.md`, `schema/README.md`, `schema/*_ORCHESTRATOR.md`, `governance/MODE_POLICY.md`;
-`knowledge/decisions/2026-08-06-org-instance-directory-split.md`,
-`knowledge/decisions/2026-08-06-org-directory-renamed-to-schema.md`,
-`knowledge/decisions/2026-08-13-cross-department-decision-promotion-trigger.md`.*
+`knowledge/decisions/workspace/instance-data-location.md` "2026-08-06 — org-instance-directory-split",
+`knowledge/decisions/workspace/instance-data-location.md` "2026-08-06 — org-directory-renamed-to-schema",
+`knowledge/decisions/execution/cross-department.md` "2026-08-13 — cross-department-decision-promotion-trigger".*

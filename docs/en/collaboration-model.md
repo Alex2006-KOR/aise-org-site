@@ -65,7 +65,7 @@ This principle didn't stay on paper — it was actually put to the test.
   inter-agent dependencies *"not a good fit for multi-agent systems today"*, and its own system
   deliberately used a synchronous hub-and-spoke structure coordinated by a lead agent.
 - Real interdependency doesn't get resolved by "run it in parallel and hope it lines up."
-- Source: `knowledge/decisions/2026-08-06-pm-interface-negotiation-before-parallel-work.md`
+- Source: `knowledge/decisions/execution/pm-authority-and-method.md` "2026-08-06 — pm-interface-negotiation-before-parallel-work"
 
 **Resolution**
 
@@ -112,7 +112,7 @@ first-hand.
   corrects, *"isolates the caller's own already-running repository ... never an arbitrary target
   path named in a delegation prompt"* — and a member really did commit into the wrong repository
   because of it.
-- Source: `knowledge/decisions/2026-08-28-parallel-work-needs-isolation-not-just-independence.md`
+- Source: `knowledge/decisions/execution/delegation.md` "2026-08-28 — parallel-work-needs-isolation-not-just-independence"
 
 **Resolution**
 
@@ -253,7 +253,7 @@ manager (the PM or Ops-staff) has resolved shared decisions first and secured ph
 [Operator vs Meta Mode](/en/operator-vs-meta-mode).
 
 *Source: `CONSTITUTION.md` §5, §10.6; `schema/README.md` "Intra-department execution graph";
-`knowledge/decisions/2026-08-06-pm-interface-negotiation-before-parallel-work.md`,
-`knowledge/decisions/2026-08-28-parallel-work-needs-isolation-not-just-independence.md`;
+`knowledge/decisions/execution/pm-authority-and-method.md` "2026-08-06 — pm-interface-negotiation-before-parallel-work",
+`knowledge/decisions/execution/delegation.md` "2026-08-28 — parallel-work-needs-isolation-not-just-independence";
 `instance/workspace/{sfr-ssot-platform,simple-ragcurl-platform,llm-wiki-platform,aise-org-site}/project-record.md`;
 `instance/portfolio/index.yaml`.*

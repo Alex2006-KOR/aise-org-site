@@ -87,7 +87,7 @@ separately as a strength**.
   trajectory**, it recovers **less than half** of the quality benefit it would have gotten by
   running the strong model from the start.
 - It gets tied down by someone else's half-built plan and possibly wrong intermediate conclusions.
-- Source: `knowledge/decisions/2026-09-08-stateless-pm-sidesteps-handoff-tax.md`
+- Source: `knowledge/decisions/execution/delegation.md` "2026-09-08 — stateless-pm-sidesteps-handoff-tax"
 
 **Resolution**
 
@@ -150,4 +150,4 @@ unpacked those five lines.
 [What the usual way does differently](/en/real-world-vs-aise).
 
 *Source: `CONSTITUTION.md` §2.1-§2.5 /
-`knowledge/decisions/2026-09-08-stateless-pm-sidesteps-handoff-tax.md`.*
+`knowledge/decisions/execution/delegation.md` "2026-09-08 — stateless-pm-sidesteps-handoff-tax".*

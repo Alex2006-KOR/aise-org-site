@@ -107,7 +107,7 @@ PM도 그만큼 중요해 보입니다. 왜 PM은 참모로 못박지 않고 그
 - 부서원 파일을 부서장 아래에 물리적으로 중첩시켜 두면 접근이 어려워지지 않겠냐는 아이디어였죠.
 - 검토 결과는 부정적이었습니다 — *"still bypassable by anything that already knew a target subagent's name"*(이미
   대상 이름을 아는 쪽에겐 그냥 뚫린다), 게다가 부서를 영구 단위로 가정하는 구조라 이번 개편의 방향과도 어긋났습니다.
-- 근거: `knowledge/decisions/2026-07-09-pm-is-a-recruited-role-not-a-fourth-staff.md`
+- 근거: `knowledge/decisions/organization/line-staff-model.md` "2026-07-09 — pm-is-a-recruited-role-not-a-fourth-staff"
 
 **해결**
 
@@ -142,7 +142,7 @@ PM도 그만큼 중요해 보입니다. 왜 PM은 참모로 못박지 않고 그
   'instance' idle-yet-remembering between assignments"** — 배정과 배정 사이에 쉬면서 기억을 유지하는 개체 같은 건 애초에 존재하지
   않습니다.
 - 그걸 모델링하려면 유휴/배정 상태 관리 같은 장부를, 실제로는 없는 것을 흉내 내려고 발명해야 했습니다.
-- 근거: `knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md`
+- 근거: `knowledge/decisions/roles/role-class-model.md` "2026-07-09 — role-is-a-class-not-an-instance"
 
 **해결**
 
@@ -250,5 +250,5 @@ flowchart TD
 [Lifecycle](/lifecycle).
 
 *근거: `CONSTITUTION.md` §3, §10.1–§10.2 / `knowledge/decisions/`의
-`2026-07-09-pm-is-a-recruited-role-not-a-fourth-staff.md`,
-`2026-07-09-role-is-a-class-not-an-instance.md`.*
+`knowledge/decisions/organization/line-staff-model.md` "2026-07-09 — pm-is-a-recruited-role-not-a-fourth-staff",
+`knowledge/decisions/roles/role-class-model.md` "2026-07-09 — role-is-a-class-not-an-instance".*

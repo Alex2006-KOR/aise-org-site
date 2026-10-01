@@ -54,7 +54,7 @@ outward, toward the adapter boundary, and once pointing inward, toward the hooks
   or gave a repeatable test for 'is this tool-specific?'"*, leaving the judgment dependent purely on
   "whoever happens to notice and check it in," and *"no way to check whether a future second adapter
   ... actually covers everything the first one does."*
-- Source: `knowledge/decisions/2026-07-08-adapter-conformance-policy.md`
+- Source: `knowledge/decisions/adapter/adapter-policy.md` "2026-07-08 — adapter-conformance-policy"
 
 **Resolution**
 
@@ -63,7 +63,9 @@ outward, toward the adapter boundary, and once pointing inward, toward the hooks
 - Every `adapters/<tool>/README.md` is required to have a one-line-per-core-concept binding table,
   with bindings not yet built explicitly marked `*(not yet built)*`, and "conformance" itself is
   pinned down as **row-for-row agreement across that table** (not that the implementations have to
-  be identical).
+  be identical). (Since 2026-09-30 this list lives not in a README table but in each tool's
+  `adapters/<tool>/conformance.yaml`, one entry per requirement id marked
+  `built`/`not-yet-built`/`not-applicable` — `knowledge/decisions/adapter/adapter-policy.md` "2026-09-30 — conformance-yaml-is-the-binding-inventory".)
 
 **The strength that followed**
 
@@ -90,14 +92,16 @@ outward, toward the adapter boundary, and once pointing inward, toward the hooks
   this exact duplication."* It's also explicit about why we waited this long instead of building a
   shared module speculatively up front — *"The shared module is justified by the rule-of-three, not
   built speculatively — this was the third occurrence of the exact same duplicated shape."*
-- Source: `knowledge/decisions/2026-09-01-reorg-approval-gate-shared-common-module.md`
+- Source: `knowledge/decisions/adapter/hooks.md` "2026-09-01 — reorg-approval-gate-shared-common-module"
 
 **Resolution**
 
 - Shared helpers were extracted into `gate_common.py`, and existing gates were only migrated after
   new unit tests confirmed behavior was unchanged.
 - The new reorg-approval gate (`reorg_approval_gate.py`) was built on top of this module from the
-  start.
+  start. (When the concept of reorganization was dropped on 2026-09-30, this gate became
+  `role_lifecycle_gate.py`, which refuses deleting a role that is in use — and it sits on the same
+  module.)
 
 **The strength that followed**
 
@@ -117,15 +121,16 @@ checkable test rather than left to guesswork.
 
 **To check this page for yourself**
 
-1. Open `governance/ADAPTER_POLICY.md` directly and look at the binding-table format and the
-   `*(not yet built)*` notation.
-2. Open `.claude/hooks/gate_common.py` and confirm that `mode-gate.sh`,
-   `execution_directive_gate.py`, and `reorg_approval_gate.py` all actually share this module.
-3. In `adapters/claude-code/README.md`'s binding table, you can see, concept by concept, how (or
-   whether yet) each core concept is implemented for this tool.
+1. Open `governance/ADAPTER_POLICY.md`'s "The requirements list and the conformance inventory"
+   section and look at what an adapter must provide and the `not-yet-built` marking.
+2. Open `.claude/hooks/lib/gate_common.py` and confirm that the gates in `.claude/hooks/gates/` —
+   `mode_gate.py`, `execution_directive_gate.py`, `role_lifecycle_gate.py` and others — actually
+   share this module.
+3. In `adapters/claude-code/conformance.yaml`, you can see, requirement by requirement, which files
+   implement it for this tool (or that it isn't built yet).
 
 **Next.** What this organization is ultimately trying to build →
 [Ultimate Goal](/en/ultimate-goal).
 
-*Source: `CONSTITUTION.md` §9; `knowledge/decisions/2026-07-08-adapter-conformance-policy.md`,
-`knowledge/decisions/2026-09-01-reorg-approval-gate-shared-common-module.md`.*
+*Source: `CONSTITUTION.md` §9; `knowledge/decisions/adapter/adapter-policy.md` "2026-07-08 — adapter-conformance-policy",
+`knowledge/decisions/adapter/hooks.md` "2026-09-01 — reorg-approval-gate-shared-common-module".*

@@ -52,14 +52,14 @@ flowchart LR
   for 'is this tool-specific?'"*, 그 결과 판단이 "매번 누군가 알아채고 체크인하는 것"에만 의존했고, *"no way to check whether a
   future second adapter ... actually covers everything the first one does"*(미래의 두 번째 adapter가 첫 번째가
   하는 걸 전부 커버하는지 확인할 방법이 없었다)는 상태였습니다.
-- 근거: `knowledge/decisions/2026-07-08-adapter-conformance-policy.md`
+- 근거: `knowledge/decisions/adapter/adapter-policy.md` "2026-07-08 — adapter-conformance-policy"
 
 **해결**
 
 - `governance/ADAPTER_POLICY.md`를 신설해 판단 기준을 구체적인 테스트로 바꿨습니다 — *"a concrete test (\"would this need
   to change if the underlying AI tool changed?\")"*.
 - 모든 `adapters/<tool>/README.md`는 core 개념마다 한 줄씩 있는 바인딩 표를 갖도록 형식을 고정하고, 아직 안 만든 바인딩은 `*(not yet
-  built)*`로 명시하며, "conformance"의 정의 자체를 **표 위에서의 행-대-행 일치**로 못박았습니다(구현이 똑같아야 한다는 뜻이 아닙니다).
+  built)*`로 명시하며, "conformance"의 정의 자체를 **표 위에서의 행-대-행 일치**로 못박았습니다(구현이 똑같아야 한다는 뜻이 아닙니다). (2026-09-30부터 이 목록은 README의 표가 아니라 도구별 `adapters/<tool>/conformance.yaml`에 요구사항 id마다 `built`/`not-yet-built`/`not-applicable`로 적힙니다 — `knowledge/decisions/adapter/adapter-policy.md` "2026-09-30 — conformance-yaml-is-the-binding-inventory".)
 
 **그래서 생긴 강점**
 
@@ -82,12 +82,12 @@ flowchart LR
   duplication"*.
 - 공유 모듈을 미리 만들어 두지 않고 여기까지 기다린 이유도 명확히 밝힙니다 — *"The shared module is justified by the rule-of-three,
   not built speculatively — this was the third occurrence of the exact same duplicated shape"*.
-- 근거: `knowledge/decisions/2026-09-01-reorg-approval-gate-shared-common-module.md`
+- 근거: `knowledge/decisions/adapter/hooks.md` "2026-09-01 — reorg-approval-gate-shared-common-module"
 
 **해결**
 
 - `gate_common.py`로 공유 헬퍼를 뽑아내고, 기존 게이트는 동작이 그대로인지 새 유닛 테스트로 검증한 뒤에만 옮겼습니다.
-- 새 조직개편 게이트(`reorg_approval_gate.py`)는 처음부터 이 모듈 위에 지었습니다.
+- 새 조직개편 게이트(`reorg_approval_gate.py`)는 처음부터 이 모듈 위에 지었습니다. (2026-09-30 조직개편 개념이 폐지되면서 이 게이트는 쓰이고 있는 역할의 삭제를 막는 `role_lifecycle_gate.py`로 바뀌었고, 그것도 같은 모듈 위에 있습니다.)
 
 **그래서 생긴 강점**
 
@@ -105,13 +105,14 @@ flowchart LR
 
 **이 페이지를 직접 확인해 보려면**
 
-1. `governance/ADAPTER_POLICY.md`의 바인딩 표 형식과 `*(not yet built)*` 표기를 직접 열어보세요.
-2. `.claude/hooks/gate_common.py`를 열어 `mode-gate.sh`·`execution_directive_gate.py`·
-   `reorg_approval_gate.py` 셋이 실제로 이 모듈을 공유하는지 확인할 수 있습니다.
-3. `adapters/claude-code/README.md`의 바인딩 표에서 core 개념 하나하나가 이 도구에서 어떻게
+1. `governance/ADAPTER_POLICY.md`의 "The requirements list and the conformance inventory" 절에서 어댑터가 무엇을 갖춰야 하는지와
+   `not-yet-built` 표기를 직접 열어보세요.
+2. `.claude/hooks/lib/gate_common.py`를 열고, `.claude/hooks/gates/`의 `mode_gate.py`·`execution_directive_gate.py`·
+   `role_lifecycle_gate.py` 등이 실제로 이 모듈을 공유하는지 확인할 수 있습니다.
+3. `adapters/claude-code/conformance.yaml`에서 요구사항 하나하나가 이 도구에서 어떤 파일로
    구현됐는지(또는 아직 안 됐는지) 볼 수 있습니다.
 
 **다음으로.** 이 조직이 궁극적으로 무엇을 만들려는 것인지 → [Ultimate Goal](/ultimate-goal).
 
-*근거: `CONSTITUTION.md` §9; `knowledge/decisions/2026-07-08-adapter-conformance-policy.md`,
-`knowledge/decisions/2026-09-01-reorg-approval-gate-shared-common-module.md`.*
+*근거: `CONSTITUTION.md` §9; `knowledge/decisions/adapter/adapter-policy.md` "2026-07-08 — adapter-conformance-policy",
+`knowledge/decisions/adapter/hooks.md` "2026-09-01 — reorg-approval-gate-shared-common-module".*
