@@ -16,10 +16,10 @@ title: Operator vs Meta Mode — 하루에도 몇 번씩 모자를 바꿔 씁니
 조직 자체를 손볼 때는 완전히 다른 모드로 움직여야 하기 때문입니다.
 
 - **Operator 모드** — 조직이 지금 가진 모습 그대로 실제 업무를 맡깁니다
-  ([Staff & Governance](/staff-governance)에서 본 참모/PM 체계 그대로). 일상적인 채용, 사용자
-  승인을 거친 조직개편까지도 여기 포함됩니다 — 조직의 **인스턴스**(지금 누가 무엇을 하고 있는가)는
+  ([Staff & Governance](/staff-governance)에서 본 참모/PM 체계 그대로). 채용, 역할 정의 변경·해고,
+  provisioning 같은 일상적인 인스턴스 변경이 모두 여기 포함됩니다 — 조직의 **인스턴스**(지금 누가 무엇을 하고 있는가)는
   바뀌지만, 조직의 **스키마**(뎁스-2 피라미드 같은 구조 그 자체)는 건드리지 않습니다.
-- **Meta 모드** — 조직 그 자체를 바꿉니다. 역할을 추가/제거하고, Workflow를 고치고, 포트폴리오·자산
+- **Meta 모드** — 조직 그 자체를 바꿉니다. 조직의 스키마와 Workflow를 고치고, 포트폴리오·자산
   카탈로그의 스키마를 바꾸고, CONSTITUTION이나 이 정책 자체를 개정하는 일이 여기 속합니다. 이 모드의
   상시 파트너는 `MG_ORCHESTRATOR`(경영참모)지만, 분석하고 제안할 뿐 최종 승인과 실행은 언제나 사용자를 거칩니다.
 
@@ -78,7 +78,7 @@ title: Operator vs Meta Mode — 하루에도 몇 번씩 모자를 바꿔 씁니
 - 운영자는 AISE가 결국 다른 AI 도구로도 옮겨갈 수 있길 원했고, 동시에 Claude 특정 메커니즘이 조직의 실제 구조 일부로 쓰이기 전에는 항상 한 번 더 확인받길
   원했습니다.
 - 이 두 요구를 동시에 만족시키려면 **정책(무엇을 보호할지)**과 **강제(어떻게 막을지)**를 아예 다른 층에 둬야 한다는 결론이 나왔습니다.
-- 근거: `knowledge/decisions/2026-07-07-operator-meta-mode-split.md`
+- 근거: `knowledge/decisions/modes/mode-model.md` "2026-07-07 — operator-meta-mode-split"
 
 **해결**
 
@@ -105,7 +105,7 @@ title: Operator vs Meta Mode — 하루에도 몇 번씩 모자를 바꿔 씁니
   모드와 무관하게 그냥 통과됐습니다.
 - ② `.../scratch/../governance/MODE_POLICY.md`처럼 `..`가 섞인 경로는, 단순 문자열 매칭이 보호 경로로 시작하는지만 봤기 때문에 실제로는
   보호 파일을 가리키면서도 통과했습니다 — 이 정확한 페이로드가 Operator 모드에서 실제로 막히지 않는 것까지 직접 테스트로 확인했습니다.
-- 근거: `knowledge/decisions/2026-07-07-mode-gate-hardening.md`
+- 근거: `knowledge/decisions/modes/mode-gate.md` "2026-07-07 — mode-gate-hardening"
 
 **조사**
 
@@ -123,7 +123,7 @@ title: Operator vs Meta Mode — 하루에도 몇 번씩 모자를 바꿔 씁니
 - 그런데 이 휴리스틱 자체가 다시 새로운 함정을 하나 더 만들었습니다 — 이 조직이 커밋 메시지에 요구하는 heredoc 트레일러(`Co-Authored-By: ...
   <noreply@anthropic.com>`)의 `>` 문자와, 커밋 메시지 본문에 보호 경로 이름을 언급하는 것만으로도 정당한 커밋이 오탐으로 막혔습니다.
 - 게다가 이 훅 자체를 고치던 중, bash 단일따옴표 문자열 안에 리터럴 따옴표가 끼어들어 **모든** 도구 호출이 막히는 전면 잠금까지 두 번이나 재발했습니다.
-- 근거: `knowledge/decisions/2026-07-15-mode-gate-heredoc-false-positive-and-recurrence.md`
+- 근거: `knowledge/decisions/modes/mode-gate.md` "2026-07-15 — mode-gate-heredoc-false-positive-and-recurrence"
 
 **그래서 생긴 강점**
 
@@ -154,7 +154,7 @@ flowchart LR
 
 1. `governance/MODE_POLICY.md`를 열어 보호 경로 목록이 도구 이름을 전혀 언급하지 않는지
    확인해 보세요.
-2. `.claude/hooks/mode-gate.sh`(Claude Code 어댑터)가 실제로 `Bash`를 감시 대상에 포함하고
+2. `.claude/hooks/gates/mode-gate.sh`(Claude Code 어댑터)가 실제로 `Bash`를 감시 대상에 포함하고
    있는지 확인해 보세요 — 이 페이지의 두 번째 결정 상자가 그 이유를 설명합니다.
 3. 지금 이 사이트(`aise-org-site`)를 만드는 작업 자체도 항상 Operator 모드에서 진행됩니다 —
    콘텐츠를 아무리 많이 고쳐도 CONSTITUTION이나 schema/*는 건드리지 않습니다.
@@ -162,6 +162,6 @@ flowchart LR
 **다음으로.** 구조 설명은 여기서 끝납니다. 이제 이 조직에 **실제로 일을 맡기는 절차** →
 [일을 맡기는 법](/usage). 모드 선언이 실전에서 어떻게 첫 동작이 되는지가 거기 나옵니다.
 
-*근거: `governance/MODE_POLICY.md`; `knowledge/decisions/2026-07-07-operator-meta-mode-split.md`,
-`knowledge/decisions/2026-07-07-mode-gate-hardening.md`,
-`knowledge/decisions/2026-07-15-mode-gate-heredoc-false-positive-and-recurrence.md`.*
+*근거: `governance/MODE_POLICY.md`; `knowledge/decisions/modes/mode-model.md` "2026-07-07 — operator-meta-mode-split",
+`knowledge/decisions/modes/mode-gate.md` "2026-07-07 — mode-gate-hardening",
+`knowledge/decisions/modes/mode-gate.md` "2026-07-15 — mode-gate-heredoc-false-positive-and-recurrence".*

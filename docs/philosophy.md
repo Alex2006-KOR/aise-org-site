@@ -76,7 +76,7 @@ Agent는 그 자리에 설 수 없습니다. "책임자"란 감사 추적상의 
   Agents"*(arXiv 2608.24358): 강한 모델이 약한 모델의 **진행 중인 추론 궤적**을 이어받으면, 처음부터 강한 모델로 돌렸을 때의 품질 이점을 **절반도
   회복하지 못합니다.**
 - 남이 세워둔 반쯤 지어진 계획과, 어쩌면 틀렸을 중간 결론에 묶여버리기 때문입니다.
-- 근거: `knowledge/decisions/2026-09-08-stateless-pm-sidesteps-handoff-tax.md`
+- 근거: `knowledge/decisions/execution/delegation.md` "2026-09-08 — stateless-pm-sidesteps-handoff-tax"
 
 **해결**
 
@@ -132,4 +132,4 @@ flowchart TB
 [일반적인 방식과 무엇이 다른가](/real-world-vs-aise).
 
 *근거: `CONSTITUTION.md` §2.1–§2.5 /
-`knowledge/decisions/2026-09-08-stateless-pm-sidesteps-handoff-tax.md`.*
+`knowledge/decisions/execution/delegation.md` "2026-09-08 — stateless-pm-sidesteps-handoff-tax".*

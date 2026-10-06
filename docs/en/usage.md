@@ -74,7 +74,7 @@ And until recently, the mode-declaration command itself had a fairly large hole 
   declaring the mode *is* them." We also confirmed why it had limped along fine: that session was
   reading department records and **imitating** the conventions soaked into them.
 - Which is exactly why long-standing rules survived and freshly added ones were quietly ignored.
-- Source: `knowledge/decisions/2026-09-15-orchestrator-persona-never-realized-nor-read.md`
+- Source: `knowledge/decisions/organization/line-staff-model.md` "2026-09-15 — orchestrator-persona-never-realized-nor-read"
 
 **Resolution**
 
@@ -104,7 +104,7 @@ skip-level, no exceptions: the user always goes through the Orchestrator, never 
 department head, regardless of how trivial the task is."* Allowing a direct line for trivial
 requests was considered, and rejected on the grounds that **Ops-staff would lose visibility into
 the organization's overall state.**
-(Source: `knowledge/decisions/2026-07-07-line-staff-org-model.md`)
+(Source: `knowledge/decisions/organization/line-staff-model.md` "2026-07-07 — line-staff-org-model")
 
 The layer below works the same way. The `project-manager` (PM) divides work among department members; there is no path
 for the operator to address a member directly.
@@ -139,7 +139,7 @@ did we actually commit to this" easy to blur, and it did blur once.
 - Then the actual problem got separated out — the operator hadn't judged wrong; **nothing had told
   them there was a judgment to make.**
 - *"That's a missing prompt, not a missing automatic trigger."*
-- Source: `knowledge/decisions/2026-07-27-activation-prompt-point.md`
+- Source: `knowledge/decisions/modes/mode-model.md` "2026-07-27 — activation-prompt-point"
 
 **Resolution**
 
@@ -216,6 +216,6 @@ rules, and it comes back to ask you again **only at the hard-to-reverse points.*
 
 *Source: `CONSTITUTION.md` §10.3, §10.5 / `governance/MODE_POLICY.md` /
 `schema/README.md` ("Department lifecycle") / `.claude/commands/aise/op.md`, `meta.md` /
-`knowledge/decisions/2026-07-07-line-staff-org-model.md` /
-`knowledge/decisions/2026-07-27-activation-prompt-point.md` /
-`knowledge/decisions/2026-09-15-orchestrator-persona-never-realized-nor-read.md`.*
+`knowledge/decisions/organization/line-staff-model.md` "2026-07-07 — line-staff-org-model" /
+`knowledge/decisions/modes/mode-model.md` "2026-07-27 — activation-prompt-point" /
+`knowledge/decisions/organization/line-staff-model.md` "2026-09-15 — orchestrator-persona-never-realized-nor-read".*

@@ -18,10 +18,10 @@ organization itself.
 
 - **Operator mode** — hands actual work to the organization exactly as it stands today (the same
   staff/PM system seen in [Staff & Governance](/en/staff-governance)). This covers everyday
-  recruitment, and even reorganization that has been approved by the user — the organization's
+  instance changes — recruitment, role-definition changes and firing, provisioning — the organization's
   **instance** (who's doing what right now) changes, but the organization's **schema** (the
   structure itself, like the depth-2 pyramid) is left untouched.
-- **Meta mode** — changes the organization itself. Adding or removing roles, revising a Workflow,
+- **Meta mode** — changes the organization itself. Revising its schema or a Workflow,
   changing the schema of the portfolio or asset catalog, or amending the CONSTITUTION or this very
   policy — all of that belongs here. The standing partner in this mode is the `MG_ORCHESTRATOR` (Management-staff),
   but it only analyzes and proposes — final approval and execution always go through the user.
@@ -87,7 +87,7 @@ silently by default.
   organization's actual structure.
 - Satisfying both at once meant **policy (what to protect)** and **enforcement (how to block it)**
   had to sit in entirely different layers.
-- Source: `knowledge/decisions/2026-07-07-operator-meta-mode-split.md`
+- Source: `knowledge/decisions/modes/mode-model.md` "2026-07-07 — operator-meta-mode-split"
 
 **Resolution**
 
@@ -120,7 +120,7 @@ Writing down the two modes and actually making the boundary hold were two differ
   though it actually pointed at a protected file, because the simple string match only checked
   whether the path *started with* a protected prefix — this was confirmed by directly testing that
   exact payload and seeing it slip past the block in Operator mode.
-- Source: `knowledge/decisions/2026-07-07-mode-gate-hardening.md`
+- Source: `knowledge/decisions/modes/mode-gate.md` "2026-07-07 — mode-gate-hardening"
 
 **Investigation**
 
@@ -143,7 +143,7 @@ Writing down the two modes and actually making the boundary hold were two differ
   blocks on legitimate commits.
 - On top of that, while this very hook was being fixed, a literal quote embedded inside a bash
   single-quoted string caused a total lockout of **every** tool call — twice.
-- Source: `knowledge/decisions/2026-07-15-mode-gate-heredoc-false-positive-and-recurrence.md`
+- Source: `knowledge/decisions/modes/mode-gate.md` "2026-07-15 — mode-gate-heredoc-false-positive-and-recurrence"
 
 **The strength that followed**
 
@@ -178,7 +178,7 @@ latter is never trusted from reading alone — it's actually tested with adversa
 
 1. Open `governance/MODE_POLICY.md` and confirm the list of protected paths never mentions any
    tool name at all.
-2. Confirm that `.claude/hooks/mode-gate.sh` (the Claude Code adapter) actually watches `Bash` —
+2. Confirm that `.claude/hooks/gates/mode-gate.sh` (the Claude Code adapter) actually watches `Bash` —
    the second decision box on this page explains why.
 3. The work of building this very site (`aise-org-site`) is always done in Operator mode — no
    matter how much content gets edited, the CONSTITUTION and `schema/*` are never touched.
@@ -187,6 +187,6 @@ latter is never trusted from reading alone — it's actually tested with adversa
 this organization** → [How to hand work to this org](/en/usage). That's where declaring a mode
 becomes the first move in practice.
 
-*Source: `governance/MODE_POLICY.md`; `knowledge/decisions/2026-07-07-operator-meta-mode-split.md`,
-`knowledge/decisions/2026-07-07-mode-gate-hardening.md`,
-`knowledge/decisions/2026-07-15-mode-gate-heredoc-false-positive-and-recurrence.md`.*
+*Source: `governance/MODE_POLICY.md`; `knowledge/decisions/modes/mode-model.md` "2026-07-07 — operator-meta-mode-split",
+`knowledge/decisions/modes/mode-gate.md` "2026-07-07 — mode-gate-hardening",
+`knowledge/decisions/modes/mode-gate.md` "2026-07-15 — mode-gate-heredoc-false-positive-and-recurrence".*

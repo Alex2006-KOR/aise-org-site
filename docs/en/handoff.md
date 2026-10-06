@@ -53,7 +53,7 @@ behind it becoming so.
   recurring boundary blur — not carelessness on any one occasion."* It also turned out there was
   already a good precedent: a narrow digest channel that PM writes and Ops-staff reads existed — **only
   the opposite direction was missing.**
-- Source: `knowledge/decisions/2026-08-26-report-directive-channel-split.md`
+- Source: `knowledge/decisions/workspace/department-record-files.md` "2026-08-26 — report-directive-channel-split"
 
 **Resolution**
 
@@ -88,7 +88,7 @@ two days later. A PM run got blocked for real, which is how we discovered that t
 tool's built-in guard denies writing a *new* file whose name contains "report"; several candidate
 names were tested directly to map the collision before settling on a name where the
 "directive → execution" pairing reads naturally.
-(Source: `knowledge/decisions/2026-08-28-report-md-renamed-execution-md-harness-collision.md`)
+(Source: `knowledge/decisions/workspace/department-record-files.md` "2026-08-28 — report-md-renamed-execution-md-harness-collision")
 
 ## `/aise:handoff` — writing it down before you stop
 
@@ -115,7 +115,7 @@ The important part is that this command **does not ask for a summary.**
   **exactly once**, performed by **the same degraded agent that has no way to verify its own
   compression.**
 - Under those conditions any session eventually produces the same failure.
-- Source: `knowledge/decisions/2026-07-10-continuity-handoff-format-redesigned-around-filtering.md`
+- Source: `knowledge/decisions/continuity/handoff-records.md` "2026-07-10 — continuity-handoff-format-redesigned-around-filtering"
 
 **Resolution**
 
@@ -219,8 +219,8 @@ commit hash.
 
 *Source: `schema/README.md` ("Storage", "Department lifecycle") /
 `governance/CONTINUITY_POLICY.md` / `.claude/commands/aise/handoff.md` /
-`knowledge/decisions/2026-07-10-continuity-handoff-format-redesigned-around-filtering.md` /
-`knowledge/decisions/2026-08-26-report-directive-channel-split.md` /
-`knowledge/decisions/2026-08-28-report-md-renamed-execution-md-harness-collision.md` /
-`knowledge/decisions/2026-09-08-stateless-pm-sidesteps-handoff-tax.md` /
+`knowledge/decisions/continuity/handoff-records.md` "2026-07-10 — continuity-handoff-format-redesigned-around-filtering" /
+`knowledge/decisions/workspace/department-record-files.md` "2026-08-26 — report-directive-channel-split" /
+`knowledge/decisions/workspace/department-record-files.md` "2026-08-28 — report-md-renamed-execution-md-harness-collision" /
+`knowledge/decisions/execution/delegation.md` "2026-09-08 — stateless-pm-sidesteps-handoff-tax" /
 `instance/workspace/aise-org-site/project-record.md` (Ledger).*

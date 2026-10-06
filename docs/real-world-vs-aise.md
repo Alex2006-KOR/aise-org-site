@@ -34,15 +34,15 @@ title: 일반적인 방식과 무엇이 다른가
 
 **각 축의 대조가 실제로 적혀 있는 문서** (전부 `knowledge/decisions/` 아래):
 
-1. `2026-07-07-org-memory-must-be-project-local.md`
-2. `2026-07-07-recruit-on-demand-phase-1.md`
-3. `2026-07-09-role-is-a-class-not-an-instance.md`
-4. `2026-07-07-role-proficiency-idea-deferred.md` +
-   `2026-09-02-role-proficiency-idea-still-deferred.md`
-5. `2026-07-07-line-staff-org-model.md`
-6. `2026-07-09-provisioning-scope-is-a-judgment-not-a-mechanism.md` +
-   `2026-07-14-folder-scoped-access-control-deferred.md`
-7. `2026-09-08-stateless-pm-sidesteps-handoff-tax.md`
+1. `knowledge/decisions/organization/departments.md` "2026-07-07 — org-memory-must-be-project-local"
+2. `knowledge/decisions/roles/role-class-model.md` "2026-07-07 — recruit-on-demand-phase-1"
+3. `knowledge/decisions/roles/role-class-model.md` "2026-07-09 — role-is-a-class-not-an-instance"
+4. `knowledge/decisions/roles/role-class-model.md` "2026-07-07 — role-proficiency-idea-deferred" +
+   `knowledge/decisions/roles/role-class-model.md` "2026-09-02 — role-proficiency-idea-still-deferred"
+5. `knowledge/decisions/organization/line-staff-model.md` "2026-07-07 — line-staff-org-model"
+6. `knowledge/decisions/provisioning/grant-scope-and-conditions.md` "2026-07-09 — provisioning-scope-is-a-judgment-not-a-mechanism" +
+   `knowledge/decisions/adapter/environment.md` "2026-07-14 — folder-scoped-access-control-deferred"
+7. `knowledge/decisions/execution/delegation.md` "2026-09-08 — stateless-pm-sidesteps-handoff-tax"
 
 눈에 띄는 공통점이 하나 있습니다. **일곱 개 중 넷이 "무언가를 만들지 않기로 한 결정"입니다.**
 2번, 4번, 6번이 그렇고, 7번은 아예 안 만들었더니 이득이 따라온 경우입니다. 이 조직에서 설계
@@ -75,7 +75,7 @@ AISE는 그 순서를 뒤집었고, 그건 편의가 아니라 명시적인 결�
   contradicting §4.1 itself (recruitment happens in response to a real gap, not speculatively) and
   risking premature structure the operator would have to unwind later."* 미리 고른 도메인은 추측에 과적합된 구조를
   만들고, 그 구조는 나중에 운영자가 직접 풀어야 하는 빚이 됩니다.
-- 근거: `knowledge/decisions/2026-07-07-recruit-on-demand-phase-1.md`
+- 근거: `knowledge/decisions/roles/role-class-model.md` "2026-07-07 — recruit-on-demand-phase-1"
 
 **해결**
 
@@ -109,7 +109,7 @@ AISE는 그 순서를 뒤집었고, 그건 편의가 아니라 명시적인 결�
   independent run of a class definition ... There is no mechanism that keeps an 'instance'
   idle-yet-remembering between assignments."* 쉬면서 기억하고 있는 인스턴스 같은 건 애초에 존재할 수 없었고, 그걸 흉내 내려면 **없는
   정체성을 시뮬레이션하는 장부**(대기/배정 상태, 풀 관리)를 새로 발명해야 했습니다.
-- 근거: `knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md`
+- 근거: `knowledge/decisions/roles/role-class-model.md` "2026-07-09 — role-is-a-class-not-an-instance"
 
 **해결**
 
@@ -123,7 +123,7 @@ AISE는 그 순서를 뒤집었고, 그건 편의가 아니라 명시적인 결�
   때문입니다.
 - 대신 다음 재검토 조건을 훨씬 날카롭게 고쳐 적었습니다 — 두 번째 실행이 첫 번째가 이미 알아낸 것을 **눈에 띄게 다시 도출하는 장면**이 실제 기록에 나타나면, 그때
   본다.
-- 근거: `knowledge/decisions/2026-09-02-role-proficiency-idea-still-deferred.md`
+- 근거: `knowledge/decisions/roles/role-class-model.md` "2026-09-02 — role-proficiency-idea-still-deferred"
 
 **그래서 생긴 강점**
 
@@ -152,7 +152,7 @@ AISE는 그 순서를 뒤집었고, 그건 편의가 아니라 명시적인 결�
 - *"the same single decision-maker (자산참모) would still decide what goes in the new file, using the
   same judgment."* 같은 사람이 같은 판단으로 새 파일을 채울 뿐이었습니다.
 - 그래서 전제를 되짚었더니, 애초에 **범위**에 관한 요청(어느 데이터, 어느 자격증명)은 **역량**에 관한 승인(이 도구를 아예 써도 되는가)과 다른 종류의 질문이었습니다.
-- 근거: `knowledge/decisions/2026-07-09-provisioning-scope-is-a-judgment-not-a-mechanism.md`
+- 근거: `knowledge/decisions/provisioning/grant-scope-and-conditions.md` "2026-07-09 — provisioning-scope-is-a-judgment-not-a-mechanism"
 
 **해결**
 
@@ -166,7 +166,7 @@ AISE는 그 순서를 뒤집었고, 그건 편의가 아니라 명시적인 결�
   cooperation at all."* 훅을 만들더라도 그건 경계가 아니라 그 위에 얹는 편의 층이라는 것까지 함께 적었습니다.
 - 그리고 착수하지 않은 이유는 단순했습니다 — *"No department has actually hit this need — the whole discussion was
   prompted by a hypothetical, not a real task."*
-- 근거: `knowledge/decisions/2026-07-14-folder-scoped-access-control-deferred.md`
+- 근거: `knowledge/decisions/adapter/environment.md` "2026-07-14 — folder-scoped-access-control-deferred"
 
 **그래서 생긴 강점**
 
@@ -216,12 +216,12 @@ once a session ends it doesn't remain part of the organization.")이 이 모든 
 [AI-Native Principles](/ai-native-principles).
 
 *근거: `CONSTITUTION.md` §1, §2.1–§2.5, §4.1 /
-`knowledge/decisions/2026-07-07-recruit-on-demand-phase-1.md` /
-`knowledge/decisions/2026-07-07-line-staff-org-model.md` /
-`knowledge/decisions/2026-07-07-org-memory-must-be-project-local.md` /
-`knowledge/decisions/2026-07-07-role-proficiency-idea-deferred.md` /
-`knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md` /
-`knowledge/decisions/2026-07-09-provisioning-scope-is-a-judgment-not-a-mechanism.md` /
-`knowledge/decisions/2026-07-14-folder-scoped-access-control-deferred.md` /
-`knowledge/decisions/2026-09-02-role-proficiency-idea-still-deferred.md` /
-`knowledge/decisions/2026-09-08-stateless-pm-sidesteps-handoff-tax.md`.*
+`knowledge/decisions/roles/role-class-model.md` "2026-07-07 — recruit-on-demand-phase-1" /
+`knowledge/decisions/organization/line-staff-model.md` "2026-07-07 — line-staff-org-model" /
+`knowledge/decisions/organization/departments.md` "2026-07-07 — org-memory-must-be-project-local" /
+`knowledge/decisions/roles/role-class-model.md` "2026-07-07 — role-proficiency-idea-deferred" /
+`knowledge/decisions/roles/role-class-model.md` "2026-07-09 — role-is-a-class-not-an-instance" /
+`knowledge/decisions/provisioning/grant-scope-and-conditions.md` "2026-07-09 — provisioning-scope-is-a-judgment-not-a-mechanism" /
+`knowledge/decisions/adapter/environment.md` "2026-07-14 — folder-scoped-access-control-deferred" /
+`knowledge/decisions/roles/role-class-model.md` "2026-09-02 — role-proficiency-idea-still-deferred" /
+`knowledge/decisions/execution/delegation.md` "2026-09-08 — stateless-pm-sidesteps-handoff-tax".*

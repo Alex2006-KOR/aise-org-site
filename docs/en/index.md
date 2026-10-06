@@ -140,7 +140,7 @@ checking is what produces the real design.
   their repo.
 - In other words, **there was no way at all to use the tool's personal memory as the organization's
   portable memory.**
-- Source: `knowledge/decisions/2026-07-07-org-memory-must-be-project-local.md`
+- Source: `knowledge/decisions/organization/departments.md` "2026-07-07 — org-memory-must-be-project-local"
 
 **Resolution**
 

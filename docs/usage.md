@@ -68,7 +68,7 @@ flowchart TB
   존재했기 때문입니다.
 - 실무에서 그럭저럭 굴러갔던 이유도 확인됐습니다 — 그 세션은 department(부서) 기록들을 읽으면서 거기 배어 있는 관례를 **흉내 내고** 있었습니다.
 - 그래서 오래된 규칙은 살아남고 갓 추가된 규칙만 조용히 무시됐습니다.
-- 근거: `knowledge/decisions/2026-09-15-orchestrator-persona-never-realized-nor-read.md`
+- 근거: `knowledge/decisions/organization/line-staff-model.md` "2026-09-15 — orchestrator-persona-never-realized-nor-read"
 
 **해결**
 
@@ -94,7 +94,7 @@ flowchart TB
 *"No skip-level, no exceptions: the user always goes through the Orchestrator, never directly to
 a department head, regardless of how trivial the task is."* 사소한 요청에 직행을 허용하는 안도
 검토됐지만, 그러면 **업무참모가 조직 전체 상태에 대한 시야를 잃는다**는 이유로 기각됐습니다.
-(근거: `knowledge/decisions/2026-07-07-line-staff-org-model.md`)
+(근거: `knowledge/decisions/organization/line-staff-model.md` "2026-07-07 — line-staff-org-model")
 
 한 층 아래도 같은 규칙입니다. PM이 부서원에게 일을 나누고, 운영자가 부서원에게 직접 말하는
 경로는 없습니다.
@@ -124,7 +124,7 @@ a department head, regardless of how trivial the task is."* 사소한 요청에 
   human is guaranteed to weigh in before a department's resourcing/scope escalates."*
 - 그리고 진짜 문제가 무엇이었는지가 분리됐습니다 — 운영자는 판단을 잘못한 게 아니라 **판단할 자리가 있다는 걸 알려주는 게 아무것도 없었을 뿐**이었습니다.
 - *"That's a missing prompt, not a missing automatic trigger."*
-- 근거: `knowledge/decisions/2026-07-27-activation-prompt-point.md`
+- 근거: `knowledge/decisions/modes/mode-model.md` "2026-07-27 — activation-prompt-point"
 
 **해결**
 
@@ -192,6 +192,6 @@ a department head, regardless of how trivial the task is."* 사소한 요청에 
 
 *근거: `CONSTITUTION.md` §10.3, §10.5 / `governance/MODE_POLICY.md` /
 `schema/README.md`("Department lifecycle") / `.claude/commands/aise/op.md`·`meta.md` /
-`knowledge/decisions/2026-07-07-line-staff-org-model.md` /
-`knowledge/decisions/2026-07-27-activation-prompt-point.md` /
-`knowledge/decisions/2026-09-15-orchestrator-persona-never-realized-nor-read.md`.*
+`knowledge/decisions/organization/line-staff-model.md` "2026-07-07 — line-staff-org-model" /
+`knowledge/decisions/modes/mode-model.md` "2026-07-27 — activation-prompt-point" /
+`knowledge/decisions/organization/line-staff-model.md` "2026-09-15 — orchestrator-persona-never-realized-nor-read".*
