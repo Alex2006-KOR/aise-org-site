@@ -65,7 +65,8 @@ If it does need delegating, a department gets created.
   answer is the go-ahead (why it asks instead of switching automatically is in the decision box on
   [How to hand work to this org](/en/usage)).
 - If a needed role doesn't exist yet, recruitment happens, judged by `HR_ORCHESTRATOR` (HR-staff).
-  Only a reorganization that shakes the existing structure needs the user's approval.
+  Changing or firing an existing role is also HR-staff's own call, with no user approval — it is
+  reported in Ops-staff's status briefing instead.
 
 ## 3. While it's running
 

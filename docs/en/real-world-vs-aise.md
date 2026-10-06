@@ -35,15 +35,15 @@ below the table, so you can check for yourself.
 
 **The document where each axis's contrast is actually written** (all under `knowledge/decisions/`):
 
-1. `2026-07-07-org-memory-must-be-project-local.md`
-2. `2026-07-07-recruit-on-demand-phase-1.md`
-3. `2026-07-09-role-is-a-class-not-an-instance.md`
-4. `2026-07-07-role-proficiency-idea-deferred.md` +
-   `2026-09-02-role-proficiency-idea-still-deferred.md`
-5. `2026-07-07-line-staff-org-model.md`
-6. `2026-07-09-provisioning-scope-is-a-judgment-not-a-mechanism.md` +
-   `2026-07-14-folder-scoped-access-control-deferred.md`
-7. `2026-09-08-stateless-pm-sidesteps-handoff-tax.md`
+1. `knowledge/decisions/organization/departments.md` "2026-07-07 — org-memory-must-be-project-local"
+2. `knowledge/decisions/roles/role-class-model.md` "2026-07-07 — recruit-on-demand-phase-1"
+3. `knowledge/decisions/roles/role-class-model.md` "2026-07-09 — role-is-a-class-not-an-instance"
+4. `knowledge/decisions/roles/role-class-model.md` "2026-07-07 — role-proficiency-idea-deferred" +
+   `knowledge/decisions/roles/role-class-model.md` "2026-09-02 — role-proficiency-idea-still-deferred"
+5. `knowledge/decisions/organization/line-staff-model.md` "2026-07-07 — line-staff-org-model"
+6. `knowledge/decisions/provisioning/grant-scope-and-conditions.md` "2026-07-09 — provisioning-scope-is-a-judgment-not-a-mechanism" +
+   `knowledge/decisions/adapter/environment.md` "2026-07-14 — folder-scoped-access-control-deferred"
+7. `knowledge/decisions/execution/delegation.md` "2026-09-08 — stateless-pm-sidesteps-handoff-tax"
 
 One thing stands out. **Four of the seven are decisions to *not* build something.** That's true
 of 2, 4, and 6, and 7 is a case where not building it turned out to be the advantage. In this
@@ -80,7 +80,7 @@ AISE inverted that order, and it wasn't convenience — it was an explicit decis
   speculatively) and risking premature structure the operator would have to unwind later."* A
   pre-chosen domain produces a structure overfit to a guess, and that structure becomes a debt the
   operator personally has to unwind.
-- Source: `knowledge/decisions/2026-07-07-recruit-on-demand-phase-1.md`
+- Source: `knowledge/decisions/roles/role-class-model.md` "2026-07-07 — recruit-on-demand-phase-1"
 
 **Resolution**
 
@@ -119,7 +119,7 @@ This is where AISE diverges most from a human organization, and it got confirmed
   no mechanism that keeps an 'instance' idle-yet-remembering between assignments."* An instance that
   sits idle while remembering simply cannot exist, and imitating one would have meant inventing
   **bookkeeping to simulate an identity that isn't there** (idle/assigned status, pool management).
-- Source: `knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md`
+- Source: `knowledge/decisions/roles/role-class-model.md` "2026-07-09 — role-is-a-class-not-an-instance"
 
 **Resolution**
 
@@ -135,7 +135,7 @@ This is where AISE diverges most from a human organization, and it got confirmed
   different one-off projects; no single role had done the same kind of work twice and hit friction.
 - Instead we rewrote the revisit condition to be far sharper: revisit once a real record shows a
   second occurrence **visibly re-deriving something the first had already worked out.**
-- Source: `knowledge/decisions/2026-09-02-role-proficiency-idea-still-deferred.md`
+- Source: `knowledge/decisions/roles/role-class-model.md` "2026-09-02 — role-proficiency-idea-still-deferred"
 
 **The strength that followed**
 
@@ -168,7 +168,7 @@ assume finer is safer. This organization met that temptation twice and built no 
 - So the premise got re-examined, and it turned out a request about **scope** (which data, which
   credential) had always been a different kind of question from an approval about **capability** (is
   this tool allowed at all).
-- Source: `knowledge/decisions/2026-07-09-provisioning-scope-is-a-judgment-not-a-mechanism.md`
+- Source: `knowledge/decisions/provisioning/grant-scope-and-conditions.md` "2026-07-09 — provisioning-scope-is-a-judgment-not-a-mechanism"
 
 **Resolution**
 
@@ -187,7 +187,7 @@ assume finer is safer. This organization met that temptation twice and built no 
   of that boundary and not the boundary itself.
 - And the reason for not starting was simple — *"No department has actually hit this need — the
   whole discussion was prompted by a hypothetical, not a real task."*
-- Source: `knowledge/decisions/2026-07-14-folder-scoped-access-control-deferred.md`
+- Source: `knowledge/decisions/adapter/environment.md` "2026-07-14 — folder-scoped-access-control-deferred"
 
 **The strength that followed**
 
@@ -245,12 +245,12 @@ the starting point of every contrast here.
 [AI-Native Principles](/en/ai-native-principles).
 
 *Source: `CONSTITUTION.md` §1, §2.1-§2.5, §4.1 /
-`knowledge/decisions/2026-07-07-recruit-on-demand-phase-1.md` /
-`knowledge/decisions/2026-07-07-line-staff-org-model.md` /
-`knowledge/decisions/2026-07-07-org-memory-must-be-project-local.md` /
-`knowledge/decisions/2026-07-07-role-proficiency-idea-deferred.md` /
-`knowledge/decisions/2026-07-09-role-is-a-class-not-an-instance.md` /
-`knowledge/decisions/2026-07-09-provisioning-scope-is-a-judgment-not-a-mechanism.md` /
-`knowledge/decisions/2026-07-14-folder-scoped-access-control-deferred.md` /
-`knowledge/decisions/2026-09-02-role-proficiency-idea-still-deferred.md` /
-`knowledge/decisions/2026-09-08-stateless-pm-sidesteps-handoff-tax.md`.*
+`knowledge/decisions/roles/role-class-model.md` "2026-07-07 — recruit-on-demand-phase-1" /
+`knowledge/decisions/organization/line-staff-model.md` "2026-07-07 — line-staff-org-model" /
+`knowledge/decisions/organization/departments.md` "2026-07-07 — org-memory-must-be-project-local" /
+`knowledge/decisions/roles/role-class-model.md` "2026-07-07 — role-proficiency-idea-deferred" /
+`knowledge/decisions/roles/role-class-model.md` "2026-07-09 — role-is-a-class-not-an-instance" /
+`knowledge/decisions/provisioning/grant-scope-and-conditions.md` "2026-07-09 — provisioning-scope-is-a-judgment-not-a-mechanism" /
+`knowledge/decisions/adapter/environment.md` "2026-07-14 — folder-scoped-access-control-deferred" /
+`knowledge/decisions/roles/role-class-model.md` "2026-09-02 — role-proficiency-idea-still-deferred" /
+`knowledge/decisions/execution/delegation.md` "2026-09-08 — stateless-pm-sidesteps-handoff-tax".*

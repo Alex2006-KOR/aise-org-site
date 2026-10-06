@@ -1,5 +1,6 @@
 ---
 reflects-through: 67eb950b1210c55333e327e923c84fa3c8bff5e6
+aise-core-through: a6fa612
 title: aise-org-site 아키텍처
 outline: deep
 ---
@@ -21,6 +22,7 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
 | 테마 | 기본 테마 + CSS 한 파일(레이아웃/컴포넌트 오버라이드 없음) | `docs/.vitepress/theme/` |
 | 산출물 | `./dist` (`outDir: ../dist`) | 빌드 시 생성, git 제외 |
 | 배포 | GitHub Actions → GitHub Pages | `.github/workflows/deploy.yml` |
+| 점검 스크립트 | upstream 대조(§7), 실 브라우저 점검 — 빌드 대상 아님 | `scripts/` |
 
 ## 2. 빌드·배포 계약
 
@@ -71,9 +73,23 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
 
 ## 7. 콘텐츠 근거와 갱신 원천
 
-콘텐츠는 aise-core의 `CONSTITUTION.md`, `schema/`, `governance/MODE_POLICY.md`, `knowledge/decisions/`에
-근거한다. aise-core가 바뀌면 이 사이트가 어긋날 수 있다(과거 stale 3건이 우연히 발견됨). 점검 절차는 아직
-정해지지 않았다(DoD N-05, 미해결).
+콘텐츠는 aise-core의 `CONSTITUTION.md`, `schema/`, `governance/`, `adapters/`, `knowledge/decisions/`에
+근거한다. aise-core가 바뀌면 이 사이트가 어긋날 수 있다(과거 stale 3건은 우연히 발견됨).
+
+**점검 절차(DoD N-05, 2026-10-01 정착).** 머리말 `aise-core-through:`는 사이트가 마지막으로 대조된 aise-core
+커밋이다. aise-core가 바뀌었다는 소식이 오면(또는 콘텐츠 PR마다) `scripts/upstream-check.sh [aise-core 경로]`를
+실행한다. 세 축을 본다.
+
+1. **참조** — 경로·decision 인용이 아직 풀리는가(aise-core `governance/reference_check.py` + 옛 decision 파일명
+   잔존 검사. reference_check는 "renamed/deleted"가 들어간 줄을 건너뛰므로 슬러그에 그 단어가 있는 인용을 놓친다 —
+   두 번째 검사가 그 구멍을 메운다). 고칠 새 인용은 reference_check가 줄마다 출력한다.
+2. **직접 인용** — `*"…"*` 형식의 영문 인용 중, `aise-core-through`에서는 축자 일치했는데 지금은 아닌 것
+   (`scripts/check_quotes.py --baseline`). 처음부터 축약·의역이던 인용(2026-10-01 기준 105건 중 24건)은 보고하지 않는다.
+3. **읽을 목록** — `aise-core-through` 이후 바뀐 규칙 문서와 새 decision 항목. 서술된 *규칙 자체*가 바뀌었는지는
+   스크립트가 판정할 수 없으므로, 이 목록을 사이트 용어로 grep해 해당 페이지만 다시 읽는다. 과거 결정 서사는
+   역사이므로 고치지 않고 "(이후 바뀜)" 주석만 단다. 현재형 서술과 "직접 확인해 보려면" 단계는 고친다.
+
+세 축을 처리한 PR에서 `aise-core-through`를 올린다. `scripts/`는 빌드 대상이 아니다(`docs/` 밖).
 
 ## 8. 알려진 한계
 

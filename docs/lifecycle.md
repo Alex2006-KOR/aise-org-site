@@ -91,7 +91,7 @@ title: Lifecycle — 여섯 단계로 자라는 조직
 - 결정 문서의 결론은 명확합니다 — *"Pre-picking a domain would have overfit Phase 1 to a guess, contradicting
   §4.1 itself"*(도메인을 미리 고르는 건 Phase 1을 추측에 끼워 맞추는 것이고, §4.1 자체와 충돌한다).
 - 미리 지어둔 구조는 나중에 운영자가 다시 풀어야 할 부채가 될 뿐입니다.
-- 근거: `knowledge/decisions/2026-07-07-recruit-on-demand-phase-1.md`
+- 근거: `knowledge/decisions/roles/role-class-model.md` "2026-07-07 — recruit-on-demand-phase-1"
 
 **해결**
 
@@ -156,14 +156,14 @@ ended, 지식누적 리뷰까지 마치면 closed가 된다.</figcaption>
 - 결정 문서는 진짜 구분점을 이렇게 짚습니다 — *"under the old model, ending a department was 조직개편 — exceptional,
   user-approval-gated... Under the new model, a department's end is the expected, routine outcome of
   its task finishing"*(옛 모델에서 부서 종료는 예외적이고 사용자 결재가 필요한 조직개편이었지만, 새 모델에서는 업무 완료의 당연하고 일상적인 결과다).
-- 근거: `knowledge/decisions/2026-07-09-department-is-project-scoped-not-renamed.md`
+- 근거: `knowledge/decisions/organization/departments.md` "2026-07-09 — department-is-project-scoped-not-renamed"
 
 **해결**
 
 - '부서'라는 이름과 §10.2 규칙은 그대로 두고, **부서로 존재한다는 것의 의미**만 바꿨습니다.
 - 부서는 어떤 역할-클래스가 실제로 실행돼야 하는 순간 형성되고, 업무가 끝나면 자동으로 해산됩니다 — 이 형성·해산은 결코 조직개편이 아닙니다.
 - 대신 **조직개편은 이제 부서가 아니라 역할-클래스 카탈로그를 대상**으로 재정의됐습니다(기존 `instance/roles/*.yaml` 항목을 합치거나 쪼개거나 재분류하거나
-  퇴역시키는 일).
+  퇴역시키는 일). (그 "조직개편" 개념도 2026-09-30에 폐지돼, 지금은 인사참모가 역할 정의 변경·해고를 직접 합니다 — [Staff & Governance](/staff-governance).)
 - "부서 두 개를 합친다"는 개념 자체가 사라진 겁니다 — 애초에 영속적인 단위였던 적이 없었으니까요.
 
 **그래서 생긴 강점**
@@ -182,14 +182,14 @@ ended, 지식누적 리뷰까지 마치면 closed가 된다.</figcaption>
 
 1. `schema/README.md`의 "Phase 1 stance: recruit-on-demand" 절에서 "채용"과 "부서 형성"이
    서로 다른 사건이라는 구분을 직접 읽어보세요.
-2. `instance/workspace/<프로젝트>/project-record.md` 상단의 `status:` 필드가 실제로
-   `draft`/`active`/`ended`/`closed` 중 하나로 적혀 있는 걸 아무 부서에서나 확인할 수 있습니다.
-3. 이 사이트(`aise-org-site`) 자신의 project-record.md도 같은 형식을 그대로 따릅니다 —
+2. 부서 목록 `instance/workspace/index.yaml`에서 부서마다 `status:`가 실제로
+   `draft`/`active`/`ended`/`closed` 중 하나로 적혀 있는 걸 확인할 수 있습니다(2026-10-01부터 부서 상태의 기준은 이 파일 하나입니다).
+3. 이 사이트(`aise-org-site`) 자신도 그 목록에 같은 형식으로 올라 있습니다 —
    지금 이 페이지를 쓰고 있는 부서도 예외가 아닙니다.
 
 **다음으로.** 부서 안에서, 그리고 부서 사이에서 실제로 협업이 어떻게 조립되는지 →
 [Collaboration Model](/collaboration-model).
 
 *근거: `CONSTITUTION.md` §4, `schema/README.md` "Department lifecycle" · "Phase 1 stance:
-recruit-on-demand"; `knowledge/decisions/2026-07-07-recruit-on-demand-phase-1.md`,
-`knowledge/decisions/2026-07-09-department-is-project-scoped-not-renamed.md`.*
+recruit-on-demand"; `knowledge/decisions/roles/role-class-model.md` "2026-07-07 — recruit-on-demand-phase-1",
+`knowledge/decisions/organization/departments.md` "2026-07-09 — department-is-project-scoped-not-renamed".*

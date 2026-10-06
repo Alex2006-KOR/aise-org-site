@@ -111,7 +111,7 @@ CONSTITUTION §2.1("AI 도구는 교체돼도 철학·운영방식은 유지") �
    는 기록하지 않는다. 그 연결은 어댑터의 일(`governance/ADAPTER_POLICY.md`)이지 자산참모의 일이
    아니다. role의 provisioning 기록도 추상 `id`만 참조한다.
 4. **모델 자체도 provisioning 대상이 아니다** — 어떤 모델(Claude/다른 LLM)을 실행 엔진으로 쓰는지는
-   자산참모가 심사하는 대상이 아니다(`knowledge/decisions/2026-07-08-model-is-not-a-provisioned-asset.md`
+   자산참모가 심사하는 대상이 아니다(`knowledge/decisions/provisioning/model-tiers.md` "2026-07-08 — model-is-not-a-provisioned-asset"
    — 이 결정은 §2.1 원칙을 provisioning 계층에서 한 번 더 확인한 것).
 5. **모드 정책의 Meta-only core**(`governance/MODE_POLICY.md`) — 조직의 철학·운영방식을 규정하는
    문서(CONSTITUTION/schema 핵심 문서/governance)는 Meta 모드에서만 바뀔 수 있어, 일상 Operator
@@ -123,7 +123,7 @@ provisioning의 추상화로 각각 다른 메커니즘이 나눠 구현한다.
 
 *근거*: `CONSTITUTION.md` §2.1, §9 + `schema/README.md`(Role file format 절) +
 `schema/AS_ORCHESTRATOR.md` §1 + `governance/MODE_POLICY.md` + `governance/ADAPTER_POLICY.md` +
-`knowledge/decisions/2026-07-08-model-is-not-a-provisioned-asset.md`(다중 문서 합성).
+`knowledge/decisions/provisioning/model-tiers.md` "2026-07-08 — model-is-not-a-provisioned-asset"(다중 문서 합성).
 
 ---
 
@@ -209,7 +209,7 @@ AISE 설계가 그 결정을 거의 공짜로 만드는 조합이기 때문이�
 문제 프레이밍을 그대로 받아들이지 않고 재도출해야 한다. handoff-tax가 측정하는 전체 궤적 세금보다는
 훨씬 가볍고 제한적인 버전.
 
-*근거*: `knowledge/decisions/2026-09-08-stateless-pm-sidesteps-handoff-tax.md` 전체(근거 문서).
+*근거*: `knowledge/decisions/execution/delegation.md` "2026-09-08 — stateless-pm-sidesteps-handoff-tax" 전체(근거 문서).
 
 ---
 

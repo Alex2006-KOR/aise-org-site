@@ -50,7 +50,7 @@ instance/workspace/<부서-id>/
   ... 인사참모 all write into was identified as the actual root of the recurring boundary blur — not
   carelessness on any one occasion."* 그리고 이미 좋은 선례가 하나 있었다는 것도 확인됐습니다.
 - PM이 쓰고 업무참모가 읽는 좁은 요약 채널은 이미 있었는데, **반대 방향 채널만 없었던** 것입니다.
-- 근거: `knowledge/decisions/2026-08-26-report-directive-channel-split.md`
+- 근거: `knowledge/decisions/workspace/department-record-files.md` "2026-08-26 — report-directive-channel-split"
 
 **해결**
 
@@ -77,7 +77,7 @@ instance/workspace/<부서-id>/
 실행 도구에 내장된 가드가 파일명에 "report"가 들어간 새 파일 쓰기를 차단한다는 것을 PM run이
 실제로 막히면서 발견했고, 여러 후보 이름을 직접 테스트해 충돌 범위를 확인한 뒤 "지시→실행"
 짝이 자연스러운 이름으로 교체했습니다.
-(근거: `knowledge/decisions/2026-08-28-report-md-renamed-execution-md-harness-collision.md`)
+(근거: `knowledge/decisions/workspace/department-record-files.md` "2026-08-28 — report-md-renamed-execution-md-harness-collision")
 
 ## `/aise:handoff` — 끝나기 전에 적어두기
 
@@ -99,7 +99,7 @@ instance/workspace/<부서-id>/
   summary"* 를 요구했는데, 그 압축은 **가장 나쁜 순간에**(컨텍스트가 이미 바닥나고, 때로는 실패 도중) **자기 압축을 검증할 방법이 없는 바로 그 지친 실행자에
   의해** 단 한 번 수행됩니다.
 - 그런 조건이면 어떤 세션이든 언젠가 같은 실패를 냅니다.
-- 근거: `knowledge/decisions/2026-07-10-continuity-handoff-format-redesigned-around-filtering.md`
+- 근거: `knowledge/decisions/continuity/handoff-records.md` "2026-07-10 — continuity-handoff-format-redesigned-around-filtering"
 
 **해결**
 
@@ -194,8 +194,8 @@ run들 사이에서 그 차이를 알아볼 수 있는 유일한 증거가 커�
 
 *근거: `schema/README.md`("Storage", "Department lifecycle") /
 `governance/CONTINUITY_POLICY.md` / `.claude/commands/aise/handoff.md` /
-`knowledge/decisions/2026-07-10-continuity-handoff-format-redesigned-around-filtering.md` /
-`knowledge/decisions/2026-08-26-report-directive-channel-split.md` /
-`knowledge/decisions/2026-08-28-report-md-renamed-execution-md-harness-collision.md` /
-`knowledge/decisions/2026-09-08-stateless-pm-sidesteps-handoff-tax.md` /
+`knowledge/decisions/continuity/handoff-records.md` "2026-07-10 — continuity-handoff-format-redesigned-around-filtering" /
+`knowledge/decisions/workspace/department-record-files.md` "2026-08-26 — report-directive-channel-split" /
+`knowledge/decisions/workspace/department-record-files.md` "2026-08-28 — report-md-renamed-execution-md-harness-collision" /
+`knowledge/decisions/execution/delegation.md` "2026-09-08 — stateless-pm-sidesteps-handoff-tax" /
 `instance/workspace/aise-org-site/project-record.md`(Ledger).*

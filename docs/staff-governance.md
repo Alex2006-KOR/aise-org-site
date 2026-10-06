@@ -21,7 +21,7 @@ department(부서)가 일을 하는 동안, 그 위에서 조직 전체가 어�
 ## 참모 셋은 서로 동급입니다
 
 - **`OP_ORCHESTRATOR`(업무참모)** — 사용자의 의도를 실제로 수행 가능한 업무로 바꾸고, 가장 알맞은 부서를 조립합니다.
-- **`HR_ORCHESTRATOR`(인사참모)** — 채용과 조직개편을 전담합니다. 업무 실행 자체에는 관여하지 않습니다.
+- **`HR_ORCHESTRATOR`(인사참모)** — 역할 카탈로그를 전담합니다: 채용, 역할 정의 변경, 해고(카탈로그에서 제거). 업무 실행 자체에는 관여하지 않습니다.
 - **`AS_ORCHESTRATOR`(자산참모)** — 어떤 역할이 실제로 어떤 도구·MCP·스킬을 쓸 수 있는지, 즉 provisioning(승인된 회사 제공 도구)을 전담합니다.
 
 셋 다 실행 책임을 지지 않고, 서로 동급이며, 어느 쪽도 다른 쪽에 보고하지 않습니다. 업무참모가
@@ -105,7 +105,7 @@ department(부서)가 일을 하는 동안, 그 위에서 조직 전체가 어�
 - 결정 문서의 결론이 정확합니다: 이런 안전장치들이 *"kept being defeated by new bypass shapes"*(막을 때마다 새로운 우회 모양에 계속
   뚫렸다), 왜냐하면 **"does this operation deserve extra scrutiny"는 어떤 경로 매칭 메커니즘으로도 완전히 풀 수 없는 의미론적 판단**이기
   때문입니다.
-- 근거: `knowledge/decisions/2026-07-07-hr-orchestrator-split.md`
+- 근거: `knowledge/decisions/organization/staff-orchestrators.md` "2026-07-07 — hr-orchestrator-split"
 
 **해결**
 
@@ -124,23 +124,49 @@ department(부서)가 일을 하는 동안, 그 위에서 조직 전체가 어�
 - 즉 **정말로 신호가 되는 한 가지에만 사람의 확인을 쓰고**, 나머지는 자동으로 흘러갑니다.
 :::
 
+위 결정이 만든 "채용은 인사참모 단독, 조직개편은 사용자 결재"라는 두 갈래는 2026-09-30에 다시 바뀌었습니다.
+지금(CONSTITUTION v0.6, 2026-10-01)의 모습은 이렇습니다.
+
 ```mermaid
 flowchart TD
-  R0["새 역할이 필요하다<br/>= 새 파일을 만든다<br/><b>채용</b>"]
-  R1["분석 — 인사참모"]
-  R2["승인 — 인사참모 단독<br/><i>사용자 결재 없음</i>"]
-  R3["실행 — 업무참모<br/><i>부서는 요청만 한다</i>"]
-  R0 --> R1 --> R2 --> R3
+  R0["새 역할이 필요하다<br/><b>채용</b>"]
+  R1["분석·승인<br/>인사참모 단독<br/><i>사용자 결재 없음</i>"]
+  R2["역할 파일 작성<br/>업무참모<br/><i>부서는 요청만</i>"]
+  R0 --> R1 --> R2
 
-  O0["기존 역할을 고치거나 지운다<br/>= 기존 파일을 건드린다<br/><b>조직개편</b>"]
-  O1["분석 — 인사참모"]
-  O2["승인 — <b>사용자의 명시적 결재</b>"]
-  O3["실행 — 인사참모만"]
+  O0["기존 역할을<br/>고치거나 지운다<br/><b>정의 변경 · 해고</b>"]
+  O1["판단·실행<br/>인사참모 단독<br/><i>사용자 결재 없음</i>"]
+  O2["좁히기·해고는<br/>다른 부서가 안 쓸 때만"]
+  O3["업무참모의 상황 보고로<br/>사용자에게 알린다"]
   O0 --> O1 --> O2 --> O3
 ```
 
-두 경로를 가르는 기준이 "의도"가 아니라 **"새 파일인가, 기존 파일인가"**라는 점이 이 설계의
-핵심입니다 — 판단이 아니라 사실로 갈리기 때문에 우회할 여지가 없습니다.
+::: info 결정 되짚어보기 — "조직개편"이라는 개념을 없앤 이유
+**문제**
+
+- 2026-09-30 조직 감사에서, 기존 역할 파일을 고치는 일은 무엇이든 사용자 결재가 필요한 조직개편으로 취급되고 있었는데, 같은 파일에 업무참모가
+  provisioning 승인 내용을 적어 넣는 일(§10.9)도 있어서 결재 요청이 수정할 때마다 떴습니다.
+- 논의해 보니 전제 자체가 틀려 있었습니다 — 조직개편이라는 말은 역할이 부서에 속한다고 가정하는데, 역할은 모든 부서가 꺼내 쓰는 **공유 클래스**입니다.
+
+**조사**
+
+- 실제로 해가 되는 경우는 하나로 좁혀졌습니다 — *"what can actually hurt is changing a role another department is using."*(실제로 해가 될 수 있는 건 다른 부서가 쓰고 있는 역할을 바꾸는 것뿐이다)
+- 모든 수정에 결재를 거는 방식은 그 위험을 겨냥하지 못했습니다.
+- 근거: `knowledge/decisions/roles/recruitment-and-reorganization.md` "2026-09-30 — reorganization-abolished-hr-owns-recruitment-and-firing"
+
+**해결**
+
+- *"reorganization is abolished as a concept."* — 채용·정의 변경·해고는 모두 인사참모 자신의 권한이고, 사용자 결재는 어디에도 없습니다.
+- 대신 위험한 경우만 기계적으로 막습니다 — 역할을 좁히거나(쪼개기 포함) 해고하는 건 요청한 부서 말고는 그 역할을 쓰는 `active`/`ended` 부서가 없을 때만
+  허용됩니다. 해고는 부서 종료 리뷰 때, 그리고 특정 도메인 전용(`domain-specific`) 역할만 합니다.
+- "쓰고 있는가"는 글로 된 Roster가 아니라 `instance/workspace/index.yaml`의 부서별 `roles:` 목록에서 읽습니다.
+- 근거: `knowledge/decisions/roles/recruitment-and-reorganization.md` "2026-09-30 — role-use-read-from-department-role-list-changes-reported"
+
+**그래서 생긴 강점**
+
+- 사람의 확인을 매번 거는 대신, 정말 위험한 한 경우(다른 부서가 쓰는 역할의 축소·삭제)만 어댑터가 거부합니다.
+- "좁히기"인지는 기계가 판정할 수 없는 판단이므로, 결재 대신 **모든 역할 정의 변경을 업무참모의 상황 보고에 싣습니다** — 막지는 않되 사용자 눈에는 보이게 합니다.
+:::
 
 ## 그러다 셋이 된 사연
 
@@ -161,7 +187,7 @@ flowchart TD
   **무엇이 승인되는지는 배포마다 완전히 다릅니다**(어떤 조직은 보안 기준, 어떤 조직은 비용·라이선스 기준).
 - ② 더 결정적으로, 평범한 부서가 이걸 맡으면 **"그 부서 자신의 provisioning은 누가 승인하나"**라는 순환이 생깁니다 — 인사참모를 만들 때 피했던 것과 똑같은
   순환입니다.
-- 근거: `knowledge/decisions/2026-07-07-as-orchestrator-provisioning-split.md`
+- 근거: `knowledge/decisions/organization/staff-orchestrators.md` "2026-07-07 — as-orchestrator-provisioning-split"
 
 **해결**
 
@@ -191,7 +217,7 @@ flowchart TD
 - 검토해 보니 **안전해지는 게 없었습니다**: 결국 같은 자산참모가 같은 판단으로 그 새 파일을 채우게 되니까요.
 - 그래서 전제를 다시 봤더니, 애초에 **범위**(어떤 데이터, 어떤 자격증명)에 관한 요청은 **역량**(이 도구를 아예 써도 되는가)을 다루는 provisioning이 기록할
   대상이 아니었습니다 — 그건 `Read` 호출이 어떤 파일을 읽느냐와 같은 런타임 파라미터입니다.
-- 근거: `knowledge/decisions/2026-07-09-provisioning-scope-is-a-judgment-not-a-mechanism.md`
+- 근거: `knowledge/decisions/provisioning/grant-scope-and-conditions.md` "2026-07-09 — provisioning-scope-is-a-judgment-not-a-mechanism"
 
 **해결**
 
@@ -224,9 +250,9 @@ flowchart TD
 1. 세 참모의 실제 정의는 `schema/OP_ORCHESTRATOR.md` / `HR_ORCHESTRATOR.md` /
    `AS_ORCHESTRATOR.md` 세 파일입니다. 각 문서가 **자기 영역 밖의 일은 하지 않는다**고 명시적으로
    적어둔 문장을 찾아보세요 — 경계가 문서에 박혀 있습니다.
-2. 채용/조직개편의 분석·승인·실행 분리는 `CONSTITUTION.md` §10.5, §10.8에 표로 있습니다.
+2. 채용의 분석·승인·실행 분리는 `CONSTITUTION.md` §10.5, 기존 역할의 정의 변경·해고는 §10.8 "Changing and firing existing roles"에 있습니다.
 3. 어떤 역할이 무엇을 쓸 수 있는지는 각 역할 파일의 `provisioning` 필드, 승인된 카탈로그는
-   `assets/index.yaml`입니다. 이 둘이 **왜 따로인지**가 위 세 번째 결정 상자의 내용입니다.
+   `assets/index.yaml`입니다. 이 둘이 **왜 따로인지**가 위 네 번째 결정 상자의 내용입니다.
 
 **헷갈리기 쉬운 것 하나.** "참모가 부서보다 윗사람"은 아닙니다. 참모는 실행 책임을 지지 않고,
 부서는 운영 책임을 지지 않습니다 — 위아래가 아니라 **다른 종류의 책임**입니다.
@@ -237,6 +263,6 @@ flowchart TD
 
 *근거: `CONSTITUTION.md` §10.3–§10.9, §11; `schema/OP_ORCHESTRATOR.md`,
 `schema/HR_ORCHESTRATOR.md`, `schema/AS_ORCHESTRATOR.md`, `schema/MG_ORCHESTRATOR.md`;
-`knowledge/decisions/`의 `2026-07-07-hr-orchestrator-split.md`,
-`2026-07-07-as-orchestrator-provisioning-split.md`,
-`2026-07-09-provisioning-scope-is-a-judgment-not-a-mechanism.md`.*
+`knowledge/decisions/`의 `knowledge/decisions/organization/staff-orchestrators.md` "2026-07-07 — hr-orchestrator-split",
+`knowledge/decisions/organization/staff-orchestrators.md` "2026-07-07 — as-orchestrator-provisioning-split",
+`knowledge/decisions/provisioning/grant-scope-and-conditions.md` "2026-07-09 — provisioning-scope-is-a-judgment-not-a-mechanism".*

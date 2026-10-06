@@ -61,7 +61,7 @@ flowchart TD
   *"not a good fit for multi-agent systems today"*(오늘날의 멀티에이전트 시스템에 잘 맞지 않는다)라고
   봤고, 자신들도 리드 에이전트가 조율하는 동기적 hub-and-spoke 구조를 택했습니다.
 - 진짜 상호의존은 "병렬로 돌리고 맞춰지길 바라는" 방식으로는 풀리지 않는다는 결론이었습니다.
-- 근거: `knowledge/decisions/2026-08-06-pm-interface-negotiation-before-parallel-work.md`
+- 근거: `knowledge/decisions/execution/pm-authority-and-method.md` "2026-08-06 — pm-interface-negotiation-before-parallel-work"
 
 **해결**
 
@@ -102,7 +102,7 @@ flowchart TD
   caller's own already-running repository ... never an arbitrary target path named in a delegation
   prompt"*(호출자 자신이 이미 실행 중인 저장소만 격리할 뿐, 위임 프롬프트가 가리키는 대상 경로는
   격리하지 못한다)였고, 실제로 부서원이 엉뚱한 저장소에 커밋하는 사고도 있었습니다.
-- 근거: `knowledge/decisions/2026-08-28-parallel-work-needs-isolation-not-just-independence.md`
+- 근거: `knowledge/decisions/execution/delegation.md` "2026-08-28 — parallel-work-needs-isolation-not-just-independence"
 
 **해결**
 
@@ -232,7 +232,7 @@ flowchart LR
 [Operator vs Meta Mode](/operator-vs-meta-mode).
 
 *근거: `CONSTITUTION.md` §5, §10.6; `schema/README.md` "Intra-department execution graph";
-`knowledge/decisions/2026-08-06-pm-interface-negotiation-before-parallel-work.md`,
-`knowledge/decisions/2026-08-28-parallel-work-needs-isolation-not-just-independence.md`;
+`knowledge/decisions/execution/pm-authority-and-method.md` "2026-08-06 — pm-interface-negotiation-before-parallel-work",
+`knowledge/decisions/execution/delegation.md` "2026-08-28 — parallel-work-needs-isolation-not-just-independence";
 `instance/workspace/{sfr-ssot-platform,simple-ragcurl-platform,llm-wiki-platform,aise-org-site}/project-record.md`;
 `instance/portfolio/index.yaml`.*

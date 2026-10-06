@@ -24,8 +24,8 @@ a real company aren't counted as a level in the hierarchy chart.
 
 - **`OP_ORCHESTRATOR` (Ops-staff)** — turns the user's intent into actually executable work, and assembles the most
   suitable department.
-- **`HR_ORCHESTRATOR` (HR-staff)** — owns recruitment and reorganization exclusively. Doesn't get involved in
-  executing work itself.
+- **`HR_ORCHESTRATOR` (HR-staff)** — owns the role catalog exclusively: recruitment, role-definition changes,
+  and firing (removal from the catalog). Doesn't get involved in executing work itself.
 - **`AS_ORCHESTRATOR` (Asset-staff)** — owns which roles can actually use which tools, MCP servers, and skills —
   that is, provisioning (company-approved tools).
 
@@ -115,7 +115,7 @@ full.
 - The decision record's conclusion is exact: these safeguards *"kept being defeated by new bypass
   shapes"*, because **"does this operation deserve extra scrutiny" is a semantic judgment that no
   path-matching mechanism can fully resolve.**
-- Source: `knowledge/decisions/2026-07-07-hr-orchestrator-split.md`
+- Source: `knowledge/decisions/organization/staff-orchestrators.md` "2026-07-07 — hr-orchestrator-split"
 
 **Resolution**
 
@@ -141,24 +141,58 @@ full.
   signal**, and everything else flows automatically.
 :::
 
+The two paths that decision created — "recruitment on HR-staff's sole approval, reorganization on the
+user's sign-off" — changed again on 2026-09-30. Today (CONSTITUTION v0.6, 2026-10-01) it looks like this.
+
 ```mermaid
 flowchart TD
-  R0["A new role is needed<br/>= a new file is created<br/><b>Recruitment</b>"]
-  R1["Analysis — HR-staff"]
-  R2["Approval — HR-staff alone<br/><i>no user sign-off</i>"]
-  R3["Execution — Ops-staff<br/><i>the department only requests</i>"]
-  R0 --> R1 --> R2 --> R3
+  R0["A new role is needed<br/><b>Recruitment</b>"]
+  R1["Analysis + approval<br/>HR-staff alone<br/><i>no user sign-off</i>"]
+  R2["Writes the role file<br/>Ops-staff<br/><i>department only requests</i>"]
+  R0 --> R1 --> R2
 
-  O0["An existing role is modified or removed<br/>= an existing file is touched<br/><b>Reorganization</b>"]
-  O1["Analysis — HR-staff"]
-  O2["Approval — <b>the user's explicit sign-off</b>"]
-  O3["Execution — HR-staff only"]
+  O0["An existing role<br/>is changed or removed<br/><b>Definition change<br/>or firing</b>"]
+  O1["Judgment + execution<br/>HR-staff alone<br/><i>no user sign-off</i>"]
+  O2["Narrowing or firing<br/>only if no other<br/>department uses it"]
+  O3["Reported to the user<br/>in Ops-staff's<br/>status briefing"]
   O0 --> O1 --> O2 --> O3
 ```
 
-The key to this design is that the line separating the two paths is not "intent," but
-**"is it a new file, or an existing one"** — because it's decided by fact, not judgment, there's
-no room to route around it.
+::: info Revisiting the decision — why the concept of "reorganization" was dropped
+**Problem**
+
+- In the 2026-09-30 organizational audit, any edit to an existing role file was being treated as a
+  reorganization needing the user's sign-off — yet Ops-staff also writes provisioning grants into
+  that same file (§10.9), so the approval prompt fired on every edit.
+- Talking it through, the premise itself turned out to be wrong: "reorganization" assumes roles
+  belong to departments, but a role is a **shared class** that every department picks up.
+
+**Investigation**
+
+- The real harm narrowed down to one case — *"what can actually hurt is changing a role another
+  department is using."*
+- Requiring sign-off on every edit didn't target that risk.
+- Source: `knowledge/decisions/roles/recruitment-and-reorganization.md` "2026-09-30 — reorganization-abolished-hr-owns-recruitment-and-firing"
+
+**Resolution**
+
+- *"reorganization is abolished as a concept."* — recruitment, definition changes and firing are all
+  HR-staff's own authority, and there is no user sign-off anywhere.
+- Instead, only the dangerous case is blocked mechanically: narrowing a role (including splitting it)
+  or firing it is allowed only when no `active`/`ended` department other than the requester uses it.
+  Firing happens at a department's closure review, and only for `domain-specific` roles.
+- "Is it in use?" is read from each department's `roles:` list in `instance/workspace/index.yaml`,
+  not from a prose Roster.
+- Source: `knowledge/decisions/roles/recruitment-and-reorganization.md` "2026-09-30 — role-use-read-from-department-role-list-changes-reported"
+
+**Strengths that came out of it**
+
+- Instead of asking a human every time, the adapter refuses only the one truly risky case (shrinking
+  or deleting a role another department uses).
+- Whether a change "narrows" a role is a judgment no machine can make, so instead of sign-off,
+  **every role-definition change is reported in Ops-staff's status briefing** — not blocked, but
+  visible to the user.
+:::
 
 ## How one staff became three
 
@@ -185,7 +219,7 @@ somewhere completely different.
 - ② More decisively, if an ordinary department owned this, it creates a circularity — **"who
   approves that department's own provisioning?"** — exactly the same circularity that HR-staff was
   created to avoid.
-- Source: `knowledge/decisions/2026-07-07-as-orchestrator-provisioning-split.md`
+- Source: `knowledge/decisions/organization/staff-orchestrators.md` "2026-07-07 — as-orchestrator-provisioning-split"
 
 **Resolution**
 
@@ -224,7 +258,7 @@ There's one more interesting postscript to this gate.
   credentials) was never something provisioning — which deals with **capability** (whether a tool
   can be used at all) — was meant to record in the first place.
 - That's a runtime parameter, like which file a `Read` call happens to read.
-- Source: `knowledge/decisions/2026-07-09-provisioning-scope-is-a-judgment-not-a-mechanism.md`
+- Source: `knowledge/decisions/provisioning/grant-scope-and-conditions.md` "2026-07-09 — provisioning-scope-is-a-judgment-not-a-mechanism"
 
 **Resolution**
 
@@ -265,10 +299,10 @@ at the same time.
    `HR_ORCHESTRATOR.md` / `AS_ORCHESTRATOR.md`. Find the sentence in each document explicitly
    stating that **it does not do work outside its own domain** — the boundary is written directly
    into the documents.
-2. The analysis/approval/execution split for recruitment/reorganization is tabulated in
-   `CONSTITUTION.md` §10.5, §10.8.
+2. The analysis/approval/execution split for recruitment is in `CONSTITUTION.md` §10.5; changing
+   and firing existing roles is in §10.8 "Changing and firing existing roles".
 3. What a role can use is in that role file's `provisioning` field; the approved catalog is
-   `assets/index.yaml`. **Why these two are kept separate** is exactly the content of the third
+   `assets/index.yaml`. **Why these two are kept separate** is exactly the content of the fourth
    decision box above.
 
 **One thing easy to get confused about.** "Staff outrank departments" is not true. Staff carry no
@@ -281,6 +315,6 @@ in this category's final page, [Operator vs Meta Mode](/en/operator-vs-meta-mode
 
 *Source: `CONSTITUTION.md` §10.3-§10.9, §11; `schema/OP_ORCHESTRATOR.md`,
 `schema/HR_ORCHESTRATOR.md`, `schema/AS_ORCHESTRATOR.md`, `schema/MG_ORCHESTRATOR.md`;
-from `knowledge/decisions/`: `2026-07-07-hr-orchestrator-split.md`,
-`2026-07-07-as-orchestrator-provisioning-split.md`,
-`2026-07-09-provisioning-scope-is-a-judgment-not-a-mechanism.md`.*
+from `knowledge/decisions/`: `knowledge/decisions/organization/staff-orchestrators.md` "2026-07-07 — hr-orchestrator-split",
+`knowledge/decisions/organization/staff-orchestrators.md` "2026-07-07 — as-orchestrator-provisioning-split",
+`knowledge/decisions/provisioning/grant-scope-and-conditions.md` "2026-07-09 — provisioning-scope-is-a-judgment-not-a-mechanism".*
