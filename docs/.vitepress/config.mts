@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
+import container from 'markdown-it-container'
+import { levelsContainers } from './theme/levels-markdown'
 
 // NOTE on outDir: the repo-root build contract is `./dist` (shared with
 // .github/workflows/deploy.yml, which runs `npm run build` then uploads
@@ -161,6 +163,14 @@ export default withMermaid(
       socialLinks: [
         { icon: 'github', link: 'https://github.com/Alex2006-KOR/aise-org-site' },
       ],
+    },
+
+    // Page levels (lead / point containers). See theme/levels-markdown.ts.
+    // withMermaid() chains its own mermaid fence rule before this callback.
+    markdown: {
+      config(md) {
+        levelsContainers(md, container)
+      },
     },
 
     // vitepress-plugin-mermaid: renders ```mermaid fences as diagrams.
