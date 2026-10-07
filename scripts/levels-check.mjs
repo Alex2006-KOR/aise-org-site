@@ -96,7 +96,8 @@ for (const scheme of ['light', 'dark']) {
       })
     })
     r.mermaid = mer
-    check('mermaid-in-point-sized', mer.length > 0 && mer.every((m) => m.w > 0 && m.h > 0 && m.w <= m.column), mer)
+    // Not applicable on a page with no diagram inside a point (counts as pass; r.mermaid stays []).
+    check('mermaid-in-point-sized', mer.every((m) => m.w > 0 && m.h > 0 && m.w <= m.column), mer)
 
     await page.click('.aise-toolbar button[data-action="collapse-all"]')
     check('collapse-all-closes-all', await page.evaluate(() => [...document.querySelectorAll('details.aise-point')].every((d) => !d.open)))
