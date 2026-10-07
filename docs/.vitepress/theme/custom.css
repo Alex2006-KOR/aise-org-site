@@ -15,3 +15,142 @@
 .vp-doc svg:not(.mermaid svg) text:not([fill]) {
   fill: currentColor;
 }
+
+/*
+ * Page levels (see levels-markdown.ts / levels.ts)
+ *   data-level 1: .aise-lead          headline sentence
+ *   data-level 2: .aise-point(-summary) key points, visible by default
+ *   data-level 3: .aise-point-body     detail, collapsed by default (native <details>)
+ */
+.aise-lead {
+  margin: 0.5rem 0 1.25rem;
+  padding-left: 0.9rem;
+  border-left: 4px solid var(--vp-c-brand-1);
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+.aise-lead > p { margin: 0; font-size: inherit; line-height: inherit; }
+.aise-lead em { font-style: normal; }
+
+.aise-point {
+  position: relative;
+  margin: 0.3rem 0;
+  padding-left: 1.6rem;
+  line-height: 1.6;
+}
+.aise-point--plain::before {
+  content: '•';
+  position: absolute;
+  left: 0.45rem;
+  color: var(--vp-c-brand-1);
+  font-weight: 700;
+}
+.aise-point-summary {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  border-radius: 6px;
+  padding: 0 0.3rem;
+  margin-left: -0.3rem;
+  overflow-wrap: anywhere;
+}
+.aise-point-summary::-webkit-details-marker { display: none; }
+.aise-point-summary:hover { background: var(--vp-c-default-soft); }
+.aise-point-summary:focus-visible { outline: 2px solid var(--vp-c-brand-1); outline-offset: 2px; }
+.aise-point-summary::before {
+  content: '▸';
+  position: absolute;
+  left: -1.35rem;
+  top: 0.12em;
+  width: 1.1rem;
+  height: 1.1rem;
+  line-height: 1.05rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--vp-c-brand-1);
+  border: 1px solid var(--vp-c-brand-1);
+  border-radius: 4px;
+  transition: transform 0.15s;
+}
+details.aise-point[open] > .aise-point-summary::before { content: '▾'; background: var(--vp-c-brand-soft); }
+.aise-point-body {
+  margin: 0.4rem 0 0.8rem 0.2rem;
+  padding: 0.1rem 0 0.1rem 1rem;
+  border-left: 2px solid var(--vp-c-divider);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.aise-point-body > :first-child { margin-top: 0.3rem; }
+.aise-point-body > :last-child { margin-bottom: 0.3rem; }
+.aise-point-body .mermaid { max-width: 100%; overflow-x: auto; }
+.aise-point-body .mermaid svg { max-width: 100%; height: auto; }
+.aise-point-body table { display: block; max-width: 100%; overflow-x: auto; }
+
+.aise-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+}
+.aise-toolbar button {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.8rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  cursor: pointer;
+}
+.aise-toolbar button:hover { border-color: var(--vp-c-brand-1); color: var(--vp-c-brand-1); }
+
+/* Citations */
+.aise-cite-wrap { margin: 0.5rem 0; font-size: 0.85rem; }
+.aise-cite-summary {
+  cursor: pointer;
+  list-style: none;
+  color: var(--vp-c-text-2);
+  display: inline-block;
+}
+.aise-cite-summary::-webkit-details-marker { display: none; }
+.aise-cite-summary:hover { color: var(--vp-c-brand-1); }
+details.aise-cite[open] .aise-cite-caret { display: inline-block; transform: rotate(180deg); }
+.aise-source-table { margin: 0.75rem 0; font-size: 0.85rem; }
+.aise-cite-list { list-style: none; margin: 0.4rem 0 0; padding: 0; }
+.aise-cite-item { margin: 0.35rem 0; line-height: 1.5; overflow-wrap: anywhere; }
+.aise-cite-item > * { margin-right: 0.5rem; }
+.aise-cite-date { color: var(--vp-c-text-3); }
+.aise-cite-path { font-size: 0.75rem; color: var(--vp-c-text-2); background: transparent; padding: 0; overflow-wrap: anywhere; }
+.aise-cite-quote { display: block; color: var(--vp-c-text-2); margin-left: 1.2rem; }
+.aise-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 0 0.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-2);
+}
+.aise-badge--record { color: var(--vp-c-green-1); border-color: var(--vp-c-green-1); }
+.aise-badge--operator { color: var(--vp-c-indigo-1); border-color: var(--vp-c-indigo-1); }
+.aise-badge--hypothesis { color: var(--vp-c-yellow-1); border-color: var(--vp-c-yellow-1); }
+.aise-cite-unknown { color: #e5000f; font-weight: 700; margin-right: 0.5rem; }
+.aise-source-scroll { overflow-x: auto; max-width: 100%; }
+.aise-source-scroll table { margin: 0.4rem 0; }
+
+/* Print / PDF: show all collapsed content, hide controls.
+   beforeprint/afterprint in levels.ts opens the details as well; this is the fallback. */
+@media print {
+  .aise-toolbar { display: none !important; }
+  .aise-point-summary::before, .aise-cite-caret { display: none !important; }
+  .aise-point-summary { cursor: auto; }
+  details.aise-point::details-content,
+  details.aise-cite::details-content {
+    content-visibility: visible !important;
+    display: block !important;
+    height: auto !important;
+  }
+  details.aise-point > .aise-point-body,
+  details.aise-cite > :not(summary) { display: block !important; }
+}
