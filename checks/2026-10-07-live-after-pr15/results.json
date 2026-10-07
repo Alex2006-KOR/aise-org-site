@@ -1,0 +1,71 @@
+{
+  "base": "http://localhost:4181/aise-org-site/",
+  "checkedAt": "2026-10-07T09:03:01.299Z",
+  "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+  "failures": 0,
+  "rows": [
+    {
+      "page": "quick-guide",
+      "status": 200,
+      "oldFound": [],
+      "newMissing": [],
+      "ok": true
+    },
+    {
+      "page": "operator-vs-meta-mode",
+      "status": 200,
+      "oldFound": [],
+      "newMissing": [],
+      "ok": true
+    },
+    {
+      "page": "staff-governance",
+      "status": 200,
+      "oldFound": [],
+      "newMissing": [],
+      "ok": true
+    },
+    {
+      "page": "glossary",
+      "status": 200,
+      "oldFound": [],
+      "newMissing": [],
+      "ok": true
+    },
+    {
+      "page": "lifecycle",
+      "status": 200,
+      "oldFound": [],
+      "newMissing": [],
+      "ok": true
+    },
+    {
+      "page": "en/quick-guide",
+      "status": 200,
+      "oldFound": [],
+      "newMissing": [],
+      "ok": true
+    },
+    {
+      "page": "en/operator-vs-meta-mode",
+      "status": 200,
+      "oldFound": [],
+      "newMissing": [],
+      "ok": true
+    },
+    {
+      "page": "en/staff-governance",
+      "status": 200,
+      "oldFound": [],
+      "newMissing": [],
+      "ok": true
+    },
+    {
+      "page": "en/glossary",
+      "status": 200,
+      "oldFound": [],
+      "newMissing": [],
+      "ok": true
+    }
+  ]
+}

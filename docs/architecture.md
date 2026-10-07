@@ -96,5 +96,6 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
 - 휴대폰 폭(390px): 페이지 수준 가로 넘침은 없으나, 인라인 SVG 다이어그램 라벨이 축소되어 유효 글자 크기가
   약 4~7px(홈, 조직의 모양, 참모와 거버넌스, Operator vs Meta Mode, 생명주기)이다. 표 4곳·코드블록 2곳은
   자체 가로 스크롤이다(2026-09-30 실 브라우저 측정). 미해결 — DoD U-06.
-- `docs/work/3way-reference-answers.md`는 내비에 없는 작업 문서인데도 빌드 대상이라 `/work/3way-reference-answers`
-  URL로 공개돼 있다(2026-09-30 `dist/work/` 확인). 의도된 공개인지는 미확정 — operator 확인 사항.
+- `docs/work/3way-reference-answers.md`는 작업 문서라 빌드에서 제외한다(`srcExclude`, operator 결정 OD-07,
+  2026-10-07 — 낡았고 P-11 대조 전이라 공개 의도가 없었음). 파일은 저장소에 그대로 둔다. P-11 뒤 "어떻게 검증했나"의
+  재료로 다시 쓸 수 있다.

@@ -1,0 +1,96 @@
+{
+  "base": "http://localhost:4182/aise-org-site/",
+  "checkedAt": "2026-10-07T09:04:52.269Z",
+  "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+  "failures": 9,
+  "rows": [
+    {
+      "page": "quick-guide",
+      "status": 200,
+      "oldFound": [
+        "기존 구조를 흔드는 조직개편만 사용자 결재가 필요합니다"
+      ],
+      "newMissing": [
+        "기존 역할의 정의 변경·해고도 인사참모가 스스로 하며 사용자 결재는 없습니다"
+      ],
+      "ok": false
+    },
+    {
+      "page": "operator-vs-meta-mode",
+      "status": 200,
+      "oldFound": [
+        "승인을 거친 조직개편까지도 여기 포함됩니다"
+      ],
+      "newMissing": [],
+      "ok": false
+    },
+    {
+      "page": "staff-governance",
+      "status": 200,
+      "oldFound": [
+        "채용/조직개편의 분석·승인·실행 분리는"
+      ],
+      "newMissing": [
+        "조직개편\"이라는 개념을 없앤 이유",
+        "2026-09-30에 다시 바뀌었습니다"
+      ],
+      "ok": false
+    },
+    {
+      "page": "glossary",
+      "status": 200,
+      "oldFound": [],
+      "newMissing": [
+        "2026-09-30까지 쓰던 \"조직개편\"이라는 개념은 폐지됐습니다"
+      ],
+      "ok": false
+    },
+    {
+      "page": "lifecycle",
+      "status": 200,
+      "oldFound": [],
+      "newMissing": [
+        "개념도 2026-09-30에 폐지돼"
+      ],
+      "ok": false
+    },
+    {
+      "page": "en/quick-guide",
+      "status": 200,
+      "oldFound": [
+        "Only a reorganization that shakes the existing structure"
+      ],
+      "newMissing": [],
+      "ok": false
+    },
+    {
+      "page": "en/operator-vs-meta-mode",
+      "status": 200,
+      "oldFound": [
+        "even reorganization that has been approved by the user"
+      ],
+      "newMissing": [],
+      "ok": false
+    },
+    {
+      "page": "en/staff-governance",
+      "status": 200,
+      "oldFound": [
+        "split for recruitment/reorganization"
+      ],
+      "newMissing": [
+        "why the concept of \"reorganization\" was dropped"
+      ],
+      "ok": false
+    },
+    {
+      "page": "en/glossary",
+      "status": 200,
+      "oldFound": [],
+      "newMissing": [
+        "The concept of \"reorganization\" used until 2026-09-30 has been dropped"
+      ],
+      "ok": false
+    }
+  ]
+}
