@@ -154,3 +154,25 @@ details.aise-cite[open] .aise-cite-caret { display: inline-block; transform: rot
   details.aise-point > .aise-point-body,
   details.aise-cite > :not(summary) { display: block !important; }
 }
+
+/*
+ * Mermaid label clipping fix.
+ *
+ * Mermaid measures each HTML label in a detached container outside `.vp-doc`
+ * (div line-height 1.5 = 24px at 16px) and reserves exactly that height in the
+ * <foreignObject>, which clips overflow. Once the SVG sits inside `.vp-doc`,
+ * VitePress's `.vp-doc p { line-height: 28px }` (labels are <p> elements) and
+ * `.vp-doc b, strong { font-weight: 600 }` make every line 28px instead of 24px,
+ * so a label grows past its box and the last line is cut off (visible on
+ * multi-line labels, e.g. a <b>/<i> line after <br/>). Make labels inside diagrams
+ * ignore those page-prose rules so rendered size equals measured size.
+ */
+.vp-doc .mermaid foreignObject p,
+.vp-doc .mermaid foreignObject span,
+.vp-doc .mermaid foreignObject div {
+  line-height: inherit;
+}
+.vp-doc .mermaid foreignObject b,
+.vp-doc .mermaid foreignObject strong {
+  font-weight: bolder;
+}
