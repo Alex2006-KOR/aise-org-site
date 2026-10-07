@@ -4,6 +4,17 @@ title: Background & Philosophy — why build this at all
 
 # Background & Philosophy
 
+::: lead
+A group of pages that looks at the decision to build this structure through five principles, the differences from the usual way, and what was done differently because it is AI.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [1. Why it started](/en/story/background), [3. Why an organization](/en/story/why-organization) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 This category only covers **why**. What the structure looks like and how it actually runs is
 handed off to the next category ([How It Works](/en/how-it-works)); here we follow the judgment
 that led to building such a structure in the first place.

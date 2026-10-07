@@ -167,6 +167,13 @@ The real case of a written prohibition broken the very next day, and how the hoo
   dropped. Hiring, changing and firing roles is HR-staff's job, and the operator is informed by report.)
 :::
 
+::: warning Review question Q-3 (for the operator — to be removed before publication)
+In parts 19 and 34 you said that "AI is a being whose emotions and relationships need not be considered, so a hierarchy is
+easier to understand and dividing responsibility avoids confusion". The later agreed "why a vertical structure" (content A)
+says no other grounds may be used, so this sentence was left out. Tell me whether to include it — not as grounds for the
+vertical structure but as background on "what need not be considered because these are AI, unlike a human organization".
+:::
+
 ## What was given up
 
 ::: point Agents at the same level are not allowed to debate each other and reach a result on their own. {#given-up}

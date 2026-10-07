@@ -4,6 +4,17 @@ title: Staff & Governance — How We Came to Separate Running the Work from Runn
 
 # How we came to separate running the work from running the org
 
+::: lead
+Why execution responsibility and operating responsibility were split, and why one staff role became several.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [3. Why an organization](/en/story/why-organization) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 ::: tip Where you are — How It Works (2/5)
 The second page in the [How It Works](/en/how-it-works) category. If
 [Organization Model](/en/organization-model) drew the layout, this page zooms in on **the one

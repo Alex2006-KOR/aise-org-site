@@ -4,10 +4,21 @@ title: Glossary — All the Terms Used Here, in One Place
 
 # All the terms used here, in one place
 
+::: lead
+aise-core's real names used on this site, with their plain-word meanings.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. Drop in from any page. The front page is the [Briefing](/en/).
+
+</div>
+
+
 ::: tip Where you are — Reference
 This page isn't part of the narrative; it's **reference material.** There's no need to read it in
 order — drop in whenever an unfamiliar term shows up on another page. To get back to the overall
-flow → the category map on [Home](/en/).
+flow → the story order on the [Briefing](/en/).
 :::
 
 Here's a collection of the terms used throughout this site. They follow one notation rule — **the
@@ -157,7 +168,7 @@ not once a department happens to end.
    (`OP_ORCHESTRATOR.md`, `HR_ORCHESTRATOR.md`, `AS_ORCHESTRATOR.md`, `MG_ORCHESTRATOR.md`) — you
    can see where the names outside the parentheses in this glossary actually live.
 
-**Next.** To go back to the beginning and see the whole picture again → [Home](/en/).
+**Next.** To go back to the beginning and see the whole picture again → [Briefing](/en/).
 
 *Source: the whole of `CONSTITUTION.md`, `schema/README.md`, `schema/*_ORCHESTRATOR.md`, `governance/MODE_POLICY.md`;
 `knowledge/decisions/workspace/instance-data-location.md` "2026-08-06 — org-instance-directory-split",

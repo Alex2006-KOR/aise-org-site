@@ -4,6 +4,17 @@ title: Organization Model — Org Chart and Execution Graph
 
 # We wanted one person to still be able to see the whole thing
 
+::: lead
+How staff, departments and roles are arranged and why the depth is fixed at two, plus an execution graph drawn from a real session.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [2. At a glance](/en/story/at-a-glance), [3. Why an organization](/en/story/why-organization) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 ::: tip Where you are — How It Works (1/5)
 The first page in the [How It Works](/en/how-it-works) category. The previous category finished
 the "why," so from here on it's **"how."** This category starts static and moves steadily toward

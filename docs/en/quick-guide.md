@@ -4,6 +4,17 @@ title: Quick Guide — Actually Using It
 
 # Quick Guide — actually using it
 
+::: lead
+A practical reference you can follow without reading the explanations: only what to type now, in order.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [2. At a glance](/en/story/at-a-glance) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 ::: tip This chapter is different
 The four categories before this one were explanations meant to help you **understand** AISE. This
 chapter is a **hands-on reference for people who actually want to use it** — you can follow it

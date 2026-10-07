@@ -4,11 +4,22 @@ title: Ultimate Goal — An Organization Rather Than a Framework
 
 # Why we are trying to build an organization rather than a framework
 
+::: lead
+Why this is called an organization rather than a framework — that is, what all of this is for.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [7. Growth, results, limits](/en/story/growth-and-limits) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 ::: tip Where you are — Evaluation & Value (2/2)
 The last page in the [Evaluation & Value](/en/value) category, and the end of the whole
 narrative. If [Structural Principles / OCP](/en/structural-principles-ocp) answered "does this
 structure hold up when changed," this page answers **"so what is all of it for"** — why we call
-it an "organization" rather than a "framework." The question thrown out back on [Home](/en/)
+it an "organization" rather than a "framework." The question thrown out back on [AISE overview](/en/overview)
 closes here.
 :::
 

@@ -4,6 +4,17 @@ title: In Practice — what happens when you actually hand work to this org
 
 # In Practice: Usage & Handoff
 
+::: lead
+A guide to handing work to the organization and to how that work carries on after a session ends.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [2. At a glance](/en/story/at-a-glance), [5. How it is kept](/en/story/how-it-is-kept) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 The previous two categories explained **what the organization looks like**. This one covers what
 actually happens when you **hand it work**, and how that work **survives after the session ends**.
 

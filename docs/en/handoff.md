@@ -4,6 +4,17 @@ title: Carrying on across sessions
 
 # Carrying on across sessions
 
+::: lead
+What actually remains after a session ends, and how the next run carries on from it.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [5. How it is kept](/en/story/how-it-is-kept) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 ::: tip Where you are — In Practice (2/2)
 The last page in the [In Practice](/en/in-practice) category. If
 [How to hand work to this org](/en/usage) followed how a unit of work **begins**, this page covers
@@ -11,7 +22,7 @@ The last page in the [In Practice](/en/in-practice) category. If
 organization; the next category, [Evaluation & Value](/en/value), is the wrap-up.
 :::
 
-We're back to the problem raised on [Home](/en/). Sessions end. Sometimes by hitting a context
+We're back to the problem raised on [AISE overview](/en/overview). Sessions end. Sometimes by hitting a context
 limit, sometimes just by closing the window. This page shows, file by file, **what actually
 survives that.**
 

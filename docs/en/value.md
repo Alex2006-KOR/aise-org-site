@@ -4,6 +4,17 @@ title: Evaluation & Value — so what did this structure actually produce
 
 # Evaluation & Value
 
+::: lead
+A group of pages that looks back at how the structure absorbs change and what this organization is ultimately aiming at.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [4. Principles](/en/story/principles), [7. Growth, results, limits](/en/story/growth-and-limits) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 The last category. It revisits **what the structures above were actually worth**, and what this
 organization is ultimately aiming at.
 
@@ -39,7 +50,7 @@ straight through is the right shape for them.
 That's the end of the explanation. To actually try it, go to the standalone chapter
 [Quick Guide](/en/quick-guide), which is a different kind of page; if you'd like every term in one
 place, go to the [Glossary](/en/glossary); to sweep the whole thing again, head back to
-[Home](/en/).
+[Briefing](/en/).
 
 **Next.** → [Structural Principles / OCP](/en/structural-principles-ocp)
 

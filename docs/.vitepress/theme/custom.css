@@ -176,3 +176,13 @@ details.aise-cite[open] .aise-cite-caret { display: inline-block; transform: rot
 .vp-doc .mermaid foreignObject strong {
   font-weight: bolder;
 }
+
+/* Reference-track header note (PM, rescope-site-2026-10-07): which story page a reference page continues. */
+.vp-doc .aise-ref-note {
+  font-size: 0.9em;
+  color: var(--vp-c-text-2);
+  border-left: 3px solid var(--vp-c-divider);
+  padding: 2px 0 2px 12px;
+  margin: 12px 0 20px;
+}
+.vp-doc .aise-ref-note p { margin: 0; }

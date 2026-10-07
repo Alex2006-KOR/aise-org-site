@@ -44,6 +44,14 @@ first section of the reference page [Quick Guide](/en/quick-guide). Status: **de
 tested with another user**.
 :::
 
+::: warning Review question Q-2 (for the operator — to be removed before publication)
+The fourth need in [1. Background](/en/story/background) was "the same user experience after distribution". What you
+said in the source (part 27) was "policy is enforced by hooks, scripts and documents; the organization is shaped to the
+user's taste", and you never said directly that this answers the fourth need. This page joins them as "what must be the
+same is guaranteed at the policy layer; the organization is deliberately allowed to differ". Please confirm that this
+matches your intent, or whether "the same experience" should go to page 7 as a still-unsolved limit.
+:::
+
 ## Many tools: designed · implemented on Claude Code · not yet tested on other tools
 
 ::: point The rules are written without any tool's vocabulary. Each tool's "adapter" provides what the rules need. {#adapters}

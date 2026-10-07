@@ -4,6 +4,17 @@ title: Home — What Happens When You Build a Company Around an AI That Forgets 
 
 # What Happens When You Build a Company Around an AI That Forgets Every Session
 
+::: lead
+The former front page. Its framing — building an organization around an AI that forgets when a session ends — and its two figures are kept as they were.
+:::
+
+<div class="aise-ref-note">
+
+This page is the former front page, moved to **reference material**. The front page is now the [Briefing](/en/), and the story starts at [1. Why it started](/en/story/background).
+
+</div>
+
+
 Ask a coding assistant to fix a bug today, and something pretty impressive happens — it reads
 the code, finds the cause, and writes a fix that actually works. Ask about a similar bug a month
 later, in a new session, and it starts from zero. The model didn't suddenly get worse. Nothing it
