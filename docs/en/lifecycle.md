@@ -4,6 +4,17 @@ title: Lifecycle — An Organization That Grows Through Six Stages
 
 # So you don't solve the same problem from scratch twice
 
+::: lead
+The timeline of one department from birth to end, and the six stages through which its experience accumulates in the organization.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [7. Growth, results, limits](/en/story/growth-and-limits) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 ::: tip Where you are — How It Works (3/5)
 The third page in the [How It Works](/en/how-it-works) category, and **this is where the structure
 starts moving.** If the previous two ([Organization Model](/en/organization-model),

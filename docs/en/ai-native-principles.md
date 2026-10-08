@@ -4,6 +4,17 @@ title: AI-Native Principles — Things AI Doesn't Have to Give Up
 
 # Things AI doesn't have to give up
 
+::: lead
+Of the differences from the usual way, only those "made possible because AI differs from people" are gathered here.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [3. Why an organization](/en/story/why-organization) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 ::: tip Where you are — Background & Philosophy (3/3)
 The last page in the [Background & Philosophy](/en/background) category. If
 [What the usual way does differently](/en/real-world-vs-aise) laid out the differences across
@@ -28,7 +39,7 @@ not restricted just because it's AI. They're actively used instead.
 - **Continuous organizational learning** — the six-stage cycle from [Lifecycle](/en/lifecycle)
   never stops.
 - **Persistence of organizational memory** — the Project Record (the department's record files) survives after a session ends, so
-  the next session can pick it up (see [Home](/en/)).
+  the next session can pick it up (see [AISE overview](/en/overview)).
 - **Independence from AI tools** — the organization's identity isn't tied to any particular model
   or tool. Tools can change; the organization's philosophy and operating principles don't.
 

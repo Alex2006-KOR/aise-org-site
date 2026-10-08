@@ -4,6 +4,17 @@ title: Structural Principles / OCP — Adding On Rather Than Rewriting
 
 # Adding on rather than rewriting
 
+::: lead
+The decisions that let the structure absorb change by adding rather than modifying what exists.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [4. Principles](/en/story/principles) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 ::: tip Where you are — Evaluation & Value (1/2)
 The first page in the [Evaluation & Value](/en/value) category. The previous category finished
 **how to actually use** this organization, so now it's time to look back — and a structure's worth

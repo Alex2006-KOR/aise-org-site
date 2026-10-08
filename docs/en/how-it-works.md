@@ -4,6 +4,17 @@ title: How It Works — what it looks like and how it actually runs
 
 # How It Works
 
+::: lead
+A guide to the group of five pages on what the organization actually looks like and how it runs.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [2. At a glance](/en/story/at-a-glance) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 If [Background & Philosophy](/en/background) was "why," this category is **"how."** Five pages
 start from the static structure and move steadily toward the parts that move.
 

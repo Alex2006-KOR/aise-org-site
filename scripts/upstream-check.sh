@@ -22,7 +22,9 @@ fail=0
 
 echo; echo "== 1. references"
 ( cd "$CORE" && python3 governance/reference_check.py "$SITE"/docs/*.md "$SITE"/docs/en/*.md "$SITE"/docs/work/*.md ) || fail=1
-old=$(grep -rnoE '(knowledge/decisions/)?20[0-9]{2}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+\.md' "$SITE/docs" || true)
+# Old one-file decision names: a bare dated filename or knowledge/decisions/<date>-<slug>.md. Dated files under other
+# folders (knowledge/evaluation/, knowledge/changes/) are current names, so a match must not continue a path.
+old=$(grep -rnoP '(?<![\w/.-])(knowledge/decisions/)?20[0-9]{2}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+\.md' "$SITE/docs" || true)
 if [ -n "$old" ]; then echo "old-form decision filenames (map: aise-core knowledge/evaluation/*decisions-topic-migration*):"; echo "$old"; fail=1; fi
 
 echo; echo "== 2. quotes broken since $THROUGH"

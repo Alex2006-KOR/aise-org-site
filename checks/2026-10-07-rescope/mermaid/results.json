@@ -1,0 +1,6934 @@
+[
+ {
+  "scheme": "light",
+  "page": "collaboration-model",
+  "diagrams": 2,
+  "labels": 19,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.03,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "부서 간 협업 조립",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 120.265625,
+      "naturalW": 120,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서 내부 협업 조립",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 135.265625,
+      "naturalW": 135,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "가벼운 자문(질문/확인)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 157.96875,
+      "naturalW": 158,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "동적 협업 — 필요하면 즉시 채용/합류",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "사용자",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "업무참모",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 60,
+      "naturalW": 60,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서 A (PM)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 87.0625,
+      "naturalW": 87,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서 B (PM)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 87.09375,
+      "naturalW": 87,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "역할 1",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45.265625,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "역할 2",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45.265625,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "역할 3",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45.265625,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "새 역할",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 50.09375,
+      "naturalW": 50,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   },
+   {
+    "diagram": 1,
+    "labels": [
+     {
+      "text": "Phase 2 위임",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 98.125,
+      "naturalW": 98,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "브랜치 위에 이어서",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 130.171875,
+      "naturalW": 130,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "직접 재검증",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 80.09375,
+      "naturalW": 80,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "PM",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 23.453125,
+      "naturalW": 23,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "backend-engineer세션 기반 신원 확인",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 144.359375,
+      "naturalW": 144,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer로그인 화면",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 144.96875,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "테스트 273·207 passedPR #18 → #19 순서",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 177.96875,
+      "naturalW": 178,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "en/collaboration-model",
+  "diagrams": 2,
+  "labels": 19,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.34,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "assembles cross-department collaboration",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "assembles intra-department collaboration",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "lightweight consultation (ask/confirm)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "dynamic collaboration — recruit/bring in",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "User",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 36.46875,
+      "naturalW": 36,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Ops-staff",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 72.296875,
+      "naturalW": 72,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Dept A (PM)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 95.65625,
+      "naturalW": 96,
+      "clipPx": 0,
+      "clipXPx": 0.34,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Dept B (PM)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 95.6875,
+      "naturalW": 96,
+      "clipPx": 0,
+      "clipXPx": 0.31,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Role 1",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 49.75,
+      "naturalW": 50,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Role 2",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 49.75,
+      "naturalW": 50,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Role 3",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 49.75,
+      "naturalW": 50,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "New role",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 70.296875,
+      "naturalW": 70,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   },
+   {
+    "diagram": 1,
+    "labels": [
+     {
+      "text": "delegates Phase 2",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 146.828125,
+      "naturalW": 147,
+      "clipPx": 0,
+      "clipXPx": 0.17,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "builds on that branch",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 170.984375,
+      "naturalW": 171,
+      "clipPx": 0,
+      "clipXPx": 0.02,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "re-verifies directly",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 144.75,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "PM",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 23.453125,
+      "naturalW": 23,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "backend-engineersession-based identity",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 179.4375,
+      "naturalW": 179,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineerlogin screen",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 144.96875,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "tests 273 · 207 passedPR #18 → #19 order",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 182.203125,
+      "naturalW": 182,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "organization-model",
+  "diagrams": 2,
+  "labels": 27,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.48,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "부서: 다른 프로젝트",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 135.5625,
+      "naturalW": 136,
+      "clipPx": 0,
+      "clipXPx": 0.44,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서: aise-org-site",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 139.890625,
+      "naturalW": 140,
+      "clipPx": 0,
+      "clipXPx": 0.11,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "역할 카탈로그 — 클래스 (재사용 단위)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 263.921875,
+      "naturalW": 264,
+      "clipPx": 0,
+      "clipXPx": 0.08,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "승인 절차 없이 재사용",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 150.265625,
+      "naturalW": 150,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "동시에 사용 가능",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "이 부서엔 불필요",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 144.96875,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "devops-engineer",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 134.515625,
+      "naturalW": 135,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "project-manager",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 133.21875,
+      "naturalW": 133,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer＋ 이 부서의 도메인 프로필",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 186.34375,
+      "naturalW": 186,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "project-manager＋ 이 부서의 도메인 프로필",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 186.34375,
+      "naturalW": 186,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer＋ 다른 도메인 프로필",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 151.265625,
+      "naturalW": 151,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   },
+   {
+    "diagram": 1,
+    "labels": [
+     {
+      "text": "Wave 1 · 병렬",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 104.4375,
+      "naturalW": 104,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Wave 1 · 병렬",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 104.4375,
+      "naturalW": 104,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Wave 1 · 병렬",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 104.4375,
+      "naturalW": 104,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Wave 1 · 병렬",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 104.4375,
+      "naturalW": 104,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "순차 위임",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 65.09375,
+      "naturalW": 65,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Wave 2 · 순차",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 104.4375,
+      "naturalW": 104,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "직접 재검증",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 80.09375,
+      "naturalW": 80,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "업무참모 세션e9540e5f",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 95.09375,
+      "naturalW": 95,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "sfr-ssot-platform PM",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 160.328125,
+      "naturalW": 160,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "simple-ragcurl-platform PM",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "aise-org-site PM",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 127.953125,
+      "naturalW": 128,
+      "clipPx": 0,
+      "clipXPx": 0.05,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "llm-wiki-platform PM",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 163.796875,
+      "naturalW": 164,
+      "clipPx": 0,
+      "clipXPx": 0.2,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineerApp.tsx 391→228줄",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 155,
+      "naturalW": 155,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "aise-org-site PM09-17 재개 · 2분 만에 중단",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 192.1875,
+      "naturalW": 192,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "평가 재실행mean_recall 0.744 재현",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 182.921875,
+      "naturalW": 183,
+      "clipPx": 0,
+      "clipXPx": 0.08,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "en/organization-model",
+  "diagrams": 2,
+  "labels": 27,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.5,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "Department: another project",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 230.484375,
+      "naturalW": 230,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Department: aise-org-site",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 206.71875,
+      "naturalW": 207,
+      "clipPx": 0,
+      "clipXPx": 0.28,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Role catalog — classes (reusable units)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 313.5,
+      "naturalW": 314,
+      "clipPx": 0,
+      "clipXPx": 0.5,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "reused without an approval step",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "usable at the same time",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 195.125,
+      "naturalW": 195,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "not needed by this department",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 144.96875,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "devops-engineer",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 134.515625,
+      "naturalW": 135,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "project-manager",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 133.21875,
+      "naturalW": 133,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer+ this department's dom",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "project-manager+ this department's domai",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer+ a different domain pr",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   },
+   {
+    "diagram": 1,
+    "labels": [
+     {
+      "text": "Wave 1 · parallel",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 133.96875,
+      "naturalW": 134,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Wave 1 · parallel",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 133.96875,
+      "naturalW": 134,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Wave 1 · parallel",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 133.96875,
+      "naturalW": 134,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Wave 1 · parallel",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 133.96875,
+      "naturalW": 134,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "sequential delegation",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 173.421875,
+      "naturalW": 173,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Wave 2 · sequential",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 157.875,
+      "naturalW": 158,
+      "clipPx": 0,
+      "clipXPx": 0.13,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "re-verifies directly",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 144.75,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Ops-staff sessione9540e5f",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 136.609375,
+      "naturalW": 137,
+      "clipPx": 0,
+      "clipXPx": 0.39,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "sfr-ssot-platform PM",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 160.328125,
+      "naturalW": 160,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "simple-ragcurl-platform PM",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "aise-org-site PM",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 127.953125,
+      "naturalW": 128,
+      "clipPx": 0,
+      "clipXPx": 0.05,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "llm-wiki-platform PM",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 163.796875,
+      "naturalW": 164,
+      "clipPx": 0,
+      "clipXPx": 0.2,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineerApp.tsx 391→228 lines",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 182.296875,
+      "naturalW": 182,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "aise-org-site PM09-17 resume · stopped a",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "re-runs evaluationreproduces mean_recall",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "operator-vs-meta-mode",
+  "diagrams": 1,
+  "labels": 13,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.42,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "아니오",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "예",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 15,
+      "naturalW": 15,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "아니오(읽기만)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 102.484375,
+      "naturalW": 102,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "예",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 15,
+      "naturalW": 15,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Meta",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 39.734375,
+      "naturalW": 40,
+      "clipPx": 0,
+      "clipXPx": 0.27,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Operator",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 71.625,
+      "naturalW": 72,
+      "clipPx": 0,
+      "clipXPx": 0.38,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Bash/Edit/Write 호출",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 158.359375,
+      "naturalW": 158,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "경로를 정규화(os.path.normpath)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 155.34375,
+      "naturalW": 155,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "보호 경로인가?(CONSTITUTION.md, governance/, o",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "통과",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "쓰기 지시어 포함?(>, sed -i, rm, mv ...)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 167.328125,
+      "naturalW": 167,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "현재 모드?",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 73.578125,
+      "naturalW": 74,
+      "clipPx": 0,
+      "clipXPx": 0.42,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "거부",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "en/operator-vs-meta-mode",
+  "diagrams": 1,
+  "labels": 13,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.42,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "no",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 19.9375,
+      "naturalW": 20,
+      "clipPx": 0,
+      "clipXPx": 0.06,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "yes",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 27.65625,
+      "naturalW": 28,
+      "clipPx": 0,
+      "clipXPx": 0.34,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "no (read only)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 112.46875,
+      "naturalW": 112,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "yes",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 27.65625,
+      "naturalW": 28,
+      "clipPx": 0,
+      "clipXPx": 0.34,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Meta",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 39.734375,
+      "naturalW": 40,
+      "clipPx": 0,
+      "clipXPx": 0.27,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Operator",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 71.625,
+      "naturalW": 72,
+      "clipPx": 0,
+      "clipXPx": 0.38,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Bash/Edit/Write call",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 155.84375,
+      "naturalW": 156,
+      "clipPx": 0,
+      "clipXPx": 0.16,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "normalize the path(os.path.normpath)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 155.34375,
+      "naturalW": 155,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "is it a protected path?(CONSTITUTION.md,",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "allowed",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 61.578125,
+      "naturalW": 62,
+      "clipPx": 0,
+      "clipXPx": 0.42,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "does it include a write directive?(>, se",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "current mode?",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 116.671875,
+      "naturalW": 117,
+      "clipPx": 0,
+      "clipXPx": 0.33,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "denied",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 54.59375,
+      "naturalW": 55,
+      "clipPx": 0,
+      "clipXPx": 0.41,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "philosophy",
+  "diagrams": 1,
+  "labels": 8,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.5,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "AISE — run마다 기록에서 새로 시작한다",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 284.21875,
+      "naturalW": 284,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "run 1(기본 티어)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 77.578125,
+      "naturalW": 78,
+      "clipPx": 0,
+      "clipXPx": 0.42,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Project Record구조화된 상태 문서",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 130.171875,
+      "naturalW": 130,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "run 2(원하는 티어, 처음부터자기 방식으로 다시 도출)",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 171.5,
+      "naturalW": 172,
+      "clipPx": 0,
+      "clipXPx": 0.5,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "흔한 방식 — 긴 컨텍스트 하나를 이어간다",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 286.515625,
+      "naturalW": 287,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "1~11단계 진행(가벼운 모델)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 109.03125,
+      "naturalW": 109,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "12단계에서모델 교체",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 80.359375,
+      "naturalW": 80,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "강한 모델이 남이 진행 중이던궤적을 이어받음→ 이점의 절반 이하만 회복",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "en/philosophy",
+  "diagrams": 1,
+  "labels": 8,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.33,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "AISE — every run starts fresh from the r",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 365.0625,
+      "naturalW": 365,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Run 1(baseline tier)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 111.734375,
+      "naturalW": 112,
+      "clipPx": 0,
+      "clipXPx": 0.27,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Project Recorda structured state documen",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Run 2(desired tier, re-derivesfrom scrat",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Common approach — carry one long context",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 425.4375,
+      "naturalW": 425,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Steps 1-11(light model)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 102.859375,
+      "naturalW": 103,
+      "clipPx": 0,
+      "clipXPx": 0.14,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Model swappedat step 12",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 124.671875,
+      "naturalW": 125,
+      "clipPx": 0,
+      "clipXPx": 0.33,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Strong model picks up atrajectory someon",
+      "reservedH": 144,
+      "naturalH": 144,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "overview",
+  "diagrams": 1,
+  "labels": 7,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.48,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "① 읽고 부트스트랩",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 129.515625,
+      "naturalW": 130,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "② 분해·위임",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 84.515625,
+      "naturalW": 85,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "③ 산출물",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 64.4375,
+      "naturalW": 64,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "④ 끝나기 전에 기록",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 134.609375,
+      "naturalW": 135,
+      "clipPx": 0,
+      "clipXPx": 0.39,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Project Record부서의 3개 파일",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 115.109375,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "PM run(이전 기억 없이 시작)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 147.75,
+      "naturalW": 148,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서원에게 위임· 결과 직접 검증",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 110.34375,
+      "naturalW": 110,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "en/overview",
+  "diagrams": 1,
+  "labels": 7,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.2,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "① read and bootstrap",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 172.890625,
+      "naturalW": 173,
+      "clipPx": 0,
+      "clipXPx": 0.11,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "② decompose, delegate",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 192.265625,
+      "naturalW": 192,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "③ deliverables",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 116.796875,
+      "naturalW": 117,
+      "clipPx": 0,
+      "clipXPx": 0.2,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "④ write back before finishing",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Project Recordthe department's 3 files",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 191.796875,
+      "naturalW": 192,
+      "clipPx": 0,
+      "clipXPx": 0.2,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "PM run(starts with no prior memory)",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Delegate to members· verify the results ",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "real-world-vs-aise",
+  "diagrams": 1,
+  "labels": 7,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "있다",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "아직 없다",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 65.09375,
+      "naturalW": 65,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "필요해 보이는 기능이 하나 떠올랐다",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "이걸 실제로 요구한사건이 있었나?",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 130.171875,
+      "naturalW": 130,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "만든다",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "안 만든다대신 이유를 기록에 남긴다",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 180.265625,
+      "naturalW": 180,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "실제 사건이 생기면그 사건에 맞춰 설계",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 135.265625,
+      "naturalW": 135,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "en/real-world-vs-aise",
+  "diagrams": 1,
+  "labels": 7,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.3,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "Yes",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 25.828125,
+      "naturalW": 26,
+      "clipPx": 0,
+      "clipXPx": 0.17,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Not yet",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 58.703125,
+      "naturalW": 59,
+      "clipPx": 0,
+      "clipXPx": 0.3,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "A feature that looks necessary comes to ",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Has a real eventactually demanded it?",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 178.25,
+      "naturalW": 178,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Build it",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 55.96875,
+      "naturalW": 56,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Don't build itRecord the reason instead",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "When a real event arrives,design against",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "staff-governance",
+  "diagrams": 1,
+  "labels": 7,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.2,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "새 역할이 필요하다채용",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 130.171875,
+      "naturalW": 130,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "분석·승인인사참모 단독사용자 결재 없음",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "역할 파일 작성업무참모부서는 요청만",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 100.171875,
+      "naturalW": 100,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "기존 역할을고치거나 지운다정의 변경 · 해고",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 112.796875,
+      "naturalW": 113,
+      "clipPx": 0,
+      "clipXPx": 0.2,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "판단·실행인사참모 단독사용자 결재 없음",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "좁히기·해고는다른 부서가 안 쓸 때만",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 155.34375,
+      "naturalW": 155,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "업무참모의 상황 보고로사용자에게 알린다",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 160.171875,
+      "naturalW": 160,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "en/staff-governance",
+  "diagrams": 1,
+  "labels": 7,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.48,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "A new role is neededRecruitment",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 167.4375,
+      "naturalW": 167,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Analysis + approvalHR-staff aloneno user",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 159.359375,
+      "naturalW": 159,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Writes the role fileOps-staffdepartment ",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "An existing roleis changed or removedDef",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 184.359375,
+      "naturalW": 184,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Judgment + executionHR-staff aloneno use",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 178.5625,
+      "naturalW": 179,
+      "clipPx": 0,
+      "clipXPx": 0.44,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Narrowing or firingonly if no otherdepar",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 152.203125,
+      "naturalW": 152,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Reported to the userin Ops-staff'sstatus",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 165.515625,
+      "naturalW": 166,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "structural-principles-ocp",
+  "diagrams": 1,
+  "labels": 10,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.33,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "확장 ①",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 49.4375,
+      "naturalW": 49,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "확장 ②",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 49.4375,
+      "naturalW": 49,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "확장 ③",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 49.4375,
+      "naturalW": 49,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "core — 절대 건드리지 않는다",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 206,
+      "naturalW": 206,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "CONSTITUTION.md",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 151.75,
+      "naturalW": 152,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "schema/",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 67.90625,
+      "naturalW": 68,
+      "clipPx": 0,
+      "clipXPx": 0.09,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "governance/",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 99.671875,
+      "naturalW": 100,
+      "clipPx": 0,
+      "clipXPx": 0.33,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "adapters/claude-code/",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 179.28125,
+      "naturalW": 179,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "adapters/<다른 AI 도구>/ (미래)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "instance/roles/<새 역할>.yaml",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "en/structural-principles-ocp",
+  "diagrams": 1,
+  "labels": 10,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.33,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "extension ①",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 97.4375,
+      "naturalW": 97,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "extension ②",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 97.4375,
+      "naturalW": 97,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "extension ③",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 97.4375,
+      "naturalW": 97,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "core — never touched",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 176.9375,
+      "naturalW": 177,
+      "clipPx": 0,
+      "clipXPx": 0.06,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "CONSTITUTION.md",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 151.75,
+      "naturalW": 152,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "schema/",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 67.90625,
+      "naturalW": 68,
+      "clipPx": 0,
+      "clipXPx": 0.09,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "governance/",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 99.671875,
+      "naturalW": 100,
+      "clipPx": 0,
+      "clipXPx": 0.33,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "adapters/claude-code/",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 179.28125,
+      "naturalW": 179,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "adapters/<another AI tool>/ (future)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "instance/roles/<new role>.yaml",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "usage",
+  "diagrams": 1,
+  "labels": 11,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "산출물",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "끝나기 전에 기록",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "다음 run이 여기서 다시 시작",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 197.203125,
+      "naturalW": 197,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "요약 보고",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 65.09375,
+      "naturalW": 65,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "보고",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "① 모드 선언/aise:op 또는 /aise:meta",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 188.046875,
+      "naturalW": 188,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "② 운영자가 업무참모에게 말한다",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "③ 업무참모· 의도 분석· 어느 부서 일인지 판단· 없으면 부서를 만든다",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 160.4375,
+      "naturalW": 160,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "④ 부서의 PM· 기록 3개 파일을 읽고 부트스트랩· 일을 슬라이스로 쪼",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "⑤ 부서원(역할 클래스)실제 실행",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 157,
+      "naturalW": 157,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서의 Project Record",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 165.203125,
+      "naturalW": 165,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "en/usage",
+  "diagrams": 1,
+  "labels": 11,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.13,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "deliverable",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 89.03125,
+      "naturalW": 89,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "record it before finishing",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 196.46875,
+      "naturalW": 196,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "the next run starts here again",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "digest report",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 103.171875,
+      "naturalW": 103,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "report",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 48.875,
+      "naturalW": 49,
+      "clipPx": 0,
+      "clipXPx": 0.13,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "① Declare a mode/aise:op or /aise:meta",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 174.421875,
+      "naturalW": 174,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "② The operator speaks to Ops-staff",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "③ Ops-staff· analyzes intent· decides wh",
+      "reservedH": 144,
+      "naturalH": 144,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "④ The department's PM· bootstraps by rea",
+      "reservedH": 120,
+      "naturalH": 120,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "⑤ Department members (role-classes)actua",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "The department's Project Record",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "ultimate-goal",
+  "diagrams": 1,
+  "labels": 6,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.17,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "교체",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "교체",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "모델 A",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 46.03125,
+      "naturalW": 46,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "모델 B",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 46.0625,
+      "naturalW": 46,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "모델 C (미래)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 93.828125,
+      "naturalW": 94,
+      "clipPx": 0,
+      "clipXPx": 0.17,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "knowledge/decisions/모델이 바뀌어도 남는 역량",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 180.265625,
+      "naturalW": 180,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "en/ultimate-goal",
+  "diagrams": 1,
+  "labels": 6,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.45,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "swapped",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 71.546875,
+      "naturalW": 72,
+      "clipPx": 0,
+      "clipXPx": 0.45,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "swapped",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 71.546875,
+      "naturalW": 72,
+      "clipPx": 0,
+      "clipXPx": 0.45,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Model A",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 64.078125,
+      "naturalW": 64,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Model B",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 64.109375,
+      "naturalW": 64,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Model C (future)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 130.125,
+      "naturalW": 130,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "knowledge/decisions/capability that surv",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "story/at-a-glance",
+  "diagrams": 1,
+  "labels": 13,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.48,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "부서 (프로젝트 하나)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 142.65625,
+      "naturalW": 143,
+      "clipPx": 0,
+      "clipXPx": 0.34,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "참모 (Operator 모드)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 154.28125,
+      "naturalW": 154,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "지시",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "보고",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "운영자",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "업무참모일: 부서를 꾸리고 조율",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 155.65625,
+      "naturalW": 156,
+      "clipPx": 0,
+      "clipXPx": 0.34,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "인사참모사람: 역할 채용·변경·해고",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 175.734375,
+      "naturalW": 176,
+      "clipPx": 0,
+      "clipXPx": 0.27,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "자산참모도구: 승인·부여",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 105.5625,
+      "naturalW": 106,
+      "clipPx": 0,
+      "clipXPx": 0.44,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "경영참모(Meta 모드)조직 자체의 개선",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "PM계획·분해·검증",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 100.171875,
+      "naturalW": 100,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서원(역할 A)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 58.515625,
+      "naturalW": 59,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서원(역할 B)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 58.546875,
+      "naturalW": 59,
+      "clipPx": 0,
+      "clipXPx": 0.45,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서 기록지시 · 진행 보고 · 프로젝트 기록",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "en/story/at-a-glance",
+  "diagrams": 1,
+  "labels": 13,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.38,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "Department (one project)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 204.78125,
+      "naturalW": 205,
+      "clipPx": 0,
+      "clipXPx": 0.22,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Staff (Operator mode)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 176.90625,
+      "naturalW": 177,
+      "clipPx": 0,
+      "clipXPx": 0.09,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "instruction",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 85.359375,
+      "naturalW": 85,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "report",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 48.875,
+      "naturalW": 49,
+      "clipPx": 0,
+      "clipXPx": 0.13,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Operator",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 71.625,
+      "naturalW": 72,
+      "clipPx": 0,
+      "clipXPx": 0.38,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Ops-staffwork: sets up and coordinates d",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "HR-staffpeople: hires, changes, fires ro",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Asset-stafftools: approves and grants",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Management-staff(Meta mode)improves the ",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "PMplans, splits, verifies",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 163.8125,
+      "naturalW": 164,
+      "clipPx": 0,
+      "clipXPx": 0.19,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Member(role A)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 65.8125,
+      "naturalW": 66,
+      "clipPx": 0,
+      "clipXPx": 0.19,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Member(role B)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 65.8125,
+      "naturalW": 66,
+      "clipPx": 0,
+      "clipXPx": 0.19,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Department recordsinstructions · progres",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "collaboration-model",
+  "diagrams": 2,
+  "labels": 19,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.03,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "부서 간 협업 조립",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 120.265625,
+      "naturalW": 120,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서 내부 협업 조립",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 135.265625,
+      "naturalW": 135,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "가벼운 자문(질문/확인)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 157.96875,
+      "naturalW": 158,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "동적 협업 — 필요하면 즉시 채용/합류",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "사용자",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "업무참모",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 60,
+      "naturalW": 60,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서 A (PM)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 87.0625,
+      "naturalW": 87,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서 B (PM)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 87.09375,
+      "naturalW": 87,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "역할 1",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45.265625,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "역할 2",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45.265625,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "역할 3",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45.265625,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "새 역할",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 50.09375,
+      "naturalW": 50,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   },
+   {
+    "diagram": 1,
+    "labels": [
+     {
+      "text": "Phase 2 위임",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 98.125,
+      "naturalW": 98,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "브랜치 위에 이어서",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 130.171875,
+      "naturalW": 130,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "직접 재검증",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 80.09375,
+      "naturalW": 80,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "PM",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 23.453125,
+      "naturalW": 23,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "backend-engineer세션 기반 신원 확인",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 144.359375,
+      "naturalW": 144,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer로그인 화면",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 144.96875,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "테스트 273·207 passedPR #18 → #19 순서",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 177.96875,
+      "naturalW": 178,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "en/collaboration-model",
+  "diagrams": 2,
+  "labels": 19,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.34,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "assembles cross-department collaboration",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "assembles intra-department collaboration",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "lightweight consultation (ask/confirm)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "dynamic collaboration — recruit/bring in",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "User",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 36.46875,
+      "naturalW": 36,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Ops-staff",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 72.296875,
+      "naturalW": 72,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Dept A (PM)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 95.65625,
+      "naturalW": 96,
+      "clipPx": 0,
+      "clipXPx": 0.34,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Dept B (PM)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 95.6875,
+      "naturalW": 96,
+      "clipPx": 0,
+      "clipXPx": 0.31,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Role 1",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 49.75,
+      "naturalW": 50,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Role 2",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 49.75,
+      "naturalW": 50,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Role 3",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 49.75,
+      "naturalW": 50,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "New role",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 70.296875,
+      "naturalW": 70,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   },
+   {
+    "diagram": 1,
+    "labels": [
+     {
+      "text": "delegates Phase 2",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 146.828125,
+      "naturalW": 147,
+      "clipPx": 0,
+      "clipXPx": 0.17,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "builds on that branch",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 170.984375,
+      "naturalW": 171,
+      "clipPx": 0,
+      "clipXPx": 0.02,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "re-verifies directly",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 144.75,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "PM",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 23.453125,
+      "naturalW": 23,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "backend-engineersession-based identity",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 179.4375,
+      "naturalW": 179,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineerlogin screen",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 144.96875,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "tests 273 · 207 passedPR #18 → #19 order",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 182.203125,
+      "naturalW": 182,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "organization-model",
+  "diagrams": 2,
+  "labels": 27,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.48,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "부서: 다른 프로젝트",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 135.5625,
+      "naturalW": 136,
+      "clipPx": 0,
+      "clipXPx": 0.44,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서: aise-org-site",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 139.890625,
+      "naturalW": 140,
+      "clipPx": 0,
+      "clipXPx": 0.11,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "역할 카탈로그 — 클래스 (재사용 단위)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 263.921875,
+      "naturalW": 264,
+      "clipPx": 0,
+      "clipXPx": 0.08,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "승인 절차 없이 재사용",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 150.265625,
+      "naturalW": 150,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "동시에 사용 가능",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "이 부서엔 불필요",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 144.96875,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "devops-engineer",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 134.515625,
+      "naturalW": 135,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "project-manager",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 133.21875,
+      "naturalW": 133,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer＋ 이 부서의 도메인 프로필",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 186.34375,
+      "naturalW": 186,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "project-manager＋ 이 부서의 도메인 프로필",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 186.34375,
+      "naturalW": 186,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer＋ 다른 도메인 프로필",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 151.265625,
+      "naturalW": 151,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   },
+   {
+    "diagram": 1,
+    "labels": [
+     {
+      "text": "Wave 1 · 병렬",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 104.4375,
+      "naturalW": 104,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Wave 1 · 병렬",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 104.4375,
+      "naturalW": 104,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Wave 1 · 병렬",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 104.4375,
+      "naturalW": 104,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Wave 1 · 병렬",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 104.4375,
+      "naturalW": 104,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "순차 위임",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 65.09375,
+      "naturalW": 65,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Wave 2 · 순차",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 104.4375,
+      "naturalW": 104,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "직접 재검증",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 80.09375,
+      "naturalW": 80,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "업무참모 세션e9540e5f",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 95.09375,
+      "naturalW": 95,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "sfr-ssot-platform PM",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 160.328125,
+      "naturalW": 160,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "simple-ragcurl-platform PM",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "aise-org-site PM",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 127.953125,
+      "naturalW": 128,
+      "clipPx": 0,
+      "clipXPx": 0.05,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "llm-wiki-platform PM",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 163.796875,
+      "naturalW": 164,
+      "clipPx": 0,
+      "clipXPx": 0.2,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineerApp.tsx 391→228줄",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 155,
+      "naturalW": 155,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "aise-org-site PM09-17 재개 · 2분 만에 중단",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 192.1875,
+      "naturalW": 192,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "평가 재실행mean_recall 0.744 재현",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 182.921875,
+      "naturalW": 183,
+      "clipPx": 0,
+      "clipXPx": 0.08,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "en/organization-model",
+  "diagrams": 2,
+  "labels": 27,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.5,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "Department: another project",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 230.484375,
+      "naturalW": 230,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Department: aise-org-site",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 206.71875,
+      "naturalW": 207,
+      "clipPx": 0,
+      "clipXPx": 0.28,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Role catalog — classes (reusable units)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 313.5,
+      "naturalW": 314,
+      "clipPx": 0,
+      "clipXPx": 0.5,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "reused without an approval step",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "usable at the same time",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 195.125,
+      "naturalW": 195,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "not needed by this department",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 144.96875,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "devops-engineer",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 134.515625,
+      "naturalW": 135,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "project-manager",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 133.21875,
+      "naturalW": 133,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer+ this department's dom",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "project-manager+ this department's domai",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer+ a different domain pr",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   },
+   {
+    "diagram": 1,
+    "labels": [
+     {
+      "text": "Wave 1 · parallel",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 133.96875,
+      "naturalW": 134,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Wave 1 · parallel",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 133.96875,
+      "naturalW": 134,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Wave 1 · parallel",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 133.96875,
+      "naturalW": 134,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Wave 1 · parallel",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 133.96875,
+      "naturalW": 134,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "sequential delegation",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 173.421875,
+      "naturalW": 173,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Wave 2 · sequential",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 157.875,
+      "naturalW": 158,
+      "clipPx": 0,
+      "clipXPx": 0.13,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "re-verifies directly",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 144.75,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Ops-staff sessione9540e5f",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 136.609375,
+      "naturalW": 137,
+      "clipPx": 0,
+      "clipXPx": 0.39,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "sfr-ssot-platform PM",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 160.328125,
+      "naturalW": 160,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "simple-ragcurl-platform PM",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "aise-org-site PM",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 127.953125,
+      "naturalW": 128,
+      "clipPx": 0,
+      "clipXPx": 0.05,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "llm-wiki-platform PM",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 163.796875,
+      "naturalW": 164,
+      "clipPx": 0,
+      "clipXPx": 0.2,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineerApp.tsx 391→228 lines",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 182.296875,
+      "naturalW": 182,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "aise-org-site PM09-17 resume · stopped a",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "re-runs evaluationreproduces mean_recall",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "operator-vs-meta-mode",
+  "diagrams": 1,
+  "labels": 13,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.42,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "아니오",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "예",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 15,
+      "naturalW": 15,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "아니오(읽기만)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 102.484375,
+      "naturalW": 102,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "예",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 15,
+      "naturalW": 15,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Meta",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 39.734375,
+      "naturalW": 40,
+      "clipPx": 0,
+      "clipXPx": 0.27,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Operator",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 71.625,
+      "naturalW": 72,
+      "clipPx": 0,
+      "clipXPx": 0.38,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Bash/Edit/Write 호출",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 158.359375,
+      "naturalW": 158,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "경로를 정규화(os.path.normpath)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 155.34375,
+      "naturalW": 155,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "보호 경로인가?(CONSTITUTION.md, governance/, o",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "통과",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "쓰기 지시어 포함?(>, sed -i, rm, mv ...)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 167.328125,
+      "naturalW": 167,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "현재 모드?",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 73.578125,
+      "naturalW": 74,
+      "clipPx": 0,
+      "clipXPx": 0.42,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "거부",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "en/operator-vs-meta-mode",
+  "diagrams": 1,
+  "labels": 13,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.42,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "no",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 19.9375,
+      "naturalW": 20,
+      "clipPx": 0,
+      "clipXPx": 0.06,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "yes",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 27.65625,
+      "naturalW": 28,
+      "clipPx": 0,
+      "clipXPx": 0.34,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "no (read only)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 112.46875,
+      "naturalW": 112,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "yes",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 27.65625,
+      "naturalW": 28,
+      "clipPx": 0,
+      "clipXPx": 0.34,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Meta",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 39.734375,
+      "naturalW": 40,
+      "clipPx": 0,
+      "clipXPx": 0.27,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Operator",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 71.625,
+      "naturalW": 72,
+      "clipPx": 0,
+      "clipXPx": 0.38,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Bash/Edit/Write call",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 155.84375,
+      "naturalW": 156,
+      "clipPx": 0,
+      "clipXPx": 0.16,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "normalize the path(os.path.normpath)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 155.34375,
+      "naturalW": 155,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "is it a protected path?(CONSTITUTION.md,",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "allowed",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 61.578125,
+      "naturalW": 62,
+      "clipPx": 0,
+      "clipXPx": 0.42,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "does it include a write directive?(>, se",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "current mode?",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 116.671875,
+      "naturalW": 117,
+      "clipPx": 0,
+      "clipXPx": 0.33,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "denied",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 54.59375,
+      "naturalW": 55,
+      "clipPx": 0,
+      "clipXPx": 0.41,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "philosophy",
+  "diagrams": 1,
+  "labels": 8,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.5,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "AISE — run마다 기록에서 새로 시작한다",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 284.21875,
+      "naturalW": 284,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "run 1(기본 티어)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 77.578125,
+      "naturalW": 78,
+      "clipPx": 0,
+      "clipXPx": 0.42,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Project Record구조화된 상태 문서",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 130.171875,
+      "naturalW": 130,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "run 2(원하는 티어, 처음부터자기 방식으로 다시 도출)",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 171.5,
+      "naturalW": 172,
+      "clipPx": 0,
+      "clipXPx": 0.5,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "흔한 방식 — 긴 컨텍스트 하나를 이어간다",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 286.515625,
+      "naturalW": 287,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "1~11단계 진행(가벼운 모델)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 109.03125,
+      "naturalW": 109,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "12단계에서모델 교체",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 80.359375,
+      "naturalW": 80,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "강한 모델이 남이 진행 중이던궤적을 이어받음→ 이점의 절반 이하만 회복",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "en/philosophy",
+  "diagrams": 1,
+  "labels": 8,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.33,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "AISE — every run starts fresh from the r",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 365.0625,
+      "naturalW": 365,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Run 1(baseline tier)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 111.734375,
+      "naturalW": 112,
+      "clipPx": 0,
+      "clipXPx": 0.27,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Project Recorda structured state documen",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Run 2(desired tier, re-derivesfrom scrat",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Common approach — carry one long context",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 425.4375,
+      "naturalW": 425,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Steps 1-11(light model)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 102.859375,
+      "naturalW": 103,
+      "clipPx": 0,
+      "clipXPx": 0.14,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Model swappedat step 12",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 124.671875,
+      "naturalW": 125,
+      "clipPx": 0,
+      "clipXPx": 0.33,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Strong model picks up atrajectory someon",
+      "reservedH": 144,
+      "naturalH": 144,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "overview",
+  "diagrams": 1,
+  "labels": 7,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.48,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "① 읽고 부트스트랩",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 129.515625,
+      "naturalW": 130,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "② 분해·위임",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 84.515625,
+      "naturalW": 85,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "③ 산출물",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 64.4375,
+      "naturalW": 64,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "④ 끝나기 전에 기록",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 134.609375,
+      "naturalW": 135,
+      "clipPx": 0,
+      "clipXPx": 0.39,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Project Record부서의 3개 파일",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 115.109375,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "PM run(이전 기억 없이 시작)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 147.75,
+      "naturalW": 148,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서원에게 위임· 결과 직접 검증",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 110.34375,
+      "naturalW": 110,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "en/overview",
+  "diagrams": 1,
+  "labels": 7,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.2,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "① read and bootstrap",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 172.890625,
+      "naturalW": 173,
+      "clipPx": 0,
+      "clipXPx": 0.11,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "② decompose, delegate",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 192.265625,
+      "naturalW": 192,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "③ deliverables",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 116.796875,
+      "naturalW": 117,
+      "clipPx": 0,
+      "clipXPx": 0.2,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "④ write back before finishing",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Project Recordthe department's 3 files",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 191.796875,
+      "naturalW": 192,
+      "clipPx": 0,
+      "clipXPx": 0.2,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "PM run(starts with no prior memory)",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Delegate to members· verify the results ",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "real-world-vs-aise",
+  "diagrams": 1,
+  "labels": 7,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "있다",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "아직 없다",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 65.09375,
+      "naturalW": 65,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "필요해 보이는 기능이 하나 떠올랐다",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "이걸 실제로 요구한사건이 있었나?",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 130.171875,
+      "naturalW": 130,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "만든다",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "안 만든다대신 이유를 기록에 남긴다",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 180.265625,
+      "naturalW": 180,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "실제 사건이 생기면그 사건에 맞춰 설계",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 135.265625,
+      "naturalW": 135,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "en/real-world-vs-aise",
+  "diagrams": 1,
+  "labels": 7,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.3,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "Yes",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 25.828125,
+      "naturalW": 26,
+      "clipPx": 0,
+      "clipXPx": 0.17,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Not yet",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 58.703125,
+      "naturalW": 59,
+      "clipPx": 0,
+      "clipXPx": 0.3,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "A feature that looks necessary comes to ",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Has a real eventactually demanded it?",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 178.25,
+      "naturalW": 178,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Build it",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 55.96875,
+      "naturalW": 56,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Don't build itRecord the reason instead",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "When a real event arrives,design against",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "staff-governance",
+  "diagrams": 1,
+  "labels": 7,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.2,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "새 역할이 필요하다채용",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 130.171875,
+      "naturalW": 130,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "분석·승인인사참모 단독사용자 결재 없음",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "역할 파일 작성업무참모부서는 요청만",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 100.171875,
+      "naturalW": 100,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "기존 역할을고치거나 지운다정의 변경 · 해고",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 112.796875,
+      "naturalW": 113,
+      "clipPx": 0,
+      "clipXPx": 0.2,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "판단·실행인사참모 단독사용자 결재 없음",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "좁히기·해고는다른 부서가 안 쓸 때만",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 155.34375,
+      "naturalW": 155,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "업무참모의 상황 보고로사용자에게 알린다",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 160.171875,
+      "naturalW": 160,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "en/staff-governance",
+  "diagrams": 1,
+  "labels": 7,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.48,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "A new role is neededRecruitment",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 167.4375,
+      "naturalW": 167,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Analysis + approvalHR-staff aloneno user",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 159.359375,
+      "naturalW": 159,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Writes the role fileOps-staffdepartment ",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "An existing roleis changed or removedDef",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 184.359375,
+      "naturalW": 184,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Judgment + executionHR-staff aloneno use",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 178.5625,
+      "naturalW": 179,
+      "clipPx": 0,
+      "clipXPx": 0.44,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Narrowing or firingonly if no otherdepar",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 152.203125,
+      "naturalW": 152,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Reported to the userin Ops-staff'sstatus",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 165.515625,
+      "naturalW": 166,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "structural-principles-ocp",
+  "diagrams": 1,
+  "labels": 10,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.33,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "확장 ①",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 49.4375,
+      "naturalW": 49,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "확장 ②",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 49.4375,
+      "naturalW": 49,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "확장 ③",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 49.4375,
+      "naturalW": 49,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "core — 절대 건드리지 않는다",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 206,
+      "naturalW": 206,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "CONSTITUTION.md",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 151.75,
+      "naturalW": 152,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "schema/",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 67.90625,
+      "naturalW": 68,
+      "clipPx": 0,
+      "clipXPx": 0.09,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "governance/",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 99.671875,
+      "naturalW": 100,
+      "clipPx": 0,
+      "clipXPx": 0.33,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "adapters/claude-code/",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 179.28125,
+      "naturalW": 179,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "adapters/<다른 AI 도구>/ (미래)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "instance/roles/<새 역할>.yaml",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "en/structural-principles-ocp",
+  "diagrams": 1,
+  "labels": 10,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.33,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "extension ①",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 97.4375,
+      "naturalW": 97,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "extension ②",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 97.4375,
+      "naturalW": 97,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "extension ③",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 97.4375,
+      "naturalW": 97,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "core — never touched",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 176.9375,
+      "naturalW": 177,
+      "clipPx": 0,
+      "clipXPx": 0.06,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "CONSTITUTION.md",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 151.75,
+      "naturalW": 152,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "schema/",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 67.90625,
+      "naturalW": 68,
+      "clipPx": 0,
+      "clipXPx": 0.09,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "governance/",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 99.671875,
+      "naturalW": 100,
+      "clipPx": 0,
+      "clipXPx": 0.33,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "adapters/claude-code/",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 179.28125,
+      "naturalW": 179,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "adapters/<another AI tool>/ (future)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "instance/roles/<new role>.yaml",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "usage",
+  "diagrams": 1,
+  "labels": 11,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "산출물",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "끝나기 전에 기록",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "다음 run이 여기서 다시 시작",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 197.203125,
+      "naturalW": 197,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "요약 보고",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 65.09375,
+      "naturalW": 65,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "보고",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "① 모드 선언/aise:op 또는 /aise:meta",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 188.046875,
+      "naturalW": 188,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "② 운영자가 업무참모에게 말한다",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "③ 업무참모· 의도 분석· 어느 부서 일인지 판단· 없으면 부서를 만든다",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 160.4375,
+      "naturalW": 160,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "④ 부서의 PM· 기록 3개 파일을 읽고 부트스트랩· 일을 슬라이스로 쪼",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "⑤ 부서원(역할 클래스)실제 실행",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 157,
+      "naturalW": 157,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서의 Project Record",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 165.203125,
+      "naturalW": 165,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "en/usage",
+  "diagrams": 1,
+  "labels": 11,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.13,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "deliverable",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 89.03125,
+      "naturalW": 89,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "record it before finishing",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 196.46875,
+      "naturalW": 196,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "the next run starts here again",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "digest report",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 103.171875,
+      "naturalW": 103,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "report",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 48.875,
+      "naturalW": 49,
+      "clipPx": 0,
+      "clipXPx": 0.13,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "① Declare a mode/aise:op or /aise:meta",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 174.421875,
+      "naturalW": 174,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "② The operator speaks to Ops-staff",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "③ Ops-staff· analyzes intent· decides wh",
+      "reservedH": 144,
+      "naturalH": 144,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "④ The department's PM· bootstraps by rea",
+      "reservedH": 120,
+      "naturalH": 120,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "⑤ Department members (role-classes)actua",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "The department's Project Record",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "ultimate-goal",
+  "diagrams": 1,
+  "labels": 6,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.17,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "교체",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "교체",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "모델 A",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 46.03125,
+      "naturalW": 46,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "모델 B",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 46.0625,
+      "naturalW": 46,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "모델 C (미래)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 93.828125,
+      "naturalW": 94,
+      "clipPx": 0,
+      "clipXPx": 0.17,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "knowledge/decisions/모델이 바뀌어도 남는 역량",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 180.265625,
+      "naturalW": 180,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "en/ultimate-goal",
+  "diagrams": 1,
+  "labels": 6,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.45,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "swapped",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 71.546875,
+      "naturalW": 72,
+      "clipPx": 0,
+      "clipXPx": 0.45,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "swapped",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 71.546875,
+      "naturalW": 72,
+      "clipPx": 0,
+      "clipXPx": 0.45,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Model A",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 64.078125,
+      "naturalW": 64,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Model B",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 64.109375,
+      "naturalW": 64,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Model C (future)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 130.125,
+      "naturalW": 130,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "knowledge/decisions/capability that surv",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "story/at-a-glance",
+  "diagrams": 1,
+  "labels": 13,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.48,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "부서 (프로젝트 하나)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 142.65625,
+      "naturalW": 143,
+      "clipPx": 0,
+      "clipXPx": 0.34,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "참모 (Operator 모드)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 154.28125,
+      "naturalW": 154,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "지시",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "보고",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "운영자",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "업무참모일: 부서를 꾸리고 조율",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 155.65625,
+      "naturalW": 156,
+      "clipPx": 0,
+      "clipXPx": 0.34,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "인사참모사람: 역할 채용·변경·해고",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 175.734375,
+      "naturalW": 176,
+      "clipPx": 0,
+      "clipXPx": 0.27,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "자산참모도구: 승인·부여",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 105.5625,
+      "naturalW": 106,
+      "clipPx": 0,
+      "clipXPx": 0.44,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "경영참모(Meta 모드)조직 자체의 개선",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "PM계획·분해·검증",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 100.171875,
+      "naturalW": 100,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서원(역할 A)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 58.515625,
+      "naturalW": 59,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서원(역할 B)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 58.546875,
+      "naturalW": 59,
+      "clipPx": 0,
+      "clipXPx": 0.45,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서 기록지시 · 진행 보고 · 프로젝트 기록",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "en/story/at-a-glance",
+  "diagrams": 1,
+  "labels": 13,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.38,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "Department (one project)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 204.78125,
+      "naturalW": 205,
+      "clipPx": 0,
+      "clipXPx": 0.22,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Staff (Operator mode)",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 176.90625,
+      "naturalW": 177,
+      "clipPx": 0,
+      "clipXPx": 0.09,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "instruction",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 85.359375,
+      "naturalW": 85,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "report",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 48.875,
+      "naturalW": 49,
+      "clipPx": 0,
+      "clipXPx": 0.13,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Operator",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 71.625,
+      "naturalW": 72,
+      "clipPx": 0,
+      "clipXPx": 0.38,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Ops-staffwork: sets up and coordinates d",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "HR-staffpeople: hires, changes, fires ro",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Asset-stafftools: approves and grants",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Management-staff(Meta mode)improves the ",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "PMplans, splits, verifies",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 163.8125,
+      "naturalW": 164,
+      "clipPx": 0,
+      "clipXPx": 0.19,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Member(role A)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 65.8125,
+      "naturalW": 66,
+      "clipPx": 0,
+      "clipXPx": 0.19,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Member(role B)",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 65.8125,
+      "naturalW": 66,
+      "clipPx": 0,
+      "clipXPx": 0.19,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Department recordsinstructions · progres",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ }
+]

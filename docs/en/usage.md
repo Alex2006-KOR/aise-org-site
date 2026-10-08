@@ -4,6 +4,17 @@ title: How to hand work to this org
 
 # How to hand work to this org
 
+::: lead
+Follows, in order, what the operator actually does when handing over work, and what happens after that.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [2. At a glance](/en/story/at-a-glance) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 ::: tip Where you are — In Practice (1/2)
 The first page in the [In Practice](/en/in-practice) category. If
 [How It Works](/en/how-it-works) finished explaining **what the organization looks like**, this

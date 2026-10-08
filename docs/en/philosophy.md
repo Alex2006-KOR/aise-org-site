@@ -4,8 +4,19 @@ title: Philosophy
 
 # Five principles, and why each one was needed
 
+::: lead
+Five resolutions that branched off from the problem that nothing survives the end of a session, and why each was needed.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [3. Why an organization](/en/story/why-organization), [4. Principles](/en/story/principles) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 ::: tip Where you are — Background & Philosophy (1/3)
-The first page in the [Background & Philosophy](/en/background) category. If [Home](/en/) threw
+The first page in the [Background & Philosophy](/en/background) category. If [AISE overview](/en/overview) threw
 out the problem — "nothing survives when a session ends" — this page follows **which decisions
 branched out of it.** The next page,
 [What the usual way does differently](/en/real-world-vs-aise), contrasts where those decisions
@@ -13,7 +24,7 @@ actually diverge from the usual way. So: this page is "what we believe," the nex
 changes."
 :::
 
-Going back to the problem we saw on [Home](/en/) — AI forgets when a session ends. That single
+Going back to the problem we saw on [AISE overview](/en/overview) — AI forgets when a session ends. That single
 sentence actually produced five distinct decisions. Follow them one at a time, and you can see
 why each one was necessary.
 
@@ -103,9 +114,9 @@ separately as a strength**.
 
 - Model tier became **a decision you can pick cleanly, fresh, every run** — because there's no
   carry-over loss.
-- Most agent frameworks carry one long context forward, so "just make this one task use a stronger
-  model" means paying a tax or throwing away state.
-- AISE loses essentially nothing by re-instantiating.
+- An approach that carries one long context forward has to pay a tax or throw away state to "just make this one
+  task use a stronger model"; AISE re-instantiates by design, so that situation does not arise. (No quality
+  comparison with other approaches has been measured.)
 :::
 
 ```mermaid
@@ -137,7 +148,7 @@ accountability)? And how do we do that without just imitating people (5)?
 | Principle | Where it actually shows up |
 |---|---|
 | 1. The organization is the center | [Ultimate Goal](/en/ultimate-goal) — why not a framework |
-| 2. The organization remembers | The Project Record (the department's record files) cycle on [Home](/en/), knowledge accumulation in [Lifecycle](/en/lifecycle) |
+| 2. The organization remembers | The Project Record (the department's record files) cycle on [AISE overview](/en/overview), knowledge accumulation in [Lifecycle](/en/lifecycle) |
 | 3. Continuous growth | The 6-stage cycle in [Lifecycle](/en/lifecycle) |
 | 4. Clear accountability | [Organization Model](/en/organization-model), [Staff & Governance](/en/staff-governance) |
 | 5. Leaning into AI's strengths | [AI-Native Principles](/en/ai-native-principles) |
