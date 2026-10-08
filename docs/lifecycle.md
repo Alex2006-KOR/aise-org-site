@@ -4,6 +4,17 @@ title: Lifecycle — 여섯 단계로 자라는 조직
 
 # 같은 문제를 두 번 처음부터 풀지 않으려면
 
+::: lead
+부서 하나가 태어나서 끝날 때까지의 시간축과, 그 경험이 조직에 쌓이는 여섯 단계입니다.
+:::
+
+<div class="aise-ref-note">
+
+이 쪽은 **참고 자료**입니다. 이야기 트랙의 [7. 성장, 성과, 한계](/story/growth-and-limits)에서 이어집니다. 첫 화면은 [브리핑](/)입니다.
+
+</div>
+
+
 ::: tip 읽는 자리 — 동작 원리 (3/5)
 [동작 원리](/how-it-works) 대분류의 세 번째 글이고, **여기서부터 구조가 움직입니다.** 앞의
 두 글([Organization Model](/organization-model), [Staff & Governance](/staff-governance))이

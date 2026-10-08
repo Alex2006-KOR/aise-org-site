@@ -4,6 +4,17 @@ title: Staff & Governance — 실행하는 쪽과 운영하는 쪽을 나눠 본
 
 # 실행하는 쪽과 운영하는 쪽을 나눠 본 이야기
 
+::: lead
+실행 책임과 운영 책임을 왜 갈랐고, 참모가 왜 한 명에서 여럿이 됐는지입니다.
+:::
+
+<div class="aise-ref-note">
+
+이 쪽은 **참고 자료**입니다. 이야기 트랙의 [3. 왜 조직인가](/story/why-organization)에서 이어집니다. 첫 화면은 [브리핑](/)입니다.
+
+</div>
+
+
 ::: tip 읽는 자리 — 동작 원리 (2/5)
 [동작 원리](/how-it-works) 대분류의 두 번째 글입니다. 앞
 [Organization Model](/organization-model)이 조직의 배치도를 그렸다면, 이 페이지는 그 배치도에서

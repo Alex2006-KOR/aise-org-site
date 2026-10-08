@@ -4,6 +4,17 @@ title: Operator vs Meta Mode — Switching Hats Several Times a Day
 
 # Switching hats several times a day
 
+::: lead
+Why and how doing the work is kept apart from the organization changing itself.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [2. At a glance](/en/story/at-a-glance), [3. Why an organization](/en/story/why-organization) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 ::: tip Where you are — How It Works (5/5)
 The last page in the [How It Works](/en/how-it-works) category. If the previous four were all
 about **"doing work,"** this page covers how **"the organization changing itself"** was separated

@@ -4,6 +4,17 @@ title: Collaboration Model — Where and How Collaboration Happens
 
 # Where and how collaboration happens
 
+::: lead
+Where and how collaboration is put together when several departments and roles move at once, shown with real cases.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [2. At a glance](/en/story/at-a-glance), [3. Why an organization](/en/story/why-organization) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 ::: tip Where you are — How It Works (4/5)
 The fourth page in the [How It Works](/en/how-it-works) category. If [Lifecycle](/en/lifecycle)
 followed the time axis of **one** department, this page covers what happens when **several run in

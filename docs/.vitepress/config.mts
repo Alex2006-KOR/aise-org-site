@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
+import container from 'markdown-it-container'
+import { levelsContainers } from './theme/levels-markdown'
 
 // NOTE on outDir: the repo-root build contract is `./dist` (shared with
 // .github/workflows/deploy.yml, which runs `npm run build` then uploads
@@ -19,8 +21,10 @@ export default withMermaid(
     description: 'AISE 조직의 철학·아키텍처·거버넌스를 설명하는 explainer 사이트',
     outDir: '../dist',
 
-    // Maintainer-facing design doc, not a site page.
-    srcExclude: ['architecture.md'],
+    // Maintainer-facing design doc, not a site page. The 3-way reference answers are a working
+    // document (outdated, comparison P-11 not run) kept in the repository but not published
+    // (operator decision OD-07, 2026-10-07).
+    srcExclude: ['architecture.md', 'work/3way-reference-answers.md'],
 
     // Served at https://<org>.github.io/aise-org-site/ (project page, not a
     // user/org root page), so all asset/link paths must be prefixed.
@@ -32,60 +36,74 @@ export default withMermaid(
         lang: 'ko-KR',
         themeConfig: {
           nav: [
-            { text: 'Home', link: '/' },
-            { text: '배경 및 철학', link: '/background' },
-            { text: '동작 원리', link: '/how-it-works' },
-            { text: '쓰는 법', link: '/in-practice' },
-            { text: '평가와 가치', link: '/value' },
+            { text: '브리핑', link: '/' },
+            { text: '이야기', link: '/story/background' },
+            { text: '참고 자료', link: '/background' },
             { text: 'Quick Guide', link: '/quick-guide' },
           ],
           sidebar: [
-            { text: 'Home', link: '/' },
+            { text: '브리핑 — 한 쪽으로', link: '/' },
             {
-              text: '1. 배경 및 철학',
-              link: '/background',
+              text: '이야기',
               collapsed: false,
               items: [
-                { text: '다섯 원칙', link: '/philosophy' },
-                { text: '일반적인 방식과 무엇이 다른가', link: '/real-world-vs-aise' },
-                { text: 'AI라서 다르게 설계한 것', link: '/ai-native-principles' },
+                { text: '1. 왜 시작했나', link: '/story/background' },
+                { text: '2. 한눈에 보기', link: '/story/at-a-glance' },
+                { text: '3. 왜 조직인가', link: '/story/why-organization' },
+                { text: '4. 원칙', link: '/story/principles' },
+                { text: '5. 어떻게 유지하나', link: '/story/how-it-is-kept' },
+                { text: '6. 배포와 여러 도구', link: '/story/distribution' },
+                { text: '7. 성장, 성과, 한계', link: '/story/growth-and-limits' },
               ],
             },
             {
-              text: '2. 동작 원리',
-              link: '/how-it-works',
+              text: '참고 자료',
               collapsed: false,
               items: [
-                { text: '조직의 모양', link: '/organization-model' },
-                { text: '참모와 거버넌스', link: '/staff-governance' },
-                { text: '부서의 생명주기', link: '/lifecycle' },
-                { text: '협업 방식', link: '/collaboration-model' },
-                { text: 'Operator vs Meta Mode', link: '/operator-vs-meta-mode' },
+                {
+                  text: '배경 및 철학',
+                  link: '/background',
+                  collapsed: true,
+                  items: [
+                    { text: '다섯 원칙', link: '/philosophy' },
+                    { text: '일반적인 방식과 무엇이 다른가', link: '/real-world-vs-aise' },
+                    { text: 'AI라서 다르게 설계한 것', link: '/ai-native-principles' },
+                  ],
+                },
+                {
+                  text: '동작 원리',
+                  link: '/how-it-works',
+                  collapsed: true,
+                  items: [
+                    { text: '조직의 모양', link: '/organization-model' },
+                    { text: '참모와 거버넌스', link: '/staff-governance' },
+                    { text: '부서의 생명주기', link: '/lifecycle' },
+                    { text: '협업 방식', link: '/collaboration-model' },
+                    { text: 'Operator vs Meta Mode', link: '/operator-vs-meta-mode' },
+                  ],
+                },
+                {
+                  text: '쓰는 법과 이어가기',
+                  link: '/in-practice',
+                  collapsed: true,
+                  items: [
+                    { text: '일을 맡기는 법', link: '/usage' },
+                    { text: '세션을 넘어 이어가기', link: '/handoff' },
+                  ],
+                },
+                {
+                  text: '평가와 가치',
+                  link: '/value',
+                  collapsed: true,
+                  items: [
+                    { text: '구조가 변경을 견디는 법', link: '/structural-principles-ocp' },
+                    { text: '궁극적으로 무엇을 노리나', link: '/ultimate-goal' },
+                  ],
+                },
+                { text: 'AISE 개요 (예전 첫 화면)', link: '/overview' },
+                { text: 'Quick Guide — 실제로 써 보기', link: '/quick-guide' },
+                { text: 'Glossary', link: '/glossary' },
               ],
-            },
-            {
-              text: '3. 쓰는 법과 이어가기',
-              link: '/in-practice',
-              collapsed: false,
-              items: [
-                { text: '일을 맡기는 법', link: '/usage' },
-                { text: '세션을 넘어 이어가기', link: '/handoff' },
-              ],
-            },
-            {
-              text: '4. 평가와 가치',
-              link: '/value',
-              collapsed: false,
-              items: [
-                { text: '구조가 변경을 견디는 법', link: '/structural-principles-ocp' },
-                { text: '궁극적으로 무엇을 노리나', link: '/ultimate-goal' },
-              ],
-            },
-            { text: 'Quick Guide — 실제로 써 보기', link: '/quick-guide' },
-            {
-              text: '참고',
-              collapsed: false,
-              items: [{ text: 'Glossary', link: '/glossary' }],
             },
           ],
         },
@@ -96,60 +114,74 @@ export default withMermaid(
         link: '/en/',
         themeConfig: {
           nav: [
-            { text: 'Home', link: '/en/' },
-            { text: 'Background', link: '/en/background' },
-            { text: 'How It Works', link: '/en/how-it-works' },
-            { text: 'In Practice', link: '/en/in-practice' },
-            { text: 'Value', link: '/en/value' },
+            { text: 'Briefing', link: '/en/' },
+            { text: 'Story', link: '/en/story/background' },
+            { text: 'Reference', link: '/en/background' },
             { text: 'Quick Guide', link: '/en/quick-guide' },
           ],
           sidebar: [
-            { text: 'Home', link: '/en/' },
+            { text: 'Briefing — on one page', link: '/en/' },
             {
-              text: '1. Background & Philosophy',
-              link: '/en/background',
+              text: 'Story',
               collapsed: false,
               items: [
-                { text: 'The five principles', link: '/en/philosophy' },
-                { text: 'What the usual way does differently', link: '/en/real-world-vs-aise' },
-                { text: 'Designed differently because it is AI', link: '/en/ai-native-principles' },
+                { text: '1. Why it started', link: '/en/story/background' },
+                { text: '2. At a glance', link: '/en/story/at-a-glance' },
+                { text: '3. Why an organization', link: '/en/story/why-organization' },
+                { text: '4. Principles', link: '/en/story/principles' },
+                { text: '5. How it is kept', link: '/en/story/how-it-is-kept' },
+                { text: '6. Distribution and many tools', link: '/en/story/distribution' },
+                { text: '7. Growth, results, limits', link: '/en/story/growth-and-limits' },
               ],
             },
-            {
-              text: '2. How It Works',
-              link: '/en/how-it-works',
-              collapsed: false,
-              items: [
-                { text: 'The shape of the org', link: '/en/organization-model' },
-                { text: 'Staff & governance', link: '/en/staff-governance' },
-                { text: "A department's lifecycle", link: '/en/lifecycle' },
-                { text: 'How collaboration works', link: '/en/collaboration-model' },
-                { text: 'Operator vs Meta Mode', link: '/en/operator-vs-meta-mode' },
-              ],
-            },
-            {
-              text: '3. In Practice: Usage & Handoff',
-              link: '/en/in-practice',
-              collapsed: false,
-              items: [
-                { text: 'How to hand work to this org', link: '/en/usage' },
-                { text: 'Carrying on across sessions', link: '/en/handoff' },
-              ],
-            },
-            {
-              text: '4. Evaluation & Value',
-              link: '/en/value',
-              collapsed: false,
-              items: [
-                { text: 'How the structure absorbs change', link: '/en/structural-principles-ocp' },
-                { text: 'What it is ultimately for', link: '/en/ultimate-goal' },
-              ],
-            },
-            { text: 'Quick Guide — Actually Using It', link: '/en/quick-guide' },
             {
               text: 'Reference',
               collapsed: false,
-              items: [{ text: 'Glossary', link: '/en/glossary' }],
+              items: [
+                {
+                  text: 'Background & Philosophy',
+                  link: '/en/background',
+                  collapsed: true,
+                  items: [
+                    { text: 'The five principles', link: '/en/philosophy' },
+                    { text: 'What the usual way does differently', link: '/en/real-world-vs-aise' },
+                    { text: 'Designed differently because it is AI', link: '/en/ai-native-principles' },
+                  ],
+                },
+                {
+                  text: 'How It Works',
+                  link: '/en/how-it-works',
+                  collapsed: true,
+                  items: [
+                    { text: 'The shape of the org', link: '/en/organization-model' },
+                    { text: 'Staff & governance', link: '/en/staff-governance' },
+                    { text: "A department's lifecycle", link: '/en/lifecycle' },
+                    { text: 'How collaboration works', link: '/en/collaboration-model' },
+                    { text: 'Operator vs Meta Mode', link: '/en/operator-vs-meta-mode' },
+                  ],
+                },
+                {
+                  text: 'In Practice: Usage & Handoff',
+                  link: '/en/in-practice',
+                  collapsed: true,
+                  items: [
+                    { text: 'How to hand work to this org', link: '/en/usage' },
+                    { text: 'Carrying on across sessions', link: '/en/handoff' },
+                  ],
+                },
+                {
+                  text: 'Evaluation & Value',
+                  link: '/en/value',
+                  collapsed: true,
+                  items: [
+                    { text: 'How the structure absorbs change', link: '/en/structural-principles-ocp' },
+                    { text: 'What it is ultimately for', link: '/en/ultimate-goal' },
+                  ],
+                },
+                { text: 'AISE overview (former front page)', link: '/en/overview' },
+                { text: 'Quick Guide — Actually Using It', link: '/en/quick-guide' },
+                { text: 'Glossary', link: '/en/glossary' },
+              ],
             },
           ],
         },
@@ -161,6 +193,14 @@ export default withMermaid(
       socialLinks: [
         { icon: 'github', link: 'https://github.com/Alex2006-KOR/aise-org-site' },
       ],
+    },
+
+    // Page levels (lead / point containers). See theme/levels-markdown.ts.
+    // withMermaid() chains its own mermaid fence rule before this callback.
+    markdown: {
+      config(md) {
+        levelsContainers(md, container)
+      },
     },
 
     // vitepress-plugin-mermaid: renders ```mermaid fences as diagrams.

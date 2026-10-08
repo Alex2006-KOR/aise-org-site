@@ -4,6 +4,17 @@ title: What the usual way does differently
 
 # What the usual way does differently
 
+::: lead
+Starting from the same principles, where it parts ways with the usual approach, compared along seven axes.
+:::
+
+<div class="aise-ref-note">
+
+This page is **reference material**. It continues from [3. Why an organization](/en/story/why-organization) in the story track. The front page is the [Briefing](/en/).
+
+</div>
+
+
 ::: tip Where you are — Background & Philosophy (2/3)
 The second page in the [Background & Philosophy](/en/background) category. If
 [Philosophy](/en/philosophy) covered "why we decided to build an organization," this page lines

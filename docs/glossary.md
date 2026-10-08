@@ -4,10 +4,21 @@ title: Glossary — 여기 나온 말들을 한 번에
 
 # 여기 나온 말들을 한 번에
 
+::: lead
+이 사이트에서 쓰는 aise-core의 실제 이름과 그 쉬운 말을 모았습니다.
+:::
+
+<div class="aise-ref-note">
+
+이 쪽은 **참고 자료**입니다. 어느 쪽을 읽다가든 들르시면 됩니다. 첫 화면은 [브리핑](/)입니다.
+
+</div>
+
+
 ::: tip 읽는 자리 — 참고
 이 페이지는 서사의 일부가 아니라 **참고 자료**입니다. 순서대로 읽을 필요가 없고, 어느
 페이지를 읽다가 낯선 말이 나왔을 때 들르시면 됩니다. 전체 흐름으로 돌아가려면 →
-[Home](/)의 대분류 지도.
+[브리핑](/)의 이야기 순서.
 :::
 
 이 사이트 곳곳에서 쓴 용어를 모아뒀습니다. 표기는 한 가지 규칙을 따릅니다 — **괄호 밖이 AISE 자신의
@@ -144,7 +155,7 @@ title: Glossary — 여기 나온 말들을 한 번에
    `HR_ORCHESTRATOR.md`, `AS_ORCHESTRATOR.md`, `MG_ORCHESTRATOR.md`)가 나란히 있습니다 — 이
    용어집의 괄호 밖 이름들이 실제로 어디에 있는지 확인할 수 있습니다.
 
-**다음으로.** 처음으로 돌아가 전체 그림을 다시 보고 싶다면 → [Home](/).
+**다음으로.** 처음으로 돌아가 전체 그림을 다시 보고 싶다면 → [브리핑](/).
 
 *근거: `CONSTITUTION.md` 전체, `schema/README.md`, `schema/*_ORCHESTRATOR.md`, `governance/MODE_POLICY.md`;
 `knowledge/decisions/workspace/instance-data-location.md` "2026-08-06 — org-instance-directory-split",

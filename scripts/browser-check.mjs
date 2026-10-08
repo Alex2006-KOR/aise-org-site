@@ -14,7 +14,8 @@ import path from 'node:path'
 const outDir = process.argv[2] || 'checks/latest'
 const base = (process.argv[3] || 'http://localhost:4173/aise-org-site/').replace(/\/?$/, '/')
 const docs = path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'docs')
-const pages = fs.readdirSync(docs).filter(f => f.endsWith('.md') && f !== 'architecture.md').map(f => f.replace(/\.md$/, ''))
+const listMd = dir => fs.existsSync(path.join(docs, dir)) ? fs.readdirSync(path.join(docs, dir)).filter(f => f.endsWith('.md') && f !== 'architecture.md').map(f => (dir ? dir + '/' : '') + f.replace(/\.md$/, '')) : []
+const pages = [...listMd(''), ...listMd('story')]
 const SHOTS = (process.env.SHOTS || 'staff-governance').split(',')
 
 fs.mkdirSync(outDir, { recursive: true })
