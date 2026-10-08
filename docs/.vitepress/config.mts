@@ -19,8 +19,10 @@ export default withMermaid(
     description: 'AISE 조직의 철학·아키텍처·거버넌스를 설명하는 explainer 사이트',
     outDir: '../dist',
 
-    // Maintainer-facing design doc, not a site page.
-    srcExclude: ['architecture.md'],
+    // Maintainer-facing design doc, not a site page. The 3-way reference answers are a working
+    // document (outdated, comparison P-11 not run) kept in the repository but not published
+    // (operator decision OD-07, 2026-10-07).
+    srcExclude: ['architecture.md', 'work/3way-reference-answers.md'],
 
     // Served at https://<org>.github.io/aise-org-site/ (project page, not a
     // user/org root page), so all asset/link paths must be prefixed.
