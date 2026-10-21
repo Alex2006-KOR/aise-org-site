@@ -1,0 +1,86 @@
+[
+  {
+    "page": "story/background",
+    "status": 200,
+    "warningBoxes": 0,
+    "reviewQuestionText": false,
+    "consoleErrors": 0,
+    "sixProblemRows": 6,
+    "ok": true
+  },
+  {
+    "page": "story/distribution",
+    "status": 200,
+    "warningBoxes": 0,
+    "reviewQuestionText": false,
+    "consoleErrors": 0,
+    "ok": true
+  },
+  {
+    "page": "story/growth-and-limits",
+    "status": 200,
+    "warningBoxes": 0,
+    "reviewQuestionText": false,
+    "consoleErrors": 0,
+    "notVerifiedPoint": true,
+    "ok": true
+  },
+  {
+    "page": "story/how-it-is-kept",
+    "status": 200,
+    "warningBoxes": 0,
+    "reviewQuestionText": false,
+    "consoleErrors": 0,
+    "ok": true
+  },
+  {
+    "page": "story/why-organization",
+    "status": 200,
+    "warningBoxes": 0,
+    "reviewQuestionText": false,
+    "consoleErrors": 0,
+    "ok": true
+  },
+  {
+    "page": "en/story/background",
+    "status": 200,
+    "warningBoxes": 0,
+    "reviewQuestionText": false,
+    "consoleErrors": 0,
+    "sixProblemRows": 6,
+    "ok": true
+  },
+  {
+    "page": "en/story/distribution",
+    "status": 200,
+    "warningBoxes": 0,
+    "reviewQuestionText": false,
+    "consoleErrors": 0,
+    "ok": true
+  },
+  {
+    "page": "en/story/growth-and-limits",
+    "status": 200,
+    "warningBoxes": 0,
+    "reviewQuestionText": false,
+    "consoleErrors": 0,
+    "notVerifiedPoint": true,
+    "ok": true
+  },
+  {
+    "page": "en/story/how-it-is-kept",
+    "status": 200,
+    "warningBoxes": 0,
+    "reviewQuestionText": false,
+    "consoleErrors": 0,
+    "ok": true
+  },
+  {
+    "page": "en/story/why-organization",
+    "status": 200,
+    "warningBoxes": 0,
+    "reviewQuestionText": false,
+    "consoleErrors": 0,
+    "ok": true
+  }
+]
