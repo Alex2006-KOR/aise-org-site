@@ -54,6 +54,10 @@ collected here.
 → [6. Distribution and many tools](/en/story/distribution)
 :::
 
+::: point "The same user experience after distribution" has not been verified with another user. What must be the same is guaranteed at the policy layer (hooks, scripts, policy documents) and the organization is deliberately left to differ, but whether that design actually gives the same experience is not checked yet.
+→ [6. Distribution and many tools](/en/story/distribution#not-yet-distributed)
+:::
+
 ::: point Independent re-verification has not fully caught up yet. The share of done items that are re-verified is being raised.
 → [5. How it is kept](/en/story/how-it-is-kept#reverify)
 :::

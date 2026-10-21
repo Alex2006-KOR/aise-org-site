@@ -45,7 +45,7 @@ GitHub, every new session produced different results. So I wrote down:
 3. **Token use must be tracked, with statistics.**
 4. **What I build must be distributable to other people, and give the same user experience after it is distributed.**
 
-Where each of the four is answered is summed up at the bottom of this page.
+Where each of the four is answered is summed up at the bottom of this page (together with the six problems below).
 :::
 
 ::: point But once built, the workflows turned out to be "programs that perform a fixed behavior". That is where I started asking "what should be handled by an AI agent?"
@@ -121,14 +121,15 @@ aise-core is my answer to this question. The line of the answer is in
 | 3. Token tracking and statistics | [5. How it is kept](/en/story/how-it-is-kept) — token monitoring | It began while building handoff, and is used to watch the fixed cost of the delegation structure. |
 | 4. Distribution with the same user experience | [6. Distribution and many tools](/en/story/distribution) | Policy, hooks and tools are distributed, not the organization. What must be the same (keeping the policy) is handled by hooks, scripts and policy documents; the organization is left open to differ from user to user. |
 
-::: warning Review question Q-1 (for the operator — to be removed before publication)
-Of the six problems, 1 and 2 (managing skills and rules, prompt bloat) and 6 (no way to check that a policy works) are
-answered in the source material (dynamic tool approval and governance — part 8; hooks and the watchlist — part 23).
-For 3 (the fatigue of learning new tools daily), 4 (inconsistent behavior from project to project) and 5 (no knowledge
-sharing or accumulation across projects), you have not said directly which part of aise-core answers them. I did not
-fill them in by guessing. If you confirm what answers each (e.g. 3 → the asset staff researches and approves tools,
-4 → the PM's plan and definition of done, 5 → the portfolio, retrospectives and Ops-staff's cross-department
-coordination), I will add them to the table.
-:::
+## Where the six problems are answered
+
+| Problem | Where | In one line |
+|---|---|---|
+| 1. Skills and rules past the limit of management | [3. Why an organization](/en/story/why-organization) — what was built first | Skills and MCP servers are swapped in when needed, and the common policies are gathered into governance. |
+| 2. A growing system prompt shrinking the context | [3. Why an organization](/en/story/why-organization) — what was built first | Tools are not always loaded but swapped in only when needed, so unused tools do not take up the context. |
+| 3. The fatigue of learning new tools every day | [3. Why an organization](/en/story/why-organization) — Asset-staff | Asset-staff researches and approves tools. I no longer have to chase new tools every day. |
+| 4. Behavior that varies from project to project | [2. At a glance](/en/story/at-a-glance) — who does what | The department's PM sets its Plan and its Definition of Done, and checks the results against them. |
+| 5. No knowledge shared or accumulated across projects | [7. Growth and limits](/en/story/growth-and-limits), [2. At a glance](/en/story/at-a-glance) | Knowledge accumulates in the portfolio and in retrospectives, and Ops-staff coordinates across departments. |
+| 6. No way to check that a policy works | [5. How it is kept](/en/story/how-it-is-kept#hooks) — hooks and the watchlist | Hooks block what must hold, and what has not happened yet is kept on the watchlist and watched. |
 
 **Next.** → [2. At a glance](/en/story/at-a-glance)

@@ -147,12 +147,6 @@ agent on the same working folder. Launching a new one could put two agents on th
 <Cite ids="coordination-wave,revive-resume" />
 :::
 
-::: warning Review question Q-5 (for the operator — to be removed before publication)
-The 3-way comparison material (reference answers versus the two search paths, P-11) is now out of the published site.
-Once the comparison is done, the most natural place for it looks like a "how it was verified" section on this page
-(after the independent re-verification section). I will ask you again then.
-:::
-
 <SourceTable />
 
 **Next.** → [6. Distribution and many tools](/en/story/distribution)
