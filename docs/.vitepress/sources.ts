@@ -22,8 +22,27 @@ export interface Source {
 }
 
 export const sources: Record<string, Source[]> = {
-  // Example page for the citation format (content J, OD-11). Other pages adopt it after the operator's review.
+  // Pilot of the step-1 rewrite (2026-10-21): the operator's own account, told 2026-10-06 (parts 1–7).
+  'story/background': [
+    { id: 'op-common-rules', kind: 'operator', nature: 'operator', date: '2026-10-06', name: { ko: '워크플로우마다 공통 규칙을 다시 설명한 경험', en: 'Re-explaining the common rules for every workflow' } },
+    { id: 'op-four-needs', kind: 'operator', nature: 'operator', date: '2026-10-06', name: { ko: '첫 번째 프레임워크와 네 가지 필요', en: 'The first framework and the four needs' } },
+    { id: 'op-agent-or-program', kind: 'operator', nature: 'operator', date: '2026-10-06', name: { ko: '워크플로우는 정해진 동작을 하는 프로그램이었다', en: 'The workflows were programs with fixed behavior' } },
+    { id: 'op-second-framework', kind: 'operator', nature: 'operator', date: '2026-10-06', name: { ko: '두 번째 프레임워크 — 소프트웨어 공학의 작업 흐름', en: 'The second framework — software-engineering workflows' } },
+    { id: 'op-six-problems', kind: 'operator', nature: 'operator', date: '2026-10-06', name: { ko: '기능이 늘며 생긴 여섯 가지 문제', en: 'Six problems as features grew' } },
+    { id: 'op-resources', kind: 'operator', nature: 'operator', date: '2026-10-06', name: { ko: '토큰 소진과 도구를 바꿔 이어 가는 생각', en: 'Tokens running out, and switching tools while keeping policy and memory' } },
+    { id: 'op-control', kind: 'operator', nature: 'operator', date: '2026-10-06', name: { ko: '요구자·감시자·승인자의 자리와 통제의 질문', en: 'The stakeholder, overseer and approver, and the question of control' } },
+  ],
+  // Citation-format example page (content J); OD-11 approved it for every page (2026-10-21). Rewritten in step 1.
   'story/how-it-is-kept': [
+    { id: 'standing-core-neutral', kind: 'rule', nature: 'record', name: { ko: '상시 규칙 — 핵심은 도구 중립, 도구 고유 부분은 어댑터에', en: 'Standing rules — core stays tool-agnostic; adapters carry the tool-specific parts' }, path: 'governance/STANDING_RULES.md', anchor: '## 3. Core must be tool-agnostic' },
+    { id: 'adapter-test', kind: 'rule', nature: 'record', name: { ko: '어댑터 정책 — 도구 고유인지 판별하는 기준', en: 'Adapter policy — the tool-specific test' }, path: 'governance/ADAPTER_POLICY.md', anchor: '## The tool-specific test' },
+    { id: 'mode-policy', kind: 'rule', nature: 'record', name: { ko: '모드 정책 — 보호 경로', en: 'Mode policy — protected core paths' }, path: 'governance/MODE_POLICY.md', anchor: '## Protected core paths' },
+    { id: 'asset-policy', kind: 'rule', nature: 'record', name: { ko: '자산 정책 — 이 조직의 도구 제약', en: "Asset policy — this organization's tool constraints" }, path: 'governance/ASSET_POLICY.md', anchor: 'Deployment-specific policy' },
+    { id: 'duplication-policy', kind: 'rule', nature: 'record', name: { ko: '중복 정책 — 다시 적은 값은 어긋난다', en: 'Duplication policy — restated values drift' }, path: 'governance/DUPLICATION_POLICY.md', anchor: 'a single push condition was found restated in six' },
+    { id: 'asset-patterns', kind: 'rule', nature: 'record', name: { ko: '승인된 도구의 명령 조건 목록', en: 'Command conditions on approved assets' }, path: 'governance/asset_command_patterns.yaml', anchor: 'the machine-readable source the' },
+    { id: 'adapter-requirements', kind: 'rule', nature: 'record', name: { ko: '어댑터 요구사항 목록', en: 'Adapter requirements list' }, path: 'governance/adapter_requirements.yaml', anchor: 'id: mode-boundary' },
+    { id: 'adapter-conformance', kind: 'rule', nature: 'record', name: { ko: 'Claude Code 어댑터의 답(conformance)', en: 'The Claude Code adapter’s conformance inventory' }, path: 'adapters/claude-code/conformance.yaml', anchor: 'mode-boundary:' },
+    { id: 'agents-md', kind: 'rule', nature: 'record', name: { ko: '새 도구에서 처음 열 때의 안내(AGENTS.md)', en: 'First steps in a new tool (AGENTS.md)' }, path: 'AGENTS.md', anchor: '## Before doing any other work' },
     { id: 'hooks-delegation', kind: 'decision', nature: 'record', date: '2026-09-01', name: { ko: '역할 위임 점검 훅을 연결하고 패턴을 넓힘', en: 'Role-delegation check wired, pattern widened' }, path: 'knowledge/decisions/adapter/hooks.md', anchor: '2026-09-01 — role-delegation-check-wired-regex-widened' },
     { id: 'hooks-reorg', kind: 'decision', nature: 'record', date: '2026-09-01', name: { ko: '승인 게이트와 공통 훅 모듈', en: 'Approval gate and the shared hook module' }, path: 'knowledge/decisions/adapter/hooks.md', anchor: '2026-09-01 — reorg-approval-gate-shared-common-module', quote: 'an explicit anti-bypass instruction, written one day, violated the next' },
     { id: 'operator-policy', kind: 'operator', nature: 'operator', date: '2026-10-06', name: { ko: '정책은 운영자가, 구현 제안은 Claude Code가', en: 'Policy from the operator, implementation proposals from Claude Code' } },

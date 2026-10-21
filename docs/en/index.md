@@ -15,10 +15,9 @@ page for that stage.
 
 ## The story, in order
 
-::: point **[1. Background](/en/story/background)** — Four months into Claude Code (as of October 2026), tired of explaining the same rules every time, I started building frameworks.
-Two rounds of trial and error (`aise-workflow`, `aise-development`) left me with four needs and six problems, and in
-the end the question "what should I hand to AI?" gained a second one: "how, and how far, should I control it?"
-→ [Background](/en/story/background)
+::: point **[1. Why it started](/en/story/background)** — Running several projects with AI agents at once makes costs climb fast and results uneven.
+Two attempts (a framework that writes system prompts, a framework that carries software engineering) produced four
+needs and six problems, and they converge on one question: how, and how far, to control. → [Why it started](/en/story/background)
 :::
 
 ::: point **[2. At a glance](/en/story/at-a-glance)** — The operator talks only to the staff, the staff set up departments, and each department's PM splits the work and hands it to members.
@@ -36,9 +35,9 @@ For the other SOLID principles, SSOT and the layered pattern, I separate what wa
 out to fit naturally. → [Why: principles](/en/story/principles)
 :::
 
-::: point **[5. How it is kept](/en/story/how-it-is-kept)** — Written rules get broken, so only what truly must hold is enforced by hooks; the rest is decided from what actually happened.
-The watchlist, independent re-verification, handoff, token monitoring — and the failures along the way.
-→ [How it is kept](/en/story/how-it-is-kept)
+::: point **[5. How it is kept](/en/story/how-it-is-kept)** — Rules are kept in three layers: the constitution sets principles, governance sets operating policy, and the adapter's hooks enforce only what must hold.
+The policy documents and lists that make up governance, how a policy becomes a requirement and then a hook, and the
+case of a written ban broken the next day. → [How it is kept](/en/story/how-it-is-kept)
 :::
 
 ::: point **[6. Distribution and many tools](/en/story/distribution)** — What is distributed is policy, hooks and tools, not the organization; users shape their own organization.
@@ -76,4 +75,4 @@ It draws on what I experienced at work, but it uses no company's systems or rule
 environment usable only on an intranet".
 :::
 
-**Next.** → [1. Background](/en/story/background)
+**Next.** → [1. Why it started](/en/story/background)

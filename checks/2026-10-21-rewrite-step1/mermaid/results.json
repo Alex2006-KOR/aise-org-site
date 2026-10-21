@@ -1,0 +1,358 @@
+[
+ {
+  "scheme": "light",
+  "page": "story/how-it-is-kept",
+  "diagrams": 1,
+  "labels": 6,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.48,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "양쪽 대조",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 65.09375,
+      "naturalW": 65,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "정책 문서MODE_POLICY보호 경로는Meta 모드만 쓴다",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 124.90625,
+      "naturalW": 125,
+      "clipPx": 0,
+      "clipXPx": 0.09,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "요구사항mode-boundary관문 · 첫 실행 전 필수",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 150.515625,
+      "naturalW": 151,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "어댑터의 답conformance.yaml구현됨 + 구현 파일",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 149.015625,
+      "naturalW": 149,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "훅쓰기 직전에 차단",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "adapter_check.py",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 142.171875,
+      "naturalW": 142,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "en/story/how-it-is-kept",
+  "diagrams": 1,
+  "labels": 6,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.45,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "checks both ways",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 142.40625,
+      "naturalW": 142,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Policy documentMODE_POLICYprotected path",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 132.546875,
+      "naturalW": 133,
+      "clipPx": 0,
+      "clipXPx": 0.45,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Requirementmode-boundarygate · first-run",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 127.390625,
+      "naturalW": 127,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "The adapter's answerconformance.yamlbuil",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Hookblocks just before a write",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "adapter_check.py",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 142.171875,
+      "naturalW": 142,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "story/how-it-is-kept",
+  "diagrams": 1,
+  "labels": 6,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.48,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "양쪽 대조",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 65.09375,
+      "naturalW": 65,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "정책 문서MODE_POLICY보호 경로는Meta 모드만 쓴다",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 124.90625,
+      "naturalW": 125,
+      "clipPx": 0,
+      "clipXPx": 0.09,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "요구사항mode-boundary관문 · 첫 실행 전 필수",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 150.515625,
+      "naturalW": 151,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "어댑터의 답conformance.yaml구현됨 + 구현 파일",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 149.015625,
+      "naturalW": 149,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "훅쓰기 직전에 차단",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "adapter_check.py",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 142.171875,
+      "naturalW": 142,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "en/story/how-it-is-kept",
+  "diagrams": 1,
+  "labels": 6,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.45,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "checks both ways",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 142.40625,
+      "naturalW": 142,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Policy documentMODE_POLICYprotected path",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 132.546875,
+      "naturalW": 133,
+      "clipPx": 0,
+      "clipXPx": 0.45,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Requirementmode-boundarygate · first-run",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 127.390625,
+      "naturalW": 127,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "The adapter's answerconformance.yamlbuil",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Hookblocks just before a write",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "adapter_check.py",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 142.171875,
+      "naturalW": 142,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ }
+]
