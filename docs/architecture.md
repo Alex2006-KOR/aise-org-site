@@ -1,6 +1,6 @@
 ---
-reflects-through: rescope-story-track (P-16, 2026-10-07; set to the merge commit when merged)
-aise-core-through: a8aac11
+reflects-through: 6479be2 (PR #17 merge) + feature/decisions-p11a-2026-10 (2026-10-21; set to the merge commit when merged)
+aise-core-through: f9dc210
 title: aise-org-site 아키텍처
 outline: deep
 ---
@@ -72,7 +72,8 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
 - **근거 표기(시범, `story/how-it-is-kept`만 — OD-11)**: `<Cite ids="…"/>`는 종류·개수 요약 → 펼치면 목록(이름·종류·날짜·
   성격·경로), `<SourceTable/>`는 쪽 끝의 전체 표. 출처는 `sources.ts` 한 곳에(KOR/EN 공용), `repoPublic=false`인 동안 링크 없음.
   `scripts/check_sources.mjs <aise-core>`가 경로·제목 실존과 id를 점검한다. 다른 쪽은 아직 기존 "근거:" 줄 형식.
-- 검토용 질문은 `::: warning 검토 질문 Q-n` 상자로 둔다 — `main` 승격(공개) 전에 지운다.
+- 검토용 질문은 `::: warning 검토 질문 Q-n` 상자로 둔다 — `main` 승격(공개) 전에 지운다. (P-16의 Q-1·Q-2·Q-3·Q-5 상자는
+  PR #18로 한때 공개됐고, operator 답(OD-14)을 받아 2026-10-21 KOR/EN 모두 지웠다. 지금 남은 상자는 없다.)
 - 참고 쪽: 페이지 머리 `::: tip 읽는 자리` 블록(대분류·위치·앞뒤 연결), 끝 "다음으로" 링크. 절 이름 "정리"(EN "Wrap-up").
   결정 서사는 "결정 되짚어보기" 상자 — 문제/조사/해결/강점 라벨 + 개조식 불릿.
 - 용어 표기: 페이지당 첫 등장에만 `AISE 실제 명칭(쉬운 말)` 형식(department 포함). 이야기 트랙은 쉬운 말 위주.
@@ -110,5 +111,5 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
   약 4~7px(홈, 조직의 모양, 참모와 거버넌스, Operator vs Meta Mode, 생명주기)이다. 표 4곳·코드블록 2곳은
   자체 가로 스크롤이다(2026-09-30 실 브라우저 측정). 미해결 — DoD U-06.
 - `docs/work/3way-reference-answers.md`는 작업 문서라 빌드에서 제외한다(`srcExclude`, operator 결정 OD-07,
-  2026-10-07 — 낡았고 P-11 대조 전이라 공개 의도가 없었음). 파일은 저장소에 그대로 둔다. P-11 뒤 "어떻게 검증했나"의
-  재료로 다시 쓸 수 있다.
+  2026-10-07 — 낡았고 P-11 대조 전이라 공개 의도가 없었음). 파일은 저장소에 그대로 둔다. 2026-10-21 P-11a에서
+  aise-core `f9dc210` 기준으로 갱신됨(current). P-11 뒤 "어떻게 검증했나"의 재료로 다시 쓸 수 있다.
