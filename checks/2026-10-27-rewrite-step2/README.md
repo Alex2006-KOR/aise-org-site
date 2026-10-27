@@ -9,3 +9,4 @@ Playwright 1.63.0.
   are not part of this check.
 - `mermaid/` + `mermaid-run.log` — `scripts/mermaid-label-check.mjs`, chapters 2–8 with mermaid, KOR and EN, light and dark:
   `0 clipped label(s)`.
+- `figures/` — `scripts/figure-shots.mjs`: every figure of chapters 4, 5, 7 (incl. new 4-6, 5-4, 7-1, 7-2), KOR/EN, light/dark — 48 PNGs, read by eye (4-6 dark, 5-4 dark, 7-2 EN light).
