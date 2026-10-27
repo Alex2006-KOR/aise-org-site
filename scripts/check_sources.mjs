@@ -23,6 +23,8 @@ const js = ts
   .replace(/:\s*Record<Kind,[^=]*=/g, ' =')
   .replace(/:\s*Record<Nature,[^=]*=/g, ' =')
   .replace(/:\s*Record<string,\s*Source\[\]>\s*=/g, ' =')
+  .replace(/:\s*Record<string,\s*Source>\s*=/g, ' =')
+  .replace(/\(\.\.\.ids: string\[\]\): Source\[\] =>/g, '(...ids) =>')
   .replace(/:\s*Kind\[\]\s*=/g, ' =')
 const { sources } = await import('data:text/javascript;base64,' + Buffer.from(js).toString('base64'))
 

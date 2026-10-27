@@ -1,6 +1,6 @@
 ---
-reflects-through: 05280df (PR #19 merge) + feature/rewrite-step1 (2026-10-21; set to the merge commit when merged)
-aise-core-through: f9dc210
+reflects-through: 951ca9d (PR #21 merge) + feature/rewrite-step2 (2026-10-27; set to the merge commit when merged)
+aise-core-through: e176648
 title: aise-org-site 아키텍처
 outline: deep
 ---
@@ -17,7 +17,7 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
 | 층 | 선택 | 위치 |
 |---|---|---|
 | 정적 사이트 생성기 | VitePress 1.x + `vitepress-plugin-mermaid`(mermaid 다이어그램) | `package.json` |
-| 콘텐츠 | Markdown 27페이지 × 2언어(KOR root, EN `/en/`): 브리핑(Home) + 이야기 7(`story/`) + 참고 19 | `docs/*.md`, `docs/story/*.md`, `docs/en/**` |
+| 콘텐츠 | Markdown 12페이지 × 2언어(KOR root, EN `/en/`): 브리핑(Home) + 이야기 9장(`story/`) + 부록 2(Quick Guide, 용어집) | `docs/*.md`, `docs/story/*.md`, `docs/en/**` |
 | 설정 | 로케일·내비·사이드바·mermaid·`srcExclude`(이 문서를 빌드에서 제외) | `docs/.vitepress/config.mts` |
 | 테마 | 기본 테마 확장: `Layout.vue`(`doc-before` 슬롯에 모두 펼치기/접기), `Cite.vue`·`SourceTable.vue`(근거 표기), `levels-markdown.ts`(`lead`/`point` 컨테이너), `levels.ts`(딥링크·인쇄), `custom.css` | `docs/.vitepress/theme/` |
 | 근거 표 | 페이지 slug별 출처 목록, `repoPublic` 링크 스위치 | `docs/.vitepress/sources.ts` |
@@ -44,23 +44,25 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
 
 ## 4. 언어(i18n)
 
-- KOR이 root 로케일이라 기존 URL(`/philosophy` 등)이 그대로 유지된다. EN은 `docs/en/` 아래 같은 파일명.
+- KOR이 root 로케일이고, EN은 `docs/en/` 아래 같은 파일명.
 - VitePress `locales`가 언어 전환 드롭다운을 자동 렌더링한다(커스텀 토글 없음).
 - **동기화 규칙(INV-5)**: 콘텐츠를 바꾸면 KOR과 EN을 같은 PR에서 함께 갱신한다. 로케일별 nav/sidebar는
   `config.mts`에 각각 있으므로 페이지를 추가·개명하면 두 블록을 모두 고친다.
 
 ## 5. 정보 구조(IA)
 
-2026-10-07 재구성(P-16): **브리핑(Home) → 이야기 트랙 → 참고 자료**. 기존 URL은 하나도 바꾸지 않았다.
+2026-10-27 재작성 2단계(P-18b): **브리핑(Home) → 이야기 1–9장 → 부록**. 장 흐름은 문제 → 해법 → 원칙 → 구조 → 메커니즘 →
+운영 → 검증 → 배포 → 한계(`docs/work/rewrite-plan.md` §2). 참고 트랙 16쪽·`overview`·`story/why-organization`은 지웠고
+넘겨주기(redirect)는 두지 않는다(operator).
 
 | 묶음 | 페이지 |
 |---|---|
-| 브리핑 | `index` — 임시 정의 한 줄, 이야기 순서(단계마다 1–2줄 + 링크), 읽는 법 |
-| 이야기 트랙 | `story/background` · `story/at-a-glance` · `story/why-organization` · `story/principles` · `story/how-it-is-kept` · `story/distribution` · `story/growth-and-limits` (순서대로, "다음으로" 링크) |
-| 참고 자료 | 그룹 랜딩 4(`background`, `how-it-works`, `in-practice`, `value`)와 그 아래 쪽들, `overview`(예전 Home 본문), `quick-guide`, `glossary` |
+| 브리핑 | `index` — 임시 정의 한 줄, 장마다 1–2줄 + 링크, 읽는 법 |
+| 이야기 | `story/background`(1) · `story/at-a-glance`(2 해법) · `story/principles`(3) · `story/structure`(4) · `story/how-it-is-kept`(5) · `story/operation`(6) · `story/verification`(7) · `story/distribution`(8) · `story/growth-and-limits`(9) — 순서대로, "다음으로" 링크 |
+| 부록 | `quick-guide`, `glossary` |
 
-참고 쪽은 머리에 `::: lead` 한 문장과 `.aise-ref-note`(어느 이야기 쪽에서 이어지는지)를 둔다. 본문 3단계화는 P-17.
-사이드바: 브리핑 · 이야기(펼침) · 참고 자료(그룹은 접힘). 상단 nav: 브리핑 · 이야기 · 참고 자료 · Quick Guide.
+사이드바: 브리핑 · 이야기(펼침) · 부록. 상단 nav: 브리핑 · 이야기 · Quick Guide · 용어집. 장 번호와 주소는 따로 간다(2장의 주소는
+`story/at-a-glance`) — 주소를 바꾸면 기존 링크가 깨지므로 1단계 계획대로 유지했다.
 
 ## 6. 페이지 서식 규약
 
@@ -69,17 +71,17 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
   발표 모드는 만들지 않음). point 본문 안에 `::: info` 같은 컨테이너를 넣으려면 바깥을 `:::: point … ::::`(콜론 4개)로 연다
   (markdown-it-container는 같은 수 이상의 콜론에서 닫힌다).
 - 모두 펼치기/접기는 point가 있는 쪽에 테마가 자동으로 넣는다. `#id` 링크는 접힌 point를 펼치고 스크롤한다. 인쇄 시 전부 펼친다.
-- **재작성 글쓰기 규칙(1단계 시범, `story/background`·`story/how-it-is-kept`만 — 2026-10-21)**: 객관적 기술서 문체(한다체, 1인칭 없음),
+- **글쓰기 규칙(모든 장, 2026-10-27 — 1단계 시범 2026-10-21을 전 장으로)**: 객관적 기술서 문체(한다체, EN은 3인칭, 1인칭 없음),
   짧은 요점 제목(독자가 모르는 이름은 제목에 넣지 않음), 절은 짧은 설명이 먼저이고 길 때만 `::: point 자세히 — …`로 접는다(상세는
   **배경 → 문제 → 해결 방법** 라벨), 그림은 설명하는 절 안에 번호·캡션(`그림 N-k.`)과 함께. 전체 규칙과 장 계획·배치 표는
-  `docs/work/rewrite-plan.md`(빌드 제외). 다른 쪽은 2단계에서 바꾼다.
-- **근거 표기(OD-11: 모든 쪽에 적용 승인 2026-10-21; 지금 적용된 쪽은 `story/background`·`story/how-it-is-kept`)**: `<Cite ids="…"/>`는 종류·개수 요약 → 펼치면 목록(이름·종류·날짜·
-  성격·경로), `<SourceTable/>`는 쪽 끝의 전체 표. 출처는 `sources.ts` 한 곳에(KOR/EN 공용), `repoPublic=false`인 동안 링크 없음.
-  `scripts/check_sources.mjs <aise-core>`가 경로·제목 실존과 id를 점검한다. 다른 쪽은 아직 기존 "근거:" 줄 형식.
+  `docs/work/rewrite-plan.md`(빌드 제외).
+- **근거 표기(OD-11: 모든 장에 적용 — 2026-10-27 이야기 9장 전부)**: `<Cite ids="…"/>`는 종류·개수 요약 → 펼치면 목록(이름·종류·날짜·
+  성격·경로), `<SourceTable/>`는 쪽 끝의 전체 표. 출처는 `sources.ts` 한 곳에(KOR/EN 공용; 여러 장이 쓰는 출처는 `pool`에 한 번 정의하고 장마다 `pick(...)`), `repoPublic=false`인 동안 링크 없음.
+  `scripts/check_sources.mjs <aise-core>`가 경로·제목 실존과 id를 점검한다.
 - 검토용 질문은 `::: warning 검토 질문 Q-n` 상자로 둔다 — `main` 승격(공개) 전에 지운다. (P-16의 Q-1·Q-2·Q-3·Q-5 상자는
   PR #18로 한때 공개됐고, operator 답(OD-14)을 받아 2026-10-21 KOR/EN 모두 지웠다. 지금 남은 상자는 없다.)
-- 참고 쪽: 페이지 머리 `::: tip 읽는 자리` 블록(대분류·위치·앞뒤 연결), 끝 "다음으로" 링크. 절 이름 "정리"(EN "Wrap-up").
-  결정 서사는 "결정 되짚어보기" 상자 — 문제/조사/해결/강점 라벨 + 개조식 불릿.
+- 부록 쪽: 머리 `.aise-ref-note`(부록임과 관련 장). "결정 되짚어보기" 상자(문제/조사/해결/강점)는 2단계에서 모두 장 안의
+  "자세히 — …" 상세(배경 → 문제 → 해결 방법)로 바뀌었다.
 - 용어 표기: 페이지당 첫 등장에만 `AISE 실제 명칭(쉬운 말)` 형식(department 포함). 이야기 트랙은 쉬운 말 위주.
 - 다이어그램: 손으로 쓴 인라인 SVG와 mermaid 두 종류. 인라인 SVG `<text>`에는 `fill`을 주지 않는다 —
   `custom.css`가 `fill: currentColor`로 다크모드 가시성을 처리한다. 강조색은 명시 `fill`(예: `#c1652a`)로
@@ -112,7 +114,7 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
 ## 8. 알려진 한계
 
 - 휴대폰 폭(390px): 페이지 수준 가로 넘침은 없으나, 인라인 SVG 다이어그램 라벨이 축소되어 유효 글자 크기가
-  약 4~7px(홈, 조직의 모양, 참모와 거버넌스, Operator vs Meta Mode, 생명주기)이다. 표 4곳·코드블록 2곳은
+  약 4~7px이다(2026-09-30 측정 당시의 참고 쪽 그림 — 같은 그림이 2단계에서 2·4·9장으로 옮겨졌다). 표 4곳·코드블록 2곳은
   자체 가로 스크롤이다(2026-09-30 실 브라우저 측정). 미해결 — DoD U-06.
 - `docs/work/`는 작업 문서라 빌드에서 제외한다(`srcExclude: work/**`). `3way-reference-answers.md`(operator 결정 OD-07,
   2026-10-07 — 낡았고 P-11 대조 전이라 공개 의도가 없었음)와 `rewrite-plan.md`(재작성 장 계획, 2026-10-21). 파일은 저장소에 그대로 둔다. 2026-10-21 P-11a에서

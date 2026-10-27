@@ -1,84 +1,88 @@
 ---
-title: 6. Distribution and many tools — distributing policy, not the organization
+title: 8. Distribution and many tools — distribute policy, not the organization
 ---
 
-# 6. Distribution and many tools
+# 8. Distribution and many tools
 
 ::: lead
-What is distributed is policy, hooks and tools, not the organization; users shape the organization to their own taste.
-The design supports many tools, but today it is implemented only for Claude Code and not yet tested on any other tool.
+What is distributed is policy, hooks and tools, not an organization; the organization is shaped by whoever uses it. Use with many tools is designed, but implemented only for Claude Code, and not yet tested with other tools.
 :::
 
-The fourth need in [1. Background](/en/story/background) was "distributable to other people, with the same user
-experience after it is distributed". And because tokens were always short, I also thought about "switching only the
-tool while keeping the policy and memory". This page is about both.
+## Distribute policy, not the organization {#policy}
 
-## I turned the idea around: distribute policy, not the organization
+One reason for building aise-core is that others could use it too. But an AI agent never gives the same answer every time, however the system
+prompt is written. So what must be the same, keeping the policy, is enforced by hooks, the scripts the hooks run, and policy documents. Within
+that, what organization to build is left to the user.
 
-::: point One of the reasons I built aise-core was that I hoped other people would put it to good use too.
+- The organization's actual data (which departments and roles exist and what they did) lives in a repository separate from aise-core.
+- A new deployment starts with an empty organization. At the first entry into Operator mode only the essential starting files are created;
+  roles and retrospectives start empty ([chapter 4](/en/story/structure#schema-instance)).
+- The organization itself would be worth distributing, but it was left out. Instead the use is split into "start without an organization" and
+  "reuse an existing organization", open for each user to change to their own preferences.
+
+<Cite ids="op-distribution,instance-location,instance-skeleton" />
+
+::: point Details — not yet distributed to anyone else {#not-yet-distributed}
+One person uses this organization today: the operator. The procedure for a new person to start with an empty organization is not complete
+either. Status: **designed · partly implemented · not yet tested with another user**.
 :::
 
-::: point But my experience with AI agents was that however the system prompt was composed, it never gave the same answer.
-So keeping the policy is enforced by hooks, the scripts the hooks run, and policy documents, and within that, users can
-compose an organization to their own taste.
+## Requirements and adapters {#adapters}
+
+Rules are written without any tool's vocabulary. What a tool must do (check, block, remind, record, answer) is gathered in one tool-neutral
+requirements list. Each tool's adapter implements it, and a check script reports how many the adapter provides. How policy becomes requirements
+and goes down to the adapter is in [chapter 5](/en/story/how-it-is-kept#requirements).
+
+<figure>
+
+```mermaid
+flowchart LR
+  REQ["Requirements list<br/>adapter_requirements.yaml<br/>no tool names"]
+  REQ --> CC["adapters/claude-code/<br/>implemented"]
+  REQ -.-> OT["adapters/&lt;another tool&gt;/<br/>not yet"]
+  K{{"adapter_check.py &lt;tool&gt;"}} -.->|"how many are built"| CC
+  K -.-> OT
+```
+
+<figcaption>Figure 8-1. One requirements list, many adapters. A new tool adds one adapter instead of rewriting the rules. Today there is one, for Claude Code.</figcaption>
+</figure>
+
+| Status | Content |
+|---|---|
+| Designed | Rules are tool-neutral; tool-specific mechanisms live only in adapters |
+| Implemented in Claude Code | 37 of 39 requirements built. One does not apply to this tool; one (secrets intake) is deferred to "build when first needed" (checked 2026-10-27) |
+| Not yet tested with other tools | aise-core has never been run with another tool |
+
+<Cite ids="adapter-requirements,adapter-check" />
+
+::: point Details — opening it in a new tool
+The tool-neutral guide at the front of the repository (`AGENTS.md`) has any AI tool run the adapter check before anything else. If there is no
+adapter, or items needed before the first run are missing, that tool proposes to the operator to build them before starting work. A tool that can
+read the rules but has no mechanism to enforce them could break them silently.
+
+<Cite ids="agents-md" />
 :::
 
-::: point The organization itself is worth distributing too, but I took it out of what is distributed. Instead, policy, hooks and tools are split into two use cases — "start with no organization" and "reuse an existing organization" — so that users can change things to their own preferences.
-This is how it actually is:
+::: point Details — experience from the earlier frameworks
+The two earlier frameworks were also used with other tools, and their limits and problems were noted then. aise-core uses that experience to
+anticipate likely problems and prepare solutions; the adapter structure and the list of requirements an adapter must implement are examples.
 
-- The organization's actual data (which departments and roles exist and what they did) lives in a separate repository,
-  apart from aise-core.
-- A fresh deployment starts with an empty organization. On the first entry into Operator mode only the essential base
-  files are created; roles and retrospectives start empty.
-- So what must be the same (keeping the policy) is handled by policy, hooks and scripts, and what may differ (the shape
-  of the organization) is left to the user.
-
-Sources: `schema/instance/README.md`, `knowledge/decisions/workspace/instance-data-location.md`
-"2026-07-08 — instance-data-lives-outside-repo-git", `governance/MODE_POLICY.md` "Org schema vs. org instance"
-(record exists, repository private).
+<Cite ids="op-multi-tool" />
 :::
 
-::: point But it has not yet been "distributed to someone else". I am the only person using this organization today. {#not-yet-distributed}
-That the procedure for a new person to start with an empty organization is not yet complete is also written in the
-first section of the reference page [Quick Guide](/en/quick-guide). Status: **designed · partly implemented · not yet
-tested with another user**.
+::: point What trying another tool found — **(to be filled after the experiment)**
+When aise-core is actually run with another tool, the results go here. Until then, no problems or solutions are written from guesses.
 :::
 
-## Many tools: designed · implemented on Claude Code · not yet tested on other tools
+## This site is in progress too {#in-progress}
 
-::: point The rules are written without any tool's vocabulary. Each tool's "adapter" provides what the rules need. {#adapters}
-What an adapter must do is gathered in a single tool-neutral list of requirements — what to check, block, remind,
-record and answer. A check script reports how many of them a given tool's adapter provides. This is the dependency
-inversion of [4. Principles](/en/story/principles).
-:::
+aise-core has not reached an end or a maintenance stage. By order it is early to build this site, but the two were judged able to proceed
+together, the same judgment as designing to extend from "a start without a known end" in [chapter 3](/en/story/principles#stance). So this
+site changes when aise-core changes. The site records the aise-core commit it was last checked against, and a script finds rule documents changed
+since then and broken quotes.
 
-::: point Today there is one adapter, for Claude Code; as of 2026-10-07 it provides 38 of the 39 requirements (the remaining one, secrets intake, is deferred as "build on first real need").
-aise-core has not yet been run on any other tool. So this whole section is **not yet tested**.
+<Cite ids="op-multi-tool" />
 
-Sources: `governance/adapter_requirements.yaml`, the output of `governance/adapter_check.py claude-code` (record
-exists, repository private).
-:::
+<SourceTable />
 
-::: point When aise-core is first opened in another tool, that tool's agent is told to run the adapter check first, and, if no adapter exists, to propose to the operator "let's build these first" before starting any work.
-The tool-neutral entry document at the front of the repository (`AGENTS.md`) instructs this. A tool that can read the
-rules but has nothing to enforce them may break them silently.
-:::
-
-::: point I did use the two earlier frameworks (`aise-workflow`, `aise-development`) on other tools, and learned their limits and problems then.
-Based on that experience, I am pointing out possible problems in advance and preparing solutions in aise-core. The
-adapter structure and the list of requirements an adapter must implement are examples of that.
-:::
-
-::: point What was found when trying other tools — **(to be filled after the experiment)**
-When aise-core is actually run on another tool, the results will be written here. For now I do not write problems or
-solutions by guessing.
-:::
-
-## This site is also being built while things are in progress
-
-::: point aise-core has not yet reached an end or a maintenance stage. In strict order, building this site now might not be right, but I judged the two could go ahead together.
-It is the same judgment as in [4. Principles](/en/story/principles): designing so that things can be extended when you
-are "given only a start, with the end unknown". So this site's content changes along with aise-core.
-:::
-
-**Next.** → [7. Growth, results, limits](/en/story/growth-and-limits)
+**Next.** → [9. Growth, results, limits](/en/story/growth-and-limits)
