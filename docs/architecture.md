@@ -1,5 +1,5 @@
 ---
-reflects-through: 6479be2 (PR #17 merge) + feature/decisions-p11a-2026-10 (2026-10-21; set to the merge commit when merged)
+reflects-through: 05280df (PR #19 merge) + feature/rewrite-step1 (2026-10-21; set to the merge commit when merged)
 aise-core-through: f9dc210
 title: aise-org-site 아키텍처
 outline: deep
@@ -69,7 +69,11 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
   발표 모드는 만들지 않음). point 본문 안에 `::: info` 같은 컨테이너를 넣으려면 바깥을 `:::: point … ::::`(콜론 4개)로 연다
   (markdown-it-container는 같은 수 이상의 콜론에서 닫힌다).
 - 모두 펼치기/접기는 point가 있는 쪽에 테마가 자동으로 넣는다. `#id` 링크는 접힌 point를 펼치고 스크롤한다. 인쇄 시 전부 펼친다.
-- **근거 표기(시범, `story/how-it-is-kept`만 — OD-11)**: `<Cite ids="…"/>`는 종류·개수 요약 → 펼치면 목록(이름·종류·날짜·
+- **재작성 글쓰기 규칙(1단계 시범, `story/background`·`story/how-it-is-kept`만 — 2026-10-21)**: 객관적 기술서 문체(한다체, 1인칭 없음),
+  짧은 요점 제목(독자가 모르는 이름은 제목에 넣지 않음), 절은 짧은 설명이 먼저이고 길 때만 `::: point 자세히 — …`로 접는다(상세는
+  **배경 → 문제 → 해결 방법** 라벨), 그림은 설명하는 절 안에 번호·캡션(`그림 N-k.`)과 함께. 전체 규칙과 장 계획·배치 표는
+  `docs/work/rewrite-plan.md`(빌드 제외). 다른 쪽은 2단계에서 바꾼다.
+- **근거 표기(OD-11: 모든 쪽에 적용 승인 2026-10-21; 지금 적용된 쪽은 `story/background`·`story/how-it-is-kept`)**: `<Cite ids="…"/>`는 종류·개수 요약 → 펼치면 목록(이름·종류·날짜·
   성격·경로), `<SourceTable/>`는 쪽 끝의 전체 표. 출처는 `sources.ts` 한 곳에(KOR/EN 공용), `repoPublic=false`인 동안 링크 없음.
   `scripts/check_sources.mjs <aise-core>`가 경로·제목 실존과 id를 점검한다. 다른 쪽은 아직 기존 "근거:" 줄 형식.
 - 검토용 질문은 `::: warning 검토 질문 Q-n` 상자로 둔다 — `main` 승격(공개) 전에 지운다. (P-16의 Q-1·Q-2·Q-3·Q-5 상자는
@@ -110,6 +114,6 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
 - 휴대폰 폭(390px): 페이지 수준 가로 넘침은 없으나, 인라인 SVG 다이어그램 라벨이 축소되어 유효 글자 크기가
   약 4~7px(홈, 조직의 모양, 참모와 거버넌스, Operator vs Meta Mode, 생명주기)이다. 표 4곳·코드블록 2곳은
   자체 가로 스크롤이다(2026-09-30 실 브라우저 측정). 미해결 — DoD U-06.
-- `docs/work/3way-reference-answers.md`는 작업 문서라 빌드에서 제외한다(`srcExclude`, operator 결정 OD-07,
-  2026-10-07 — 낡았고 P-11 대조 전이라 공개 의도가 없었음). 파일은 저장소에 그대로 둔다. 2026-10-21 P-11a에서
+- `docs/work/`는 작업 문서라 빌드에서 제외한다(`srcExclude: work/**`). `3way-reference-answers.md`(operator 결정 OD-07,
+  2026-10-07 — 낡았고 P-11 대조 전이라 공개 의도가 없었음)와 `rewrite-plan.md`(재작성 장 계획, 2026-10-21). 파일은 저장소에 그대로 둔다. 2026-10-21 P-11a에서
   aise-core `f9dc210` 기준으로 갱신됨(current). P-11 뒤 "어떻게 검증했나"의 재료로 다시 쓸 수 있다.
