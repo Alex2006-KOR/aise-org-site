@@ -10,16 +10,10 @@ aise-core's real names used on this site, with their plain-word meanings.
 
 <div class="aise-ref-note">
 
-This page is **reference material**. Drop in from any page. The front page is the [Briefing](/en/).
+This page is an **appendix**. Drop in from any chapter. The story starts at [chapter 1](/en/story/background); the front page is the [Briefing](/en/).
 
 </div>
 
-
-::: tip Where you are — Reference
-This page isn't part of the narrative; it's **reference material.** There's no need to read it in
-order — drop in whenever an unfamiliar term shows up on another page. To get back to the overall
-flow → the story order on the [Briefing](/en/).
-:::
 
 Here's a collection of the terms used throughout this site. They follow one notation rule — **the
 name outside the parentheses is the one AISE's own documents and code actually use; the text inside
@@ -34,13 +28,13 @@ text, each page uses this form only the first time a term appears, and the plain
   department's records live under `instance/workspace/<project-id>/`.
 - **`project-manager` (PM, the manager who runs a department)** — breaks down and distributes a
   department's work, and represents the department to Ops-staff. A line role in the
-  [depth-2 pyramid](/en/organization-model).
+  [ch. 4, chart and execution graph](/en/story/structure#chart).
 - **project member (a department member)** — an expert role with single responsibility (SRP) over
   one domain, e.g. `backend-engineer`, `frontend-engineer`, `devops-engineer`.
 - **`OP_ORCHESTRATOR` (Ops-staff)** — takes the user's instructions, sets up departments, and
   assembles collaboration between them. It *is* the top-level session that declared `/aise:op`. See
-  [Staff & Governance](/en/staff-governance).
-- **`HR_ORCHESTRATOR` (HR-staff)** — handles the role catalog (recruitment, role-definition changes, firing), and nothing else. The concept of "reorganization" used until 2026-09-30 has been dropped ([Staff & Governance](/en/staff-governance)).
+  [ch. 4, line and staff](/en/story/structure#staff).
+- **`HR_ORCHESTRATOR` (HR-staff)** — handles the role catalog (recruitment, role-definition changes, firing), and nothing else. The concept of "reorganization" used until 2026-09-30 has been dropped ([ch. 4, line and staff](/en/story/structure#staff)).
 - **`AS_ORCHESTRATOR` (Asset-staff)** — approves what each role may use (provisioning).
 - **`MG_ORCHESTRATOR` (Management-staff)** — works on the design of the organization itself in Meta
   mode. It *is* the top-level session that declared `/aise:meta`.
@@ -55,25 +49,25 @@ text, each page uses this form only the first time a term appears, and the plain
 - **provisioning (company-approved tools)** — the scope of tools, MCP servers, and skills a role can
   actually use. Approved by Asset-staff.
 - **organization chart / execution graph (who does what, when)** — see
-  [Organization Model](/en/organization-model).
+  [ch. 4, chart and execution graph](/en/story/structure#chart).
 - **`draft` / `active` / `ended` / `closed` (being set up / running / finished / archived)** — a
-  department's lifecycle status. See [Lifecycle](/en/lifecycle).
+  department's lifecycle status. See [ch. 4, departments](/en/story/structure#departments).
 
 **Modes and commands**
 
 - **Operator mode / Meta mode (using the organization / changing the organization itself)** — see
-  [Operator vs Meta Mode](/en/operator-vs-meta-mode).
+  [ch. 4, the two modes](/en/story/structure#modes).
 - **`/aise:op` · `/aise:meta` (declare a mode)** · **`/aise:handoff` (write a continuity record now)**
   · **`/aise:usage` (see a session's token usage and execution graph)** — what to actually type, in
   order, is in the [Quick Guide](/en/quick-guide); why it's split this way is in
-  [How to hand work to this org](/en/usage).
+  [ch. 6, how work flows](/en/story/operation#flow).
 
 **Records and continuity**
 
 - **Project Record (the department's record files)** — the PM's detailed continuity memory
   (`project-record.md`), the inbox of not-yet-absorbed instructions Ops-staff leaves
   (`directive.md`), and the lightweight report to Ops-staff (`execution.md`). Each file has exactly
-  one writer; the story of how they got split is in [Carrying on across sessions](/en/handoff).
+  one writer; the story of how they got split is in [ch. 6, handoff](/en/story/operation#handoff).
   (The third file was first created as `report.md` on 2026-08-26, then renamed `execution.md` two
   days later after colliding with the execution tool's filename guard.)
 - **run (one execution of a PM)** — a department exists across many independent runs, and those

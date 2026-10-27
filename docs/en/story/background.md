@@ -8,7 +8,7 @@ title: 1. Why it started — the cost and disorder of many AI projects
 Running several projects with AI agents at once makes costs climb fast and results uneven. aise-core starts from these two problems.
 :::
 
-## The same rules, explained every time
+## Recurring common rules {#common-rules}
 
 Every workflow carries the same common rules: the environment is intranet-only, external MCP servers may not be used,
 the information to consult lives in a known place, a particular execution environment is running. The agent does not
@@ -50,7 +50,7 @@ remember any of this. Each new workflow needed the same explanation again from t
 
 <Cite ids="op-common-rules" />
 
-## First attempt: a framework that writes system prompts
+## First attempt: a prompt-generating framework {#first}
 
 A framework was built that takes the common rules and information given in advance and produces the system prompt for
 a workflow to automate. It was called `aise-workflow`. Several workflows were automated with it, and the basic concepts
@@ -77,15 +77,15 @@ Where each of the four is solved is in the table at the end of this chapter.
 <Cite ids="op-four-needs" />
 :::
 
-## The line between program and agent blurs
+## A blurred line: program or agent {#agent-or-program}
 
 The workflows were made of scripts and md files. Yet what they did was always the same steps in the same order. Fixed
 behavior is what a program is for. This raised the question: what should be left to an agent, and what should be built
-as a program? The conclusion is in [3. Why an organization](/en/story/why-organization#agent-or-program).
+as a program? The conclusion is in [chapter 2](/en/story/at-a-glance#control).
 
 <Cite ids="op-agent-or-program" />
 
-## Second attempt: a framework that carries software engineering
+## Second attempt: a software-engineering framework {#second}
 
 The first framework was redefined as "a tool for trying a workflow out before developing it as software". A separate
 framework was built to develop those workflows into real software. It was called `aise-development`. It carried the
@@ -95,7 +95,7 @@ development.
 
 <Cite ids="op-second-framework" />
 
-## More features, more cost and more disorder {#six-problems}
+## Six problems: cost and disorder {#six-problems}
 
 Every added feature brought a new problem. They come down to six: three are problems of cost, three are problems of
 disorder.
@@ -145,14 +145,14 @@ disorder.
 <Cite ids="op-six-problems" />
 :::
 
-## Resources always run out first
+## Resources run out first {#resources}
 
 Tokens ran out very fast. A way was needed to switch only the tool and keep the policy and memory, so that a project
-could go on. This need leads to [6. Distribution and many tools](/en/story/distribution).
+could go on. This need leads to [chapter 8](/en/story/distribution).
 
 <Cite ids="op-resources" />
 
-## The human's place: stakeholder, overseer, approver {#the-question}
+## The human's place: stakeholder · overseer · approver {#the-question}
 
 When software is built with AI agents, the human holds three places: the stakeholder who gives the requirements, the
 overseer who checks the plan, the design and the intermediate outputs, and the approver who inspects and accepts the
@@ -178,10 +178,10 @@ what is the right scope of control?", and this became the most important questio
 <Cite ids="op-control" />
 :::
 
-## The remaining question: how, and how far, to control
+## The remaining question: how and how far to control {#control}
 
-aise-core is the answer to this question. The line of the answer is in [3. Why an organization](/en/story/why-organization);
-the overall shape is in [2. At a glance](/en/story/at-a-glance).
+aise-core is the answer to this question. The line of the answer is in [chapter 2](/en/story/at-a-glance), the principles in
+[chapter 3](/en/story/principles), the whole structure in [chapter 4](/en/story/structure).
 
 <figure>
 <svg viewBox="0 0 560 210" role="img" aria-label="The flow of this chapter: the same rules explained again, first attempt, four needs, second attempt, six problems, the question of control, aise-core">
@@ -219,24 +219,24 @@ the overall shape is in [2. At a glance](/en/story/at-a-glance).
 <figcaption>Figure 1-3. The flow of this chapter. The needs and problems of two attempts converge on one question: how to control.</figcaption>
 </figure>
 
-## Problems and where they are answered
+## Problems and the chapters that answer them {#answers}
 
-| Need | Where | In one line |
+| Need | Chapter | In one line |
 |---|---|---|
-| 1. A device that carries memory over | [5. How it is kept](/en/story/how-it-is-kept#memory) — handoff, department records | Finished work is recorded as its important facts; unfinished work is recorded so the next session continues with the same knowledge. |
-| 2. Exact behavior as programs | [3. Why an organization](/en/story/why-organization), [5](/en/story/how-it-is-kept#hooks) — hooks and scripts | Claude Code judges and proposes what to build as a program; policies that must hold are enforced by hooks and scripts. |
-| 3. Token tracking and statistics | [5. How it is kept](/en/story/how-it-is-kept#tokens) — token records | Used to watch the fixed cost of the delegation structure and the flow of work. |
-| 4. Distribution with the same user experience | [6. Distribution and many tools](/en/story/distribution) | Policy, hooks and tools are distributed, not the organization. The policy layer carries what must be the same; the organization is left open to differ by user. |
+| 1. A device that carries memory over | [Chapter 6](/en/story/operation#records) — department records, handoff | Finished work is recorded as its important facts; unfinished work is recorded so the next session continues with the same knowledge. |
+| 2. Exact behavior as programs | [Chapter 2](/en/story/at-a-glance#accountability), [chapter 5](/en/story/how-it-is-kept#hooks) — hooks and scripts | Claude Code judges and proposes what to build as a program; policies that must hold are enforced by hooks and scripts. |
+| 3. Token tracking and statistics | [Chapter 7](/en/story/verification#tokens) — token records | Used to watch the fixed cost of the delegation structure and the flow of work. |
+| 4. Distribution with the same user experience | [Chapter 8](/en/story/distribution) | Policy, hooks and tools are distributed, not the organization. The policy layer carries what must be the same; the organization is left open to differ by user. |
 
-| Problem | Where | In one line |
+| Problem | Chapter | In one line |
 |---|---|---|
-| 1. Skills and rules past management | [3. Why an organization](/en/story/why-organization) — what was built first | Skills and MCP servers are swapped in when needed; common policies are gathered into governance. |
-| 2. Context eaten | [3. Why an organization](/en/story/why-organization) — what was built first | Tools are loaded only when needed, so unused tools take no context. |
-| 3. The fatigue of learning new tools daily | [3. Why an organization](/en/story/why-organization) — Asset-staff | Asset-staff researches and approves tools. |
-| 4. Uneven behavior | [2. At a glance](/en/story/at-a-glance) — who does what | The department's PM sets the plan and the Definition of Done, and checks results against them. |
-| 5. Knowledge cut off between projects | [7. Growth and limits](/en/story/growth-and-limits), [2. At a glance](/en/story/at-a-glance) | Knowledge accumulates in the portfolio and retrospectives; Ops-staff coordinates across departments. |
-| 6. No way to check that a policy works | [5. How it is kept](/en/story/how-it-is-kept#hooks) — governance and hooks | Hooks block what must hold; what has not happened yet is kept on the watchlist. |
+| 1. Skills and rules past management | [Chapter 3](/en/story/principles#solid), [chapter 5](/en/story/how-it-is-kept#governance) | Each role gets only the tools it needs; common policies are gathered into governance. |
+| 2. Context eaten | [Chapter 3](/en/story/principles#solid) — interface segregation | Nothing is loaded by default; only what a role is granted is used, so unused tools take no context. |
+| 3. The fatigue of learning new tools daily | [Chapter 4](/en/story/structure#three-staff) — asset staff | The asset staff reviews and approves tools. |
+| 4. Uneven behavior | [Chapter 4](/en/story/structure#departments), [chapter 6](/en/story/operation#within) | The department's PM sets the plan and the Definition of Done, and checks results against them. |
+| 5. Knowledge cut off between projects | [Chapter 9](/en/story/growth-and-limits#growth), [chapter 6](/en/story/operation#across) | Knowledge accumulates in retrospectives and the portfolio; the ops staff coordinates across departments. |
+| 6. No way to check that a policy works | [Chapter 5](/en/story/how-it-is-kept#hooks), [chapter 7](/en/story/verification#audit) | Hooks block what must hold; whether it held is audited from real records. |
 
 <SourceTable />
 
-**Next.** → [2. At a glance](/en/story/at-a-glance)
+**Next.** → [2. The answer: borrow a company's structure](/en/story/at-a-glance)
