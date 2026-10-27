@@ -10,14 +10,14 @@ A practical reference you can follow without reading the explanations: only what
 
 <div class="aise-ref-note">
 
-This page is **reference material**. It continues from [2. At a glance](/en/story/at-a-glance) in the story track. The front page is the [Briefing](/en/).
+This page is an **appendix**: what to type, in order. Why it works this way is in [chapter 6](/en/story/operation); the front page is the [Briefing](/en/).
 
 </div>
 
 
 ::: tip This chapter is different
-The four categories before this one were explanations meant to help you **understand** AISE. This
-chapter is a **hands-on reference for people who actually want to use it** — you can follow it
+Story chapters 1–9 are explanations meant to help you **understand** AISE. This
+appendix is a **hands-on reference for people who actually want to use it** — you can follow it
 without reading all of that first. It only lists, in order, "what do I type now." Why each step
 looks the way it does is on the linked explanation pages.
 :::
@@ -29,9 +29,10 @@ looks the way it does is on the linked explanation pages.
   commands and hooks).
 - **One honest caveat up front** — `instance/`, which holds this organization's actual members and
   department records, is **a separate repository** from `aise-core`, so it doesn't come along when
-  you clone. `governance/DEPLOYMENT_READINESS.md` itself records that the procedure for standing up
-  a new organization from an empty `instance/` hasn't been decided yet. The steps below assume **a
-  deployment that already has an `instance/`** (like the one that built this site).
+  you clone. In a new deployment, the first `/aise:op` creates the empty organization's
+  starting files (department list, staff records, portfolio) (`schema/instance/README.md`); roles and
+  departments are filled in as real work arrives. This has not yet been tried by another user
+  ([chapter 8](/en/story/distribution#not-yet-distributed)).
 - **Conversation language** — the first time you declare a mode, it asks once which language to
   converse in and remembers it in `.aise/language`. The organization's own files stay in English
   regardless.
@@ -55,7 +56,7 @@ What that one line does (`.claude/commands/aise/op.md`):
 
 From there, just **write what you want done in plain words.** You don't need to name a department —
 Ops-staff decides that. Why you only ever talk to Ops-staff is in
-[How to hand work to this org](/en/usage).
+[ch. 6, how work flows](/en/story/operation#flow).
 
 ## 2. To start a project (department)
 
@@ -74,7 +75,7 @@ If it does need delegating, a department gets created.
   it may start straight away as `active`.
 - When moving from `draft` to `active`, Ops-staff **asks "shall we actually start now?"** Your
   answer is the go-ahead (why it asks instead of switching automatically is in the decision box on
-  [How to hand work to this org](/en/usage)).
+  [ch. 6, how work flows](/en/story/operation#flow)).
 - If a needed role doesn't exist yet, recruitment happens, judged by `HR_ORCHESTRATOR` (HR-staff).
   Changing or firing an existing role is also HR-staff's own call, with no user approval — it is
   reported in Ops-staff's status briefing instead.
@@ -100,7 +101,7 @@ Type this before context runs out or you step away:
   `directive.md`**. The next PM run reads it and moves it into its own record.
 - In Meta mode, it leaves a handoff record in `continuity/`.
 - It doesn't summarize; it filters down to "what still needs judgment" — why is in
-  [Carrying on across sessions](/en/handoff).
+  [ch. 6, handoff](/en/story/operation#handoff).
 
 ## 5. To change the organization itself — `/aise:meta`
 
@@ -115,7 +116,7 @@ Use this only when you want to design a new role, or change rules or workflows.
 - The protected core paths (constitution, schema, governance, etc.) can only be changed in this
   mode. Conversely, this deployment's own `instance/` data stays off-limits even in Meta mode.
 - Even in Meta mode, it checks with you before adding anything to the organization that only works
-  in one specific AI tool. The full distinction is in [Operator vs Meta Mode](/en/operator-vs-meta-mode).
+  in one specific AI tool. The full distinction is in [ch. 4, the two modes](/en/story/structure#modes).
 
 ## 6. To finish
 
@@ -123,7 +124,7 @@ Use this only when you want to design a new role, or change rules or workflows.
 "does this result meet my intent." Tell Ops-staff to wrap it up; the PM writes the final report in
 `execution.md`, the department becomes `ended` once Ops-staff confirms it, and `closed` once
 Ops-staff has finished the retrospective (reviewing whether any lesson is worth reusing)
-(`schema/README.md` "Department lifecycle", [Lifecycle](/en/lifecycle)).
+(`schema/README.md` "Department lifecycle", [ch. 4, departments](/en/story/structure#departments)).
 
 ## On one page
 

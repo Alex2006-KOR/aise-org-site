@@ -8,7 +8,7 @@ title: 5. How it is kept — governance, policy files, hooks
 Rules are kept in three layers. The constitution sets the principles, governance sets the operating policy, and the adapter's hooks enforce only what must hold.
 :::
 
-## Rules live in three layers {#layers}
+## Three layers of rules {#layers}
 
 aise-core's rules are split into three layers. The constitution (`CONSTITUTION.md`) sets why the organization exists,
 its principles and its shape. Governance (`governance/`) turns those principles into operating policy. The adapter
@@ -60,7 +60,7 @@ is built — and that check-in happens for every tool-specific mechanism.
 <Cite ids="standing-core-neutral,adapter-test" />
 :::
 
-## Governance is policy documents plus machine-read lists {#governance}
+## How governance is composed {#governance}
 
 `governance/` holds policy documents for people and lists read by programs. Most of it is portable policy, the same in
 every deployment. Policy that reflects this organization's own circumstances, such as its tool constraints, is marked as
@@ -122,7 +122,7 @@ the hook and the role definitions both take them from that file.
 <Cite ids="duplication-policy,asset-patterns" />
 :::
 
-## Policy becomes requirements, handed down to the adapter {#requirements}
+## From policy to adapter {#requirements}
 
 The parts of a policy that the tool itself must check, block, remind, record or answer are written as requirements in
 `adapter_requirements.yaml`. Each requirement has a kind and a priority. The adapter answers each one in
@@ -173,17 +173,35 @@ work.
 <Cite ids="adapter-requirements,agents-md" />
 :::
 
-## Hooks block only what must hold {#hooks}
+## Hooks: only what must hold {#hooks}
 
 A hook is a script the tool runs just before or after a given action. aise-core enforces with hooks only the few
 points that truly must hold, and leaves the rest to the model's judgment. Writing to a protected path in the wrong mode,
 a command that breaks a condition attached to an approved tool, and a delegation that bypasses a role's definition are
 such points.
 
-::: info Figure placeholder — the hook composition is drawn after the hook redesign
-The hooks are being redesigned. A figure of which hook runs at which moment and what it blocks goes here once the
-redesign is finished.
-:::
+The hooks run as one engine. The tool calls one hook per event; the engine runs the checks registered for that event and tool in a fixed
+order and merges their results. Checks are of two kinds: a **gate** may block or ask a person, an **observer** may only note or warn. Policy
+values, such as who may write which path, are read from governance's lists, not from code.
+
+<figure>
+
+```mermaid
+flowchart LR
+  T["Tool call<br/>Edit · Write · Bash · Agent …"] --> E["Hook engine<br/>one entry point per event"]
+  P[("Policy lists<br/>write_policy.yaml<br/>asset_command_patterns.yaml")] -.-> E
+  E --> G["Gates<br/>write boundaries · command conditions<br/>role delegation · role deletion<br/>settings protection"]
+  E --> O["Observers<br/>context warning · working trees<br/>record reminders"]
+  G -->|"deny > ask > allow"| D{"Decision"}
+  O -->|"notes only"| D
+  E -.->|"if a check fails,<br/>write-capable calls are denied"| D
+```
+
+<figcaption>Figure 5-4. How the hooks are composed. Check results merge into one (deny over ask, ask over allow), and a gate that cannot run denies any write-capable call. The only way to switch this off is the operator changing a setting by hand.</figcaption>
+</figure>
+
+<Cite ids="hook-engine" />
+
 
 ::: point In detail — a written ban, broken the next day (background · problem · solution)
 **Background.** The PM's role definition contained the sentence "do not replace a role with a role-play prompt to a
@@ -220,109 +238,21 @@ Later, when the concept of "reorganization" was retired, the gate's target chang
 <Cite ids="hooks-reorg,operator-policy" />
 :::
 
-## Sections to move to other chapters {#moving}
+::: point Details — no scaffolding around a gate (background · problem · solution)
+**Background.** Once roles became classes shared across departments, a tool grant one department needed would follow the class into every
+department that later used it. The question "can this role be barred from just this folder?" came up too.
 
-::: info Sections moving under the chapter plan
-In the new chapter plan the four sections below belong to chapter 6 (operation) and chapter 7 (verification and
-evaluation). Those chapters are rewritten in step 2, and these sections move then. Their prose already follows the new
-rules.
-:::
+**Problem.** A per-department permission file was considered. The same asset staff would fill it with the same judgment, so safety would not
+increase. Folder-level blocking by an application-layer hook would only be best-effort.
 
-## What has not happened is not judged {#watchlist}
+**Solution.** No new mechanism; the line the judgment must draw was written down instead. Coarse capability approval ("may this tool be used at
+all?") is what grants cover; fine scope and credentials are not a grant's business, and such requests are read as a sign that a catalog entry is
+too coarse. If a stronger boundary is needed, it is built at the OS or infrastructure layer. Adding scaffolding around a gate that already cannot
+be skipped does not make the judgment behind it any sharper.
 
-Problems that can only be judged once a condition arises in real operation are put on a watchlist, and judged when the
-condition actually arises — problems visible only when two or more departments run at once, when a department closes, or
-when a real delegation session takes place. What a hypothetical scenario can reproduce is kept in a separate
-regression list. Both exist so that decisions rest on what actually happened, not on what might. → chapter 7
-
-<Cite ids="watchlist,regression-fts,operator-watch" />
-
-## Reports are checked again {#reverify}
-
-A department's "done" is not trusted until it is checked. The PM re-checks its members' results, and Ops-staff
-re-checks the PM's report, against the actual deliverables. Even so, many items were marked done without independent
-re-verification, and that share is being reduced. As of 2026-10-07, 20 of the 54 done items across all departments
-(37%) had been independently re-verified. This is a current state, not a score. → chapter 7
-
-<Cite ids="portfolio-report" />
-
-::: point In detail — a screen that did not work for 54 days (background · problem · solution)
-**Background.** Screen work, too, was judged done by unit tests, type checks and builds.
-
-**Problem.** One department's core editing feature never once worked in a real browser for about two months (54 days).
-Every check passed the whole time, because the test environment did not render that part of the screen. The operator
-found it by looking in a browser.
-
-**Solution.** Screen work is done only after a real-browser interaction check whose script and screenshots are kept in
-the product repository. This site's fold, expand-all and print checks follow the same rule.
-
-<Cite ids="fts01-round4,pm-run-start" />
-:::
-
-## Memory is carried by records {#memory}
-
-A department's PM starts every run with no memory, reads the department's three record files, and leaves a record
-before it ends. A session computes its context use from the usage recorded on its last response and gives notice past a
-threshold. The record to continue from is written with `/aise:handoff`. The implementation is in the Claude Code
-adapter; the full procedure is in [Carrying work across sessions](/en/handoff). → chapter 6
-
-<Cite ids="adapter-continuity,handoff-cmd" />
-
-::: point In detail — why handoff exists (background · problem · solution)
-**Background.** Because of the risk of context compaction, work was kept within about 30% of the context per session.
-
-**Problem.** Finishing a unit of work inside that limit was hard. When a discussion came up, it had to be finished on
-the spot for the resulting change to reflect all of it. Above all, the work itself did not fit into one session.
-
-**Solution.** Finished work is recorded as its important facts only; unfinished work is recorded so that the next
-session continues with the same knowledge. This is handoff.
-
-<Cite ids="operator-handoff" />
-:::
-
-::: point In detail — a stalled delegation is revived, not respawned
-A PM run once stopped midway on a usage limit. Instead of starting over, the same agent was woken again and finished.
-Something that looks stopped may not be dead, and a new agent launched on the same working folder could edit the same
-files at the same time as the old one. So the rule is to wake the same agent again.
-
-<Cite ids="coordination-wave,revive-resume" />
-:::
-
-::: point In detail — the search over this organization's records
-The search used to find this organization's records is a personal general-purpose search service, built by one of the
-organization's departments, applied to this organization. It retrieves and does not generate answers. The "AISE
-organization corpus", which bundles aise-core and the organization's records, is one deployment of it; this site's
-sources were found with it too. Keeping its data current is that department's job.
-
-<Cite ids="ragcurl-task" />
-:::
-
-## Cost is read as the flow of work and judgment {#tokens}
-
-Once delegation appeared, how many tokens each piece of work took had to be measured — just as a company hires people,
-pays salaries, and sets development costs and budgets. `/aise:usage` shows the tokens each agent used, per unit of work
-and per execution graph. The figures are computed from recorded usage, not estimated, and add up every depth of
-delegation. → chapter 7
-
-<Cite ids="usage-cmd,operator-tokens" />
-
-::: point In detail — delegation was not chosen to save tokens (background · problem · solution)
-**Background.** Token tracking began while building handoff: measuring the amount of context with a hook required a
-record of token use.
-
-**Problem.** When a leader delegates work downward and a lower leader delegates again to a role further down, it is no
-longer visible what each piece of work cost. The available tokens are limited.
-
-**Solution.** Use is forecast, tracked and monitored, and fed back into improving aise-core. The management staff role
-arose together with these functions. Delegation was chosen because it fits a vertical structure and a real company's
-structure; token monitoring exists to improve that structure's fixed cost. The site does not say "the organizational
-approach costs more": what has been measured so far is totals per run, never the overhead of going through the
-organization separated from the work itself. The aim is not only to cut fixed cost but to see, together, which way a
-project is going and what judgments its PM is making.
-
-<Cite ids="operator-tokens" />
+<Cite ids="grant-scope,folder-access" />
 :::
 
 <SourceTable />
 
-**Next.** → [6. Distribution and many tools](/en/story/distribution)
+**Next.** → [6. Operation](/en/story/operation)

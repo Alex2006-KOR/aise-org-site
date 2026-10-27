@@ -10,16 +10,10 @@ title: Glossary — 여기 나온 말들을 한 번에
 
 <div class="aise-ref-note">
 
-이 쪽은 **참고 자료**입니다. 어느 쪽을 읽다가든 들르시면 됩니다. 첫 화면은 [브리핑](/)입니다.
+이 쪽은 **부록**이다. 어느 장을 읽다가든 들르면 된다. 이야기는 [1장](/story/background)부터, 첫 화면은 [브리핑](/)이다.
 
 </div>
 
-
-::: tip 읽는 자리 — 참고
-이 페이지는 서사의 일부가 아니라 **참고 자료**입니다. 순서대로 읽을 필요가 없고, 어느
-페이지를 읽다가 낯선 말이 나왔을 때 들르시면 됩니다. 전체 흐름으로 돌아가려면 →
-[브리핑](/)의 이야기 순서.
-:::
 
 이 사이트 곳곳에서 쓴 용어를 모아뒀습니다. 표기는 한 가지 규칙을 따릅니다 — **괄호 밖이 AISE 자신의
 문서·코드에 실제로 쓰인 이름, 괄호 안이 그게 뜻하는 쉬운 말**입니다. 예를 들어
@@ -33,12 +27,12 @@ title: Glossary — 여기 나온 말들을 한 번에
   영속적일 수도, 특정 task 단위로 결성·해체되는 project일 수도 있습니다. 부서마다
   `instance/workspace/<project-id>/`에 기록이 모입니다.
 - **`project-manager`(PM, 부서를 맡는 관리자)** — 부서의 업무를 분해·분배하고, 부서를 대표해
-  업무참모와 소통하는 역할. [뎁스-2 피라미드](/organization-model)에 속하는 line 역할입니다.
+  업무참모와 소통하는 역할. [4장 조직도와 실행 그래프](/story/structure#chart)에 속하는 line 역할입니다.
 - **project member(부서원)** — 하나의 분야에 대한 단일 책임(SRP)을 갖는 전문가 역할. 예:
   `backend-engineer`, `frontend-engineer`, `devops-engineer`.
 - **`OP_ORCHESTRATOR`(업무참모)** — 사용자의 지시를 받아 부서를 꾸리고 부서 간 협업을 조립하는
-  참모. `/aise:op`를 선언한 최상위 세션 자체입니다. [Staff & Governance](/staff-governance) 참고.
-- **`HR_ORCHESTRATOR`(인사참모)** — 역할 카탈로그(채용·역할 정의 변경·해고)만 전담하는 참모. 2026-09-30까지 쓰던 "조직개편"이라는 개념은 폐지됐습니다([Staff & Governance](/staff-governance)).
+  참모. `/aise:op`를 선언한 최상위 세션 자체입니다. [4장 라인과 참모](/story/structure#staff) 참고.
+- **`HR_ORCHESTRATOR`(인사참모)** — 역할 카탈로그(채용·역할 정의 변경·해고)만 전담하는 참모. 2026-09-30까지 쓰던 "조직개편"이라는 개념은 폐지됐습니다([4장 라인과 참모](/story/structure#staff)).
 - **`AS_ORCHESTRATOR`(자산참모)** — 각 역할이 무엇을 쓸 수 있는지(provisioning)를 승인하는 참모.
 - **`MG_ORCHESTRATOR`(경영참모)** — Meta 모드에서 조직 자체의 설계를 함께 다루는 참모. `/aise:meta`를
   선언한 최상위 세션 자체입니다.
@@ -52,23 +46,23 @@ title: Glossary — 여기 나온 말들을 한 번에
 - **provisioning(승인된 회사 제공 도구)** — 어떤 역할이 실제로 쓸 수 있는 도구·MCP·스킬의 범위.
   자산참모가 승인합니다.
 - **organization chart / execution graph(조직도 / 누가 무엇을 언제 하는지의 실행 그래프)** —
-  [Organization Model](/organization-model) 참고.
+  [4장 조직도와 실행 그래프](/story/structure#chart) 참고.
 - **`draft` / `active` / `ended` / `closed`(준비 중 / 진행 중 / 종료 / 보관)** — 부서의 생명주기
-  상태. [Lifecycle](/lifecycle) 참고.
+  상태. [4장 부서](/story/structure#departments) 참고.
 
 **모드와 명령**
 
 - **Operator mode / Meta mode(조직을 쓰는 모드 / 조직 자체를 고치는 모드)** —
-  [Operator vs Meta Mode](/operator-vs-meta-mode) 참고.
+  [4장 두 모드](/story/structure#modes) 참고.
 - **`/aise:op` · `/aise:meta`(모드 선언)** · **`/aise:handoff`(지금 시점의 이어받기 기록 쓰기)** ·
   **`/aise:usage`(한 세션의 토큰 사용량과 실행 그래프 보기)** — 실제로 치는 순서는
-  [Quick Guide](/quick-guide), 왜 이렇게 나뉘었는지는 [일을 맡기는 법](/usage) 참고.
+  [Quick Guide](/quick-guide), 왜 이렇게 나뉘었는지는 [6장 일을 맡기는 흐름](/story/operation#flow) 참고.
 
 **기록과 연속성**
 
 - **Project Record(부서 기록 파일 세트)** — PM의 상세 연속성 기억(`project-record.md`), 업무참모가
   남기는 미흡수 지시함(`directive.md`), 업무참모에게 보내는 경량 보고(`execution.md`)로 구성됩니다.
-  파일마다 쓰는 주체가 정확히 한 명이고, 그렇게 갈라진 사연은 [세션을 넘어 이어가기](/handoff)
+  파일마다 쓰는 주체가 정확히 한 명이고, 그렇게 갈라진 사연은 [6장 핸드오프](/story/operation#handoff)
   참고. (세 번째 파일은 2026-08-26에 `report.md`로 처음 만들어졌다가 이틀 뒤 실행 도구의 파일명
   가드와 충돌해 `execution.md`로 개칭됐습니다.)
 - **run(PM의 한 번의 실행)** — 부서는 여러 번의 독립적인 run에 걸쳐 존재하고, run들은 서로 기억을
