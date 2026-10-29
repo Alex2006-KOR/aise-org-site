@@ -1,6 +1,6 @@
 ---
-reflects-through: 951ca9d (PR #21 merge) + feature/rewrite-step2 (2026-10-27; set to the merge commit when merged)
-aise-core-through: e176648
+reflects-through: 315d65a (PR #23 merge) + feature/p19-live-check (2026-10-29; set to the merge commit when merged)
+aise-core-through: 0553da7
 title: aise-org-site 아키텍처
 outline: deep
 ---
@@ -23,7 +23,7 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
 | 근거 표 | 페이지 slug별 출처 목록, `repoPublic` 링크 스위치 | `docs/.vitepress/sources.ts` |
 | 산출물 | `./dist` (`outDir: ../dist`) | 빌드 시 생성, git 제외 |
 | 배포 | GitHub Actions → GitHub Pages | `.github/workflows/deploy.yml` |
-| 점검 스크립트 | upstream 대조(§7), 실 브라우저 점검(`browser-check.mjs`, `levels-check.mjs`, `mermaid-label-check.mjs`, `wording-check.mjs`), 출처 표 점검(`check_sources.mjs`) — 빌드 대상 아님 | `scripts/` |
+| 점검 스크립트 | upstream 대조(§7), 실 브라우저 점검(`browser-check.mjs`, `levels-check.mjs`, `mermaid-label-check.mjs`, `wording-check.mjs`, `figure-shots.mjs`; 구조 통합 점검 `live-integration-check.mjs` — 사이드바·"다음으로" 사슬·상세 라벨·그림 번호/캡션·출처 표·폐지 쪽 404), 출처 표 점검(`check_sources.mjs`) — 빌드 대상 아님 | `scripts/` |
 
 ## 2. 빌드·배포 계약
 
@@ -77,7 +77,7 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
   `docs/work/rewrite-plan.md`(빌드 제외).
 - **근거 표기(OD-11: 모든 장에 적용 — 2026-10-27 이야기 9장 전부)**: `<Cite ids="…"/>`는 종류·개수 요약 → 펼치면 목록(이름·종류·날짜·
   성격·경로), `<SourceTable/>`는 쪽 끝의 전체 표. 출처는 `sources.ts` 한 곳에(KOR/EN 공용; 여러 장이 쓰는 출처는 `pool`에 한 번 정의하고 장마다 `pick(...)`), `repoPublic=false`인 동안 링크 없음.
-  `scripts/check_sources.mjs <aise-core>`가 경로·제목 실존과 id를 점검한다.
+  `scripts/check_sources.mjs <aise-core>`가 경로·제목 실존과 id를 점검한다(빌드 제외 파일 `architecture.md`·`work/`는 건너뜀 — 문법 설명의 `…`이 오탐이었다).
 - 검토용 질문은 `::: warning 검토 질문 Q-n` 상자로 둔다 — `main` 승격(공개) 전에 지운다. (P-16의 Q-1·Q-2·Q-3·Q-5 상자는
   PR #18로 한때 공개됐고, operator 답(OD-14)을 받아 2026-10-21 KOR/EN 모두 지웠다. 지금 남은 상자는 없다.)
 - 부록 쪽: 머리 `.aise-ref-note`(부록임과 관련 장). "결정 되짚어보기" 상자(문제/조사/해결/강점)는 2단계에서 모두 장 안의

@@ -60,6 +60,8 @@ function* walk(d) {
 const docs = path.join(root, 'docs')
 for (const f of walk(docs)) {
   const rel = path.relative(docs, f).split(path.sep).join('/')
+  // Not site pages: config.mts `srcExclude` (maintainer docs describe the <Cite> syntax itself).
+  if (rel === 'architecture.md' || rel.startsWith('work/')) continue
   const slug = rel.replace(/\.md$/, '').replace(/^en\//, '')
   const text = fs.readFileSync(f, 'utf8')
   const ids = new Set((sources[slug] || []).map((s) => s.id))
