@@ -19,7 +19,7 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
 | 정적 사이트 생성기 | VitePress 1.x + `vitepress-plugin-mermaid`(mermaid 다이어그램) | `package.json` |
 | 콘텐츠 | Markdown 12페이지 × 2언어(KOR root, EN `/en/`): 브리핑(Home) + 이야기 9장(`story/`) + 부록 2(Quick Guide, 용어집) | `docs/*.md`, `docs/story/*.md`, `docs/en/**` |
 | 설정 | 로케일·내비·사이드바·mermaid·`srcExclude`(이 문서를 빌드에서 제외) | `docs/.vitepress/config.mts` |
-| 테마 | 기본 테마 확장: `Layout.vue`(`doc-before` 슬롯에 모두 펼치기/접기), `Cite.vue`·`SourceTable.vue`(근거 표기), `levels-markdown.ts`(`lead`/`point` 컨테이너), `levels.ts`(딥링크·인쇄), `custom.css` | `docs/.vitepress/theme/` |
+| 테마 | 기본 테마 확장: `Layout.vue`(`doc-before` 슬롯에 모두 펼치기/접기), `Cite.vue`·`SourceTable.vue`(근거 표기), `levels-markdown.ts`(`lead`/`point` 컨테이너), `levels.ts`(딥링크·인쇄), `figures.ts`(휴대폰 폭 그림 폭 계산), `custom.css` | `docs/.vitepress/theme/` |
 | 근거 표 | 페이지 slug별 출처 목록, `repoPublic` 링크 스위치 | `docs/.vitepress/sources.ts` |
 | 산출물 | `./dist` (`outDir: ../dist`) | 빌드 시 생성, git 제외 |
 | 배포 | GitHub Actions → GitHub Pages | `.github/workflows/deploy.yml` |
@@ -87,6 +87,9 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
   `custom.css`가 `fill: currentColor`로 다크모드 가시성을 처리한다. 강조색은 명시 `fill`(예: `#c1652a`)로
   두면 규칙에서 제외된다. mermaid는 플러그인이 라이트/다크 테마를 스스로 바꾼다. mermaid 라벨은 `.vp-doc`의 문단
   줄 높이를 받지 않게 한다(`custom.css`; 받으면 측정 높이보다 커져 마지막 줄이 잘림 — 2026-10-07 수정).
+  휴대폰 폭(640px 이하)에서 가장 작은 라벨의 유효 크기는 11px 이상이다: `figures.ts`가 그림마다 필요한 폭(viewBox 폭 × 11 ÷ 가장 작은
+  라벨 글자 크기)을 계산해 `figure`에 `--aise-fig-width`와 `aise-fig-wide`를 주고, `custom.css`가 그 폭으로 넓혀 `figure` 자체를 가로로
+  스크롤시킨다(캡션·안내 줄은 고정, 이미 11px 이상인 그림은 그대로, 데스크톱·인쇄는 불변, DOM 이동 없음). 검사: `scripts/mobile-figures-check.mjs`, `scripts/mobile-figures-interaction.mjs`.
 - 직접 인용은 `aise-core` 원문과 축자 일치해야 하고(INV-1/INV-4), EN 본문에는 인용 밖 한국어가 없어야 한다.
 - 공개 사이트 규칙: 회사는 일반화, 수직 구조의 우열 주장 없음, 측정 결과 주장 없음, 성과는 TBD, 미검증은
   "설계됨 / 구현됨 / 검증 전"으로 표시.
@@ -113,9 +116,9 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
 
 ## 8. 알려진 한계
 
-- 휴대폰 폭(390px): 페이지 수준 가로 넘침은 없으나, 인라인 SVG 다이어그램 라벨이 축소되어 유효 글자 크기가
-  약 4~7px이다(2026-09-30 측정 당시의 참고 쪽 그림 — 같은 그림이 2단계에서 2·4·9장으로 옮겨졌다). 표 4곳·코드블록 2곳은
-  자체 가로 스크롤이다(2026-09-30 실 브라우저 측정). 미해결 — DoD U-06.
+- 휴대폰 폭(390px): 페이지 수준 가로 넘침이 없고, 그림 58개 모두 라벨 유효 크기가 11px 이상이다(그림이 3.2~9px까지 줄던 문제는
+  2026-11-04 해결, §6 다이어그램 항목. Chromium 390x844 모바일 컨텍스트 측정 `checks/2026-11-04-mobile-figures/`). 실기기 확인은 아직 남았다 — DoD U-06. 표 4곳·코드블록 2곳은
+  자체 가로 스크롤이다(2026-09-30 실 브라우저 측정).
 - `docs/work/`는 작업 문서라 빌드에서 제외한다(`srcExclude: work/**`). `3way-reference-answers.md`(operator 결정 OD-07,
   2026-10-07 — 낡았고 P-11 대조 전이라 공개 의도가 없었음)와 `rewrite-plan.md`(재작성 장 계획, 2026-10-21). 파일은 저장소에 그대로 둔다. 2026-10-21 P-11a에서
   aise-core `f9dc210` 기준으로 갱신됨(current). P-11 뒤 "어떻게 검증했나"의 재료로 다시 쓸 수 있다.
