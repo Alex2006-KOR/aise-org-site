@@ -130,7 +130,7 @@ flowchart TB
     M1["Member<br/>(role A)"]
     M2["Member<br/>(role B)"]
   end
-  REC[("Department records<br/>inbox · status report · project record · log")]
+  REC[("Department records<br/>inbox · status report<br/>project record · log")]
   OP <--> W
   OP <--> H
   OP <--> A

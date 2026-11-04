@@ -381,7 +381,7 @@ aise-core는 조직의 **모양**과 지금 조직의 **구성**을 다른 곳�
   <text x="490" y="255" text-anchor="middle" font-size="12" fill="#c1652a">부서 목록 · 포트폴리오</text>
   <text x="490" y="271" text-anchor="middle" font-size="10" fill="#c1652a">처음엔 빈 파일</text>
   <line x1="280" y1="257" x2="356" y2="257" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#st-arrow4)" />
-  <text x="318" y="300" text-anchor="middle" font-size="10" opacity="0.75">실선 = 템플릿이 모양을 정한다 · 점선 = 첫 Operator 모드 진입 때 빈 파일로 생성</text>
+  <text x="318" y="300" text-anchor="middle" font-size="10" opacity="0.75">실선 = 템플릿이 모양을 정한다 · 점선 = 첫 Operator 모드 진입 때 생성</text>
 </svg>
 <figcaption>그림 4-7. 템플릿(schema/)과 인스턴스(instance/). 왼쪽이 바뀌면 조직이 가질 수 있는 모양이 바뀌고, 오른쪽이 바뀌면 지금의 조직이 바뀐다.</figcaption>
 </figure>

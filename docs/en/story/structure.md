@@ -391,7 +391,7 @@ it in its own repository.
   <text x="490" y="255" text-anchor="middle" font-size="12" fill="#c1652a">department index · portfolio</text>
   <text x="490" y="271" text-anchor="middle" font-size="10" fill="#c1652a">empty at first</text>
   <line x1="280" y1="257" x2="356" y2="257" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#st-arrow4)" />
-  <text x="318" y="300" text-anchor="middle" font-size="10" opacity="0.75">solid = the template sets the shape · dashed = created empty at the first Operator-mode entry</text>
+  <text x="318" y="300" text-anchor="middle" font-size="10" opacity="0.75">solid = the template sets the shape · dashed = created at the first Operator-mode entry</text>
 </svg>
 <figcaption>Figure 4-7. Templates (schema/) and instance (instance/). Changing the left changes the shapes the organization may take; changing the right changes the organization as it is now.</figcaption>
 </figure>
