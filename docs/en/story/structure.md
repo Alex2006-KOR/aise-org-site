@@ -143,6 +143,8 @@ ordinary department raises a loop: who approves that department's own tools?
   governance (`ASSET_POLICY.md`).
 - Approval to recruit does not mean approval of tools. The three are independent gates.
 
+<figure>
+
 ```mermaid
 flowchart TD
   R0["A new role is needed<br/><b>recruitment</b>"]
@@ -151,6 +153,9 @@ flowchart TD
   R3["Tool approval<br/>asset staff<br/><i>a separate judgment</i>"]
   R0 --> R1 --> R2 --> R3
 ```
+
+<figcaption>Figure 4-3. The recruitment path. Recruitment splits into analysis and approval by HR staff and the role file written by ops staff; tool approval is a separate judgment by asset staff.</figcaption>
+</figure>
 
 <Cite ids="hr-split,as-split,op-hr,op-assets" />
 :::
@@ -218,7 +223,7 @@ flowchart LR
   PMC --> PMa
 ```
 
-<figcaption>Figure 4-3. The role catalog. One class placed in two departments at once does not interfere with itself; the difference comes from the domain profile added on joining.</figcaption>
+<figcaption>Figure 4-4. The role catalog. One class placed in two departments at once does not interfere with itself; the difference comes from the domain profile added on joining.</figcaption>
 </figure>
 
 ::: point Details — classes instead of instances (background · problem · solution)
@@ -277,7 +282,7 @@ project, the ops staff owns coordination between projects, and the view widens t
   <text x="345" y="95" text-anchor="middle" font-size="10" opacity="0.8">operator decides the end</text>
   <text x="485" y="95" text-anchor="middle" font-size="10" opacity="0.8">after retrospective</text>
 </svg>
-<figcaption>Figure 4-4. One department's life. The operator decides the end; the department closes only after the retrospective, the portfolio promotion review and the HR staff's review of its roles.</figcaption>
+<figcaption>Figure 4-5. One department's life. The operator decides the end; the department closes only after the retrospective, the portfolio promotion review and the HR staff's review of its roles.</figcaption>
 </figure>
 
 With responsibility divided this way, a member handles only its single task, so no unneeded or confusing information reaches it. The PM does
@@ -329,7 +334,7 @@ access to the core documents without a declaration.
   <text x="540" y="270" text-anchor="middle" font-size="11" fill="#c1652a">the shape itself changes —</text>
   <text x="540" y="286" text-anchor="middle" font-size="11" font-weight="600" fill="#c1652a">always after the operator confirms</text>
 </svg>
-<figcaption>Figure 4-5. Two modes. Operator mode keeps the organization's shape and changes its make-up; Meta mode changes the shape itself.</figcaption>
+<figcaption>Figure 4-6. Two modes. Operator mode keeps the organization's shape and changes its make-up; Meta mode changes the shape itself.</figcaption>
 </figure>
 
 Meta mode is not a superset of Operator mode either. Meta mode cannot write this deployment's make-up records (role files, department records,
@@ -388,7 +393,7 @@ it in its own repository.
   <line x1="280" y1="257" x2="356" y2="257" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#st-arrow4)" />
   <text x="318" y="300" text-anchor="middle" font-size="10" opacity="0.75">solid = the template sets the shape · dashed = created empty at the first Operator-mode entry</text>
 </svg>
-<figcaption>Figure 4-6. Templates (schema/) and instance (instance/). Changing the left changes the shapes the organization may take; changing the right changes the organization as it is now.</figcaption>
+<figcaption>Figure 4-7. Templates (schema/) and instance (instance/). Changing the left changes the shapes the organization may take; changing the right changes the organization as it is now.</figcaption>
 </figure>
 
 A new deployment starts with an empty organization. At the first entry into Operator mode the instance skeleton is created as empty files, and

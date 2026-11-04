@@ -1,0 +1,810 @@
+[
+ {
+  "scheme": "light",
+  "page": "story/structure",
+  "diagrams": 2,
+  "labels": 15,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.48,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "새 역할이 필요하다채용",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 130.171875,
+      "naturalW": 130,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "분석·승인인사참모 단독",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 95.09375,
+      "naturalW": 95,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "역할 파일 작성업무참모부서는 요청만",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 100.171875,
+      "naturalW": 100,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "도구 승인자산참모따로 한 번 더",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 90.265625,
+      "naturalW": 90,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   },
+   {
+    "diagram": 1,
+    "labels": [
+     {
+      "text": "부서: 다른 프로젝트",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 135.5625,
+      "naturalW": 136,
+      "clipPx": 0,
+      "clipXPx": 0.44,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서: 이 사이트",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 105.5625,
+      "naturalW": 106,
+      "clipPx": 0,
+      "clipXPx": 0.44,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "역할 카탈로그 — 클래스",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 166.265625,
+      "naturalW": 166,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "승인 없이 재사용",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "동시에 사용",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 80.09375,
+      "naturalW": 80,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 144.96875,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "devops-engineer",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 134.515625,
+      "naturalW": 135,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "project-manager",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 133.21875,
+      "naturalW": 133,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer＋ 이 부서의 도메인 프로필",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 186.34375,
+      "naturalW": 186,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "project-manager＋ 이 부서의 도메인 프로필",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 186.34375,
+      "naturalW": 186,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer＋ 다른 도메인 프로필",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 151.265625,
+      "naturalW": 151,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "en/story/structure",
+  "diagrams": 2,
+  "labels": 15,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.48,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "A new role is neededrecruitment",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 167.4375,
+      "naturalW": 167,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Analysis and approvalHR staff alone",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 176.046875,
+      "naturalW": 176,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Role file writtenops staffdepartments on",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Tool approvalasset staffa separate judgm",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 167.359375,
+      "naturalW": 167,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   },
+   {
+    "diagram": 1,
+    "labels": [
+     {
+      "text": "Department: another project",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 230.484375,
+      "naturalW": 230,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Department: this site",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 170.484375,
+      "naturalW": 170,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Role catalog — classes",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 182.703125,
+      "naturalW": 183,
+      "clipPx": 0,
+      "clipXPx": 0.3,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "reused without approval",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 194.71875,
+      "naturalW": 195,
+      "clipPx": 0,
+      "clipXPx": 0.28,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "used at the same time",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 180.875,
+      "naturalW": 181,
+      "clipPx": 0,
+      "clipXPx": 0.13,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 144.96875,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "devops-engineer",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 134.515625,
+      "naturalW": 135,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "project-manager",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 133.21875,
+      "naturalW": 133,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer＋ this department's dom",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "project-manager＋ this department's domai",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer＋ another domain profil",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "story/structure",
+  "diagrams": 2,
+  "labels": 15,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.48,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "새 역할이 필요하다채용",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 130.171875,
+      "naturalW": 130,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "분석·승인인사참모 단독",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 95.09375,
+      "naturalW": 95,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "역할 파일 작성업무참모부서는 요청만",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 100.171875,
+      "naturalW": 100,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "도구 승인자산참모따로 한 번 더",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 90.265625,
+      "naturalW": 90,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   },
+   {
+    "diagram": 1,
+    "labels": [
+     {
+      "text": "부서: 다른 프로젝트",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 135.5625,
+      "naturalW": 136,
+      "clipPx": 0,
+      "clipXPx": 0.44,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "부서: 이 사이트",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 105.5625,
+      "naturalW": 106,
+      "clipPx": 0,
+      "clipXPx": 0.44,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "역할 카탈로그 — 클래스",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 166.265625,
+      "naturalW": 166,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "승인 없이 재사용",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "동시에 사용",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 80.09375,
+      "naturalW": 80,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 144.96875,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "devops-engineer",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 134.515625,
+      "naturalW": 135,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "project-manager",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 133.21875,
+      "naturalW": 133,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer＋ 이 부서의 도메인 프로필",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 186.34375,
+      "naturalW": 186,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "project-manager＋ 이 부서의 도메인 프로필",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 186.34375,
+      "naturalW": 186,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer＋ 다른 도메인 프로필",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 151.265625,
+      "naturalW": 151,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "en/story/structure",
+  "diagrams": 2,
+  "labels": 15,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.48,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "A new role is neededrecruitment",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 167.4375,
+      "naturalW": 167,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Analysis and approvalHR staff alone",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 176.046875,
+      "naturalW": 176,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Role file writtenops staffdepartments on",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Tool approvalasset staffa separate judgm",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 167.359375,
+      "naturalW": 167,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   },
+   {
+    "diagram": 1,
+    "labels": [
+     {
+      "text": "Department: another project",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 230.484375,
+      "naturalW": 230,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Department: this site",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 170.484375,
+      "naturalW": 170,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Role catalog — classes",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 182.703125,
+      "naturalW": 183,
+      "clipPx": 0,
+      "clipXPx": 0.3,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "reused without approval",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 194.71875,
+      "naturalW": 195,
+      "clipPx": 0,
+      "clipXPx": 0.28,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "used at the same time",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 180.875,
+      "naturalW": 181,
+      "clipPx": 0,
+      "clipXPx": 0.13,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 144.96875,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0.03,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "devops-engineer",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 134.515625,
+      "naturalW": 135,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "project-manager",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 133.21875,
+      "naturalW": 133,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer＋ this department's dom",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "project-manager＋ this department's domai",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "frontend-engineer＋ another domain profil",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ }
+]

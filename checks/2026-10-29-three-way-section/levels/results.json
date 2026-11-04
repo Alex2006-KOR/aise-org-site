@@ -1,0 +1,630 @@
+[
+ {
+  "page": "story/verification",
+  "scheme": "light",
+  "checks": {
+   "http-200": {
+    "ok": true,
+    "detail": 200
+   },
+   "dark-class": {
+    "ok": true
+   },
+   "has-collapsible-points": {
+    "ok": true,
+    "detail": 5
+   },
+   "initial-all-closed": {
+    "ok": true
+   },
+   "toolbar-labels": {
+    "ok": true,
+    "detail": [
+     "모두 펼치기",
+     "모두 접기"
+    ]
+   },
+   "expand-all-opens-all": {
+    "ok": true
+   },
+   "mermaid-in-point-sized": {
+    "ok": true,
+    "detail": []
+   },
+   "collapse-all-closes-all": {
+    "ok": true
+   },
+   "find-in-page-text-findable-in-closed-point(window.find; auto-expand is NOT asserted)": {
+    "ok": true,
+    "detail": {
+     "words": "배경. 화면",
+     "found": true,
+     "opened": false,
+     "beforematch": 0,
+     "control": {
+      "found": true,
+      "opened": false
+     }
+    }
+   },
+   "print-emulated-all-bodies-visible": {
+    "ok": true,
+    "detail": {
+     "bodies": 5,
+     "hidden": 0,
+     "toolbarHidden": true,
+     "markerHidden": true
+    }
+   },
+   "print-hides-toolbar-and-markers": {
+    "ok": true,
+    "detail": {
+     "bodies": 5,
+     "hidden": 0,
+     "toolbarHidden": true,
+     "markerHidden": true
+    }
+   },
+   "pdf-closed-equals-open": {
+    "ok": true,
+    "detail": {
+     "pagesClosed": 9,
+     "pagesOpen": 9,
+     "pagesHiddenBaseline": 7,
+     "bytesClosed": 485705,
+     "bytesOpen": 485705,
+     "bytesBaseline": 448610
+    }
+   },
+   "pdf-open-larger-than-hidden-baseline": {
+    "ok": true,
+    "detail": {
+     "pagesClosed": 9,
+     "pagesOpen": 9,
+     "pagesHiddenBaseline": 7,
+     "bytesClosed": 485705,
+     "bytesOpen": 485705,
+     "bytesBaseline": 448610
+    }
+   },
+   "beforeprint-opens-afterprint-restores": {
+    "ok": true,
+    "detail": {
+     "before": [
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "during": true,
+     "after": [
+      true,
+      false,
+      false,
+      false,
+      false
+     ]
+    }
+   },
+   "mobile-390-no-horizontal-overflow": {
+    "ok": true,
+    "detail": {
+     "scrollWidth": 390,
+     "merW": []
+    }
+   },
+   "no-console-errors": {
+    "ok": true,
+    "detail": []
+   }
+  },
+  "notes": {
+   "find": "window.find() is a script-driven search, not the Ctrl+F UI; headless Chromium has no find bar. Reported as observed, not as proof of Ctrl+F."
+  },
+  "levels": {
+   "1": 1,
+   "2": 5,
+   "3": 15,
+   "points": 5,
+   "plain": 0
+  },
+  "mermaid": [],
+  "find": {
+   "words": "배경. 화면",
+   "found": true,
+   "opened": false,
+   "beforematch": 0,
+   "control": {
+    "found": true,
+    "opened": false
+   }
+  },
+  "printEmulated": {
+   "bodies": 5,
+   "hidden": 0,
+   "toolbarHidden": true,
+   "markerHidden": true
+  },
+  "pdf": {
+   "pagesClosed": 9,
+   "pagesOpen": 9,
+   "pagesHiddenBaseline": 7,
+   "bytesClosed": 485705,
+   "bytesOpen": 485705,
+   "bytesBaseline": 448610
+  },
+  "consoleErrors": []
+ },
+ {
+  "page": "en/story/verification",
+  "scheme": "light",
+  "checks": {
+   "http-200": {
+    "ok": true,
+    "detail": 200
+   },
+   "dark-class": {
+    "ok": true
+   },
+   "has-collapsible-points": {
+    "ok": true,
+    "detail": 5
+   },
+   "initial-all-closed": {
+    "ok": true
+   },
+   "toolbar-labels": {
+    "ok": true,
+    "detail": [
+     "Expand all",
+     "Collapse all"
+    ]
+   },
+   "expand-all-opens-all": {
+    "ok": true
+   },
+   "mermaid-in-point-sized": {
+    "ok": true,
+    "detail": []
+   },
+   "collapse-all-closes-all": {
+    "ok": true
+   },
+   "find-in-page-text-findable-in-closed-point(window.find; auto-expand is NOT asserted)": {
+    "ok": true,
+    "detail": {
+     "words": "Background. Screen",
+     "found": true,
+     "opened": false,
+     "beforematch": 0,
+     "control": {
+      "found": true,
+      "opened": false
+     }
+    }
+   },
+   "print-emulated-all-bodies-visible": {
+    "ok": true,
+    "detail": {
+     "bodies": 5,
+     "hidden": 0,
+     "toolbarHidden": true,
+     "markerHidden": true
+    }
+   },
+   "print-hides-toolbar-and-markers": {
+    "ok": true,
+    "detail": {
+     "bodies": 5,
+     "hidden": 0,
+     "toolbarHidden": true,
+     "markerHidden": true
+    }
+   },
+   "pdf-closed-equals-open": {
+    "ok": true,
+    "detail": {
+     "pagesClosed": 10,
+     "pagesOpen": 10,
+     "pagesHiddenBaseline": 8,
+     "bytesClosed": 436996,
+     "bytesOpen": 436996,
+     "bytesBaseline": 409845
+    }
+   },
+   "pdf-open-larger-than-hidden-baseline": {
+    "ok": true,
+    "detail": {
+     "pagesClosed": 10,
+     "pagesOpen": 10,
+     "pagesHiddenBaseline": 8,
+     "bytesClosed": 436996,
+     "bytesOpen": 436996,
+     "bytesBaseline": 409845
+    }
+   },
+   "beforeprint-opens-afterprint-restores": {
+    "ok": true,
+    "detail": {
+     "before": [
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "during": true,
+     "after": [
+      true,
+      false,
+      false,
+      false,
+      false
+     ]
+    }
+   },
+   "mobile-390-no-horizontal-overflow": {
+    "ok": true,
+    "detail": {
+     "scrollWidth": 390,
+     "merW": []
+    }
+   },
+   "no-console-errors": {
+    "ok": true,
+    "detail": []
+   }
+  },
+  "notes": {
+   "find": "window.find() is a script-driven search, not the Ctrl+F UI; headless Chromium has no find bar. Reported as observed, not as proof of Ctrl+F."
+  },
+  "levels": {
+   "1": 1,
+   "2": 5,
+   "3": 15,
+   "points": 5,
+   "plain": 0
+  },
+  "mermaid": [],
+  "find": {
+   "words": "Background. Screen",
+   "found": true,
+   "opened": false,
+   "beforematch": 0,
+   "control": {
+    "found": true,
+    "opened": false
+   }
+  },
+  "printEmulated": {
+   "bodies": 5,
+   "hidden": 0,
+   "toolbarHidden": true,
+   "markerHidden": true
+  },
+  "pdf": {
+   "pagesClosed": 10,
+   "pagesOpen": 10,
+   "pagesHiddenBaseline": 8,
+   "bytesClosed": 436996,
+   "bytesOpen": 436996,
+   "bytesBaseline": 409845
+  },
+  "consoleErrors": []
+ },
+ {
+  "page": "story/verification",
+  "scheme": "dark",
+  "checks": {
+   "http-200": {
+    "ok": true,
+    "detail": 200
+   },
+   "dark-class": {
+    "ok": true
+   },
+   "has-collapsible-points": {
+    "ok": true,
+    "detail": 5
+   },
+   "initial-all-closed": {
+    "ok": true
+   },
+   "toolbar-labels": {
+    "ok": true,
+    "detail": [
+     "모두 펼치기",
+     "모두 접기"
+    ]
+   },
+   "expand-all-opens-all": {
+    "ok": true
+   },
+   "mermaid-in-point-sized": {
+    "ok": true,
+    "detail": []
+   },
+   "collapse-all-closes-all": {
+    "ok": true
+   },
+   "find-in-page-text-findable-in-closed-point(window.find; auto-expand is NOT asserted)": {
+    "ok": true,
+    "detail": {
+     "words": "배경. 화면",
+     "found": true,
+     "opened": false,
+     "beforematch": 0,
+     "control": {
+      "found": true,
+      "opened": false
+     }
+    }
+   },
+   "print-emulated-all-bodies-visible": {
+    "ok": true,
+    "detail": {
+     "bodies": 5,
+     "hidden": 0,
+     "toolbarHidden": true,
+     "markerHidden": true
+    }
+   },
+   "print-hides-toolbar-and-markers": {
+    "ok": true,
+    "detail": {
+     "bodies": 5,
+     "hidden": 0,
+     "toolbarHidden": true,
+     "markerHidden": true
+    }
+   },
+   "pdf-closed-equals-open": {
+    "ok": true,
+    "detail": {
+     "pagesClosed": 9,
+     "pagesOpen": 9,
+     "pagesHiddenBaseline": 7,
+     "bytesClosed": 485920,
+     "bytesOpen": 485920,
+     "bytesBaseline": 448785
+    }
+   },
+   "pdf-open-larger-than-hidden-baseline": {
+    "ok": true,
+    "detail": {
+     "pagesClosed": 9,
+     "pagesOpen": 9,
+     "pagesHiddenBaseline": 7,
+     "bytesClosed": 485920,
+     "bytesOpen": 485920,
+     "bytesBaseline": 448785
+    }
+   },
+   "beforeprint-opens-afterprint-restores": {
+    "ok": true,
+    "detail": {
+     "before": [
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "during": true,
+     "after": [
+      true,
+      false,
+      false,
+      false,
+      false
+     ]
+    }
+   },
+   "mobile-390-no-horizontal-overflow": {
+    "ok": true,
+    "detail": {
+     "scrollWidth": 390,
+     "merW": []
+    }
+   },
+   "no-console-errors": {
+    "ok": true,
+    "detail": []
+   }
+  },
+  "notes": {
+   "find": "window.find() is a script-driven search, not the Ctrl+F UI; headless Chromium has no find bar. Reported as observed, not as proof of Ctrl+F."
+  },
+  "levels": {
+   "1": 1,
+   "2": 5,
+   "3": 15,
+   "points": 5,
+   "plain": 0
+  },
+  "mermaid": [],
+  "find": {
+   "words": "배경. 화면",
+   "found": true,
+   "opened": false,
+   "beforematch": 0,
+   "control": {
+    "found": true,
+    "opened": false
+   }
+  },
+  "printEmulated": {
+   "bodies": 5,
+   "hidden": 0,
+   "toolbarHidden": true,
+   "markerHidden": true
+  },
+  "pdf": {
+   "pagesClosed": 9,
+   "pagesOpen": 9,
+   "pagesHiddenBaseline": 7,
+   "bytesClosed": 485920,
+   "bytesOpen": 485920,
+   "bytesBaseline": 448785
+  },
+  "consoleErrors": []
+ },
+ {
+  "page": "en/story/verification",
+  "scheme": "dark",
+  "checks": {
+   "http-200": {
+    "ok": true,
+    "detail": 200
+   },
+   "dark-class": {
+    "ok": true
+   },
+   "has-collapsible-points": {
+    "ok": true,
+    "detail": 5
+   },
+   "initial-all-closed": {
+    "ok": true
+   },
+   "toolbar-labels": {
+    "ok": true,
+    "detail": [
+     "Expand all",
+     "Collapse all"
+    ]
+   },
+   "expand-all-opens-all": {
+    "ok": true
+   },
+   "mermaid-in-point-sized": {
+    "ok": true,
+    "detail": []
+   },
+   "collapse-all-closes-all": {
+    "ok": true
+   },
+   "find-in-page-text-findable-in-closed-point(window.find; auto-expand is NOT asserted)": {
+    "ok": true,
+    "detail": {
+     "words": "Background. Screen",
+     "found": true,
+     "opened": false,
+     "beforematch": 0,
+     "control": {
+      "found": true,
+      "opened": false
+     }
+    }
+   },
+   "print-emulated-all-bodies-visible": {
+    "ok": true,
+    "detail": {
+     "bodies": 5,
+     "hidden": 0,
+     "toolbarHidden": true,
+     "markerHidden": true
+    }
+   },
+   "print-hides-toolbar-and-markers": {
+    "ok": true,
+    "detail": {
+     "bodies": 5,
+     "hidden": 0,
+     "toolbarHidden": true,
+     "markerHidden": true
+    }
+   },
+   "pdf-closed-equals-open": {
+    "ok": true,
+    "detail": {
+     "pagesClosed": 10,
+     "pagesOpen": 10,
+     "pagesHiddenBaseline": 8,
+     "bytesClosed": 437215,
+     "bytesOpen": 437215,
+     "bytesBaseline": 410011
+    }
+   },
+   "pdf-open-larger-than-hidden-baseline": {
+    "ok": true,
+    "detail": {
+     "pagesClosed": 10,
+     "pagesOpen": 10,
+     "pagesHiddenBaseline": 8,
+     "bytesClosed": 437215,
+     "bytesOpen": 437215,
+     "bytesBaseline": 410011
+    }
+   },
+   "beforeprint-opens-afterprint-restores": {
+    "ok": true,
+    "detail": {
+     "before": [
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "during": true,
+     "after": [
+      true,
+      false,
+      false,
+      false,
+      false
+     ]
+    }
+   },
+   "mobile-390-no-horizontal-overflow": {
+    "ok": true,
+    "detail": {
+     "scrollWidth": 390,
+     "merW": []
+    }
+   },
+   "no-console-errors": {
+    "ok": true,
+    "detail": []
+   }
+  },
+  "notes": {
+   "find": "window.find() is a script-driven search, not the Ctrl+F UI; headless Chromium has no find bar. Reported as observed, not as proof of Ctrl+F."
+  },
+  "levels": {
+   "1": 1,
+   "2": 5,
+   "3": 15,
+   "points": 5,
+   "plain": 0
+  },
+  "mermaid": [],
+  "find": {
+   "words": "Background. Screen",
+   "found": true,
+   "opened": false,
+   "beforematch": 0,
+   "control": {
+    "found": true,
+    "opened": false
+   }
+  },
+  "printEmulated": {
+   "bodies": 5,
+   "hidden": 0,
+   "toolbarHidden": true,
+   "markerHidden": true
+  },
+  "pdf": {
+   "pagesClosed": 10,
+   "pagesOpen": 10,
+   "pagesHiddenBaseline": 8,
+   "bytesClosed": 437215,
+   "bytesOpen": 437215,
+   "bytesBaseline": 410011
+  },
+  "consoleErrors": []
+ }
+]

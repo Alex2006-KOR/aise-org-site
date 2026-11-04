@@ -97,7 +97,7 @@ HTML을 옮기지 않는다.
 | `organization-model` 그림 두 장 + SVG | 4장 조직도와 실행 그래프 — 그림 4-1 |
 | `organization-model` 뎁스를 2로 | 4장 깊이 2 |
 | `organization-model` PM은 왜 네 번째 참모가 아닌가 + 결정 상자 | 4장 PM은 채용되는 역할 |
-| `organization-model` 같은 역할이 여러 부서에 + 결정 상자(클래스) + mermaid | 4장 역할은 클래스 — 그림 4-3 |
+| `organization-model` 같은 역할이 여러 부서에 + 결정 상자(클래스) + mermaid | 4장 역할은 클래스 — 그림 4-4 |
 | `organization-model` 실제 실행 그래프(2026-09-15 세션) + mermaid | **7장 실행 그래프 — 그림 7-1**(brief 5(a)) |
 | `staff-governance` 참모 셋은 동급 + SVG | 4장 라인과 참모 — 그림 4-2 |
 | `staff-governance` 책임을 두 종류로 | 4장 두 종류의 책임 |
@@ -108,13 +108,13 @@ HTML을 옮기지 않는다.
 | `staff-governance` Meta 모드의 파트너 | 4장 경영참모 |
 | `lifecycle` 여섯 단계 + SVG | 9장 성장 — 그림 9-1 |
 | `lifecycle` 결정 상자(역할 목록을 미리 그리지 않음) | 4장 역할은 필요할 때 채용 (합침) |
-| `lifecycle` 부서 하나의 생애 + SVG | 4장 부서와 생명주기 — 그림 4-4 |
+| `lifecycle` 부서 하나의 생애 + SVG | 4장 부서와 생명주기 — 그림 4-5 |
 | `lifecycle` 결정 상자(부서라는 말의 뜻이 바뀜) | 4장 부서 (합침) |
 | `collaboration-model` 머리 + mermaid(협업 조립) | 6장 부서 사이의 협업 — 그림 6-2 |
 | `collaboration-model` 서로 멈춰 있던 두 역할 + 결정 상자 2개(병렬인데 멈춤, 파일이 안 겹쳐도 의존) | 6장 부서 안 위임과 병렬 — 상세 두 개 |
 | `collaboration-model` 한 부서 안에서 + mermaid | 6장 — 그림 6-3 |
 | `collaboration-model` 부서 사이에서 오간 것 + 결정 상자(평가 점수가 떨어진 이유) | 6장 협업(사례) + 7장 평가(점수 추적은 그림 7-3) |
-| `operator-vs-meta-mode` 머리 + SVG | 4장 두 모드 — 그림 4-5 |
+| `operator-vs-meta-mode` 머리 + SVG | 4장 두 모드 — 그림 4-6 |
 | `operator-vs-meta-mode` 둘로 나눈 이유 + 결정 상자(정책과 강제 장치를 다른 곳에) | 5장 세 층 상세 (합침 — 5장 시범 "왜 층을 나눴나"에 이미 일부) |
 | `operator-vs-meta-mode` 결정 상자(정책을 적는 것과 지켜지는 것) + mermaid(경로 정규화 흐름) | 5장 훅 — **그림은 훅 재설계 뒤 판단**(이 흐름도는 mode-gate 한 개의 내부라 재설계로 바뀔 수 있음) |
 
@@ -172,15 +172,15 @@ HTML을 옮기지 않는다.
 | F3 | `philosophy` | mermaid | 흔한 방식(긴 컨텍스트) vs 매번 새로 시작 | 6장 그림 6-5 |
 | F4 | `real-world-vs-aise` | mermaid | 기능이 떠올랐을 때의 흐름 | 3장 그림 3-3 |
 | F5 | `organization-model` | SVG | 조직도 vs 실행 그래프 오버레이 | 4장 그림 4-1 |
-| F6 | `organization-model` | mermaid | 역할 카탈로그(클래스) | 4장 그림 4-3 |
+| F6 | `organization-model` | mermaid | 역할 카탈로그(클래스) | 4장 그림 4-4 |
 | F7 | `organization-model` | mermaid | 2026-09-15 세션의 실제 실행 그래프 | **7장 그림 7-1** |
 | F8 | `staff-governance` | SVG | 라인 조직과 참모 셋 | 4장 그림 4-2 |
-| F9 | `staff-governance` | mermaid | 채용 경로 | 4장 (참모 셋이 된 이유 안) |
+| F9 | `staff-governance` | mermaid | 채용 경로 | 4장 그림 4-3 (참모 셋이 된 이유 안) |
 | F10 | `lifecycle` | SVG | 여섯 단계 순환 | 9장 그림 9-1 |
-| F11 | `lifecycle` | SVG | 부서 하나의 생애 | 4장 그림 4-4 |
+| F11 | `lifecycle` | SVG | 부서 하나의 생애 | 4장 그림 4-5 |
 | F12 | `collaboration-model` | mermaid | 협업 조립(부서 안/사이) | 6장 그림 6-2 |
 | F13 | `collaboration-model` | mermaid | 한 부서 안 위임 | 6장 그림 6-3 |
-| F14 | `operator-vs-meta-mode` | SVG | 두 모드와 피라미드 | 4장 그림 4-5 |
+| F14 | `operator-vs-meta-mode` | SVG | 두 모드와 피라미드 | 4장 그림 4-6 |
 | F15 | `operator-vs-meta-mode` | mermaid | 쓰기 전 경로 정규화(mode-gate 내부) | 5장 — **훅 재설계 뒤 판단** |
 | F16 | `structural-principles-ocp` | mermaid | core와 확장 지점 | 3장 그림 3-2 |
 | F17 | `ultimate-goal` | mermaid | 모델 교체와 남는 역량 | 3장 그림 3-4 (9장에서 링크) |
@@ -188,7 +188,7 @@ HTML을 옮기지 않는다.
 | F19 | `story/at-a-glance` | mermaid | 전체 구조 | 2장 그림 2-1 |
 | 새 | `story/background` | SVG ×2, mermaid ×1 | 1-1, 1-2, 1-3 | 1장 (시범 완료) |
 | 새 | `story/how-it-is-kept` | SVG ×2, mermaid ×1 | 5-1, 5-2, 5-3 | 5장 (시범 완료) |
-| 새(2단계) | — | — | 템플릿(`schema/`)↔인스턴스(`instance/`) | 4장 그림 4-6 |
+| 새(2단계) | — | — | 템플릿(`schema/`)↔인스턴스(`instance/`) | 4장 그림 4-7 |
 | 새(2단계) | — | — | 평가 산출물 예시 | 7장 그림 7-2 |
 | 보류 | — | — | 훅 구성도 | 5장 자리만 — 훅 재설계 뒤 |
 
@@ -227,3 +227,8 @@ operator 승인(OD-16, 2026-10-26)으로 §7의 1–6을 적용했다. 계획과
 | 감시 목록·회귀 점검 | 7장 | 7장 "감사" 절로 다시 씀(AUD-N 네 종류) | aise-core가 2026-10-26 감시 목록과 회귀 목록을 감사로 대체했다 |
 | 장 주소 | 2장 `story/at-a-glance` 유지 | 그대로(제목만 "해법") | 기존 링크 보존 |
 
+## 9. 라이브 통합 확인에서 고친 것 (2026-10-28, `p19-live-check-2026-10-28`)
+
+- 4장의 채용 경로 mermaid(F9)가 번호·캡션 없이 있었다(U-10 "번호·캡션과 함께" 위반, `scripts/live-integration-check.mjs`가 찾음).
+  그림 4-3으로 캡션을 달고, 뒤의 그림을 하나씩 밀었다: 역할 카탈로그 4-4, 부서 하나의 생애 4-5, 두 모드 4-6, 템플릿↔인스턴스 4-7
+  (KOR/EN). 다른 장에서 4장 그림 번호를 가리키는 곳은 없다. §7의 "그림 4-6(템플릿↔인스턴스)"은 2단계 당시 번호다.

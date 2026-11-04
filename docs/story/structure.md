@@ -140,6 +140,8 @@ Meta 모드에는 경영참모가 따로 있다. 조직 자체(헌법, 스키마
   배포마다 다르므로, 기능은 헌법에, 구체적인 제약은 그 배포의 거버넌스(`ASSET_POLICY.md`)에 둔다.
 - 채용 승인이 도구 승인을 뜻하지 않는다. 셋은 서로 독립된 관문이다.
 
+<figure>
+
 ```mermaid
 flowchart TD
   R0["새 역할이 필요하다<br/><b>채용</b>"]
@@ -148,6 +150,9 @@ flowchart TD
   R3["도구 승인<br/>자산참모<br/><i>따로 한 번 더</i>"]
   R0 --> R1 --> R2 --> R3
 ```
+
+<figcaption>그림 4-3. 채용 경로. 채용은 인사참모의 분석·승인과 업무참모의 역할 파일 작성으로 나뉘고, 도구 승인은 자산참모가 따로 한 번 더 한다.</figcaption>
+</figure>
 
 <Cite ids="hr-split,as-split,op-hr,op-assets" />
 :::
@@ -215,7 +220,7 @@ flowchart LR
   PMC --> PMa
 ```
 
-<figcaption>그림 4-3. 역할 카탈로그. 같은 클래스가 두 부서에 동시에 놓여도 서로 간섭하지 않는다. 차이는 부서에 합류할 때 붙는 도메인 프로필이 만든다.</figcaption>
+<figcaption>그림 4-4. 역할 카탈로그. 같은 클래스가 두 부서에 동시에 놓여도 서로 간섭하지 않는다. 차이는 부서에 합류할 때 붙는 도메인 프로필이 만든다.</figcaption>
 </figure>
 
 ::: point 자세히 — 인스턴스 대신 클래스 (배경 · 문제 · 해결 방법)
@@ -271,7 +276,7 @@ flowchart LR
   <text x="345" y="95" text-anchor="middle" font-size="10" opacity="0.8">운영자의 종료 결정</text>
   <text x="485" y="95" text-anchor="middle" font-size="10" opacity="0.8">회고 · 승격 검토 뒤</text>
 </svg>
-<figcaption>그림 4-4. 부서 하나의 생애. 종료는 운영자가 정하고, 회고와 포트폴리오 승격 검토, 인사참모의 역할 검토까지 끝나야 닫힌다.</figcaption>
+<figcaption>그림 4-5. 부서 하나의 생애. 종료는 운영자가 정하고, 회고와 포트폴리오 승격 검토, 인사참모의 역할 검토까지 끝나야 닫힌다.</figcaption>
 </figure>
 
 이렇게 책임을 나누면 부서원은 자기 단일 업무만 처리하므로, 불필요하거나 혼란을 줄 수 있는 정보가 전달되지 않는다. PM은
@@ -321,7 +326,7 @@ flowchart LR
   <text x="540" y="270" text-anchor="middle" font-size="11" fill="#c1652a">모양 자체가 바뀐다 —</text>
   <text x="540" y="286" text-anchor="middle" font-size="11" font-weight="600" fill="#c1652a">항상 운영자 확인 뒤</text>
 </svg>
-<figcaption>그림 4-5. 두 모드. Operator 모드는 조직의 모양을 두고 구성만 바꾸고, Meta 모드는 모양 자체를 바꾼다.</figcaption>
+<figcaption>그림 4-6. 두 모드. Operator 모드는 조직의 모양을 두고 구성만 바꾸고, Meta 모드는 모양 자체를 바꾼다.</figcaption>
 </figure>
 
 Meta 모드도 Operator 모드의 상위 권한은 아니다. Meta 모드는 이 배포의 구성 기록(역할 파일, 부서 기록, 참모 기록)에 쓸 수 없다.
@@ -378,7 +383,7 @@ aise-core는 조직의 **모양**과 지금 조직의 **구성**을 다른 곳�
   <line x1="280" y1="257" x2="356" y2="257" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#st-arrow4)" />
   <text x="318" y="300" text-anchor="middle" font-size="10" opacity="0.75">실선 = 템플릿이 모양을 정한다 · 점선 = 첫 Operator 모드 진입 때 빈 파일로 생성</text>
 </svg>
-<figcaption>그림 4-6. 템플릿(schema/)과 인스턴스(instance/). 왼쪽이 바뀌면 조직이 가질 수 있는 모양이 바뀌고, 오른쪽이 바뀌면 지금의 조직이 바뀐다.</figcaption>
+<figcaption>그림 4-7. 템플릿(schema/)과 인스턴스(instance/). 왼쪽이 바뀌면 조직이 가질 수 있는 모양이 바뀌고, 오른쪽이 바뀌면 지금의 조직이 바뀐다.</figcaption>
 </figure>
 
 새 배포는 빈 조직으로 시작한다. 처음 Operator 모드로 들어갈 때 인스턴스 뼈대가 빈 파일로 만들어지고, 부서와 역할은 실제 일이

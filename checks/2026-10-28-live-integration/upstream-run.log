@@ -1,0 +1,27 @@
+aise-core: checked-through e176648 -> now 0553da7
+
+== 1. references
+0 finding(s)
+
+== 2. quotes broken since e176648
+0 finding(s) in 8 quote(s)
+
+== 3. reading list (changed since e176648)
+ adapters/claude-code/README.md                                 |  4 +-
+ schema/OP_ORCHESTRATOR.md                                      | 40 ++++++++------
+ schema/roles/project-manager.run-start.md                      | 26 +++++----
+ schema/workspace/examples/aise-org-site/execution.md           | 23 ++++----
+ schema/workspace/examples/llm-wiki-platform/execution.md       | 27 +++++-----
+ schema/workspace/examples/portfolio-report.md                  | 58 +++++++++++++-------
+ schema/workspace/examples/sfr-ssot-platform/execution.md       | 57 ++++++++++----------
+ schema/workspace/examples/simple-ragcurl-platform/execution.md | 35 ++++++------
+ schema/workspace/execution.template.md                         | 59 +++++++++++++++------
+ schema/workspace/execution_stats.py                            | 24 ++++++++-
+ schema/workspace/portfolio_report.py                           | 85 ++++++++++++++++++++++++++----
+ 11 files changed, 299 insertions(+), 139 deletions(-)
+-- decision entries added:
+  2026-10-28 — activity-includes-own-delegations
+  2026-10-28 — concurrent-commits-no-tool
+  2026-10-28 — a-tier-the-plan-lacks-is-pinned-none
+  2026-10-27 — plan-to-the-demo-and-stage-per-row
+  2026-10-28 — briefing-in-two-parts-ids-named

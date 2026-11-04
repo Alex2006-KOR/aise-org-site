@@ -178,6 +178,42 @@ department record, commits, the directive inbox's history). For a flipped axis, 
 
 <Cite ids="round4" />
 
+## Same questions, three answers {#three-way}
+
+The same 12 questions about the organization were answered in three ways and judged against a reference answer. (a) The reference
+answers were written by the department that builds this site, reading the rule documents directly. (b) was written only from the top 5
+chunks found by the search platform department's search service, and (c) only from the 9 wiki pages curated by the wiki department. The
+verdicts were given by an evaluator that belongs to none of the three departments.
+
+| Approach | Correct | Partial | Wrong | No answer | States an outdated fact |
+|---|---:|---:|---:|---:|---:|
+| (b) top 5 search chunks | 6 | 6 | 0 | 0 | 4 |
+| (c) 9 curated wiki pages | 10 | 2 | 0 | 0 | 1 |
+
+::: warning One comparison, 12 questions — not a performance measurement
+This is the result of a single comparison on 2026-10-21. The inputs were pinned that day: the reference answers against aise-core
+`f9dc210`, the wiki as its 9 pages at `88dba25`. Later fixes (a revised gold set for the search evaluation, a fix to the search service, fixes
+to the wiki pages) are not reflected. It is not a figure that ranks the two approaches or measures their performance.
+:::
+
+There are two observations.
+
+- **Outdated answers came from old documents in the index, not from index lag.** The search service's rule documents were synced to
+  the same commit as the reference answers. But an old content draft of this site's department appeared in the results for five
+  questions, and ranked first for two. Old decision records that state abolished rules also ranked high.
+- **A curated wiki is detailed but stays at the time it was curated.** The wiki was more detailed than the reference answer on almost
+  every question. But it deliberately holds no progress state, so it could not fully answer the "current state of the departments"
+  question, and it lacked rules newer than its pages.
+
+::: point In detail — how the comparison was kept independent
+The evaluator wrote the (b) and (c) answers for all 12 questions first, and only then opened the reference answers for the first time.
+The time it opened them is recorded, and the (b) and (c) answers were not changed after that. Each question was searched once, with its
+original wording. None of the three departments' PMs took part in the comparison. The mixing of the old draft into search results was
+raised to ops staff by this site's department.
+
+<Cite ids="three-way,gold-questions" />
+:::
+
 <SourceTable />
 
 **Next.** → [8. Distribution and many tools](/en/story/distribution)
