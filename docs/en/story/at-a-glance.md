@@ -45,10 +45,10 @@ and manages tools. What was borrowed is separation of responsibility; in softwar
 | Company | aise-core |
 |---|---|
 | A department and PM for each project | One department per project. The PM plans, divides and checks |
-| The function that assigns work and coordinates departments | Ops staff (업무참모) |
-| HR, which recruits people and defines jobs | HR staff (인사참모) |
-| The asset function, which reviews and issues tools | Asset staff (자산참모) |
-| Management, which develops the organization itself | Management staff (경영참모) and Meta mode |
+| The function that assigns work and coordinates departments | Ops staff |
+| HR, which recruits people and defines jobs | HR staff |
+| The asset function, which reviews and issues tools | Asset staff |
+| Management, which develops the organization itself | Management staff and Meta mode |
 | Company rules | The constitution and governance |
 
 Borrowing a company's shape means something remains after the work ends. A solo AI session loses what it learned when it ends. An aise-core
@@ -130,7 +130,7 @@ flowchart TB
     M1["Member<br/>(role A)"]
     M2["Member<br/>(role B)"]
   end
-  REC[("Department records<br/>directive · status report · project record")]
+  REC[("Department records<br/>inbox · status report · project record · log")]
   OP <--> W
   OP <--> H
   OP <--> A
@@ -148,7 +148,7 @@ flowchart TB
 | Seat | Does | Does not |
 |---|---|---|
 | Operator | Sets the mode and instructs the staff. Takes the decisions whose approver is the operator (a decision a PM escalated, ending a department, high-impact tools, policy and governance changes) | Instruct a PM or member directly |
-| Ops staff | Interprets instructions and assigns them to departments, forms departments, coordinates them, re-verifies PM reports against the actual output | Edit a department's records (writes only the directive file), develop directly |
+| Ops staff | Interprets instructions and assigns them to departments, forms departments, coordinates them, re-verifies PM reports against the actual output | Edit a department's records (only leaves messages in its inbox), develop directly |
 | HR staff | Recruits, redefines and fires roles (job definitions); researches the domain for a role joining a department | Project work |
 | Asset staff | Keeps the catalog of approved tools (skills, MCP servers, …) and their realizations; decides which tools each role may use | Decide which roles exist |
 | Management staff | In Meta mode, diagnoses and fixes the organization itself (rules, structure, mechanisms) | Project work |
@@ -167,15 +167,15 @@ are in [chapter 4](/en/story/structure#modes).
 :::
 
 ::: point 2. In Operator mode the operator talks to the ops staff only. The ops staff decides whose work it is, writes a directive to that department, and forms a new department if none fits.
-The only file the ops staff writes inside a department is the directive file (`directive.md`). A department's records are written by its
+All the ops staff writes inside a department is messages in its inbox (`inbox/`). A department's records are written by its
 PM only. There is no path for the operator to instruct a PM directly.
 
 <Cite ids="constitution-staff,op-directive" />
 :::
 
 ::: point 3. The department's PM reads the department records, plans, and divides the work among the members. A missing role or tool is requested from the HR or asset staff through the ops staff.
-A PM has no memory between sessions. Every time it starts by reading the department's three record files (directive, status report, project
-record). Work in which one side waits for the other is divided only after the shared decision is settled. The detailed flow is in
+A PM has no memory between sessions. Every time it starts by reading the department's inbox, status report and project
+record. Work in which one side waits for the other is divided only after the shared decision is settled. The detailed flow is in
 [chapter 6](/en/story/operation).
 :::
 
@@ -209,7 +209,7 @@ results, and merged them.
 
 ::: point ② Clear accountability boundaries, and one writer per record.
 The PM owns the work inside a project; the ops staff owns coordination between departments. A department's records are written only by its
-PM, and the ops staff writes only one directive file inside a department. The tool enforces this boundary. Agents of the same role debating
+PM, and the ops staff writes only inbox messages inside a department. The tool enforces this boundary. Agents of the same role debating
 the same topic would empty the role definitions of meaning and collapse the accountability boundaries.
 
 <Cite ids="op-directive,op-vertical" />
@@ -239,7 +239,9 @@ the top leader, must know all the information, and the result must meet the oper
 the software's structure, which stays open to evaluation and re-architecture. Other things given up are in
 [chapter 9](/en/story/growth-and-limits#given-up).
 
-<Cite ids="op-vertical" />
+There is one exception (2026-11-04). In a staff deliberation, temporary read-only advisors examine one question, each taking a staff role document as a perspective. The result is an opinion report for the operator to judge; nothing is carried out from it.
+
+<Cite ids="op-vertical,staff-deliberation" />
 :::
 
 ## One real request: propagating an upstream change {#example}

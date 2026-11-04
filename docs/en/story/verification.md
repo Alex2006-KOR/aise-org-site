@@ -174,7 +174,7 @@ axis whose conclusion flipped from the previous rounds is marked.
 </figure>
 
 An assessment is not scoring but leaving evidence. Under each verdict sits the location of the records that produced it (lines of the
-department record, commits, the directive inbox's history). For a flipped axis, it also says why the earlier rounds missed the problem.
+department record, commits, the history of directives received). For a flipped axis, it also says why the earlier rounds missed the problem.
 
 <Cite ids="round4" />
 

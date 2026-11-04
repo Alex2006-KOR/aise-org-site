@@ -72,11 +72,11 @@ or a chief of staff in a real organization is not counted in the hierarchy. The 
 
 | Staff | Question it answers | Does |
 |---|---|---|
-| Ops staff (업무참모) | What happens | Turns the operator's intent into executable work, forms departments, coordinates them |
-| HR staff (인사참모) | Who exists | Owns the role catalog: recruiting, redefining, firing |
-| Asset staff (자산참모) | What can be used | Owns provisioning: which tools, MCP servers and skills a role may use |
+| Ops staff | What happens | Turns the operator's intent into executable work, forms departments, coordinates them |
+| HR staff | Who exists | Owns the role catalog: recruiting, redefining, firing |
+| Asset staff | What can be used | Owns provisioning: which tools, MCP servers and skills a role may use |
 
-Meta mode has the management staff (경영참모). It analyzes and proposes the evolution of the organization itself (constitution, schema,
+Meta mode has the management staff. It analyzes and proposes the evolution of the organization itself (constitution, schema,
 governance) and runs the organization's self-diagnosis (audits). It takes no part in Operator-mode work, and actual changes go through the
 operator's confirmation.
 
@@ -359,7 +359,7 @@ exist now, departments and their records, the staff's records, the portfolio. `i
 it in its own repository.
 
 <figure>
-<svg viewBox="0 0 640 330" role="img" aria-label="Left, the templates in schema/: PM and member templates, the department record format, staff templates, the instance skeleton. Right, the actual data in instance/: role files, each department's three record files, staff records, the department index and portfolio. Arrows mean a template sets the shape of the actual file; the skeleton is created as empty files at the first Operator-mode entry. Only Meta mode writes the left, only Operator mode the right">
+<svg viewBox="0 0 640 330" role="img" aria-label="Left, the templates in schema/: PM and member templates, the department record format, staff templates, the instance skeleton. Right, the actual data in instance/: role files, each department's records, staff records, the department index and portfolio. Arrows mean a template sets the shape of the actual file; the skeleton is created as empty files at the first Operator-mode entry. Only Meta mode writes the left, only Operator mode the right">
   <defs>
     <marker id="st-arrow4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" />
@@ -378,7 +378,7 @@ it in its own repository.
   <text x="150" y="142" text-anchor="middle" font-size="12">department record format</text>
   <rect x="360" y="115" width="260" height="44" rx="6" fill="none" stroke="#c1652a" stroke-width="1.5" />
   <text x="490" y="135" text-anchor="middle" font-size="12" fill="#c1652a">workspace/&lt;department&gt;/</text>
-  <text x="490" y="151" text-anchor="middle" font-size="10" fill="#c1652a">directive · status report · project record</text>
+  <text x="490" y="151" text-anchor="middle" font-size="10" fill="#c1652a">inbox · status report · project record · log</text>
   <line x1="280" y1="137" x2="356" y2="137" stroke="currentColor" stroke-width="1.5" marker-end="url(#st-arrow4)" />
   <rect x="20" y="175" width="260" height="44" rx="6" fill="none" stroke="currentColor" stroke-width="1.5" />
   <text x="150" y="202" text-anchor="middle" font-size="12">staff definitions and templates</text>

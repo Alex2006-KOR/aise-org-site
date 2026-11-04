@@ -1,6 +1,6 @@
 ---
-reflects-through: 315d65a (PR #23 merge) + feature/p19-live-check (2026-10-29; set to the merge commit when merged)
-aise-core-through: 0553da7
+reflects-through: b1da893 (PR #27 merge, main) + feature/p21-mobile-figures (2026-11-04; set to the merge commit when merged)
+aise-core-through: c71fa8a
 title: aise-org-site 아키텍처
 outline: deep
 ---
@@ -108,6 +108,9 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
 3. **읽을 목록** — `aise-core-through` 이후 바뀐 규칙 문서와 새 decision 항목. 서술된 *규칙 자체*가 바뀌었는지는
    스크립트가 판정할 수 없으므로, 이 목록을 사이트 용어로 grep해 해당 페이지만 다시 읽는다. 과거 결정 서사는
    역사이므로 고치지 않고 "(이후 바뀜)" 주석만 단다. 현재형 서술과 "직접 확인해 보려면" 단계는 고친다.
+
+참조 축은 `docs/work/3way-reference-answers.md`를 건너뛴다. 그 파일은 aise-core `f9dc210`에 고정된 답 열쇠라 경로도 그 커밋의 것이다.
+출처는 Operator 모드에서 읽을 수 있는 곳만 가리킨다. 경영참모의 공간 `instance/staff/mg/`는 이 부서가 읽을 수 없으므로(`governance/MODE_POLICY.md` "Spaces"), 그 안의 결과를 인용하지 않고 `knowledge/`의 기록을 인용한다.
 
 세 축을 처리한 PR에서 `aise-core-through`를 올린다. `scripts/`는 빌드 대상이 아니다(`docs/` 밖).
 

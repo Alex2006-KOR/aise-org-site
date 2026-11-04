@@ -10,6 +10,7 @@
 #   2. quotes      — direct quotes that were verbatim at aise-core-through but no longer are
 #   3. reading list — the rule documents and decision entries changed since aise-core-through: the part
 #                    no script can judge (has a *described rule* changed?) — review these against the pages.
+# docs/work/3way-reference-answers.md is skipped on axis 1: it is the answer key pinned to aise-core f9dc210, so its paths are that commit's.
 # Exit 1 if axis 1 or 2 has findings. After fixing and reviewing, raise aise-core-through in the same PR.
 set -u
 SITE="$(cd "$(dirname "$0")/.." && pwd)"
@@ -21,7 +22,7 @@ echo "aise-core: checked-through $THROUGH -> now $HEAD"
 fail=0
 
 echo; echo "== 1. references"
-( cd "$CORE" && python3 governance/reference_check.py "$SITE"/docs/*.md "$SITE"/docs/en/*.md "$SITE"/docs/work/*.md ) || fail=1
+( cd "$CORE" && python3 governance/reference_check.py "$SITE"/docs/*.md "$SITE"/docs/en/*.md "$SITE"/docs/work/rewrite-plan.md ) || fail=1
 # Old one-file decision names: a bare dated filename or knowledge/decisions/<date>-<slug>.md. Dated files under other
 # folders (knowledge/evaluation/, knowledge/changes/) are current names, so a match must not continue a path.
 old=$(grep -rnoP '(?<![\w/.-])(knowledge/decisions/)?20[0-9]{2}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+\.md' "$SITE/docs" || true)

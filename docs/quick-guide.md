@@ -62,7 +62,7 @@ Claude Code 세션을 열고 이렇게 칩니다.
 | 무엇이 생기나 | 어디에 |
 |---|---|
 | 부서 목록의 새 줄 (`project-id`, 상태) | `instance/workspace/index.yaml` |
-| 부서 기록 세 파일 | `instance/workspace/<project-id>/execution.md`, `directive.md`, `project-record.md` |
+| 부서 기록 | `instance/workspace/<project-id>/`의 `execution.md`, `project-record.md`, `log.md`, `inbox/` |
 
 - 부서는 보통 `draft`(준비 중)로 시작합니다. 의도가 이미 분명하고 규모가 가늠되면 바로
   `active`로 시작하기도 합니다.
@@ -76,7 +76,7 @@ Claude Code 세션을 열고 이렇게 칩니다.
 | 하고 싶은 것 | 이렇게 하시면 됩니다 |
 |---|---|
 | 지금 부서들이 어떤 상태인지 보기 | 업무참모에게 "지금 부서 현황 알려줘"처럼 묻기 — `index.yaml`을 읽어 `draft`/`active`/`ended` 부서를 요약해 줍니다 |
-| 이어서 지시하기 | 그냥 업무참모에게 말하기 — 부서 PM이 지금 돌고 있지 않으면 그 부서의 `directive.md`에 적어 두고, 다음 PM run이 흡수합니다 |
+| 이어서 지시하기 | 그냥 업무참모에게 말하기 — 부서 PM이 지금 돌고 있지 않으면 그 부서의 `inbox/`에 메시지로 남기고, 다음 PM run이 흡수합니다 |
 | 되돌리기 어려운 일 승인하기 | 공개 배포, `main` 병합 같은 것은 부서가 PR까지만 만들고, 병합은 사용자가 합니다 |
 | 비용과 위임 구조 보기 | `/aise:usage` — 이 세션의 토큰 사용량과 누가 누구에게 무엇을 맡겼는지(실행 그래프)를 실제 기록에서 재구성해 보여줍니다 |
 
@@ -88,9 +88,9 @@ Claude Code 세션을 열고 이렇게 칩니다.
 /aise:handoff
 ```
 
-- Operator 모드에서는 지금까지의 상황을 **그 부서의 `directive.md`에 한 항목으로** 남깁니다. 다음 PM
+- Operator 모드에서는 지금까지의 상황을 **그 부서의 `inbox/`에 메시지 하나로** 남깁니다. 다음 PM
   run이 그걸 읽고 자기 기록으로 옮깁니다.
-- Meta 모드에서는 `continuity/`에 인수인계 기록을 남깁니다.
+- Meta 모드에서는 `instance/staff/mg/handoff/`에 인수인계 기록을 남깁니다.
 - 요약하지 않고 "아직 판단이 남은 것"만 걸러서 남기는 방식입니다 — 이유는
   [6장 핸드오프](/story/operation#handoff).
 
@@ -102,7 +102,7 @@ Claude Code 세션을 열고 이렇게 칩니다.
 /aise:meta
 ```
 
-- 이 세션이 `MG_ORCHESTRATOR`(경영참모)가 되고, `continuity/`에 이어서 할 일이 남아 있으면 먼저
+- 이 세션이 `MG_ORCHESTRATOR`(경영참모)가 되고, `instance/staff/mg/handoff/`에 이어서 할 일이 남아 있으면 먼저
   그걸 브리핑합니다(`.claude/commands/aise/meta.md`).
 - 보호된 핵심 경로(헌법·스키마·거버넌스 등)는 이 모드에서만 고칠 수 있습니다. 반대로 이 배포의
   `instance/` 데이터는 Meta 모드에서도 건드리지 않습니다.

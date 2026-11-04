@@ -5,7 +5,7 @@ title: 6. Operation — how work flows
 # 6. Operation: how work flows
 
 ::: lead
-The operator sets the mode and talks to the ops staff. The organization handles the rest by its own rules, and memory lives not in people but in a department's three record files.
+The operator sets the mode and talks to the ops staff. The organization handles the rest by its own rules, and memory lives not in people but in a department's records.
 :::
 
 ## How work is handed over {#flow}
@@ -19,7 +19,7 @@ flowchart TB
   M["① Declare the mode<br/>/aise:op or /aise:meta"]
   U["② The operator talks to the ops staff"]
   O["③ Ops staff<br/>analyzes the intent · decides whose work it is<br/>forms a department if none fits"]
-  P["④ The department's PM<br/>starts by reading the three record files<br/>divides and delegates"]
+  P["④ The department's PM<br/>starts by reading the department's records<br/>divides and delegates"]
   R["⑤ Members<br/>actual execution"]
   REC[("Department records")]
   M --> U --> O --> P --> R
@@ -98,7 +98,7 @@ exploration, the ops staff asks the operator whether to start. It neither stays 
 
 ## Delegation and parallel work inside a department {#within}
 
-When work arrives, the PM first reads the department's three record files, then divides the work and delegates it to members. A member's
+When work arrives, the PM first reads the department's records, then divides the work and delegates it to members. A member's
 "done" is not taken at face value; it is checked against the actual commits or tool calls before being reported up. Work in which one side waits
 on the other is divided only after the shared decision is settled.
 
@@ -197,21 +197,22 @@ weakness identified earlier remained as predicted. The same day the ops staff re
 <Cite ids="ragcurl-eval" />
 :::
 
-## A department's three record files {#records}
+## A department's records {#records}
 
-A department's continuity is not a chat history but three files in its folder. Each file has exactly one writer.
+A department's continuity is not a chat history but the records in its folder. Their owner is the department's PM; everyone else only leaves messages in its inbox.
 
 | File | Writer → reader | Holds |
 |---|---|---|
-| `directive.md` | ops staff → PM | Directives, decisions and re-verification results not yet absorbed |
+| `inbox/` | ops staff and others → PM | One file per message: directives, decisions and re-verification results not yet absorbed. The PM deletes each once absorbed |
 | `execution.md` | PM → ops staff | The current status: Definition of Done, operator-decision table, recent runs |
-| `project-record.md` | PM → PM | The department's main record: task, plan, invariants, decisions, history (Ledger), next steps |
+| `project-record.md` | PM → PM | The department's state: task, plan, invariants, roster, open questions, next steps. What is done leaves it |
+| `log.md` | PM → whoever needs an entry | Append-only: decisions (Decisions) and each run's history (Ledger). Not read at run start; an entry is opened when needed |
 
 <figure>
 
 ```mermaid
 flowchart LR
-  PR[("Department records<br/>three files")]
+  PR[("Department records")]
   RUN["PM run<br/>starts with no memory"]
   WORK["Delegates to members<br/>verifies results itself"]
   PR -->|"① read and start"| RUN
@@ -232,10 +233,10 @@ flowchart LR
 no PM run was alive, that seemed the only place to put it. A real company's staff do not edit a team's working documents. The cause was not one
 lapse but the structure: one large document with many writers.
 
-**Solution.** It was split into three files with one writer each. The only file the ops staff writes inside a department is the directive
+**Solution.** It was split into three files with one writer each (a directive inbox `directive.md`, the status report, the main record). The only file the ops staff writes inside a department is the directive
 inbox, which keeps no archive; when the PM absorbs an entry it leaves one Ledger line quoting it. On the very day the rule was made, the ops staff
 again wrote directly into another department's main record. The rule's wording was fine, but in-context habit beat a rule made minutes before. So
-instead of restating the rule, a gate was added that refuses writes from anything but a PM.
+instead of restating the rule, a gate was added that refuses writes from anything but a PM. (Changed since: the 2026-11 redesign of the record spaces made the inbox one file per message and moved the history into `log.md`.)
 
 <Cite ids="record-split" />
 :::
@@ -255,7 +256,7 @@ exception.
 
 ## Starting fresh every time {#stateless}
 
-A PM run does not inherit the previous run's reasoning. It reads the three record files and derives again from scratch. Even "done" in the
+A PM run does not inherit the previous run's reasoning. It reads the department's records and derives again from scratch. Even "done" in the
 records is not taken at face value: the real repository state (branches, commits, PRs) is checked first. When records and reality disagree,
 reality wins.
 
@@ -308,7 +309,7 @@ was measured.
 ## Handoff {#handoff}
 
 A session computes its context use from the last response's usage record and warns past a set level. A continuity record is written with
-`/aise:handoff`: in Operator mode into the department's directive inbox, in Meta mode into a separate handoff record. The implementation is in the
+`/aise:handoff`: in Operator mode into the department's inbox, in Meta mode into a separate handoff record. The implementation is in the
 Claude Code adapter.
 
 <Cite ids="adapter-continuity,handoff-cmd" />
@@ -343,7 +344,7 @@ before other work.
 ::: point Details — two kinds of "memory"
 "Memory" covers both the organization's lasting capability and the state of work in progress. The operator pointed out that calling both by one
 word would bake the ambiguity into the organization's vocabulary. So accumulated capability goes into `knowledge/`, and work-in-progress state
-(handoff records) into `continuity/`. A handoff record that turns out to be a recurring lesson is later moved into a decision record or a
+(handoff records) into the management staff's space (`instance/staff/mg/handoff/`). A handoff record that turns out to be a recurring lesson is later moved into a decision record or a
 retrospective.
 
 <Cite ids="knowledge-continuity" />

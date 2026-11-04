@@ -41,7 +41,7 @@ operator의 내용 지시(2026-10-21, `directive.md` "operator content brief —
 | 4 | 구조 | 구조 | `story/structure` (새) | 조직도와 실행 그래프, 깊이 2, 참모 셋과 경영참모, 두 종류의 책임, PM은 채용되는 역할, 역할은 클래스, 부서와 생명주기, 두 모드, **스키마(템플릿)와 인스턴스** | 4-1 조직도 vs 실행 그래프(SVG), 4-2 라인과 참모(SVG), 4-3 역할 카탈로그(mermaid), 4-4 부서 생애(SVG), 4-5 두 모드(SVG), **4-6 템플릿(`schema/`)↔인스턴스(`instance/`) 새 그림** |
 | 5 | 어떻게 유지하나 | 메커니즘 | `story/how-it-is-kept` (유지) | 규칙의 세 층, 거버넌스의 구성과 정책 파일, 정책 → 요구사항 → 어댑터, 훅 | **시범 완료** — 5-1 세 층, 5-2 거버넌스 구성, 5-3 정책이 강제되기까지, **훅 구성도 자리(훅 재설계 뒤)** |
 | 6 | 운영: 일이 흐르는 방식 | 운영 | `story/operation` (새) | 모드 고르기, 업무참모 한 명에게만 말하기, 부서가 꾸려지는 과정, 부서 안의 위임과 병렬, 부서 사이의 협업, 기억과 핸드오프(부서 기록 세 파일, stateless PM), 멈춘 위임 깨우기, 조직 기록 검색 | 6-1 일을 맡기는 흐름(usage mermaid), 6-2 협업 조립(collaboration mermaid), 6-3 부서 안 위임(collaboration mermaid), 6-4 부서 기록(overview mermaid), 6-5 매번 새로 시작(philosophy mermaid 중 하나 — §5 참고) |
-| 7 | 검증과 평가 | 검증 | `story/verification` (새) | 보고는 다시 확인한다(독립 재검증), 실제 브라우저 규칙, 감시 목록과 회귀 점검, **실행 그래프**와 토큰 사용, **평가 산출물 예시**, 3자 비교(OD-14 Q-5 제안) | **7-1 실행 그래프(organization-model의 2026-09-15 세션 mermaid를 옮기고 설명 추가)**, **7-2 평가 산출물 예시(`instance/audit/results/assessments/sfr-ssot-platform/2026-10-01-round4.md`의 축별 표 발췌 또는 `/aise:usage` 보고 화면)**, 7-3 평가 점수 변화(collaboration 결정 상자의 수치) |
+| 7 | 검증과 평가 | 검증 | `story/verification` (새) | 보고는 다시 확인한다(독립 재검증), 실제 브라우저 규칙, 감시 목록과 회귀 점검, **실행 그래프**와 토큰 사용, **평가 산출물 예시**, 3자 비교(OD-14 Q-5 제안) | **7-1 실행 그래프(organization-model의 2026-09-15 세션 mermaid를 옮기고 설명 추가)**, **7-2 평가 산출물 예시(`knowledge/audit/results/2026-09-30-ssot-duplication-audit.md`의 축별 표 발췌 또는 `/aise:usage` 보고 화면)**, 7-3 평가 점수 변화(collaboration 결정 상자의 수치) |
 | 8 | 배포와 여러 도구 | 배포 | `story/distribution` (유지) | 조직이 아니라 정책을 배포한다, 어댑터와 요구사항(5장과 연결), 다른 도구에서는 검증 전, 이 사이트도 진행 중 | 8-1 핵심과 어댑터(OCP mermaid를 5장·8장 중 한 곳 — §5) |
 | 9 | 성장, 성과, 한계 | 한계 | `story/growth-and-limits` (유지) | 성장은 조직에 쌓인다, 궁극 목표(프레임워크가 아니라 조직), 성과 TBD, 한계, 아직 부족한 점(운영자가 채울 자리) | 9-1 생명주기 여섯 단계 순환(lifecycle SVG) |
 
@@ -53,7 +53,7 @@ operator의 내용 지시(2026-10-21, `directive.md` "operator content brief —
 **OD-14 Q-5 제안(3자 비교 결과의 자리).** 7장 "검증과 평가"의 한 절로 둔다: 같은 12문항을 (a) 손으로 쓴 답, (b) 검색(RAG), (c) 큐레이션
 위키로 답하게 한 한 번의 비교 기록. 합계 표(정답/부분/오답/답 없음, 낡은 내용 표시)와 관찰 두 가지(낡은 초안이 검색 결과 1위로 올라온 일,
 append-only 결정 기록에서 폐지된 규칙이 올라온 일)를 싣고, "한 번의 비교, 12문항 — 성능 측정이 아니다"를 표시한다(N-06 "측정 결과 주장
-없음"과 맞추기 위해). 근거: `instance/staff/coordination-record.md` "2026-10-21 — P-11 three-way comparison …".
+없음"과 맞추기 위해). 근거: `instance/staff/op/log.md` "2026-10-21 — P-11 three-way comparison …".
 
 ## 3. 배치 표 — 참고 트랙 16쪽 + `overview`
 
