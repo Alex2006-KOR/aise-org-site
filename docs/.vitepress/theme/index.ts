@@ -1,10 +1,11 @@
 // Extends the VitePress default theme: custom.css, the page-levels toolbar
-// (doc-before slot), <Cite>/<SourceTable>, and levels.ts runtime behaviour.
+// (doc-before slot), <Cite>/<SourceTable>, and levels.ts / figures.ts runtime behaviour.
 import DefaultTheme from 'vitepress/theme'
 import Layout from './Layout.vue'
 import Cite from './Cite.vue'
 import SourceTable from './SourceTable.vue'
 import { installLevels } from './levels'
+import { installFigures } from './figures'
 import './custom.css'
 
 export default {
@@ -14,5 +15,6 @@ export default {
     app.component('Cite', Cite)
     app.component('SourceTable', SourceTable)
     installLevels(router)
+    installFigures()
   },
 }

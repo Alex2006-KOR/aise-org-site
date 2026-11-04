@@ -106,6 +106,29 @@ details.aise-point[open] > .aise-point-summary::before { content: '▾'; backgro
 }
 .aise-toolbar button:hover { border-color: var(--vp-c-brand-1); color: var(--vp-c-brand-1); }
 
+/*
+ * Phone-width figures (see figures.ts): a figure too small to read takes the width it needs and scrolls sideways.
+ * The figure is the scroller and a grid whose one track has that width: a sticky item stays inside its grid area, so
+ * the caption and the hint, one column wide (100cqw), can travel the whole scroll. In a plain block the caption's
+ * containing block would be only the column, and it would scroll away.
+ */
+@media screen and (max-width: 640px) {
+  .vp-doc figure.aise-fig-wide {
+    container-type: inline-size;
+    display: grid;
+    grid-template-columns: var(--aise-fig-width);
+    overflow: auto hidden;
+    overscroll-behavior-x: contain;
+  }
+  .vp-doc figure.aise-fig-wide:focus-visible { outline: 2px solid var(--vp-c-brand-1); outline-offset: -2px; }
+  .vp-doc figure.aise-fig-wide .mermaid { max-width: none; overflow: visible; }
+  .vp-doc figure.aise-fig-wide svg { width: 100%; min-width: var(--aise-fig-width); }
+  .vp-doc figure.aise-fig-wide > figcaption,
+  .vp-doc figure.aise-fig-wide::before { position: sticky; left: 0; width: 100cqw; }
+  .vp-doc figure.aise-fig-wide::before { content: '↔ 옆으로 밀어서 전체 보기'; font-size: 0.75rem; color: var(--vp-c-text-2); }
+  html[lang^='en'] .vp-doc figure.aise-fig-wide::before { content: '↔ Swipe sideways to see all of it'; }
+}
+
 /* Citations */
 .aise-cite-wrap { margin: 0.5rem 0; font-size: 0.85rem; }
 .aise-cite-summary {
