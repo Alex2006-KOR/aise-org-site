@@ -69,7 +69,7 @@ If it does need delegating, a department gets created.
 | What appears | Where |
 |---|---|
 | A new line in the department list (`project-id`, status) | `instance/workspace/index.yaml` |
-| The department's three record files | `instance/workspace/<project-id>/execution.md`, `directive.md`, `project-record.md` |
+| The department's records | `execution.md`, `project-record.md`, `log.md` and `inbox/` in `instance/workspace/<project-id>/` |
 
 - A department usually starts as `draft`. If the intent is already clear and the scale is gauged,
   it may start straight away as `active`.
@@ -85,7 +85,7 @@ If it does need delegating, a department gets created.
 | What you want | How |
 |---|---|
 | See what state the departments are in | Ask Ops-staff something like "give me the department status" — it reads `index.yaml` and summarizes the `draft`/`active`/`ended` departments |
-| Give a follow-up instruction | Just tell Ops-staff — if that department's PM isn't running right now, it's written into that department's `directive.md` and absorbed by the next PM run |
+| Give a follow-up instruction | Just tell Ops-staff — if that department's PM isn't running right now, it's left as a message in that department's `inbox/` and absorbed by the next PM run |
 | Approve something hard to undo | For things like public deployment or merging into `main`, the department stops at the PR; you do the merge |
 | See cost and delegation structure | `/aise:usage` — reconstructs this session's token usage and who delegated what to whom (the execution graph) from the real on-disk record |
 
@@ -97,9 +97,9 @@ Type this before context runs out or you step away:
 /aise:handoff
 ```
 
-- In Operator mode, it leaves the current situation **as one entry in that department's
-  `directive.md`**. The next PM run reads it and moves it into its own record.
-- In Meta mode, it leaves a handoff record in `continuity/`.
+- In Operator mode, it leaves the current situation **as one message in that department's
+  `inbox/`**. The next PM run reads it and moves it into its own record.
+- In Meta mode, it leaves a handoff record in `instance/staff/mg/handoff/`.
 - It doesn't summarize; it filters down to "what still needs judgment" — why is in
   [ch. 6, handoff](/en/story/operation#handoff).
 
@@ -111,7 +111,7 @@ Use this only when you want to design a new role, or change rules or workflows.
 /aise:meta
 ```
 
-- This session becomes `MG_ORCHESTRATOR` (Management-staff), and if `continuity/` has unfinished
+- This session becomes `MG_ORCHESTRATOR` (Management-staff), and if `instance/staff/mg/handoff/` has unfinished
   work, it briefs you on that first (`.claude/commands/aise/meta.md`).
 - The protected core paths (constitution, schema, governance, etc.) can only be changed in this
   mode. Conversely, this deployment's own `instance/` data stays off-limits even in Meta mode.

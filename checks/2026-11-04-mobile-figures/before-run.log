@@ -1,0 +1,60 @@
+ko/story/background            그림 1-1. 공통 규칙은  svg     w=342   h=153   scale=0.611  min=7.3 max=8.5 n=13 scrolls=false
+ko/story/background            그림 1-2. 여섯 가지   svg     w=342   h=183   scale=0.611  min=7.3 max=9.2 n=14 scrolls=false
+ko/story/background            그림 1-3. 이 장의 흐  svg     w=342   h=128   scale=0.611  min=7.3 max=7.9 n=11 scrolls=false
+ko/story/at-a-glance           그림 2-1. 끝난 뒤에   svg     w=342   h=181   scale=0.475  min=4.8 max=6.2 n=18 scrolls=false
+ko/story/at-a-glance           그림 2-2. 전체 구조.  mermaid w=342   h=205   scale=0.319  min=5.1 max=5.1 n=13 scrolls=false
+ko/story/principles            그림 3-1. 다섯 원칙의  mermaid w=342   h=108   scale=0.309  min=4.9 max=4.9 n=6 scrolls=false
+ko/story/principles            그림 3-2. core와   mermaid w=342   h=107   scale=0.327  min=5.2 max=5.2 n=10 scrolls=false
+ko/story/principles            그림 3-3. 모델 교체와  mermaid w=342   h=64    scale=0.411  min=6.6 max=6.6 n=6 scrolls=false
+ko/story/principles            그림 3-4. 기능이 떠올  mermaid w=342   h=582   scale=0.909  min=14.5 max=14.5 n=7 scrolls=false
+ko/story/structure             그림 4-1. 조직도와 실  svg     w=342   h=203   scale=0.534  min=5.3 max=6.4 n=11 scrolls=false
+ko/story/structure             그림 4-2. 라인과 참모  svg     w=342   h=160   scale=0.534  min=4.8 max=6.4 n=12 scrolls=false
+ko/story/structure             그림 4-3. 채용 경로.  mermaid w=206   h=526   scale=1      min=16 max=16 n=4 scrolls=false
+ko/story/structure             그림 4-4. 역할 카탈로  mermaid w=342   h=233   scale=0.467  min=7.5 max=7.5 n=11 scrolls=false
+ko/story/structure             그림 4-5. 부서 하나의  svg     w=342   h=79    scale=0.611  min=6.1 max=7.3 n=8 scrolls=false
+ko/story/structure             그림 4-6. 두 모드.   svg     w=342   h=143   scale=0.475  min=4.3 max=6.2 n=12 scrolls=false
+ko/story/structure             그림 4-7. 템플릿(sc  svg     w=342   h=176   scale=0.534  min=5.3 max=6.9 n=15 scrolls=false
+ko/story/how-it-is-kept        그림 5-1. 규칙의 세   svg     w=342   h=183   scale=0.611  min=6.7 max=8.5 n=13 scrolls=false
+ko/story/how-it-is-kept        그림 5-2. 거버넌스의   svg     w=342   h=220   scale=0.611  min=7.3 max=7.9 n=17 scrolls=false
+ko/story/how-it-is-kept        그림 5-3. 정책 하나가  mermaid w=342   h=78    scale=0.338  min=5.4 max=5.4 n=6 scrolls=false
+ko/story/how-it-is-kept        그림 5-4. 훅의 구성.  mermaid w=342   h=115   scale=0.306  min=4.9 max=4.9 n=9 scrolls=false
+ko/story/operation             그림 6-1. 일을 맡기는  mermaid w=342   h=603   scale=0.805  min=12.9 max=12.9 n=11 scrolls=false
+ko/story/operation             그림 6-2. 한 부서 안  mermaid w=342   h=102   scale=0.416  min=6.7 max=6.7 n=7 scrolls=false
+ko/story/operation             그림 6-3. 협업의 세   mermaid w=342   h=385   scale=0.691  min=11.1 max=11.1 n=11 scrolls=false
+ko/story/operation             그림 6-4. PM run  mermaid w=342   h=47    scale=0.438  min=7 max=7 n=7 scrolls=false
+ko/story/operation             그림 6-5. 이어받기와   mermaid w=342   h=44    scale=0.229  min=3.7 max=3.7 n=8 scrolls=false
+ko/story/verification          그림 7-1. 실제 실행   mermaid w=342   h=103   scale=0.275  min=4.4 max=4.4 n=15 scrolls=false
+ko/story/verification          그림 7-2. 평가 산출물  svg     w=342   h=176   scale=0.534  min=5.3 max=6.9 n=24 scrolls=false
+ko/story/distribution          그림 8-1. 요구사항 하  mermaid w=342   h=129   scale=0.497  min=8 max=8 n=5 scrolls=false
+ko/story/growth-and-limits     그림 9-1. 여섯 단계의  svg     w=342   h=277   scale=0.814  min=9.8 max=9.8 n=7 scrolls=false
+en/story/background            Figure 1-1. Th  svg     w=342   h=153   scale=0.611  min=7.3 max=8.5 n=13 scrolls=false
+en/story/background            Figure 1-2. Th  svg     w=342   h=183   scale=0.611  min=7.3 max=9.2 n=14 scrolls=false
+en/story/background            Figure 1-3. Th  svg     w=342   h=128   scale=0.611  min=7.3 max=7.9 n=12 scrolls=false
+en/story/at-a-glance           Figure 2-1. Wh  svg     w=342   h=181   scale=0.475  min=4.8 max=6.2 n=18 scrolls=false
+en/story/at-a-glance           Figure 2-2. Th  mermaid w=342   h=174   scale=0.26   min=4.2 max=4.2 n=13 scrolls=false
+en/story/principles            Figure 3-1. Ho  mermaid w=342   h=116   scale=0.292  min=4.7 max=4.7 n=6 scrolls=false
+en/story/principles            Figure 3-2. Th  mermaid w=342   h=102   scale=0.313  min=5 max=5 n=10 scrolls=false
+en/story/principles            Figure 3-3. Mo  mermaid w=342   h=61    scale=0.341  min=5.5 max=5.5 n=6 scrolls=false
+en/story/principles            Figure 3-4. De  mermaid w=342   h=522   scale=0.828  min=13.3 max=13.3 n=7 scrolls=false
+en/story/structure             Figure 4-1. Or  svg     w=342   h=203   scale=0.534  min=5.3 max=6.4 n=11 scrolls=false
+en/story/structure             Figure 4-2. Li  svg     w=342   h=160   scale=0.534  min=4.8 max=6.4 n=12 scrolls=false
+en/story/structure             Figure 4-3. Th  mermaid w=276   h=550   scale=1      min=16 max=16 n=4 scrolls=false
+en/story/structure             Figure 4-4. Th  mermaid w=342   h=232   scale=0.414  min=6.6 max=6.6 n=11 scrolls=false
+en/story/structure             Figure 4-5. On  svg     w=342   h=79    scale=0.611  min=6.1 max=7.3 n=8 scrolls=false
+en/story/structure             Figure 4-6. Tw  svg     w=342   h=143   scale=0.475  min=4.3 max=6.2 n=12 scrolls=false
+en/story/structure             Figure 4-7. Te  svg     w=342   h=176   scale=0.534  min=5.3 max=6.9 n=15 scrolls=false
+en/story/how-it-is-kept        Figure 5-1. Th  svg     w=342   h=183   scale=0.611  min=6.7 max=8.5 n=13 scrolls=false
+en/story/how-it-is-kept        Figure 5-2. Wh  svg     w=342   h=220   scale=0.611  min=7.3 max=7.9 n=17 scrolls=false
+en/story/how-it-is-kept        Figure 5-3. Ho  mermaid w=342   h=65    scale=0.283  min=4.5 max=4.5 n=6 scrolls=false
+en/story/how-it-is-kept        Figure 5-4. Ho  mermaid w=342   h=132   scale=0.278  min=4.5 max=4.5 n=9 scrolls=false
+en/story/operation             Figure 6-1. Ho  mermaid w=342   h=508   scale=0.632  min=10.1 max=10.1 n=11 scrolls=false
+en/story/operation             Figure 6-2. De  mermaid w=342   h=89    scale=0.363  min=5.8 max=5.8 n=7 scrolls=false
+en/story/operation             Figure 6-3. Th  mermaid w=342   h=336   scale=0.555  min=8.9 max=8.9 n=11 scrolls=false
+en/story/operation             Figure 6-4. Th  mermaid w=342   h=37    scale=0.299  min=4.8 max=4.8 n=7 scrolls=false
+en/story/operation             Figure 6-5. Ta  mermaid w=342   h=43    scale=0.201  min=3.2 max=3.2 n=8 scrolls=false
+en/story/verification          Figure 7-1. On  mermaid w=342   h=96    scale=0.24   min=3.8 max=3.8 n=15 scrolls=false
+en/story/verification          Figure 7-2. An  svg     w=342   h=176   scale=0.534  min=5.3 max=6.9 n=24 scrolls=false
+en/story/distribution          Figure 8-1. On  mermaid w=342   h=121   scale=0.448  min=7.2 max=7.2 n=5 scrolls=false
+en/story/growth-and-limits     Figure 9-1. Th  svg     w=342   h=277   scale=0.814  min=9 max=9 n=10 scrolls=false
+pages 24, page overflow 0, figures 58, min label 3.2, under -: -
+0 failure(s)

@@ -349,7 +349,7 @@ aise-core는 조직의 **모양**과 지금 조직의 **구성**을 다른 곳�
 그 기록, 참모의 기록, 포트폴리오가 여기 있다. `instance/`는 aise-core와 함께 배포되지 않고, 배포마다 자기 저장소에 둔다.
 
 <figure>
-<svg viewBox="0 0 640 330" role="img" aria-label="왼쪽 schema/의 템플릿: PM 템플릿과 부서원 템플릿, 부서 기록 양식, 참모 템플릿, 인스턴스 뼈대. 오른쪽 instance/의 실제 데이터: 역할 파일, 부서별 기록 세 파일, 참모 기록, 포트폴리오와 부서 목록. 화살표는 템플릿이 실제 파일의 모양을 정한다는 뜻이고, 뼈대는 첫 Operator 모드 진입 때 빈 파일로 만들어진다. 왼쪽은 Meta 모드만, 오른쪽은 Operator 모드만 쓴다">
+<svg viewBox="0 0 640 330" role="img" aria-label="왼쪽 schema/의 템플릿: PM 템플릿과 부서원 템플릿, 부서 기록 양식, 참모 템플릿, 인스턴스 뼈대. 오른쪽 instance/의 실제 데이터: 역할 파일, 부서별 기록, 참모 기록, 포트폴리오와 부서 목록. 화살표는 템플릿이 실제 파일의 모양을 정한다는 뜻이고, 뼈대는 첫 Operator 모드 진입 때 빈 파일로 만들어진다. 왼쪽은 Meta 모드만, 오른쪽은 Operator 모드만 쓴다">
   <defs>
     <marker id="st-arrow4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" />
@@ -368,7 +368,7 @@ aise-core는 조직의 **모양**과 지금 조직의 **구성**을 다른 곳�
   <text x="150" y="142" text-anchor="middle" font-size="12">부서 기록 양식</text>
   <rect x="360" y="115" width="260" height="44" rx="6" fill="none" stroke="#c1652a" stroke-width="1.5" />
   <text x="490" y="135" text-anchor="middle" font-size="12" fill="#c1652a">workspace/&lt;부서&gt;/</text>
-  <text x="490" y="151" text-anchor="middle" font-size="10" fill="#c1652a">지시 · 진행 보고 · 프로젝트 기록</text>
+  <text x="490" y="151" text-anchor="middle" font-size="10" fill="#c1652a">받은 메시지 · 진행 보고 · 프로젝트 기록 · 로그</text>
   <line x1="280" y1="137" x2="356" y2="137" stroke="currentColor" stroke-width="1.5" marker-end="url(#st-arrow4)" />
   <rect x="20" y="175" width="260" height="44" rx="6" fill="none" stroke="currentColor" stroke-width="1.5" />
   <text x="150" y="202" text-anchor="middle" font-size="12">참모 정의와 템플릿</text>
@@ -381,12 +381,12 @@ aise-core는 조직의 **모양**과 지금 조직의 **구성**을 다른 곳�
   <text x="490" y="255" text-anchor="middle" font-size="12" fill="#c1652a">부서 목록 · 포트폴리오</text>
   <text x="490" y="271" text-anchor="middle" font-size="10" fill="#c1652a">처음엔 빈 파일</text>
   <line x1="280" y1="257" x2="356" y2="257" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#st-arrow4)" />
-  <text x="318" y="300" text-anchor="middle" font-size="10" opacity="0.75">실선 = 템플릿이 모양을 정한다 · 점선 = 첫 Operator 모드 진입 때 빈 파일로 생성</text>
+  <text x="318" y="300" text-anchor="middle" font-size="10" opacity="0.75">실선 = 템플릿이 모양을 정한다 · 점선 = 첫 Operator 모드 진입 때 생성</text>
 </svg>
 <figcaption>그림 4-7. 템플릿(schema/)과 인스턴스(instance/). 왼쪽이 바뀌면 조직이 가질 수 있는 모양이 바뀌고, 오른쪽이 바뀌면 지금의 조직이 바뀐다.</figcaption>
 </figure>
 
-새 배포는 빈 조직으로 시작한다. 처음 Operator 모드로 들어갈 때 인스턴스 뼈대가 빈 파일로 만들어지고, 부서와 역할은 실제 일이
+새 배포는 빈 조직으로 시작한다. 처음 Operator 모드로 들어갈 때 인스턴스 뼈대의 기본 파일이 만들어지고(자산 목록에는 검토 전으로 표시된 시작용 항목만 있다), 부서와 역할은 실제 일이
 생길 때 채워진다. 그래서 배포되는 것은 조직이 아니라 정책과 도구다([8장](/story/distribution)).
 
 <Cite ids="constitution-schema-instance,instance-skeleton,instance-location" />
