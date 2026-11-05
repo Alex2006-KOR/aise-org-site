@@ -36,7 +36,7 @@ and instance.
 How policy becomes requirements and hooks, how the hooks are composed, and a written prohibition broken the next day.
 :::
 
-::: point **[6. Operation](/en/story/operation)** — The operator sets the mode and talks to the ops staff. Memory lives in a department's three record files.
+::: point **[6. Operation](/en/story/operation)** — The operator sets the mode and talks to the ops staff. Memory lives in a department's records.
 How a department forms, delegation inside and between departments, a PM that starts fresh each time, handoff, waking a stalled delegation.
 :::
 

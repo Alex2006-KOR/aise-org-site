@@ -60,16 +60,16 @@ title: Glossary — 여기 나온 말들을 한 번에
 
 **기록과 연속성**
 
-- **Project Record(부서 기록 파일 세트)** — PM의 상세 연속성 기억(`project-record.md`), 업무참모가
-  남기는 미흡수 지시함(`directive.md`), 업무참모에게 보내는 경량 보고(`execution.md`)로 구성됩니다.
-  파일마다 쓰는 주체가 정확히 한 명이고, 그렇게 갈라진 사연은 [6장 핸드오프](/story/operation#handoff)
-  참고. (세 번째 파일은 2026-08-26에 `report.md`로 처음 만들어졌다가 이틀 뒤 실행 도구의 파일명
+- **부서 기록** — PM이 run마다 읽는 상태(`project-record.md`, Project Record), 업무참모에게 보내는 지금의
+  보고(`execution.md`), 추가만 하는 로그(`log.md`), 업무참모 등이 메시지를 남기는 받은 편지함(`inbox/`)으로
+  구성됩니다. 주인은 그 부서의 PM이고, 다른 쪽은 받은 편지함에 메시지만 넣습니다. 그렇게 갈라진 사연은
+  [6장 부서 기록](/story/operation#records) 참고. (`execution.md`는 2026-08-26에 `report.md`로 처음 만들어졌다가 이틀 뒤 실행 도구의 파일명
   가드와 충돌해 `execution.md`로 개칭됐습니다.)
 - **run(PM의 한 번의 실행)** — 부서는 여러 번의 독립적인 run에 걸쳐 존재하고, run들은 서로 기억을
-  공유하지 않습니다 — 매번 위 세 파일에서 다시 부트스트랩합니다.
-- **Ledger(추가 전용 작업 이력)** — `project-record.md` 안의 표. 흡수한 지시의 원문 인용과 각 run의
-  산출물이 여기 남습니다 — 지시함을 작게 유지할 수 있는 이유입니다.
-- **`knowledge/decisions/`(조직 차원의 결정 기록)** — 이 사이트의 "결정 되짚어보기" 상자들이 인용하는
+  공유하지 않습니다 — 매번 위 기록에서 다시 부트스트랩합니다.
+- **Ledger(추가 전용 작업 이력)** — `log.md` 안의 표. 각 run의 산출물이 여기 남고, 흡수한 지시는
+  같은 파일의 Decisions에 남습니다 — 받은 편지함과 상태를 작게 유지할 수 있는 이유입니다.
+- **`knowledge/decisions/`(조직 차원의 결정 기록)** — 이 사이트의 장들이 인용하는
   원본. 2026-09-17부터 aise-core의 원문(CONSTITUTION.md 포함)은 영어로 작성·유지되므로, 이 사이트의
   한국어 설명은 번역이고 인용은 영어 원문 그대로입니다(근거:
   `knowledge/decisions/knowledge/language.md` "2026-09-17 — korean-to-english-conversion-executed-with-language-preference-mechanism").
@@ -77,7 +77,7 @@ title: Glossary — 여기 나온 말들을 한 번에
 이 용어들 중 둘은 그 자체로 짧은 사연을 갖고 있습니다 — 왜 이런 구분이 필요했는지 알면, 위
 목록의 다른 용어들도 왜 지금의 이름과 자리로 갈라져 있는지 더 선명해집니다.
 
-::: info 결정 되짚어보기 — 이름 하나가 두 가지를 가리키던 디렉터리
+::: info 자세히 — 이름 하나가 두 가지를 가리키던 디렉터리
 **문제**
 
 - 한때 `org/`라는 디렉터리 하나가 이 조직 자신의 스키마 파일(`README.md`, `OP_ORCHESTRATOR.md` 등, aise-core 저장소 소속)과, 실제
@@ -105,7 +105,7 @@ title: Glossary — 여기 나온 말들을 한 번에
 - 위 목록의 "Project Record"가 왜 하필 `instance/workspace/<project-id>/` 밑에 있는지도 이걸로 설명됩니다.
 :::
 
-::: info 결정 되짚어보기 — 이 용어집이 인용하는 knowledge/decisions/는 어떻게 채워지나
+::: info 자세히 — 이 용어집이 인용하는 knowledge/decisions/는 어떻게 채워지나
 **문제**
 
 - 한 부서의 Decisions 항목이 전혀 무관한 다른 부서에서 독자적으로 다시 채택되는 일이 실제로 있었는데, 그때마다 인용할 수 있는 조직 차원의 출처가 없었습니다 — 두
@@ -143,7 +143,7 @@ title: Glossary — 여기 나온 말들을 한 번에
 
 1. `knowledge/decisions/` 디렉터리에서 파일명을 훑어보는 것만으로도 이 조직이 무엇을 두고
    고민해 왔는지 감을 잡을 수 있습니다.
-2. `instance/workspace/aise-org-site/project-record.md`(바로 이 사이트를 만든 부서 자신의
+2. `instance/workspace/aise-org-site/log.md`(바로 이 사이트를 만든 부서 자신의
    기록)를 열어보면, 이 페이지가 인용한 결정들이 실제로 어떻게 쓰였는지 볼 수 있습니다.
 3. aise-core의 `schema/` 디렉터리를 열어 보면 참모 네 명의 문서(`OP_ORCHESTRATOR.md`,
    `HR_ORCHESTRATOR.md`, `AS_ORCHESTRATOR.md`, `MG_ORCHESTRATOR.md`)가 나란히 있습니다 — 이

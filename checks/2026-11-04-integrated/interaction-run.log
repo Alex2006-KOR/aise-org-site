@@ -1,0 +1,33 @@
+ok   ko mermaid wide after first render -- {"wide":true,"widthVar":"1026px","svgWidth":1026,"effective":11.01,"scrollLeft":0,"scrollWidth":1026,"clientWidth":342,"captionInView":true,"tabindex":"0"}
+ok   ko mermaid scrolls by touch, caption stays -- {"wide":true,"widthVar":"1026px","svgWidth":1026,"effective":11.01,"scrollLeft":283,"scrollWidth":1026,"clientWidth":342,"captionInView":true,"tabindex":"0"}
+ok   ko dark toggle: mermaid re-rendered, width holds -- {"reRendered":true,"wide":true,"widthVar":"1026px","svgWidth":1026,"effective":11.01,"scrollLeft":285,"scrollWidth":1026,"clientWidth":342,"captionInView":true,"tabindex":"0"}
+ok   ko dark: still scrolls by touch, caption stays -- {"wide":true,"widthVar":"1026px","svgWidth":1026,"effective":11.01,"scrollLeft":538,"scrollWidth":1026,"clientWidth":342,"captionInView":true,"tabindex":"0"}
+ok   ko no mutation loop on figures (1.5s idle) -- {"mutations":0}
+ok   ko SPA route change: no reload, new page's figure handled -- {"same":true,"wide":true,"widthVar":"855px","svgWidth":855,"effective":11,"scrollLeft":0,"scrollWidth":855,"clientWidth":342,"captionInView":true,"tabindex":"0"}
+ok   ko no page overflow after route change -- {"overflow":390}
+ok   ko history back: figure handled -- {"wide":true,"widthVar":"1026px","svgWidth":1026,"effective":11.01,"scrollLeft":0,"scrollWidth":1026,"clientWidth":342,"captionInView":true,"tabindex":"0"}
+ok   ko inline SVG wide, scrolls by touch, caption stays -- {"wide":true,"widthVar":"704px","svgWidth":704,"effective":11,"scrollLeft":270,"scrollWidth":704,"clientWidth":342,"captionInView":true,"tabindex":"0"}
+ok   ko figure in a closed point already has its width -- {"inClosedPoint":true,"widthVar":"142px"}
+ok   ko opened point: figure that meets the minimum stays as it is -- {"wide":false,"widthVar":"142px","svgWidth":206.2,"effective":16,"scrollLeft":0,"scrollWidth":295,"clientWidth":295,"captionInView":true,"tabindex":null}
+ok   ko wide figure in a closed point has its width before opening -- {"wide":true,"widthVar":"704px","svgWidth":704,"effective":10,"scrollLeft":0,"scrollWidth":704,"clientWidth":295,"captionInView":true,"tabindex":"0"}
+ok   ko opening that point: wide, scrolls, caption stays -- {"wide":true,"widthVar":"704px","svgWidth":704,"effective":11,"scrollLeft":252,"scrollWidth":704,"clientWidth":295,"captionInView":true,"tabindex":"0"}
+ok   ko at 800px: no class, no width, no tabindex -- {"wide":false,"widthVar":"","svgWidth":688,"effective":10.75,"scrollLeft":0,"scrollWidth":688,"clientWidth":688,"captionInView":true,"tabindex":null}
+ok   ko back at 390px: wide again, no page overflow -- {"wide":true,"widthVar":"704px","svgWidth":704,"effective":11,"scrollLeft":270,"scrollWidth":704,"clientWidth":342,"captionInView":true,"tabindex":"0","fin":390}
+ok   ko no console or page errors -- []
+ok   en mermaid wide after first render -- {"wide":true,"widthVar":"1173px","svgWidth":1173,"effective":11,"scrollLeft":0,"scrollWidth":1173,"clientWidth":342,"captionInView":true,"tabindex":"0"}
+ok   en mermaid scrolls by touch, caption stays -- {"wide":true,"widthVar":"1173px","svgWidth":1173,"effective":11,"scrollLeft":241,"scrollWidth":1173,"clientWidth":342,"captionInView":true,"tabindex":"0"}
+ok   en dark toggle: mermaid re-rendered, width holds -- {"reRendered":true,"wide":true,"widthVar":"1173px","svgWidth":1173,"effective":11,"scrollLeft":241,"scrollWidth":1173,"clientWidth":342,"captionInView":true,"tabindex":"0"}
+ok   en dark: still scrolls by touch, caption stays -- {"wide":true,"widthVar":"1173px","svgWidth":1173,"effective":11,"scrollLeft":496,"scrollWidth":1173,"clientWidth":342,"captionInView":true,"tabindex":"0"}
+ok   en no mutation loop on figures (1.5s idle) -- {"mutations":0}
+ok   en SPA route change: no reload, new page's figure handled -- {"same":true,"wide":true,"widthVar":"979px","svgWidth":979,"effective":11,"scrollLeft":0,"scrollWidth":979,"clientWidth":342,"captionInView":true,"tabindex":"0"}
+ok   en no page overflow after route change -- {"overflow":390}
+ok   en history back: figure handled -- {"wide":true,"widthVar":"1173px","svgWidth":1173,"effective":11,"scrollLeft":0,"scrollWidth":1173,"clientWidth":342,"captionInView":true,"tabindex":"0"}
+ok   en inline SVG wide, scrolls by touch, caption stays -- {"wide":true,"widthVar":"704px","svgWidth":704,"effective":11,"scrollLeft":260,"scrollWidth":704,"clientWidth":342,"captionInView":true,"tabindex":"0"}
+ok   en figure in a closed point already has its width -- {"inClosedPoint":true,"widthVar":"190px"}
+ok   en opened point: figure that meets the minimum stays as it is -- {"wide":false,"widthVar":"190px","svgWidth":276,"effective":16,"scrollLeft":0,"scrollWidth":295,"clientWidth":295,"captionInView":true,"tabindex":null}
+ok   en wide figure in a closed point has its width before opening -- {"wide":true,"widthVar":"704px","svgWidth":704,"effective":10,"scrollLeft":0,"scrollWidth":704,"clientWidth":295,"captionInView":true,"tabindex":"0"}
+ok   en opening that point: wide, scrolls, caption stays -- {"wide":true,"widthVar":"704px","svgWidth":704,"effective":11,"scrollLeft":260,"scrollWidth":704,"clientWidth":295,"captionInView":true,"tabindex":"0"}
+ok   en at 800px: no class, no width, no tabindex -- {"wide":false,"widthVar":"","svgWidth":688,"effective":10.75,"scrollLeft":0,"scrollWidth":688,"clientWidth":688,"captionInView":true,"tabindex":null}
+ok   en back at 390px: wide again, no page overflow -- {"wide":true,"widthVar":"704px","svgWidth":704,"effective":11,"scrollLeft":260,"scrollWidth":704,"clientWidth":342,"captionInView":true,"tabindex":"0","fin":390}
+ok   en no console or page errors -- []
+0 failure(s)

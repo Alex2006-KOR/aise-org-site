@@ -64,19 +64,19 @@ text, each page uses this form only the first time a term appears, and the plain
 
 **Records and continuity**
 
-- **Project Record (the department's record files)** — the PM's detailed continuity memory
-  (`project-record.md`), the inbox of not-yet-absorbed instructions Ops-staff leaves
-  (`directive.md`), and the lightweight report to Ops-staff (`execution.md`). Each file has exactly
-  one writer; the story of how they got split is in [ch. 6, handoff](/en/story/operation#handoff).
-  (The third file was first created as `report.md` on 2026-08-26, then renamed `execution.md` two
+- **Department records** — the state a PM reads at each run (`project-record.md`, the Project Record), the
+  report of now to Ops-staff (`execution.md`), the append-only log (`log.md`), and the inbox where Ops-staff and
+  others leave messages (`inbox/`). Their owner is the department's PM; everyone else only leaves inbox messages.
+  The story of how they got split is in [ch. 6, records](/en/story/operation#records).
+  (`execution.md` was first created as `report.md` on 2026-08-26, then renamed `execution.md` two
   days later after colliding with the execution tool's filename guard.)
 - **run (one execution of a PM)** — a department exists across many independent runs, and those
-  runs share no memory — each one bootstraps again from the three files above.
-- **Ledger (an append-only work history)** — a table inside `project-record.md`. Verbatim quotes of
-  absorbed instructions and each run's deliverables live here — which is why the inbox can stay
+  runs share no memory — each one bootstraps again from the records above.
+- **Ledger (an append-only work history)** — a table inside `log.md`. Each run's deliverables live here, and
+  absorbed instructions go to the same file's Decisions — which is why the inbox and the state can stay
   small.
-- **`knowledge/decisions/` (organization-level decision records)** — the sources the "Revisiting the
-  decision" boxes on this site cite. Since 2026-09-17, aise-core's originals (including
+- **`knowledge/decisions/` (organization-level decision records)** — the sources the chapters of this
+  site cite. Since 2026-09-17, aise-core's originals (including
   CONSTITUTION.md) are written and maintained in English (source:
   `knowledge/decisions/knowledge/language.md` "2026-09-17 — korean-to-english-conversion-executed-with-language-preference-mechanism").
 
@@ -84,7 +84,7 @@ Two of these terms carry a short story of their own — knowing why these distin
 also makes clearer why the rest of the terms above ended up with the names and places they have
 now.
 
-::: info Revisiting the decision — the directory whose one name pointed to two things
+::: info Details — the directory whose one name pointed to two things
 **Problem**
 
 - At one point, a single directory named `org/` held both this organization's own schema files
@@ -116,7 +116,7 @@ now.
   `instance/workspace/<project-id>/`.
 :::
 
-::: info Revisiting the decision — how the knowledge/decisions/ this glossary cites gets filled
+::: info Details — how the knowledge/decisions/ this glossary cites gets filled
 **Problem**
 
 - There was an actual case where one department's Decisions entry got independently re-adopted by an
@@ -156,7 +156,7 @@ not once a department happens to end.
 
 1. Just skimming the file names in the `knowledge/decisions/` directory will give you a sense of
    what this organization has been wrestling with.
-2. Open `instance/workspace/aise-org-site/project-record.md` (the record of the very department
+2. Open `instance/workspace/aise-org-site/log.md` (the record of the very department
    that built this site) to see how the decisions cited on this page were actually used.
 3. Open aise-core's `schema/` directory and you'll find the four staff documents side by side
    (`OP_ORCHESTRATOR.md`, `HR_ORCHESTRATOR.md`, `AS_ORCHESTRATOR.md`, `MG_ORCHESTRATOR.md`) — you
