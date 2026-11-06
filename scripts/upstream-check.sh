@@ -22,7 +22,7 @@ echo "aise-core: checked-through $THROUGH -> now $HEAD"
 fail=0
 
 echo; echo "== 1. references"
-( cd "$CORE" && python3 governance/reference_check.py "$SITE"/docs/*.md "$SITE"/docs/en/*.md "$SITE"/docs/work/rewrite-plan.md ) || fail=1
+( cd "$CORE" && python3 governance/scripts/tools/reference_check.py "$SITE"/docs/*.md "$SITE"/docs/en/*.md "$SITE"/docs/work/rewrite-plan.md ) || fail=1
 # Old one-file decision names: a bare dated filename or knowledge/decisions/<date>-<slug>.md. Dated files under other
 # folders (knowledge/evaluation/, knowledge/changes/) are current names, so a match must not continue a path.
 old=$(grep -rnoP '(?<![\w/.-])(knowledge/decisions/)?20[0-9]{2}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+\.md' "$SITE/docs" || true)
@@ -34,7 +34,7 @@ git -C "$CORE" archive "$THROUGH" CONSTITUTION.md governance schema knowledge ad
 python3 "$SITE/scripts/check_quotes.py" --aise-core "$CORE" --baseline "$TMP" || fail=1
 
 echo; echo "== 3. reading list (changed since $THROUGH)"
-git -C "$CORE" diff --stat=100 "$THROUGH" HEAD -- CONSTITUTION.md governance/*.md schema adapters/*/README.md | tail -n 40
+git -C "$CORE" diff --stat=100 "$THROUGH" HEAD -- CONSTITUTION.md governance/policies governance/data schema adapters/*/README.md | tail -n 40
 echo "-- decision entries added:"
 git -C "$CORE" diff "$THROUGH" HEAD -- knowledge/decisions | sed -n 's/^+## \(20[0-9-]* — .*\)/  \1/p'
 exit $fail

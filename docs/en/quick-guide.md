@@ -50,7 +50,7 @@ What that one line does (`.claude/commands/aise/op.md`):
 1. This session's mode is recorded as `op` (Operator). Without this declaration, writes to
    protected paths are blocked.
 2. If any member role definitions are missing, a script (`realize_role.py`) regenerates them.
-3. The mode-entry checklist (`schema/op_mode_entry_checks.yaml`) runs in full, every time, and
+3. The mode-entry checklist (`governance/data/op_mode_entry_checks.yaml`) runs in full, every time, and
    reports its results.
 4. This session becomes `OP_ORCHESTRATOR` (Ops-staff) and reads its own operating manual end to end.
 
@@ -62,7 +62,7 @@ Ops-staff decides that. Why you only ever talk to Ops-staff is in
 
 When you describe something new, Ops-staff first checks whether it **actually needs to be delegated
 to someone**. If it's just a question, it answers directly without creating a department
-(`schema/OP_ORCHESTRATOR.md` §3).
+(`schema/staff/OP_ORCHESTRATOR.md` §3).
 
 If it does need delegating, a department gets created.
 
@@ -140,6 +140,6 @@ Ops-staff has finished the retrospective (reviewing whether any lesson is worth 
 
 If a term is unfamiliar, they're all collected in the [Glossary](/en/glossary).
 
-*Source: `.claude/commands/aise/{op,meta,handoff,usage}.md`; `schema/OP_ORCHESTRATOR.md` §3;
-`schema/README.md` "Storage", "Department lifecycle"; `governance/MODE_POLICY.md`;
-`governance/DEPLOYMENT_READINESS.md`.*
+*Source: `.claude/commands/aise/{op,meta,handoff,usage}.md`; `schema/staff/OP_ORCHESTRATOR.md` §3;
+`schema/README.md` "Storage", "Department lifecycle"; `governance/policies/MODE_POLICY.md`;
+`governance/policies/DEPLOYMENT_READINESS.md`.*

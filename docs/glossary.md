@@ -17,7 +17,7 @@ title: Glossary — 여기 나온 말들을 한 번에
 
 이 사이트 곳곳에서 쓴 용어를 모아뒀습니다. 표기는 한 가지 규칙을 따릅니다 — **괄호 밖이 AISE 자신의
 문서·코드에 실제로 쓰인 이름, 괄호 안이 그게 뜻하는 쉬운 말**입니다. 예를 들어
-`OP_ORCHESTRATOR`(업무참모)는 "업무참모"라는 역할이 실제로는 `schema/OP_ORCHESTRATOR.md`라는 문서로
+`OP_ORCHESTRATOR`(업무참모)는 "업무참모"라는 역할이 실제로는 `schema/staff/OP_ORCHESTRATOR.md`라는 문서로
 존재한다는 뜻입니다. 본문에서는 각 페이지에서 처음 나올 때만 이렇게 적고, 그다음부터는 쉬운 말만
 씁니다.
 
@@ -145,13 +145,13 @@ title: Glossary — 여기 나온 말들을 한 번에
    고민해 왔는지 감을 잡을 수 있습니다.
 2. `instance/workspace/aise-org-site/log.md`(바로 이 사이트를 만든 부서 자신의
    기록)를 열어보면, 이 페이지가 인용한 결정들이 실제로 어떻게 쓰였는지 볼 수 있습니다.
-3. aise-core의 `schema/` 디렉터리를 열어 보면 참모 네 명의 문서(`OP_ORCHESTRATOR.md`,
+3. aise-core의 `schema/staff/` 디렉터리를 열어 보면 참모 네 명의 문서(`OP_ORCHESTRATOR.md`,
    `HR_ORCHESTRATOR.md`, `AS_ORCHESTRATOR.md`, `MG_ORCHESTRATOR.md`)가 나란히 있습니다 — 이
    용어집의 괄호 밖 이름들이 실제로 어디에 있는지 확인할 수 있습니다.
 
 **다음으로.** 처음으로 돌아가 전체 그림을 다시 보고 싶다면 → [브리핑](/).
 
-*근거: `CONSTITUTION.md` 전체, `schema/README.md`, `schema/*_ORCHESTRATOR.md`, `governance/MODE_POLICY.md`;
+*근거: `CONSTITUTION.md` 전체, `schema/README.md`, `schema/staff/*_ORCHESTRATOR.md`, `governance/policies/MODE_POLICY.md`;
 `knowledge/decisions/workspace/instance-data-location.md` "2026-08-06 — org-instance-directory-split",
 `knowledge/decisions/workspace/instance-data-location.md` "2026-08-06 — org-directory-renamed-to-schema",
 `knowledge/decisions/execution/cross-department.md` "2026-08-13 — cross-department-decision-promotion-trigger".*

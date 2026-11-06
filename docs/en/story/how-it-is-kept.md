@@ -62,12 +62,13 @@ is built — and that check-in happens for every tool-specific mechanism.
 
 ## How governance is composed {#governance}
 
-`governance/` holds policy documents for people and lists read by programs. Most of it is portable policy, the same in
-every deployment. Policy that reflects this organization's own circumstances, such as its tool constraints, is marked as
-such. All of governance can be changed only in Meta mode.
+`governance/` splits into policy documents for people (`policies/`), lists read by programs (`data/`) and check tools (`scripts/`).
+All of it is portable policy, the same in every deployment, and can be changed only in Meta mode. Policy that reflects this
+organization's own circumstances, such as its tool constraints, sits outside governance, in the organization's own space
+`instance/assets/`, and the asset staff writes it.
 
 <figure>
-<svg viewBox="0 0 560 360" role="img" aria-label="Governance on two axes. Across: policy documents for people and lists read by programs. Down: portable policy and policy for this deployment only. Portable documents: STANDING_RULES, MODE_POLICY, CONTINUITY_POLICY, DUPLICATION_POLICY, ADAPTER_POLICY, SECRETS_POLICY, DEPLOYMENT_READINESS. Portable list: adapter_requirements.yaml. This deployment's document: ASSET_POLICY. This deployment's list: asset_command_patterns.yaml">
+<svg viewBox="0 0 560 360" role="img" aria-label="Governance on two axes. Across: policy documents for people and lists read by programs. Down: portable policy and policy for this deployment only. Portable documents: STANDING_RULES, MODE_POLICY, CONTINUITY_POLICY, DUPLICATION_POLICY, ADAPTER_POLICY, SECRETS_POLICY, DEPLOYMENT_READINESS. Portable lists: adapter_requirements.yaml, spaces.yaml. This deployment's document: instance/assets/policy.md. This deployment's list: instance/assets/conditions.yaml">
   <text x="225" y="22" text-anchor="middle" font-size="13" font-weight="600">Policy documents (people)</text>
   <text x="491" y="22" text-anchor="middle" font-size="13" font-weight="600">Lists (programs)</text>
   <text x="14" y="140" font-size="12" font-weight="600" transform="rotate(-90 14 140)" text-anchor="middle">Portable</text>
@@ -84,13 +85,14 @@ such. All of governance can be changed only in Meta mode.
   <text x="491" y="130" text-anchor="middle" font-size="12">adapter_</text>
   <text x="491" y="148" text-anchor="middle" font-size="12">requirements</text>
   <text x="491" y="166" text-anchor="middle" font-size="12">.yaml</text>
+  <text x="491" y="196" text-anchor="middle" font-size="12">spaces.yaml</text>
   <rect x="30" y="256" width="390" height="92" rx="8" fill="none" stroke="#c1652a" stroke-width="2" />
-  <text x="46" y="307" font-size="13" fill="#c1652a">ASSET_POLICY — this organization's tool limits</text>
+  <text x="46" y="307" font-size="13" fill="#c1652a">policy.md — this organization's tool limits</text>
   <rect x="432" y="256" width="118" height="92" rx="8" fill="none" stroke="#c1652a" stroke-width="2" />
-  <text x="491" y="297" text-anchor="middle" font-size="12" fill="#c1652a">asset_command_</text>
-  <text x="491" y="315" text-anchor="middle" font-size="12" fill="#c1652a">patterns.yaml</text>
+  <text x="491" y="297" text-anchor="middle" font-size="12" fill="#c1652a">conditions</text>
+  <text x="491" y="315" text-anchor="middle" font-size="12" fill="#c1652a">.yaml</text>
 </svg>
-<figcaption>Figure 5-2. What governance is made of. Another organization using aise-core rewrites only the bottom row (orange) for its own circumstances.</figcaption>
+<figcaption>Figure 5-2. Governance and the organization's asset policy. The bottom row (orange) sits outside governance, in instance/assets/. Another organization receives starting values and rewrites only this row for its own circumstances.</figcaption>
 </figure>
 
 | File | What it holds |
@@ -102,11 +104,12 @@ such. All of governance can be changed only in Meta mode.
 | `ADAPTER_POLICY.md` | How to tell what is tool-specific, what an adapter must provide, how an adapter is checked |
 | `SECRETS_POLICY.md` | Credentials: the need is recorded, the value stays outside the repository |
 | `DEPLOYMENT_READINESS.md` | What to check when leaving the development phase for deployment |
-| `ASSET_POLICY.md` | This organization's tool constraints: no external MCP servers, no tools with exfiltration risk, the same review for skills |
+| `spaces.yaml` | The table of record spaces: who may write and read each one |
+| `instance/assets/policy.md` | This organization's tool constraints: no external MCP servers, no tools with exfiltration risk, the same review for skills |
 | `adapter_requirements.yaml` | The requirements an adapter must provide, written without any tool's name |
-| `asset_command_patterns.yaml` | Command conditions attached to approved tools, e.g. no arbitrary external network calls, no force-push and no direct push to a protected branch |
+| `instance/assets/conditions.yaml` | Command conditions attached to approved tools, e.g. no arbitrary external network calls, no force-push and no direct push to a protected branch |
 
-<Cite ids="mode-policy,asset-policy" />
+<Cite ids="mode-policy,asset-policy,assets-in-instance" />
 
 ::: point In detail — why documents and lists are separate (background · problem · solution)
 **Background.** The same condition was written into several documents separately. One audit found a single push
@@ -116,7 +119,7 @@ condition restated in six files, two of them describing an old policy the enforc
 stays hidden until someone re-reads every document.
 
 **Solution.** A value a program enforces lives in one machine-read list. Documents cite the file instead of restating
-the value. Hooks read the same list. The command conditions, for instance, exist only in `asset_command_patterns.yaml`;
+the value. Hooks read the same list. The command conditions, for instance, exist only in `instance/assets/conditions.yaml`;
 the hook and the role definitions both take them from that file.
 
 <Cite ids="duplication-policy,asset-patterns" />
@@ -182,14 +185,14 @@ such points.
 
 The hooks run as one engine. The tool calls one hook per event; the engine runs the checks registered for that event and tool in a fixed
 order and merges their results. Checks are of two kinds: a **gate** may block or ask a person, an **observer** may only note or warn. Policy
-values, such as who may write which path, are read from governance's lists, not from code.
+values, such as who may write which path, are read from lists, not from code.
 
 <figure>
 
 ```mermaid
 flowchart LR
   T["Tool call<br/>Edit · Write · Bash · Agent …"] --> E["Hook engine<br/>one entry point per event"]
-  P[("Policy lists<br/>write_policy.yaml<br/>asset_command_patterns.yaml")] -.-> E
+  P[("Policy lists<br/>spaces.yaml<br/>conditions.yaml")] -.-> E
   E --> G["Gates<br/>write boundaries · command conditions<br/>role delegation · role deletion<br/>settings protection"]
   E --> O["Observers<br/>context warning · working trees<br/>record reminders"]
   G -->|"deny > ask > allow"| D{"Decision"}

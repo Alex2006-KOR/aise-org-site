@@ -1,0 +1,810 @@
+[
+ {
+  "scheme": "light",
+  "page": "story/how-it-is-kept",
+  "diagrams": 2,
+  "labels": 15,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.48,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "양쪽 대조",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 65.09375,
+      "naturalW": 65,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "정책 문서MODE_POLICY보호 경로는Meta 모드만 쓴다",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 124.90625,
+      "naturalW": 125,
+      "clipPx": 0,
+      "clipXPx": 0.09,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "요구사항mode-boundary관문 · 첫 실행 전 필수",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 150.515625,
+      "naturalW": 151,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "어댑터의 답conformance.yaml구현됨 + 구현 파일",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 149.015625,
+      "naturalW": 149,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "훅쓰기 직전에 차단",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "adapter_check.py",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 142.171875,
+      "naturalW": 142,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   },
+   {
+    "diagram": 1,
+    "labels": [
+     {
+      "text": "거부 > 질문 > 허용",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 137.15625,
+      "naturalW": 137,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "알림만",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "점검이 실패하면쓰기 가능한 호출은 거부",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 165.265625,
+      "naturalW": 165,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "도구 호출Edit · Write · Bash · Agent …",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "훅 엔진이벤트 하나, 진입점 하나",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 170.34375,
+      "naturalW": 170,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "정책 목록spaces.yamlconditions.yaml",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 126.703125,
+      "naturalW": 127,
+      "clipPx": 0,
+      "clipXPx": 0.3,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "관문쓰기 경계 · 명령 조건역할 위임 · 역할 삭제설정 보호",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 145.4375,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "관찰자컨텍스트 경고 · 작업 폴더기록 알림",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 175.4375,
+      "naturalW": 175,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "결정",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "light",
+  "page": "en/story/how-it-is-kept",
+  "diagrams": 2,
+  "labels": 15,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.45,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "checks both ways",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 142.40625,
+      "naturalW": 142,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Policy documentMODE_POLICYprotected path",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 132.546875,
+      "naturalW": 133,
+      "clipPx": 0,
+      "clipXPx": 0.45,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Requirementmode-boundarygate · first-run",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 127.390625,
+      "naturalW": 127,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "The adapter's answerconformance.yamlbuil",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Hookblocks just before a write",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "adapter_check.py",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 142.171875,
+      "naturalW": 142,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   },
+   {
+    "diagram": 1,
+    "labels": [
+     {
+      "text": "deny > ask > allow",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 155.75,
+      "naturalW": 156,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "notes only",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 83.3125,
+      "naturalW": 83,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "if a check fails,write-capable calls are",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Tool callEdit · Write · Bash · Agent …",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Hook engineone entry point per event",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Policy listsspaces.yamlconditions.yaml",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 126.703125,
+      "naturalW": 127,
+      "clipPx": 0,
+      "clipXPx": 0.3,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Gateswrite boundaries · command conditio",
+      "reservedH": 144,
+      "naturalH": 144,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Observerscontext warning · working trees",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Decision",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 68.125,
+      "naturalW": 68,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "story/how-it-is-kept",
+  "diagrams": 2,
+  "labels": 15,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.48,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "양쪽 대조",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 65.09375,
+      "naturalW": 65,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "정책 문서MODE_POLICY보호 경로는Meta 모드만 쓴다",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 124.90625,
+      "naturalW": 125,
+      "clipPx": 0,
+      "clipXPx": 0.09,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "요구사항mode-boundary관문 · 첫 실행 전 필수",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 150.515625,
+      "naturalW": 151,
+      "clipPx": 0,
+      "clipXPx": 0.48,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "어댑터의 답conformance.yaml구현됨 + 구현 파일",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 149.015625,
+      "naturalW": 149,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "훅쓰기 직전에 차단",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 115.171875,
+      "naturalW": 115,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "adapter_check.py",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 142.171875,
+      "naturalW": 142,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   },
+   {
+    "diagram": 1,
+    "labels": [
+     {
+      "text": "거부 > 질문 > 허용",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 137.15625,
+      "naturalW": 137,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "알림만",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 45,
+      "naturalW": 45,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "점검이 실패하면쓰기 가능한 호출은 거부",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 165.265625,
+      "naturalW": 165,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "도구 호출Edit · Write · Bash · Agent …",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "훅 엔진이벤트 하나, 진입점 하나",
+      "reservedH": 48,
+      "naturalH": 48,
+      "reservedW": 170.34375,
+      "naturalW": 170,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "정책 목록spaces.yamlconditions.yaml",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 126.703125,
+      "naturalW": 127,
+      "clipPx": 0,
+      "clipXPx": 0.3,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "관문쓰기 경계 · 명령 조건역할 위임 · 역할 삭제설정 보호",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 145.4375,
+      "naturalW": 145,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "관찰자컨텍스트 경고 · 작업 폴더기록 알림",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 175.4375,
+      "naturalW": 175,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "결정",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 30,
+      "naturalW": 30,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scheme": "dark",
+  "page": "en/story/how-it-is-kept",
+  "diagrams": 2,
+  "labels": 15,
+  "clipped": 0,
+  "maxClipPx": 0,
+  "maxClipXPx": 0.45,
+  "clippedLabels": [],
+  "detail": [
+   {
+    "diagram": 0,
+    "labels": [
+     {
+      "text": "checks both ways",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 142.40625,
+      "naturalW": 142,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Policy documentMODE_POLICYprotected path",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 132.546875,
+      "naturalW": 133,
+      "clipPx": 0,
+      "clipXPx": 0.45,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Requirementmode-boundarygate · first-run",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 127.390625,
+      "naturalW": 127,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "The adapter's answerconformance.yamlbuil",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Hookblocks just before a write",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "adapter_check.py",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 142.171875,
+      "naturalW": 142,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   },
+   {
+    "diagram": 1,
+    "labels": [
+     {
+      "text": "deny > ask > allow",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 155.75,
+      "naturalW": 156,
+      "clipPx": 0,
+      "clipXPx": 0.25,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "notes only",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 83.3125,
+      "naturalW": 83,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "if a check fails,write-capable calls are",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Tool callEdit · Write · Bash · Agent …",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Hook engineone entry point per event",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Policy listsspaces.yamlconditions.yaml",
+      "reservedH": 72,
+      "naturalH": 72,
+      "reservedW": 126.703125,
+      "naturalW": 127,
+      "clipPx": 0,
+      "clipXPx": 0.3,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Gateswrite boundaries · command conditio",
+      "reservedH": 144,
+      "naturalH": 144,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Observerscontext warning · working trees",
+      "reservedH": 96,
+      "naturalH": 96,
+      "reservedW": 200,
+      "naturalW": 200,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     },
+     {
+      "text": "Decision",
+      "reservedH": 24,
+      "naturalH": 24,
+      "reservedW": 68.125,
+      "naturalW": 68,
+      "clipPx": 0,
+      "clipXPx": 0,
+      "pLineHeight": "24px",
+      "divLineHeight": "24px",
+      "fontSize": "16px"
+     }
+    ]
+   }
+  ]
+ }
+]
