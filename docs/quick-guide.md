@@ -45,7 +45,7 @@ Claude Code 세션을 열고 이렇게 칩니다.
 
 1. 이 세션의 모드가 `op`(Operator)로 기록됩니다. 이 선언이 없으면 보호된 경로에 쓰기가 막힙니다.
 2. 부서원 역할 정의가 빠져 있으면 스크립트(`realize_role.py`)가 자동으로 다시 만듭니다.
-3. 모드 진입 체크리스트(`schema/op_mode_entry_checks.yaml`)가 매번 전부 돌고, 결과를 알려줍니다.
+3. 모드 진입 체크리스트(`governance/data/op_mode_entry_checks.yaml`)가 매번 전부 돌고, 결과를 알려줍니다.
 4. 이 세션이 곧 `OP_ORCHESTRATOR`(업무참모)가 되어, 자기 운영 규칙 문서를 끝까지 읽습니다.
 
 그다음부터는 **하고 싶은 일을 평범한 말로** 적으시면 됩니다. 어느 부서에 맡길지 지목할 필요는
@@ -55,7 +55,7 @@ Claude Code 세션을 열고 이렇게 칩니다.
 ## 2. 프로젝트(부서)를 시작하려면
 
 새로운 일을 말하면 업무참모가 먼저 이게 **실제로 누군가에게 일을 맡겨야 하는 일인지**를 봅니다.
-단순 질문이면 부서를 만들지 않고 바로 답합니다(`schema/OP_ORCHESTRATOR.md` §3).
+단순 질문이면 부서를 만들지 않고 바로 답합니다(`schema/staff/OP_ORCHESTRATOR.md` §3).
 
 맡겨야 하는 일이면 department(부서)가 하나 생깁니다.
 
@@ -130,6 +130,6 @@ Claude Code 세션을 열고 이렇게 칩니다.
 
 용어가 낯설면 [Glossary](/glossary)에 전부 모아 두었습니다.
 
-*근거: `.claude/commands/aise/{op,meta,handoff,usage}.md`; `schema/OP_ORCHESTRATOR.md` §3;
-`schema/README.md` "Storage", "Department lifecycle"; `governance/MODE_POLICY.md`;
-`governance/DEPLOYMENT_READINESS.md`.*
+*근거: `.claude/commands/aise/{op,meta,handoff,usage}.md`; `schema/staff/OP_ORCHESTRATOR.md` §3;
+`schema/README.md` "Storage", "Department lifecycle"; `governance/policies/MODE_POLICY.md`;
+`governance/policies/DEPLOYMENT_READINESS.md`.*

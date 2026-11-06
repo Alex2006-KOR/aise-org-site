@@ -17,9 +17,9 @@ Below is the whole site reduced to one page; each line leads to its chapter.
 Two attempts produced four needs and six problems, and the question narrowed to "how, and how far, to control".
 :::
 
-::: point **[2. The answer: borrow a company's structure](/en/story/at-a-glance)** — Instead of controlling each action, judgment is delegated and accountability is bound by a company's structure.
-The operator talks only to the staff, the ops staff forms departments, and a PM divides work among members and checks the results. From
-instruction to report, in five sentences and one real request.
+::: point **[2. The answer: borrow a company's structure](/en/story/at-a-glance)** — Instead of controlling each action, judgment is delegated and a company's structure binds accountability.
+The operator talks only to the staff, the ops staff forms departments, a PM divides and checks the work. Instruction to report, in five
+sentences and one real request.
 :::
 
 ::: point **[3. Principles](/en/story/principles)** — Principles and boundaries first, features left open. The two axes are SRP and OCP.

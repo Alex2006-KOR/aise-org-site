@@ -139,8 +139,8 @@ ordinary department raises a loop: who approves that department's own tools?
   approval (HR staff) from execution (the ops staff writes the role file). A department can only request a new role.
 - The asset staff comes from the way companies review and approve high-impact tools before introducing them: a newcomer learns the basic
   rules from HR and receives tools from the asset team. To break the loop it is a staff defined by the constitution, not a recruited department.
-  What gets approved differs per deployment, so the function is in the constitution and the concrete constraints in that deployment's
-  governance (`ASSET_POLICY.md`).
+  What gets approved differs per deployment, so the function is in the constitution and the concrete constraints in that organization's
+  asset policy (`instance/assets/policy.md`).
 - Approval to recruit does not mean approval of tools. The three are independent gates.
 
 <figure>
@@ -396,7 +396,7 @@ it in its own repository.
 <figcaption>Figure 4-7. Templates (schema/) and instance (instance/). Changing the left changes the shapes the organization may take; changing the right changes the organization as it is now.</figcaption>
 </figure>
 
-A new deployment starts with an empty organization. At the first entry into Operator mode the instance skeleton is created as empty files, and
+A new deployment starts with an empty organization. At the first entry into Operator mode the instance skeleton's files are created (the asset catalog empty, the asset policy and command conditions as unreviewed starting values), and
 departments and roles fill in as real work arrives. That is why what is distributed is policy and tools, not an organization
 ([chapter 8](/en/story/distribution)).
 

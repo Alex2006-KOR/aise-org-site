@@ -1,6 +1,6 @@
 ---
-reflects-through: b1da893 (PR #27 merge, main) + feature/p21-mobile-figures (2026-11-04; set to the merge commit when merged)
-aise-core-through: c71fa8a
+reflects-through: 5d10d47 (PR #29 merge, main) + feature/p23-core-boundary (2026-11-06; set to the merge commit when merged)
+aise-core-through: 60a85c9
 title: aise-org-site 아키텍처
 outline: deep
 ---
@@ -103,7 +103,7 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
 커밋이다. aise-core가 바뀌었다는 소식이 오면(또는 콘텐츠 PR마다) `scripts/upstream-check.sh [aise-core 경로]`를
 실행한다. 세 축을 본다.
 
-1. **참조** — 경로·decision 인용이 아직 풀리는가(aise-core `governance/reference_check.py` + 옛 decision 파일명
+1. **참조** — 경로·decision 인용이 아직 풀리는가(aise-core `governance/scripts/tools/reference_check.py` + 옛 decision 파일명
    잔존 검사. reference_check는 "renamed/deleted"가 들어간 줄을 건너뛰므로 슬러그에 그 단어가 있는 인용을 놓친다 —
    두 번째 검사가 그 구멍을 메운다). 고칠 새 인용은 reference_check가 줄마다 출력한다.
 2. **직접 인용** — `*"…"*` 형식의 영문 인용 중, `aise-core-through`에서는 축자 일치했는데 지금은 아닌 것
@@ -113,9 +113,13 @@ AISE 조직(철학·구조·거버넌스)을 일반 독자에게 소개하는 �
    역사이므로 고치지 않고 "(이후 바뀜)" 주석만 단다. 현재형 서술과 "직접 확인해 보려면" 단계는 고친다.
 
 참조 축은 `docs/work/3way-reference-answers.md`를 건너뛴다. 그 파일은 aise-core `f9dc210`에 고정된 답 열쇠라 경로도 그 커밋의 것이다.
-출처는 Operator 모드에서 읽을 수 있는 곳만 가리킨다. 경영참모의 공간 `instance/staff/mg/`는 이 부서가 읽을 수 없으므로(`governance/MODE_POLICY.md` "Spaces"), 그 안의 결과를 인용하지 않고 `knowledge/`의 기록을 인용한다.
+출처는 Operator 모드에서 읽을 수 있는 곳만 가리킨다. 경영참모의 공간 `instance/staff/mg/`는 이 부서가 읽을 수 없으므로(`governance/policies/MODE_POLICY.md` "Spaces"), 그 안의 결과를 인용하지 않고 `knowledge/`의 기록을 인용한다.
+
+대조 기준은 aise-core의 작업 브랜치(지금 `feature/first-recruitment-pilot`)다. aise-core `main`에는 아직 규칙 문서가 없고 저장소도 비공개라(`sources.ts` `repoPublic: false`) 링크는 그려지지 않는다. 그래서 경로가 옮겨지면 사이트는 바로 따라가고, 작업 브랜치가 `main`에 병합될 때는 고칠 것이 없다.
 
 세 축을 처리한 PR에서 `aise-core-through`를 올린다. `scripts/`는 빌드 대상이 아니다(`docs/` 밖).
+
+EN 한글 점검은 두 겹이다. `docs/en` grep은 원문만 보므로, `scripts/en-hangul-check.mjs`가 렌더된 EN 쪽을 실 브라우저로 읽어 `sources.ts`·테마에서 온 글자까지 본다(출처 표의 축자 앵커는 인용으로 친다).
 
 ## 8. 알려진 한계
 
