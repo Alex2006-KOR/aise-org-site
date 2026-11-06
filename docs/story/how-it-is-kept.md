@@ -62,11 +62,12 @@ aise-core의 규칙은 세 층으로 나뉜다. 헌법(`CONSTITUTION.md`)은 존
 
 ## 거버넌스의 구성 {#governance}
 
-`governance/`에는 사람이 읽는 정책 문서와 프로그램이 읽는 목록이 함께 있다. 대부분은 어느 배포에서나 같은 이식 가능한
-정책이다. 도구 제약처럼 이 조직만의 사정을 담은 정책은 따로 표시돼 있다. 거버넌스 전체는 Meta 모드에서만 고칠 수 있다.
+`governance/`는 사람이 읽는 정책 문서(`policies/`), 프로그램이 읽는 목록(`data/`), 점검 도구(`scripts/`)로 나뉜다. 모두 어느 배포에서나
+같은 이식 가능한 정책이고, Meta 모드에서만 고칠 수 있다. 도구 제약처럼 이 조직만의 사정을 담은 정책은 거버넌스 밖, 조직 자신의 공간
+`instance/assets/`에 있고 자산참모가 쓴다.
 
 <figure>
-<svg viewBox="0 0 560 360" role="img" aria-label="거버넌스 구성을 두 축으로 나눈 그림. 가로는 사람이 읽는 정책 문서와 프로그램이 읽는 목록, 세로는 이식 가능한 정책과 이 배포만의 정책이다. 이식 가능한 문서: STANDING_RULES, MODE_POLICY, CONTINUITY_POLICY, DUPLICATION_POLICY, ADAPTER_POLICY, SECRETS_POLICY, DEPLOYMENT_READINESS. 이식 가능한 목록: adapter_requirements.yaml. 이 배포만의 문서: ASSET_POLICY. 이 배포만의 목록: asset_command_patterns.yaml">
+<svg viewBox="0 0 560 360" role="img" aria-label="거버넌스 구성을 두 축으로 나눈 그림. 가로는 사람이 읽는 정책 문서와 프로그램이 읽는 목록, 세로는 이식 가능한 정책과 이 배포만의 정책이다. 이식 가능한 문서: STANDING_RULES, MODE_POLICY, CONTINUITY_POLICY, DUPLICATION_POLICY, ADAPTER_POLICY, SECRETS_POLICY, DEPLOYMENT_READINESS. 이식 가능한 목록: adapter_requirements.yaml, spaces.yaml. 이 배포만의 문서: instance/assets/policy.md. 이 배포만의 목록: instance/assets/conditions.yaml">
   <text x="225" y="22" text-anchor="middle" font-size="13" font-weight="600">사람이 읽는 정책 문서</text>
   <text x="458" y="22" text-anchor="middle" font-size="13" font-weight="600">프로그램이 읽는 목록</text>
   <text x="14" y="140" font-size="12" font-weight="600" transform="rotate(-90 14 140)" text-anchor="middle">이식 가능</text>
@@ -83,13 +84,14 @@ aise-core의 규칙은 세 층으로 나뉜다. 헌법(`CONSTITUTION.md`)은 존
   <text x="491" y="130" text-anchor="middle" font-size="12">adapter_</text>
   <text x="491" y="148" text-anchor="middle" font-size="12">requirements</text>
   <text x="491" y="166" text-anchor="middle" font-size="12">.yaml</text>
+  <text x="491" y="196" text-anchor="middle" font-size="12">spaces.yaml</text>
   <rect x="30" y="256" width="390" height="92" rx="8" fill="none" stroke="#c1652a" stroke-width="2" />
-  <text x="46" y="307" font-size="13" fill="#c1652a">ASSET_POLICY — 이 조직의 도구 제약</text>
+  <text x="46" y="307" font-size="13" fill="#c1652a">policy.md — 이 조직의 도구 제약</text>
   <rect x="432" y="256" width="118" height="92" rx="8" fill="none" stroke="#c1652a" stroke-width="2" />
-  <text x="491" y="297" text-anchor="middle" font-size="12" fill="#c1652a">asset_command_</text>
-  <text x="491" y="315" text-anchor="middle" font-size="12" fill="#c1652a">patterns.yaml</text>
+  <text x="491" y="297" text-anchor="middle" font-size="12" fill="#c1652a">conditions</text>
+  <text x="491" y="315" text-anchor="middle" font-size="12" fill="#c1652a">.yaml</text>
 </svg>
-<figcaption>그림 5-2. 거버넌스의 구성. 다른 조직이 aise-core를 쓰면 아래 줄(주황)만 자기 사정에 맞게 다시 쓴다.</figcaption>
+<figcaption>그림 5-2. 거버넌스와 조직의 자산 정책. 아래 줄(주황)은 거버넌스 밖 instance/assets/에 있다. 다른 조직은 시작값을 받아 이 줄만 자기 사정에 맞게 다시 쓴다.</figcaption>
 </figure>
 
 | 파일 | 담는 것 |
@@ -101,11 +103,12 @@ aise-core의 규칙은 세 층으로 나뉜다. 헌법(`CONSTITUTION.md`)은 존
 | `ADAPTER_POLICY.md` | 무엇이 도구 고유인지의 판별, 어댑터가 갖출 것, 어댑터 점검 |
 | `SECRETS_POLICY.md` | 자격 증명. 필요하다는 사실은 기록하고, 값은 저장소 밖에만 둔다 |
 | `DEPLOYMENT_READINESS.md` | 개발 단계를 벗어나 배포할 때 확인할 항목 |
-| `ASSET_POLICY.md` | 이 조직의 도구 제약. 외부 MCP 서버 금지, 외부 유출 위험이 있는 도구 금지, 스킬도 같은 심사 |
+| `spaces.yaml` | 기록 공간표. 공간마다 누가 쓰고 누가 읽을 수 있는가 |
+| `instance/assets/policy.md` | 이 조직의 도구 제약. 외부 MCP 서버 금지, 외부 유출 위험이 있는 도구 금지, 스킬도 같은 심사 |
 | `adapter_requirements.yaml` | 어댑터가 제공해야 할 요구사항 목록. 도구 이름 없이 쓴다 |
-| `asset_command_patterns.yaml` | 승인된 도구에 붙은 명령 조건. 예: 임의의 외부 네트워크 호출 금지, 강제 push와 보호 브랜치 직접 push 금지 |
+| `instance/assets/conditions.yaml` | 승인된 도구에 붙은 명령 조건. 예: 임의의 외부 네트워크 호출 금지, 강제 push와 보호 브랜치 직접 push 금지 |
 
-<Cite ids="mode-policy,asset-policy" />
+<Cite ids="mode-policy,asset-policy,assets-in-instance" />
 
 ::: point 자세히 — 왜 문서와 목록을 나눴나 (배경 · 문제 · 해결 방법)
 **배경.** 같은 조건이 여러 문서에 따로 적혀 있었다. 한 번의 점검에서 push 조건 하나가 여섯 파일에 다시 적혀 있었고, 그중
@@ -115,7 +118,7 @@ aise-core의 규칙은 세 층으로 나뉜다. 헌법(`CONSTITUTION.md`)은 존
 어긋난 곳을 찾을 수 없다.
 
 **해결 방법.** 프로그램이 지키는 값은 기계가 읽는 목록 한 곳에 둔다. 문서는 그 값을 다시 적지 않고 파일을 인용한다.
-훅도 같은 목록을 읽는다. 예를 들어 명령 조건은 `asset_command_patterns.yaml`에만 있고, 훅과 역할 정의가 모두 이 파일에서
+훅도 같은 목록을 읽는다. 예를 들어 명령 조건은 `instance/assets/conditions.yaml`에만 있고, 훅과 역할 정의가 모두 이 파일에서
 조건을 가져온다.
 
 <Cite ids="duplication-policy,asset-patterns" />
@@ -178,14 +181,14 @@ flowchart LR
 
 훅은 하나의 엔진으로 돈다. 도구는 이벤트마다 훅 하나만 부르고, 엔진이 그 이벤트와 도구에 등록된 점검을 정해진 순서로 실행해
 결과를 합친다. 점검은 두 종류다. **관문**은 막거나 사람에게 물을 수 있고, **관찰자**는 알리거나 기록만 한다. 누가 어느 경로에 쓸 수
-있는지 같은 정책 값은 코드가 아니라 거버넌스의 목록에서 읽는다.
+있는지 같은 정책 값은 코드가 아니라 목록에서 읽는다.
 
 <figure>
 
 ```mermaid
 flowchart LR
   T["도구 호출<br/>Edit · Write · Bash · Agent …"] --> E["훅 엔진<br/>이벤트 하나, 진입점 하나"]
-  P[("정책 목록<br/>write_policy.yaml<br/>asset_command_patterns.yaml")] -.-> E
+  P[("정책 목록<br/>spaces.yaml<br/>conditions.yaml")] -.-> E
   E --> G["관문<br/>쓰기 경계 · 명령 조건<br/>역할 위임 · 역할 삭제<br/>설정 보호"]
   E --> O["관찰자<br/>컨텍스트 경고 · 작업 폴더<br/>기록 알림"]
   G -->|"거부 > 질문 > 허용"| D{"결정"}

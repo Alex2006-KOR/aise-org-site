@@ -18,7 +18,7 @@ This page is an **appendix**. Drop in from any chapter. The story starts at [cha
 Here's a collection of the terms used throughout this site. They follow one notation rule — **the
 name outside the parentheses is the one AISE's own documents and code actually use; the text inside
 is what it means in plain words.** For example, `OP_ORCHESTRATOR` (Ops-staff) means the role this
-site calls "Ops-staff" actually exists as the document `schema/OP_ORCHESTRATOR.md`. In the body
+site calls "Ops-staff" actually exists as the document `schema/staff/OP_ORCHESTRATOR.md`. In the body
 text, each page uses this form only the first time a term appears, and the plain word after that.
 
 **The members of the organization**
@@ -158,13 +158,13 @@ not once a department happens to end.
    what this organization has been wrestling with.
 2. Open `instance/workspace/aise-org-site/log.md` (the record of the very department
    that built this site) to see how the decisions cited on this page were actually used.
-3. Open aise-core's `schema/` directory and you'll find the four staff documents side by side
+3. Open aise-core's `schema/staff/` directory and you'll find the four staff documents side by side
    (`OP_ORCHESTRATOR.md`, `HR_ORCHESTRATOR.md`, `AS_ORCHESTRATOR.md`, `MG_ORCHESTRATOR.md`) — you
    can see where the names outside the parentheses in this glossary actually live.
 
 **Next.** To go back to the beginning and see the whole picture again → [Briefing](/en/).
 
-*Source: the whole of `CONSTITUTION.md`, `schema/README.md`, `schema/*_ORCHESTRATOR.md`, `governance/MODE_POLICY.md`;
+*Source: the whole of `CONSTITUTION.md`, `schema/README.md`, `schema/staff/*_ORCHESTRATOR.md`, `governance/policies/MODE_POLICY.md`;
 `knowledge/decisions/workspace/instance-data-location.md` "2026-08-06 — org-instance-directory-split",
 `knowledge/decisions/workspace/instance-data-location.md` "2026-08-06 — org-directory-renamed-to-schema",
 `knowledge/decisions/execution/cross-department.md` "2026-08-13 — cross-department-decision-promotion-trigger".*
