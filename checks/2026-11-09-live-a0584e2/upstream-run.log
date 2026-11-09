@@ -1,0 +1,21 @@
+aise-core: checked-through 60a85c9 -> now 7533c7a
+
+== 1. references
+0 finding(s)
+
+== 2. quotes broken since 60a85c9
+0 finding(s) in 8 quote(s)
+
+== 3. reading list (changed since 60a85c9)
+ governance/data/adapter_requirements.yaml     | 11 ++++++++++
+ governance/data/op_mode_entry_checks.yaml     | 10 ++++-----
+ governance/policies/CONTINUITY_POLICY.md      |  8 +++++++
+ schema/assets/library/git-remote-push/push.py | 55 ++++++++++++++++++++++++++++++++++++++---------
+ schema/staff/OP_ORCHESTRATOR.md               | 12 ++++++-----
+ 5 files changed, 76 insertions(+), 20 deletions(-)
+-- decision entries added:
+  2026-11-06 — launch-report-clause-removed
+  2026-11-09 — staff-inbox-before-department-work
+  2026-11-09 — observation-classification-by-hand
+  2026-11-09 — push-tool-edits-a-pr-body
+  2026-11-06 — re-verification-leaves-the-entry
