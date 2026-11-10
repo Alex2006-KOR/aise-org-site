@@ -1,6 +1,6 @@
 ---
-reflects-through: 5d10d47 (PR #29 merge, main) + feature/p23-core-boundary (2026-11-06; set to the merge commit when merged)
-aise-core-through: 60a85c9
+reflects-through: a0584e2 (PR #31 merge, main; 2026-11-09)
+aise-core-through: 7533c7a
 title: aise-org-site 아키텍처
 outline: deep
 ---
